@@ -1,0 +1,3577 @@
+$begin 'AnsoftProject'
+	Created='Thu Jan 26 05:36:04 2023'
+	FileOwnedByWorkbench=false
+	Product='HFSS'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(15, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	$begin 'HFSSEnvironment'
+		Version(1, 0)
+	$end 'HFSSEnvironment'
+	$begin 'HFIEEnvironment'
+		Version(1, 0)
+	$end 'HFIEEnvironment'
+	$begin 'geometry3deditor'
+		Version(1, 0)
+	$end 'geometry3deditor'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1104, 10000, 1, 1, 0, false, false)
+			Materials(1104, 9500, 9, 2, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'vacuum'
+			$begin 'pec'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				conductivity='1e+030'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'pec'
+			$begin 'Teflon (tm)'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='2.1'
+				dielectric_loss_tangent='0.001'
+				thermal_conductivity='0.25'
+				mass_density='2250'
+				specific_heat='1400'
+				youngs_modulus='496000000'
+				poissons_ratio='0.3'
+				thermal_expansion_coeffcient='1.35e-006'
+				ModTime=1132068241
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'Teflon (tm)'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+	$end 'Definitions'
+	DesignIDServer=2
+	MoveBackwards=false
+	$begin 'HFSSModel'
+		RepRewriteV2=true
+		Name='HFSSDesign1'
+		DesignID=0
+		'Use Advanced DC Extrapolation'=false
+		'Allow Material Override'=false
+		'Calculate Lossy Dielectrics'=true
+		$begin 'TemperatureSettings'
+			IncludeTemperatureDependence=false
+			EnableFeedback=false
+			Temperatures(746, '22cel')
+		$end 'TemperatureSettings'
+		ObjsEnabledForDeformation()
+		SolutionType='DrivenModal'
+		MaterialDensity=1
+		MassOfTissue=1
+		UseAutoDCThickness=true
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'ModelSetup'
+			$begin 'Editor3D Doc Preferences'
+				'Plane Background'=true
+				BackgroundColor1=16777215
+				BackgroundColor2=0
+				'Need Lights'=true
+				'Ambient Light'=8355711
+				'Num Lights'=2
+				Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+				Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+			$end 'Editor3D Doc Preferences'
+			$begin 'DesignDatasets'
+				NextUniqueID=0
+				MoveBackwards=false
+				DatasetType='DesignDatasetType'
+				$begin 'DatasetDefinitions'
+				$end 'DatasetDefinitions'
+			$end 'DesignDatasets'
+			$begin 'Properties'
+				VariableProp('th', 'UD', '', '90deg')
+			$end 'Properties'
+			SnapMode=31
+			WorkingCS=1
+			$begin 'GeometryCore'
+				BlockVersionID=3
+				DataVersion=7
+				NativeKernel='ACIS'
+				NativeKernelVersionID=5
+				Units='mm'
+				InstanceID=-1
+				$begin 'ValidationOptions'
+					EntityCheckLevel='Strict'
+					IgnoreUnclassifiedObjects=false
+					SkipIntersectionChecks=false
+				$end 'ValidationOptions'
+				$begin 'GeometryOperations'
+					BlockVersionID=2
+					$begin 'AnsoftRangedIDServerManager'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=0
+							IDServerRangeMin=0
+							IDServerRangeMax=2146483647
+							NextUniqueID=751
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=1
+							IDServerRangeMin=2146483648
+							IDServerRangeMax=2146485547
+							NextUniqueID=2146483654
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+					$end 'AnsoftRangedIDServerManager'
+					StartBackGroundFaceID=2146483648
+					$begin 'CoordinateSystems'
+					$end 'CoordinateSystems'
+					$begin 'UserDefinedModels'
+					$end 'UserDefinedModels'
+					$begin 'ToplevelParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Vacuumsolid2'
+								Flags=''
+								Color='(128 204 255)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"vacuum"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=476
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\morteza\\Desktop\\adaptor.stp'
+									$end 'NativeBodyParameters'
+									ParentPartID=477
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=9
+											NumWires=0
+											NumLoops=10
+											NumCoedges=36
+											NumEdges=18
+											NumVertices=12
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000477.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Substract'
+									ID=517
+									$begin 'SubtractParameters'
+										KernelVersion=5
+										KeepOriginals=false
+										BlankPart=477
+										NumToolParts=2
+										ToolParts(654, 625)
+									$end 'SubtractParameters'
+									ParentPartID=477
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=12
+											NumWires=0
+											NumLoops=14
+											NumCoedges=48
+											NumEdges=24
+											NumVertices=16
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=518
+										StartEdgeID=521
+										StartVertexID=527
+										NumNewFaces=3
+										NumNewEdges=6
+										NumNewVertices=4
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+												$begin 'Face'
+													NormalizedSerialNum=0
+													ID=518
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=9.23628240155399
+															FcUVMid(11.43, 5.86, 4.4925)
+															$begin 'FcTolVts'
+																TolVt(12.83, 4.81, 5.8925, 0)
+																TolVt(12.83, 6.91, 5.8925, 0)
+																TolVt(10.03, 6.91, 5.8925, 0)
+																TolVt(10.03, 4.81, 5.8925, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=1
+													ID=519
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 2, 2, 2)
+														$begin 'FaceGeometry'
+															Area=6.15752160103599
+															FcUVMid(11.43, 4.81, 5.8925)
+															$begin 'FcTolVts'
+																TolVt(12.83, 4.81, 5.8925, 0)
+																TolVt(10.03, 4.81, 5.8925, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=2
+													ID=520
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=9.23628240155399
+															FcUVMid(11.43, 5.86, 7.2925)
+															$begin 'FcTolVts'
+																TolVt(12.83, 6.91, 5.8925, 0)
+																TolVt(12.83, 4.81, 5.8925, 0)
+																TolVt(10.03, 4.81, 5.8925, 0)
+																TolVt(10.03, 6.91, 5.8925, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+												$begin 'Edge'
+													NormalizedSerialNum=0
+													ID=521
+													EdgeFaces(518, 520)
+													$begin 'EdTolVts'
+														TolVt(12.83, 4.81, 5.8925, 0)
+														TolVt(12.83, 6.91, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(12.83, 5.86, 5.8925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=1
+													ID=522
+													EdgeFaces(479, 518)
+													$begin 'EdTolVts'
+														TolVt(10.03, 6.91, 5.8925, 0)
+														TolVt(12.83, 6.91, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 6.91, 4.4925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=2
+													ID=523
+													EdgeFaces(518, 520)
+													$begin 'EdTolVts'
+														TolVt(10.03, 6.91, 5.8925, 0)
+														TolVt(10.03, 4.81, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(10.03, 5.86, 5.8925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=3
+													ID=524
+													EdgeFaces(518, 519)
+													$begin 'EdTolVts'
+														TolVt(12.83, 4.81, 5.8925, 0)
+														TolVt(10.03, 4.81, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 4.81, 4.4925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=4
+													ID=525
+													EdgeFaces(519, 520)
+													$begin 'EdTolVts'
+														TolVt(10.03, 4.81, 5.8925, 0)
+														TolVt(12.83, 4.81, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 4.81, 7.2925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=5
+													ID=526
+													EdgeFaces(479, 520)
+													$begin 'EdTolVts'
+														TolVt(12.83, 6.91, 5.8925, 0)
+														TolVt(10.03, 6.91, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 6.91, 7.2925)
+												$end 'Edge'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+												$begin 'Vertex'
+													NormalizedSerialNum=0
+													ID=527
+													VtPos(12.83, 4.81, 5.8925)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=1
+													ID=528
+													VtPos(12.83, 6.91, 5.8925)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=2
+													ID=529
+													VtPos(10.03, 6.91, 5.8925)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=3
+													ID=530
+													VtPos(10.03, 4.81, 5.8925)
+												$end 'Vertex'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									BlankOperation=476
+									NumToolOperations=2
+									ToolOperations(653, 624)
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Move'
+									ID=735
+									ReferenceCoordSystemID=1
+									$begin 'TranslateParameters'
+										KernelVersion=5
+										PartID=477
+										TranslateVectorX='-11.43mm'
+										TranslateVectorY='-4.81mm'
+										TranslateVectorZ='-5.8925mm'
+									$end 'TranslateParameters'
+									ParentPartID=477
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=12
+											NumWires=0
+											NumLoops=14
+											NumCoedges=48
+											NumEdges=24
+											NumVertices=16
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									TranformBaseOperationID=517
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Coaxcoax1'
+								Flags=''
+								Color='(0 128 0)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"Teflon (tm)"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=531
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\morteza\\Desktop\\adaptor.stp'
+									$end 'NativeBodyParameters'
+									ParentPartID=532
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000532.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+								$begin 'CloneToOperation'
+									OperationType='DuplicateAroundAxis'
+									ID=547
+									ReferenceCoordSystemID=1
+									$begin 'DuplicateAroundAxisParameters'
+										KernelVersion=5
+										ClonedPart=532
+										CreateNewObjects=true
+										WhichAxis='Y'
+										AngleStr='360deg'
+										NumClones='2'
+									$end 'DuplicateAroundAxisParameters'
+									ParentPartID=532
+								$end 'CloneToOperation'
+								$begin 'Operation'
+									OperationType='Substract'
+									ID=548
+									$begin 'SubtractParameters'
+										KernelVersion=5
+										KeepOriginals=false
+										BlankPart=532
+										NumToolParts=1
+										ToolParts(670)
+									$end 'SubtractParameters'
+									ParentPartID=532
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=549
+										StartEdgeID=551
+										StartVertexID=557
+										NumNewFaces=2
+										NumNewEdges=6
+										NumNewVertices=4
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+												$begin 'Face'
+													NormalizedSerialNum=0
+													ID=549
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=14.463107178964
+															FcUVMid(11.43, 10.535, 5.2575)
+															$begin 'FcTolVts'
+																TolVt(12.065, 6.91, 5.8925, 0)
+																TolVt(12.065, 14.16, 5.8925, 0)
+																TolVt(10.795, 14.16, 5.8925, 0)
+																TolVt(10.795, 6.91, 5.8925, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=1
+													ID=550
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=14.463107178964
+															FcUVMid(11.43, 10.535, 6.5275)
+															$begin 'FcTolVts'
+																TolVt(12.065, 14.16, 5.8925, 0)
+																TolVt(12.065, 6.91, 5.8925, 0)
+																TolVt(10.795, 6.91, 5.8925, 0)
+																TolVt(10.795, 14.16, 5.8925, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+												$begin 'Edge'
+													NormalizedSerialNum=0
+													ID=551
+													EdgeFaces(549, 550)
+													$begin 'EdTolVts'
+														TolVt(12.065, 6.91, 5.8925, 0)
+														TolVt(12.065, 14.16, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(12.065, 10.535, 5.8925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=1
+													ID=552
+													EdgeFaces(536, 549)
+													$begin 'EdTolVts'
+														TolVt(10.795, 14.16, 5.8925, 0)
+														TolVt(12.065, 14.16, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 14.16, 5.2575)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=2
+													ID=553
+													EdgeFaces(549, 550)
+													$begin 'EdTolVts'
+														TolVt(10.795, 14.16, 5.8925, 0)
+														TolVt(10.795, 6.91, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(10.795, 10.535, 5.8925)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=3
+													ID=554
+													EdgeFaces(534, 549)
+													$begin 'EdTolVts'
+														TolVt(12.065, 6.91, 5.8925, 0)
+														TolVt(10.795, 6.91, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 6.91, 5.2575)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=4
+													ID=555
+													EdgeFaces(534, 550)
+													$begin 'EdTolVts'
+														TolVt(10.795, 6.91, 5.8925, 0)
+														TolVt(12.065, 6.91, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 6.91, 6.5275)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=5
+													ID=556
+													EdgeFaces(536, 550)
+													$begin 'EdTolVts'
+														TolVt(12.065, 14.16, 5.8925, 0)
+														TolVt(10.795, 14.16, 5.8925, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11.43, 14.16, 6.5275)
+												$end 'Edge'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+												$begin 'Vertex'
+													NormalizedSerialNum=0
+													ID=557
+													VtPos(12.065, 6.91, 5.8925)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=1
+													ID=558
+													VtPos(12.065, 14.16, 5.8925)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=2
+													ID=559
+													VtPos(10.795, 14.16, 5.8925)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=3
+													ID=560
+													VtPos(10.795, 6.91, 5.8925)
+												$end 'Vertex'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									BlankOperation=531
+									NumToolOperations=1
+									ToolOperations(669)
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Move'
+									ID=736
+									ReferenceCoordSystemID=1
+									$begin 'TranslateParameters'
+										KernelVersion=5
+										PartID=532
+										TranslateVectorX='-11.43mm'
+										TranslateVectorY='-4.81mm'
+										TranslateVectorZ='-5.8925mm'
+									$end 'TranslateParameters'
+									ParentPartID=532
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									TranformBaseOperationID=548
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='PECsolid4'
+								Flags=''
+								Color='(204 204 204)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=561
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\morteza\\Desktop\\adaptor.stp'
+									$end 'NativeBodyParameters'
+									ParentPartID=562
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=7
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000562.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+								$begin 'CloneToOperation'
+									OperationType='DuplicateAroundAxis'
+									ID=590
+									ReferenceCoordSystemID=1
+									$begin 'DuplicateAroundAxisParameters'
+										KernelVersion=5
+										ClonedPart=562
+										CreateNewObjects=true
+										WhichAxis='Y'
+										AngleStr='360deg'
+										NumClones='2'
+									$end 'DuplicateAroundAxisParameters'
+									ParentPartID=562
+								$end 'CloneToOperation'
+								$begin 'CloneToOperation'
+									OperationType='DuplicateAroundAxis'
+									ID=591
+									ReferenceCoordSystemID=1
+									$begin 'DuplicateAroundAxisParameters'
+										KernelVersion=5
+										ClonedPart=562
+										CreateNewObjects=true
+										WhichAxis='Y'
+										AngleStr='360deg'
+										NumClones='2'
+									$end 'DuplicateAroundAxisParameters'
+									ParentPartID=562
+								$end 'CloneToOperation'
+								$begin 'Operation'
+									OperationType='Move'
+									ID=737
+									ReferenceCoordSystemID=1
+									$begin 'TranslateParameters'
+										KernelVersion=5
+										PartID=562
+										TranslateVectorX='-11.43mm'
+										TranslateVectorY='-4.81mm'
+										TranslateVectorZ='-5.8925mm'
+									$end 'TranslateParameters'
+									ParentPartID=562
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=7
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									TranformBaseOperationID=561
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='PECstub3'
+								Flags=''
+								Color='(204 204 204)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=592
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\morteza\\Desktop\\adaptor.stp'
+									$end 'NativeBodyParameters'
+									ParentPartID=593
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000593.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Move'
+									ID=738
+									ReferenceCoordSystemID=1
+									$begin 'TranslateParameters'
+										KernelVersion=5
+										PartID=593
+										TranslateVectorX='-11.43mm'
+										TranslateVectorY='-4.81mm'
+										TranslateVectorZ='-5.8925mm'
+									$end 'TranslateParameters'
+									ParentPartID=593
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									TranformBaseOperationID=592
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='PECstub4'
+								Flags=''
+								Color='(204 204 204)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=608
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\morteza\\Desktop\\adaptor.stp'
+									$end 'NativeBodyParameters'
+									ParentPartID=609
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000609.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Move'
+									ID=739
+									ReferenceCoordSystemID=1
+									$begin 'TranslateParameters'
+										KernelVersion=5
+										PartID=609
+										TranslateVectorX='-11.43mm'
+										TranslateVectorY='-4.81mm'
+										TranslateVectorZ='-5.8925mm'
+									$end 'TranslateParameters'
+									ParentPartID=609
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									TranformBaseOperationID=608
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Circle1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"vacuum"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Circle'
+									ID=745
+									ReferenceCoordSystemID=1
+									$begin 'CircleParameters'
+										KernelVersion=5
+										XCenter='0mm'
+										YCenter='9.35mm'
+										ZCenter='0mm'
+										Radius='2.0575mm'
+										WhichAxis='Y'
+										NumSegments='0'
+									$end 'CircleParameters'
+									ParentPartID=746
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=0
+											NumWires=1
+											NumLoops=0
+											NumCoedges=1
+											NumEdges=1
+											NumVertices=1
+										$end 'Topology'
+										BodyID=746
+										StartFaceID=-1
+										StartEdgeID=747
+										StartVertexID=748
+										NumNewFaces=0
+										NumNewEdges=1
+										NumNewVertices=1
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='CoverLines'
+									ID=749
+									$begin 'LocalOperationParameters'
+										KernelVersion=5
+										LocalOpPart=746
+									$end 'LocalOperationParameters'
+									ParentPartID=746
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=1
+											NumWires=0
+											NumLoops=1
+											NumCoedges=1
+											NumEdges=1
+											NumVertices=1
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=750
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=1
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+												$begin 'Face'
+													NormalizedSerialNum=0
+													ID=750
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 1, 1, 1)
+														$begin 'FaceGeometry'
+															Area=13.2993238153958
+															FcUVMid(2.22044604925031e-016, 9.35, -3.55574975823631e-048)
+															$begin 'FcTolVts'
+																TolVt(3.77956618386852e-016, 9.35, 2.0575, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									ParentOperationID=745
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'ToplevelParts'
+					$begin 'OperandParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='PECsolid3_3'
+								Flags=''
+								Color='(204 204 204)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='DuplicateBodyAroundAxis'
+									ID=624
+									$begin 'CloneFromParameters'
+										KernelVersion=5
+										SourcePartID=562
+										WhichClone=0
+									$end 'CloneFromParameters'
+									ParentPartID=625
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=7
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=625
+										StartFaceID=626
+										StartEdgeID=633
+										StartVertexID=645
+										NumNewFaces=7
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'CloneFromOperationIdentityHelper'
+											CloneFaces('563'='626', '564'='627', '565'='628', '566'='629', '567'='630', '568'='631', '569'='632')
+											CloneEdges('570'='633', '571'='634', '572'='635', '573'='636', '574'='637', '575'='638', '576'='639', '577'='640', '578'='641', '579'='642', '580'='643', '581'='644')
+											CloneVertices('582'='645', '583'='646', '584'='647', '585'='648', '586'='649', '587'='650', '588'='651', '589'='652')
+										$end 'CloneFromOperationIdentityHelper'
+										OriginalFaceIDs(563, 564, 565, 566, 567, 568, 569)
+										OriginalEdgeIDs(570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581)
+										OriginalVertexIDs(582, 583, 584, 585, 586, 587, 588, 589)
+									$end 'OperationIdentity'
+									PlaceHolderOpnId=590
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Coaxcoax_2'
+								Flags=''
+								Color='(0 128 0)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='DuplicateBodyAroundAxis'
+									ID=653
+									$begin 'CloneFromParameters'
+										KernelVersion=5
+										SourcePartID=532
+										WhichClone=0
+									$end 'CloneFromParameters'
+									ParentPartID=654
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=654
+										StartFaceID=655
+										StartEdgeID=659
+										StartVertexID=665
+										NumNewFaces=4
+										NumNewEdges=6
+										NumNewVertices=4
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'CloneFromOperationIdentityHelper'
+											CloneFaces('533'='655', '534'='656', '535'='657', '536'='658')
+											CloneEdges('537'='659', '538'='660', '539'='661', '540'='662', '541'='663', '542'='664')
+											CloneVertices('543'='665', '544'='666', '545'='667', '546'='668')
+										$end 'CloneFromOperationIdentityHelper'
+										OriginalFaceIDs(533, 534, 535, 536)
+										OriginalEdgeIDs(537, 538, 539, 540, 541, 542)
+										OriginalVertexIDs(543, 544, 545, 546)
+									$end 'OperationIdentity'
+									PlaceHolderOpnId=547
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='PECsolid3_4'
+								Flags=''
+								Color='(204 204 204)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='DuplicateBodyAroundAxis'
+									ID=669
+									$begin 'CloneFromParameters'
+										KernelVersion=5
+										SourcePartID=562
+										WhichClone=0
+									$end 'CloneFromParameters'
+									ParentPartID=670
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=7
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=670
+										StartFaceID=671
+										StartEdgeID=678
+										StartVertexID=690
+										NumNewFaces=7
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'CloneFromOperationIdentityHelper'
+											CloneFaces('563'='671', '564'='672', '565'='673', '566'='674', '567'='675', '568'='676', '569'='677')
+											CloneEdges('570'='678', '571'='679', '572'='680', '573'='681', '574'='682', '575'='683', '576'='684', '577'='685', '578'='686', '579'='687', '580'='688', '581'='689')
+											CloneVertices('582'='690', '583'='691', '584'='692', '585'='693', '586'='694', '587'='695', '588'='696', '589'='697')
+										$end 'CloneFromOperationIdentityHelper'
+										OriginalFaceIDs(563, 564, 565, 566, 567, 568, 569)
+										OriginalEdgeIDs(570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581)
+										OriginalVertexIDs(582, 583, 584, 585, 586, 587, 588, 589)
+									$end 'OperationIdentity'
+									PlaceHolderOpnId=591
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'OperandParts'
+					$begin 'Planes'
+					$end 'Planes'
+					$begin 'Points'
+					$end 'Points'
+					$begin 'GeometryEntityLists'
+					$end 'GeometryEntityLists'
+					$begin 'CachedNames'
+						$begin 'allobjects'
+							allobjects(-1)
+						$end 'allobjects'
+						$begin 'circle'
+							circle(1)
+						$end 'circle'
+						$begin 'coaxcoax'
+							coaxcoax(1)
+						$end 'coaxcoax'
+						$begin 'coaxcoax_'
+							coaxcoax_(2)
+						$end 'coaxcoax_'
+						$begin 'global'
+							global(-1)
+						$end 'global'
+						$begin 'pecsolid'
+							pecsolid(4)
+						$end 'pecsolid'
+						$begin 'pecsolid3_'
+							pecsolid3_(3, 4)
+						$end 'pecsolid3_'
+						$begin 'pecstub'
+							pecstub(3, 4)
+						$end 'pecstub'
+						$begin 'vacuumsolid'
+							vacuumsolid(2)
+						$end 'vacuumsolid'
+					$end 'CachedNames'
+				$end 'GeometryOperations'
+				$begin 'GeometryDependencies'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 476)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=3
+						DependencyObject('GeometryBodyOperation', 517)
+						DependencyObject('GeometryBodyOperation', 476)
+						DependencyObject('GeometryBodyOperation', 653)
+						DependencyObject('GeometryBodyOperation', 624)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 735)
+						DependencyObject('CoordinateSystem', 1)
+						DependencyObject('GeometryBodyOperation', 517)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 531)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryOperation', 547)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 548)
+						DependencyObject('GeometryBodyOperation', 531)
+						DependencyObject('GeometryBodyOperation', 669)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 736)
+						DependencyObject('CoordinateSystem', 1)
+						DependencyObject('GeometryBodyOperation', 548)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 561)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryOperation', 590)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryOperation', 591)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 737)
+						DependencyObject('CoordinateSystem', 1)
+						DependencyObject('GeometryBodyOperation', 561)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 592)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 738)
+						DependencyObject('CoordinateSystem', 1)
+						DependencyObject('GeometryBodyOperation', 592)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 608)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 739)
+						DependencyObject('CoordinateSystem', 1)
+						DependencyObject('GeometryBodyOperation', 608)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 745)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 749)
+						DependencyObject('GeometryBodyOperation', 745)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 624)
+						DependencyObject('GeometryOperation', 590)
+						DependencyObject('GeometryBodyOperation', 561)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 653)
+						DependencyObject('GeometryOperation', 547)
+						DependencyObject('GeometryBodyOperation', 531)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 669)
+						DependencyObject('GeometryOperation', 591)
+						DependencyObject('GeometryBodyOperation', 561)
+					$end 'DependencyInformation'
+				$end 'GeometryDependencies'
+			$end 'GeometryCore'
+			GroupByMaterial('-1'=true)
+			GroupSheetByMaterial()
+			$begin 'LastUserInputs'
+			$end 'LastUserInputs'
+		$end 'ModelSetup'
+		$begin 'BoundarySetup'
+			$begin 'GlobalBoundData'
+				PortImpedance='1'
+				GlobalMaterialEnv='vacuum'
+			$end 'GlobalBoundData'
+			$begin 'Boundaries'
+				NextUniqueID=4
+				MoveBackwards=false
+				$begin '1'
+					ID=2
+					BoundType='Wave Port'
+					Faces(481)
+					NumModes=1
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					UseLineModeAlignment=false
+					DoDeembed=false
+					DeembedDist='0mm'
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=false
+						$end 'Mode1'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true)
+					UseAnalyticAlignment=false
+				$end '1'
+				$begin '2'
+					ID=3
+					BoundType='Wave Port'
+					Objects(746)
+					NumModes=1
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					UseLineModeAlignment=false
+					DoDeembed=false
+					DeembedDist='0mm'
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=false
+						$end 'Mode1'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true)
+					UseAnalyticAlignment=false
+				$end '2'
+			$end 'Boundaries'
+			$begin 'ProductSpecificData'
+				$begin 'PMLData'
+					$begin 'PMLGroups'
+					$end 'PMLGroups'
+				$end 'PMLData'
+				$begin 'SortOrder'
+					Port[1: -1]
+					Terminal[1: -1]
+				$end 'SortOrder'
+			$end 'ProductSpecificData'
+		$end 'BoundarySetup'
+		$begin 'ArrayDefinition'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'ArrayDefinition'
+		$begin 'MeshSetup'
+			$begin 'MeshSettings'
+				$begin 'GlobalSurfApproximation'
+					SurfDevChoice=0
+					NormalDevChoice=1
+					AspectRatioChoice=1
+					PullToTrueSurf=false
+					SetFacePreservationLevel=0
+				$end 'GlobalSurfApproximation'
+				MeshMethod='Auto'
+			$end 'MeshSettings'
+			$begin 'MeshOperations'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'MeshOperations'
+		$end 'MeshSetup'
+		$begin 'AnalysisSetup'
+			$begin 'HfssGlobalData'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'HfssGlobalData'
+			$begin 'SolveSetups'
+				NextUniqueID=1
+				MoveBackwards=false
+				$begin 'Setup1'
+					ID=0
+					SetupType='HfssDriven'
+					Frequency='10GHz'
+					PortsOnly=false
+					MaxDeltaS=0.02
+					UseMatrixConv=false
+					MaximumPasses=6
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					IsEnabled=true
+					BasisOrder=1
+					UseIterativeSolver=false
+					DoLambdaRefine=true
+					DoMaterialLambda=true
+					SetLambdaTarget=false
+					Target=0.3333
+					UseMaxTetIncrease=false
+					PortAccuracy=2
+					UseABCOnPort=false
+					SetPortMinMaxTri=false
+					PortMinTri=100
+					PortMaxTri=500
+					EnableSolverDomains=false
+					SaveRadFieldsOnly=false
+					SaveAnyFields=true
+					NoAdditionalRefinementOnImport=false
+					$begin 'Sweeps'
+						NextUniqueID=1
+						MoveBackwards=false
+						$begin 'Sweep'
+							ID=0
+							IsEnabled=true
+							SetupType='LinearStep'
+							StartValue='8GHz'
+							StopValue='12GHz'
+							StepSize='0.2GHz'
+							Type='Discrete'
+							SaveFields=true
+							SaveRadFields=true
+							ExtrapToDC=false
+						$end 'Sweep'
+					$end 'Sweeps'
+					DerivativesOnlyForLastPass=false
+				$end 'Setup1'
+			$end 'SolveSetups'
+		$end 'AnalysisSetup'
+		$begin 'Optimetrics'
+			$begin 'OptimetricsSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'OptimetricsSetups'
+		$end 'Optimetrics'
+		$begin 'Solutions'
+			FieldType='NoIncidentWave'
+			IncludePortPostProcessing=false
+			SourceEntry(ID=2, Index=0, Terminal=false, Terminated=false, Magnitude='1W', Phase='0deg')
+			SourceEntry(ID=3, Index=0, Terminal=false, Terminated=false, Magnitude='0W', Phase='0deg')
+			$begin 'Contexts'
+				NextUniqueID=1
+				MoveBackwards=false
+			$end 'Contexts'
+		$end 'Solutions'
+		$begin 'PortFieldDisplay'
+			$begin 'PortFieldDisplay'
+				ScaleFactor=5
+				Solution='Setup1 : LastAdaptive'
+				Frequency='10GHz'
+			$end 'PortFieldDisplay'
+		$end 'PortFieldDisplay'
+		$begin 'FieldsReporter'
+			$begin 'FieldsCalculator'
+				Line_Discretization=1000
+			$end 'FieldsCalculator'
+			$begin 'PlotDefaults'
+				Default_SolutionId=14
+				Default_PlotFolder='Automatic'
+				Default_Phase='0deg'
+				Default_Freq='10GHz'
+			$end 'PlotDefaults'
+			$begin 'FieldsPlotManagerID'
+				NextUniqueID=2
+				MoveBackwards=false
+				NumQuantityType=2
+				$begin 'QuantityFolder_1'
+					PlotFolder='E Field'
+					'Real time mode'=true
+					$begin 'ColorMapSettings'
+						ColorMapType='Spectrum'
+						SpectrumType='Rainbow'
+						UniformColor(127, 255, 255)
+						RampColor(255, 127, 127)
+					$end 'ColorMapSettings'
+					$begin 'Scale3DSettings'
+						unit=154
+						m_nLevels=15
+						minvalue=0
+						maxvalue=12302.271484375
+						log=false
+						IntrinsicMin=0
+						IntrinsicMax=12302.271484375
+						LimitFieldValuePrecision=false
+						FieldValuePrecisionDigits=4
+						ScaleType=0
+						UserSpecifyValues(15, 0, 1294.86291503906, 2589.72583007813, 3884.5888671875, 5179.45166015625, 6474.314453125, 7769.177734375, 9064.0400390625, 10358.9033203125, 11653.7666015625, 12948.62890625, 14243.4921875, 15538.35546875, 16833.21875, 18128.080078125)
+					$end 'Scale3DSettings'
+					$begin 'Marker3DSettings'
+						MarkerType=9
+						MarkerMapSize=true
+						MarkerMapColor=false
+						MarkerSize=0.25
+					$end 'Marker3DSettings'
+					$begin 'Arrow3DSettings'
+						ArrowType=1
+						ArrowMapSize=true
+						ArrowMapColor=true
+						ShowArrowTail=true
+						ArrowSize=0.25
+					$end 'Arrow3DSettings'
+					$begin 'DeformScaleSettings'
+						ShowDeformation=true
+						MinScaleFactor=0
+						MaxScaleFactor=1
+						DeformationScale=0
+					$end 'DeformScaleSettings'
+				$end 'QuantityFolder_1'
+				$begin 'QuantityFolder_2'
+					PlotFolder='H Field'
+					'Real time mode'=true
+					$begin 'ColorMapSettings'
+						ColorMapType='Spectrum'
+						SpectrumType='Rainbow'
+						UniformColor(127, 255, 255)
+						RampColor(255, 127, 127)
+					$end 'ColorMapSettings'
+					$begin 'Scale3DSettings'
+						unit=107
+						m_nLevels=15
+						minvalue=0.00903110764920712
+						maxvalue=54.3138847351074
+						log=false
+						IntrinsicMin=0.00903110764920712
+						IntrinsicMax=54.3138847351074
+						LimitFieldValuePrecision=false
+						FieldValuePrecisionDigits=4
+						ScaleType=0
+						UserSpecifyValues(15, 0, 3.89042925834656, 7.78085851669312, 11.6712875366211, 15.5617170333862, 19.4521465301514, 23.3425750732422, 27.2330055236816, 31.1234340667725, 35.0138626098633, 38.9042930603027, 42.7947235107422, 46.6851501464844, 50.5755805969238, 54.4660110473633)
+					$end 'Scale3DSettings'
+					$begin 'Marker3DSettings'
+						MarkerType=9
+						MarkerMapSize=true
+						MarkerMapColor=false
+						MarkerSize=0.25
+					$end 'Marker3DSettings'
+					$begin 'Arrow3DSettings'
+						ArrowType=1
+						ArrowMapSize=true
+						ArrowMapColor=true
+						ShowArrowTail=true
+						ArrowSize=0.25
+					$end 'Arrow3DSettings'
+					$begin 'DeformScaleSettings'
+						ShowDeformation=true
+						MinScaleFactor=0
+						MaxScaleFactor=1
+						DeformationScale=0
+					$end 'DeformScaleSettings'
+				$end 'QuantityFolder_2'
+				NumPlots=2
+				$begin 'PlotDefinition_1'
+					PlotName='Mag_E1'
+					PlotDefinitionId=0
+					VersionID=28
+					SolutionId=14
+					QuantityId=2
+					PlotFolder='E Field'
+					UserSpecifyName=0
+					UserSpecifyFolder=0
+					StreamlinePlot=false
+					IntrinsicVar='Freq=\'10GHz\' Phase=\'0deg\''
+					FieldPlotGeometry(2, 64, 0, 2, 477, 532, 128, 2, 15, 563, 564, 565, 566, 567, 568, 569, 594, 595, 596, 597, 610, 611, 612, 613)
+					FilterIds(0)
+					$begin 'PlotOnSurfaceSettings'
+						Filled=false
+						IsoValType='Fringe'
+						SmoothShade=true
+						AddGrid=false
+						MapTransparency=true
+						Refinement=0
+						Transparency=0
+						$begin 'Arrow3DSpacingSettings'
+							ArrowUniform=true
+							ArrowSpacing=0.662314414978027
+							MinArrowSpacing=0.441542953252792
+							MaxArrowSpacing=0.883085906505585
+						$end 'Arrow3DSpacingSettings'
+						GridColor(255, 255, 255)
+					$end 'PlotOnSurfaceSettings'
+					$begin 'PlotOnVolumeSettings'
+						PlotIsoSurface=true
+						PointSize=1
+						Refinement=0
+						CloudSpacing=0.5
+						CloudMinSpacing=0.147180989384651
+						CloudMaxSpacing=0.441542983055115
+						$begin 'Arrow3DSpacingSettings'
+							ArrowUniform=true
+							ArrowSpacing=1.10385739803314
+							MinArrowSpacing=0.883085906505585
+							MaxArrowSpacing=1.32462882995605
+						$end 'Arrow3DSpacingSettings'
+					$end 'PlotOnVolumeSettings'
+				$end 'PlotDefinition_1'
+				$begin 'PlotDefinition_2'
+					PlotName='Mag_H1'
+					PlotDefinitionId=1
+					VersionID=28
+					SolutionId=14
+					QuantityId=3
+					PlotFolder='H Field'
+					UserSpecifyName=0
+					UserSpecifyFolder=0
+					StreamlinePlot=false
+					IntrinsicVar='Freq=\'10GHz\' Phase=\'0deg\''
+					FieldPlotGeometry(2, 64, 0, 2, 477, 532, 128, 2, 15, 563, 564, 565, 566, 567, 568, 569, 594, 595, 596, 597, 610, 611, 612, 613)
+					FilterIds(0)
+					$begin 'PlotOnSurfaceSettings'
+						Filled=false
+						IsoValType='Fringe'
+						SmoothShade=true
+						AddGrid=false
+						MapTransparency=true
+						Refinement=0
+						Transparency=0
+						$begin 'Arrow3DSpacingSettings'
+							ArrowUniform=true
+							ArrowSpacing=0.662314414978027
+							MinArrowSpacing=0.441542953252792
+							MaxArrowSpacing=0.883085906505585
+						$end 'Arrow3DSpacingSettings'
+						GridColor(255, 255, 255)
+					$end 'PlotOnSurfaceSettings'
+					$begin 'PlotOnVolumeSettings'
+						PlotIsoSurface=true
+						PointSize=1
+						Refinement=0
+						CloudSpacing=0.5
+						CloudMinSpacing=0.147180989384651
+						CloudMaxSpacing=0.441542983055115
+						$begin 'Arrow3DSpacingSettings'
+							ArrowUniform=true
+							ArrowSpacing=1.10385739803314
+							MinArrowSpacing=0.883085906505585
+							MaxArrowSpacing=1.32462882995605
+						$end 'Arrow3DSpacingSettings'
+					$end 'PlotOnVolumeSettings'
+				$end 'PlotDefinition_2'
+			$end 'FieldsPlotManagerID'
+			$begin 'Report3dInGeomWnd'
+				Report3dNum=0
+			$end 'Report3dInGeomWnd'
+		$end 'FieldsReporter'
+		$begin 'RadField'
+			$begin 'FarFieldSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'FarFieldSetups'
+			$begin 'ArraySetup'
+				UseOption='NoArray'
+				$begin 'RegularArray'
+					NumUCells='10'
+					NumVCells='10'
+					CellUDist='10mm'
+					CellVDist='10mm'
+					UDirnX='1'
+					UDirnY='0'
+					UDirnZ='0'
+					VDirnX='0'
+					VDirnY='1'
+					VDirnZ='0'
+					FirstCellPosX='0mm'
+					FirstCellPosY='0mm'
+					FirstCellPosZ='0mm'
+					Behavior='UseSlaveSettings'
+					ScanAnglePhi='45deg'
+					ScanAngleTheta='45deg'
+					UDirnPhaseShift='0deg'
+					VDirnPhaseShift='0deg'
+				$end 'RegularArray'
+				$begin 'CustomArray'
+					NumCells=0
+					$begin 'Cell'
+					$end 'Cell'
+				$end 'CustomArray'
+			$end 'ArraySetup'
+			$begin 'NearFieldSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'NearFieldSetups'
+			RadFieldComputationVersion=1.4
+			RadfieldHeaderFile='RAD4473784416747401641.tmp'
+		$end 'RadField'
+		$begin 'SolutionManager'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=12
+				Name='Setup1'
+				$begin 'Solution'
+					ID=13
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Pass'
+								Column='1;2;3;4;5;6'
+								Units=''
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='10GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='th'
+								Column='90deg'
+								Units='deg'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=14
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						SimValue('Mag_E', 1, 154, false, SimValueID=294, 3, 0, 2, 0, false, false, 47, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_H', 1, 107, false, SimValueID=295, 3, 0, 2, 0, false, false, 47, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=298, 3, 0, 2, 0, false, false, 477, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_H', 1, 107, false, SimValueID=299, 3, 0, 2, 0, false, false, 477, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='10GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='th'
+								Column='90deg'
+								Units='deg'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=16
+					Name='Sweep'
+					$begin 'SimDataExtractor'
+						SimValue('S(1,1)', 2, 90, false, SimValueID=290, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('S(2,1)', 2, 90, false, SimValueID=291, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='8GHz;8.2GHz;8.4GHz;8.6GHz;8.8GHz;9GHz;9.2GHz;9.4GHz;9.6GHz;9.8GHz;10GHz;10.2GHz;10.4GHz;10.6GHz;10.8GHz;11GHz;11.2GHz;11.4GHz;11.6GHz;11.8GHz;12GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='th'
+								Column='90deg'
+								Units='deg'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=338
+				$begin 'Setup'
+					N='Setup1'
+					V=339
+					Soln(N='AdaptivePass', V=339)
+					Soln(N='LastAdaptive', V=339)
+					Soln(N='Sweep', V=339)
+				$end 'Setup'
+			$end 'Version ID Map'
+			$begin 'ID Map'
+				$begin 'Setup'
+					N='Setup1'
+					I=12
+					Soln(N='AdaptivePass', I=13)
+					Soln(N='LastAdaptive', I=14)
+					Soln(N='Sweep', I=16)
+				$end 'Setup'
+			$end 'ID Map'
+		$end 'SolutionManager'
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+		CacheHeaderFile='HDR6D3E2013616750243242.tmp'
+	$end 'HFSSModel'
+	$begin 'DataInstances'
+		$begin 'Instance'
+			DesignEditor='HFSSDesign1'
+			$begin 'HfssDesignInstance'
+				DesignInstanceID=1
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 0, 0, 962, 406), OrientationMatrix(0.0400674864649773, -0.0243010967969894, 0.0207767989486456, 0, 0.00347682274878025, 0.0364251472055912, 0.0358983278274536, 0, -0.0317826606333256, -0.0266512371599674, 0.0301196500658989, 0, 0.895042061805725, 0.662750959396362, -5.14419651031494, 1, 0, -1.19115579128265, 4.05691146850586, -0.417296886444092, 1.96394371986389, 0.158470153808594, 9.56891441345215), Drawings[6: 'Vacuumsolid2', 'Coaxcoax1', 'PECsolid4', 'PECstub3', 'PECstub4', 'Circle1'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+							$begin 'XY Plot 1'
+								ReportID=2
+								ReportName='XY Plot 1'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=0
+											SolutionID=16
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=0
+												SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=0
+									VersionID=2
+									Name='dB(S(1,1))'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='Freq'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='dB(S(1,1))'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Regular'
+												SubsweepChoiceType='All'
+												SweepVariableName='Freq'
+											$end '0'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=1
+								$end 'TraceDef'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=0
+											SolutionID=16
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=0
+												SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=1
+									VersionID=7
+									Name='dB(S(2,1))'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='Freq'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='dB(S(2,1))'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Regular'
+												SubsweepChoiceType='All'
+												SweepVariableName='Freq'
+											$end '0'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=1
+								$end 'TraceDef'
+							$end 'XY Plot 1'
+						$end 'Reports'
+						NextUniqueID=3
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=8
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+						$begin 'XY Plot 1'
+							ReportID=2
+							$begin 'Report2D'
+								name='XY Plot 1'
+								ReportID=2
+								ReportType=0
+								DisplayType=1
+								Title=''
+								Domain=''
+								$begin 'Graph2DsV2'
+									$begin 'Graph2D'
+										TraceDefID=0
+										Type='Continuous'
+										Axis='Y1'
+									$end 'Graph2D'
+									$begin 'Graph2D'
+										TraceDefID=1
+										Type='Continuous'
+										Axis='Y1'
+									$end 'Graph2D'
+								$end 'Graph2DsV2'
+								$begin 'PlotDisplayDataManager'
+									NextUniqueID=49
+									MoveBackwards=false
+									$begin 'PlotHeaderDataSource'
+										CompanyName=''
+										ShowDesignName=true
+										ProjectFileName=''
+									$end 'PlotHeaderDataSource'
+									StockNameIDMap(AxisX=1, AxisY1=2, AxisY2=8, AxisY3=9, AxisY4=10, Grid=11, Header=0, Legend=5, XYHorizScroller=7)
+									$begin 'SourceList'
+									$end 'SourceList'
+									$begin 'DocAttributes'
+										$begin 'PlotAttributeStoreMap'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=11
+													$begin 'CartesianGridDescAttribute'
+														ShowXMinor=true
+														ShowYMinor=true
+														ShowXMajor=true
+														ShowYMajor=true
+														ShowBorder=true
+													$end 'CartesianGridDescAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=21
+													$begin 'CurveCartesianAttribute'
+														YAxis='Y1'
+													$end 'CurveCartesianAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=23
+													$begin 'CurveCartesianAttribute'
+														YAxis='Y1'
+													$end 'CurveCartesianAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=21
+													$begin 'CurveRenderAttribute'
+														$begin 'LineRenderAttribute'
+															LineStyle='Solid'
+															LineWidth=3
+															LineColor(R=255, G=0, B=0)
+														$end 'LineRenderAttribute'
+														TraceType='Continuous'
+														SymbolType='HorizontalLeftTriangle'
+														SymbolColor(R=0, G=25, B=185)
+														ShowSymbols=false
+														SymbolFrequency=15
+														ShowArrows=false
+													$end 'CurveRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=23
+													$begin 'CurveRenderAttribute'
+														$begin 'LineRenderAttribute'
+															LineStyle='Solid'
+															LineWidth=5
+															LineColor(R=0, G=255, B=0)
+														$end 'LineRenderAttribute'
+														TraceType='Continuous'
+														SymbolType='HollowCircle'
+														SymbolColor(R=128, G=0, B=128)
+														ShowSymbols=false
+														SymbolFrequency=15
+														ShowArrows=false
+													$end 'CurveRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=0
+													$begin 'HeaderRenderAttribute'
+														$begin 'TitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-19
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TitleFont'
+														$begin 'SubtitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-13
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'SubtitleFont'
+													$end 'HeaderRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=5
+													$begin 'LegendRenderAttribute'
+														$begin 'LegendTableAttrib'
+															$begin 'TableRenderAttribute'
+																$begin 'TableFontAttrib'
+																	$begin 'FontAttribute'
+																		$begin 'Font'
+																			Height=-11
+																			Width=0
+																			Escapement=0
+																			Orientation=0
+																			Weight=400
+																			Italic=0
+																			Underline=0
+																			StrikeOut=0
+																			CharSet=0
+																			OutPrecision=7
+																			ClipPrecision=48
+																			Quality=6
+																			PitchAndFamily=0
+																			FaceName='Arial'
+																		$end 'Font'
+																		Color(R=0, G=0, B=0)
+																	$end 'FontAttribute'
+																$end 'TableFontAttrib'
+																$begin 'TableTitleFontAttrib'
+																	$begin 'FontAttribute'
+																		$begin 'Font'
+																			Height=-11
+																			Width=0
+																			Escapement=0
+																			Orientation=0
+																			Weight=400
+																			Italic=0
+																			Underline=0
+																			StrikeOut=0
+																			CharSet=0
+																			OutPrecision=7
+																			ClipPrecision=48
+																			Quality=6
+																			PitchAndFamily=0
+																			FaceName='Arial'
+																		$end 'Font'
+																		Color(R=0, G=0, B=0)
+																	$end 'FontAttribute'
+																$end 'TableTitleFontAttrib'
+																TableBorderLineWidth=1
+																TableBorderLineColor=0
+																TableGridLineWidth=1
+																TableGridLineColor=12632256
+																TableBackgroundColor=16777215
+																TableHeaderBackgroundColor=14408667
+															$end 'TableRenderAttribute'
+														$end 'LegendTableAttrib'
+														ShowTraceName=true
+														ShowSolutionName=true
+														ShowVariationKey=true
+														DockMode='None'
+													$end 'LegendRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=1
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=2
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=8
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=9
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=10
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocAttributes'
+									$begin 'DocDefaultAttributes'
+										$begin 'PlotAttributeStoreMap'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocDefaultAttributes'
+									$begin 'PerViewPlotAttributeStoreMap'
+										$begin 'MapItem'
+											ItemID=48
+											$begin 'PlotAttributeStoreMap'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=759
+																Left=765
+																Bottom=9774
+																Right=9045
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=12
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=759
+																Left=765
+																Bottom=9774
+																Right=9045
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=19
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=75
+																Left=75
+																Bottom=9925
+																Right=582
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=15
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=9045
+																Bottom=9925
+																Right=9925
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=759
+																Left=765
+																Bottom=9774
+																Right=9045
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=16
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=607
+																Bottom=758
+																Right=9045
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=759
+																Left=765
+																Bottom=9774
+																Right=9045
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'CartesianCurveGroupLayoutAttribute'
+															X_spc=500000000
+															X_fwd=4
+															X_fpr=2
+															Y1_spc=10
+															Y1_fwd=4
+															Y1_fpr=2
+														$end 'CartesianCurveGroupLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=6
+														$begin 'DockableOverlayLayoutAttribute'
+															$begin 'Dock_0'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=9025
+																		Left=843
+																		Bottom=9772
+																		Right=8343
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=true
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=9253
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=true
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=747
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=true
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
+														$end 'DockableOverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+											$end 'PlotAttributeStoreMap'
+											PlotType=1
+										$end 'MapItem'
+									$end 'PerViewPlotAttributeStoreMap'
+									IsViewAttribServer=false
+									ViewID=-1
+									$begin 'SourceIDMap'
+										IDMapItem(0, 0, -1, 21)
+										IDMapItem(1, 0, -1, 23)
+									$end 'SourceIDMap'
+									$begin 'TraceCharacteristicsMgr'
+									$end 'TraceCharacteristicsMgr'
+									$begin 'CartesianXMarkerManager'
+										RefMarkerID=-1
+										CurrentMarkerID=-1
+										$begin 'ReferenceCurves'
+										$end 'ReferenceCurves'
+									$end 'CartesianXMarkerManager'
+									$begin 'CartesianYMarkerManager'
+									$end 'CartesianYMarkerManager'
+									XAxisStackID=-1
+									$begin 'AllTransSrcDwg'
+										$begin 'PT'
+											ID=1
+											TransSrcDwg(-1, 0, 19, 1, 15, 2, 16, 5, 6, 11, 12, 21, 22, 23, 24)
+										$end 'PT'
+									$end 'AllTransSrcDwg'
+									$begin 'AllPtSVID'
+										PtID(1, -1, 4)
+									$end 'AllPtSVID'
+								$end 'PlotDisplayDataManager'
+							$end 'Report2D'
+						$end 'XY Plot 1'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+						$begin 'XY Plot 1'
+							ReportID=2
+							$begin 'WindowInfoList'
+								$begin 'Report2D'
+									$begin 'ViewInfo'
+										$begin 'WrapperView'
+											ID(48)
+										$end 'WrapperView'
+										$begin 'WrapperDoc'
+											HiddenDrawings()
+											$begin 'DispType'
+												PlotType=1
+												$begin 'CurveMed'
+													$begin 'MedCamera'
+														$begin 'svrc'
+															svid=4
+															view(48, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 9.91838912919259e-039, 8.90813561302379e-039)))
+														$end 'svrc'
+													$end 'MedCamera'
+												$end 'CurveMed'
+											$end 'DispType'
+										$end 'WrapperDoc'
+										WindowPos(WindowPos(5, -1, -1, -8, -31, 0, 0, 1079, 358))
+									$end 'ViewInfo'
+								$end 'Report2D'
+							$end 'WindowInfoList'
+						$end 'XY Plot 1'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+				$begin 'Properties'
+				$end 'Properties'
+				$begin 'UserDefinedDocument'
+					$begin 'Data'
+					$end 'Data'
+				$end 'UserDefinedDocument'
+			$end 'HfssDesignInstance'
+		$end 'Instance'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+$end 'AnsoftProject'
+$begin 'AllReferencedFilesForProject'
+$begin 'Design_0.setup/NativeGeometryFiles'
+NumFiles= 5
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000477.sab
+BIN000000020792
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+                        \Âõ(Ü6@R¸…ëQ$@      9@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEVacuumsolid1lump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+                        \Âõ(Ü6@R¸…ëQ$@      9@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ Vacuumsolid1İ          ÿÌ€€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID129shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+                        \Âõ(Ü6@R¸…ëQ$@      9@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID129string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_IDVacuum|solid1face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ$@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_IDVacuum|solid1string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAMEVacuum|solid1idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îÛ Ş  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@¤p=
+×£@ÍÌÌÌÌÌ@loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ$@R¸…ë‘@      
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ë%@R¸…ë‘@              ğ¿        ö(\Âu @                      ğ?       €      ğ?ö(\Âu @
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   
+       Æîß ATTRIB_XACIS_LAYER_NAMEVacuumstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_LAYER_NAMEVacuum	rgb_colorstattribÿÿÿÿÿÿÿÿ      	   Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îÛ ß  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@š™™™™ù*@R¸…ëQ$@ÍÌÌÌÌÌ@loop!   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"      
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@¤p=
+×£@ÍÌÌÌÌÌ@      
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®Gáê(@¤p=
+×£@R¸…ë‘@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   $   %   &   
+   ÿÿÿÿinteger_attribname_attribgenattribÿÿÿÿÿÿÿÿ'          Æîß ATTRIB_XACIS_LAYER†  integer_attribname_attribgenattribÿÿÿÿÿÿÿÿ(         Æîß ATTRIB_XACIS_LAYER†  string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID111	rgb_colorstattribÿÿÿÿÿÿÿÿ)         Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿ*   ÿÿÿÿ   ¥îÛ à  face+   ÿÿÿÿÿÿÿÿÿÿÿÿ,   -      ÿÿÿÿ.   
+                      9@\Âõ(Ü6@R¸…ëQ$@      9@loop/   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%      
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@š™™™™ù*@R¸…ëQ$@ÍÌÌÌÌÌ@       
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ë%@R¸…ë‘@              ğ¿        ö(\Âu @                      ğ?       €      ğ?ö(\Âu @
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   0   $   1      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2      3   4   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   2   "   1   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ5   6      &      ÿÿÿÿedge7   ÿÿÿÿÿÿÿÿÿÿÿÿ8         ú¿9         ú?   :   unknown
+š™™™™ù*@¤p=
+×£@R¸…ë‘@š™™™™ù*@R¸…ëQ$@R¸…ë‘@	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ       Æîß à?š™™™™™é?      ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß       à?    ™™é?      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß ATTRIB_XACIS_ID113	rgb_colorstattribÿÿÿÿÿÿÿÿ;         Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿ<   ÿÿÿÿ   ¥îÛ á  face=   ÿÿÿÿÿÿÿÿÿÿÿÿ>   ?      ÿÿÿÿ@   
+
+                        \Âõ(Ü6@R¸…ëQ$@        loopA   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿB      
+                      9@\Âõ(Ü6@R¸…ëQ$@      9@   .   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ@      9@                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   "   5   C      ÿÿÿÿedgeD   ÿÿÿÿÿÿÿÿÿÿÿÿ9           E   -DTû!	@$   F   unknown
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@¤p=
+×£@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$   #   G   H   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI   I   #   4   J   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL   -DTû!	@8   -DTû!@#   M   unknown
+…ëQ¸¾"@R¸…ëQ$@®Gáz®@š™™™™ù*@R¸…ëQ$@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   %   0   C   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   G   I   N   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿO   ÿÿÿÿ&   ¥îÛ ç  vertexP   ÿÿÿÿÿÿÿÿÿÿÿÿ&   Q   vertexR   ÿÿÿÿÿÿÿÿÿÿÿÿC   S   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿš™™™™ù*@R¸…ë!@R¸…ë‘@       €      ğ¿       €
+      ú¿
+      ú?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ*      Æîß ATTRIB_XACIS_ID115	rgb_colorstattribÿÿÿÿÿÿÿÿT   +      Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿU   ÿÿÿÿ,   ¥îÛ â  faceV   ÿÿÿÿÿÿÿÿÿÿÿÿW   X      ÿÿÿÿY   
+
+                        \Âõ(Ü6@              9@loopZ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ[   ,   
+                        \Âõ(Ü6@R¸…ëQ$@           @   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ@                              ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   ]   ^   _   -   ÿÿÿÿedge`   ÿÿÿÿÿÿÿÿÿÿÿÿE   -DTû!	@9   -DTû!@0   a   unknown
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@š™™™™ù*@¤p=
+×£@ÍÌÌÌÌÌ@idansoftattribÿÿÿÿÿÿÿÿb   ÿÿÿÿ1   ¥îÛ ê  vertexc   ÿÿÿÿÿÿÿÿÿÿÿÿC   d   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        ö(\Âu @                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ6   5   2   H      ÿÿÿÿedgee   ÿÿÿÿÿÿÿÿÿÿÿÿE         ú¿L         ú?2   f   unknown
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@…ëQ¸¾"@R¸…ëQ$@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   3   6   N   J   ÿÿÿÿloopg   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   h   
+…ëQ¸¾"@R¸…ëQ$@®Gáz®@š™™™™ù*@R¸…ëQ$@ÍÌÌÌÌÌ@   i   
+idansoftattribÿÿÿÿÿÿÿÿj   ÿÿÿÿ4   ¥îÛ è  vertexk   ÿÿÿÿÿÿÿÿÿÿÿÿH   l   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ$@R¸…ë‘@              ğ¿        ö(\Âu @                      ğ?
+-DTû!	@
+-DTû!@edgem   ÿÿÿÿÿÿÿÿÿÿÿÿ8           L   -DTû!	@6   n   unknown
+…ëQ¸¾"@R¸…ëQ$@R¸…ë‘@š™™™™ù*@R¸…ëQ$@ÍÌÌÌÌÌ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ7   &   Æîß ATTRIB_XACIS_ID658idansoftattribÿÿÿÿÿÿÿÿo   ÿÿÿÿ8   ¥îÛ ú  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿš™™™™ù*@R¸…ëQ$@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿp   ÿÿÿÿ9   ¥îÛ ù  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿš™™™™ù*@¤p=
+×£@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ<      Æîß ATTRIB_XACIS_ID117	rgb_colorstattribÿÿÿÿÿÿÿÿq   =   ,   Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿr   ÿÿÿÿ>   ¥îÛ ã  faces   ÿÿÿÿÿÿÿÿÿÿÿÿh   t      ÿÿÿÿu   
+
+                                R¸…ëQ$@      9@loopv   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿw   >   
+                        \Âõ(Ü6@              9@   Y   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@              )@              ğ?              ğ?               €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ?   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿx   y   z   {   ?   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ|   B   }   ~   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿB   |      €   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ‚   B   _   
+ƒ   ÿÿÿÿedge„   ÿÿÿÿÿÿÿÿÿÿÿÿ…   R¸…ëQÀ†   R¸…ëQ@B   ‡   unknown
+\Âõ(Ü6@              9@\Âõ(Ü6@R¸…ëQ$@      9@idansoftattribÿÿÿÿÿÿÿÿˆ   ÿÿÿÿC   ¥îÛ ë  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        ö(\Âu @                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿD   1   Æîß ATTRIB_XACIS_ID661idansoftattribÿÿÿÿÿÿÿÿ‰   ÿÿÿÿE   ¥îÛ ü  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸¾"@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿŠ   ÿÿÿÿH   ¥îÛ é  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸¾"@R¸…ë!@R¸…ë‘@       €      ğ?        
+      ú¿
+      ú?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   Æîß ATTRIB_XACIS_ID-1face‹   ÿÿÿÿÿÿÿÿÿÿÿÿŒ         ÿÿÿÿi   
+
+        R¸…ëQ$@        \Âõ(Ü6@R¸…ëQ$@      9@planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ$@      )@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿK   4   Æîß ATTRIB_XACIS_ID659idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿL   ¥îÛ û  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸¾"@R¸…ëQ$@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿN   ¥îÛ ì  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ$@R¸…ë‘@              ğ¿        ö(\Âu @                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿP   8   Æîß ATTRIB_XACIS_ID743string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿR   9   Æîß ATTRIB_XACIS_ID744string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿU   ,   Æîß ATTRIB_XACIS_ID119	rgb_colorstattribÿÿÿÿÿÿÿÿ   V   >   Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿ‘   ÿÿÿÿW   ¥îÛ ä  loop’   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ“   W   
+                                R¸…ëQ$@      9@   u   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        R¸…ëQ@      )@      ğ?                              ğ?       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ”      •   –   X   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   [   ”   ˜   ?   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ[   —   ™   š   ?   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‚      [   {   
+ƒ   ÿÿÿÿedge›   ÿÿÿÿÿÿÿÿÿÿÿÿœ   R¸…ëQÀ   R¸…ëQ@[      unknown
+\Âõ(Ü6@                \Âõ(Ü6@R¸…ëQ$@        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ]   \   Ÿ       -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¡   ¢   \   ~   
+   ÿÿÿÿedge£   ÿÿÿÿÿÿÿÿÿÿÿÿ†   \Âõ(Ü&À¤   \Âõ(Ü&@\   ¥   unknown
+        R¸…ëQ$@      9@\Âõ(Ü6@R¸…ëQ$@      9@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿw   ¦   ]   €   
+X   ÿÿÿÿedge§   ÿÿÿÿÿÿÿÿÿÿÿÿ¨   \Âõ(Ü&À…   \Âõ(Ü&@]   ©   unknown
+                      9@\Âõ(Ü6@              9@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿz   ^   ¦   ª   ƒ   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ^   z   ¡   «   
+ƒ   ÿÿÿÿloop¬   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Œ   
+\Âõ(Ü6@                \Âõ(Ü6@R¸…ëQ$@      9@   ­   
+idansoftattribÿÿÿÿÿÿÿÿ®   ÿÿÿÿ_   ¥îÛ í  vertex¯   ÿÿÿÿÿÿÿÿÿÿÿÿª   °   vertex±   ÿÿÿÿÿÿÿÿÿÿÿÿ_   ²   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@R¸…ëQ@      9@              ğ?        
+R¸…ëQÀ
+R¸…ëQ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ`   C   Æîß ATTRIB_XACIS_ID663string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿc   E   Æîß ATTRIB_XACIS_ID748string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿe   H   Æîß ATTRIB_XACIS_ID660idansoftattribÿÿÿÿÿÿÿÿ³   ÿÿÿÿh   ¥îÛ å  face´   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿƒ      ÿÿÿÿ­   
+
+\Âõ(Ü6@                \Âõ(Ü6@R¸…ëQ$@      9@loopµ   ÿÿÿÿÿÿÿÿÿÿÿÿJ   ¡   h   
+        R¸…ëQ$@        \Âõ(Ü6@R¸…ëQ$@      9@   i   
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿk   L   Æîß ATTRIB_XACIS_ID746string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿm   N   Æîß ATTRIB_XACIS_ID665string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿr   >   Æîß ATTRIB_XACIS_ID121	rgb_colorstattribÿÿÿÿÿÿÿÿ¶   s   W   Æîß       à?    ™™é?      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿt   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ·   Ÿ   ¢   ¸   t   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¦   w   x   ˜   
+X   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿŸ   ·   w   –   
+t   ÿÿÿÿedge¹   ÿÿÿÿÿÿÿÿÿÿÿÿ¨         )Àº         )@w   »   unknown
+                                              9@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿy   x   ·   ¼   ?   ÿÿÿÿedge½   ÿÿÿÿÿÿÿÿÿÿÿÿ   \Âõ(Ü&Àº   \Âõ(Ü&@x   ¾   unknown
+                        \Âõ(Ü6@                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¢   ¡   y   š   
+   ÿÿÿÿedge¿   ÿÿÿÿÿÿÿÿÿÿÿÿÀ   \Âõ(Ü&Àœ   \Âõ(Ü&@y   Á   unknown
+        R¸…ëQ$@        \Âõ(Ü6@R¸…ëQ$@        idansoftattribÿÿÿÿÿÿÿÿÂ   ÿÿÿÿ{   ¥îÛ ñ  vertexÃ   ÿÿÿÿÿÿÿÿÿÿÿÿš   Ä   vertexÅ   ÿÿÿÿÿÿÿÿÿÿÿÿª   Æ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@R¸…ëQ@                      ğ¿        
+R¸…ëQÀ
+R¸…ëQ@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ“   •   |       
+t   ÿÿÿÿedgeÇ   ÿÿÿÿÿÿÿÿÿÿÿÿ¤   R¸…ëQÀ¨   R¸…ëQ@|   È   unknown
+                      9@        R¸…ëQ$@      9@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ™   }   ‚   «      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ}   ™   “   ¸   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÉ   ÿÿÿÿ~   ¥îÛ î  vertexÊ   ÿÿÿÿÿÿÿÿÿÿÿÿ    Ë   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ$@      9@      ğ¿                
+\Âõ(Ü&À
+\Âõ(Ü&@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ”      ª   
+X   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÌ   ÿÿÿÿ€   ¥îÛ ğ  vertexÍ   ÿÿÿÿÿÿÿÿÿÿÿÿ    Î   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@              9@      ğ?                
+\Âõ(Ü&À
+\Âõ(Ü&@edgeÏ   ÿÿÿÿÿÿÿÿÿÿÿÿ…         )À         )@¦   Ğ   unknown
+\Âõ(Ü6@                \Âõ(Ü6@              9@edgeÑ   ÿÿÿÿÿÿÿÿÿÿÿÿ†         )Àœ         )@¡   Ò   unknown
+\Âõ(Ü6@R¸…ëQ$@        \Âõ(Ü6@R¸…ëQ$@      9@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿƒ   Æîß ATTRIB_XACIS_ID-1planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@R¸…ëQ@      )@      ğ¿                                      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ„   _   Æîß ATTRIB_XACIS_ID667idansoftattribÿÿÿÿÿÿÿÿÓ   ÿÿÿÿ…   ¥îÛ ı  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@              9@idansoftattribÿÿÿÿÿÿÿÿÔ   ÿÿÿÿ†   ¥îÛ ş  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@R¸…ëQ$@      9@	rgb_colorstattribÿÿÿÿÿÿÿÿÕ   ‹   h   Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿÖ   ÿÿÿÿŒ   ¥îÛ æ  string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   W   Æîß ATTRIB_XACIS_ID123coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ•   “   —   ¼   
+t   ÿÿÿÿedge×   ÿÿÿÿÿÿÿÿÿÿÿÿ¤         )ÀÀ         )@“   Ø   unknown
+        R¸…ëQ$@                R¸…ëQ$@      9@idansoftattribÿÿÿÿÿÿÿÿÙ   ÿÿÿÿ–   ¥îÛ õ  vertexÚ   ÿÿÿÿÿÿÿÿÿÿÿÿ¼   Û   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                      )@                      ğ¿
+      )À
+      )@edgeÜ   ÿÿÿÿÿÿÿÿÿÿÿÿº   R¸…ëQÀÀ   R¸…ëQ@—   İ   unknown
+                                R¸…ëQ$@        idansoftattribÿÿÿÿÿÿÿÿŞ   ÿÿÿÿ˜   ¥îÛ ò  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@                      ğ¿                
+\Âõ(Ü&À
+\Âõ(Ü&@idansoftattribÿÿÿÿÿÿÿÿß   ÿÿÿÿš   ¥îÛ ô  vertexà   ÿÿÿÿÿÿÿÿÿÿÿÿš   á   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ$@              ğ?                
+\Âõ(Ü&À
+\Âõ(Ü&@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ›   {   Æîß ATTRIB_XACIS_ID672idansoftattribÿÿÿÿÿÿÿÿâ   ÿÿÿÿœ   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@R¸…ëQ$@        idansoftattribÿÿÿÿÿÿÿÿã   ÿÿÿÿ   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@                idansoftattribÿÿÿÿÿÿÿÿä   ÿÿÿÿ    ¥îÛ ï  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        R¸…ëQ@      9@              ğ¿        
+R¸…ëQÀ
+R¸…ëQ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ£   ~   Æîß ATTRIB_XACIS_ID668idansoftattribÿÿÿÿÿÿÿÿå   ÿÿÿÿ¤   ¥îÛ ÿ  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        R¸…ëQ$@      9@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ§   €   Æîß ATTRIB_XACIS_ID670idansoftattribÿÿÿÿÿÿÿÿæ   ÿÿÿÿ¨   ¥îÛ    pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                      9@idansoftattribÿÿÿÿÿÿÿÿç   ÿÿÿÿª   ¥îÛ ö  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@              )@                      ğ¿
+      )À
+      )@idansoftattribÿÿÿÿÿÿÿÿè   ÿÿÿÿ«   ¥îÛ ø  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü6@R¸…ëQ$@      )@                      ğ¿
+      )À
+      )@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¯   …   Æîß ATTRIB_XACIS_ID756string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ±   †   Æîß ATTRIB_XACIS_ID757string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ³   h   Æîß ATTRIB_XACIS_ID125	rgb_colorstattribÿÿÿÿÿÿÿÿé   ´   Œ   Æîß       à?    ™™é?      ğ?idansoftattribÿÿÿÿÿÿÿÿê   ÿÿÿÿ¸   ¥îÛ ÷  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        R¸…ëQ$@      )@                      ğ¿
+      )À
+      )@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¹   –   Æîß ATTRIB_XACIS_ID677idansoftattribÿÿÿÿÿÿÿÿë   ÿÿÿÿº   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                        idansoftattribÿÿÿÿÿÿÿÿì   ÿÿÿÿ¼   ¥îÛ ó  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        R¸…ëQ@                      ğ?        
+R¸…ëQÀ
+R¸…ëQ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ½   ˜   Æîß ATTRIB_XACIS_ID673string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¿   š   Æîß ATTRIB_XACIS_ID675idansoftattribÿÿÿÿÿÿÿÿí   ÿÿÿÿÀ   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        R¸…ëQ$@        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÃ   œ   Æîß ATTRIB_XACIS_ID765string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÅ      Æîß ATTRIB_XACIS_ID766string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÇ       Æîß ATTRIB_XACIS_ID669string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÊ   ¤   Æîß ATTRIB_XACIS_ID759string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÍ   ¨   Æîß ATTRIB_XACIS_ID761string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÏ   ª   Æîß ATTRIB_XACIS_ID678string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÑ   «   Æîß ATTRIB_XACIS_ID682string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÖ   Œ   Æîß ATTRIB_XACIS_ID127string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ×   ¸   Æîß ATTRIB_XACIS_ID680string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÚ   º   Æîß ATTRIB_XACIS_ID768string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÜ   ¼   Æîß ATTRIB_XACIS_ID674string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿà   À   Æîß ATTRIB_XACIS_ID770End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 20075 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000532.sab
+BIN000000009331
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMECoaxcoaxlump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ Coaxcoax           € €string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID139shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID139string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_ID	Coax|coaxface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ,@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_ID	Coax|coaxstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAME	Coax|coaxidansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îÛ   face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@¤p=
+×£@ÍÌÌÌÌÌ@loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@R¸…ëQ,@R¸…ë‘@      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ë%@R¸…ë‘@              ğ¿        ö(\Âu @                      ğ?       €      ğ?ö(\Âu @
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   
+       Æîß ATTRIB_XACIS_LAYER_NAMECoaxstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_LAYER_NAMECoax	rgb_colorstattribÿÿÿÿÿÿÿÿ      	   Æîß            €à?        idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îÛ   face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@loop!   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"      
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@¤p=
+×£@ÍÌÌÌÌÌ@      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®Gáê(@¤p=
+×£@R¸…ë‘@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   $   %   &   
+   ÿÿÿÿinteger_attribname_attribgenattribÿÿÿÿÿÿÿÿ'          Æîß ATTRIB_XACIS_LAYER‡  integer_attribname_attribgenattribÿÿÿÿÿÿÿÿ(         Æîß ATTRIB_XACIS_LAYER‡  string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID131	rgb_colorstattribÿÿÿÿÿÿÿÿ)         Æîß            €à?        idansoftattribÿÿÿÿÿÿÿÿ*   ÿÿÿÿ   ¥îÛ   face+   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,      ÿÿÿÿ-   
+…ëQ¸¾"@R¸…ëQ,@®Gáz®@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@loop.   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%      
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@       conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ë%@R¸…ë‘@              ğ¿        ö(\Âu @                      ğ?       €      ğ?ö(\Âu @
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   /   #   0   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      "   0      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   1   2   3   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   5      &      ÿÿÿÿedge6   ÿÿÿÿÿÿÿÿÿÿÿÿ7         À8         @   9   unknown
+š™™™™ù*@¤p=
+×£@R¸…ë‘@š™™™™ù*@R¸…ëQ,@R¸…ë‘@	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ       Æîß            €à?        	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß            €à?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß ATTRIB_XACIS_ID133	rgb_colorstattribÿÿÿÿÿÿÿÿ:         Æîß            €à?        idansoftattribÿÿÿÿÿÿÿÿ;   ÿÿÿÿ   ¥îÛ   loop<   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2      
+…ëQ¸¾"@R¸…ëQ,@®Gáz®@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@   -   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®Gáê(@R¸…ëQ,@R¸…ë‘@       €      ğ?              ğ?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   "   5   =   
+   ÿÿÿÿedge>   ÿÿÿÿÿÿÿÿÿÿÿÿ7           ?   -DTû!	@#   @   unknown
+…ëQ¸¾"@¤p=
+×£@®Gáz®@š™™™™ù*@¤p=
+×£@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$   #   A   B   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   C   $   3   ,   ÿÿÿÿedgeD   ÿÿÿÿÿÿÿÿÿÿÿÿ8           E   -DTû!	@$   F   unknown
+…ëQ¸¾"@R¸…ëQ,@®Gáz®@š™™™™ù*@R¸…ëQ,@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   %   C   G   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   A   /   =      ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿH   ÿÿÿÿ&   ¥îÛ   vertexI   ÿÿÿÿÿÿÿÿÿÿÿÿ=   J   vertexK   ÿÿÿÿÿÿÿÿÿÿÿÿG   L   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿš™™™™ù*@R¸…ë%@R¸…ë‘@              ğ?        
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ*      Æîß ATTRIB_XACIS_ID135	rgb_colorstattribÿÿÿÿÿÿÿÿM   +      Æîß            €à?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   Æîß ATTRIB_XACIS_ID-1edgeN   ÿÿÿÿÿÿÿÿÿÿÿÿ?   -DTû!	@7   -DTû!@/   O   unknown
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@š™™™™ù*@¤p=
+×£@ÍÌÌÌÌÌ@idansoftattribÿÿÿÿÿÿÿÿP   ÿÿÿÿ0   ¥îÛ   vertexQ   ÿÿÿÿÿÿÿÿÿÿÿÿB   R   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        ö(\Âu @                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ5   4   1   B      ÿÿÿÿedgeS   ÿÿÿÿÿÿÿÿÿÿÿÿE         À?         @1   T   unknown
+…ëQ¸¾"@¤p=
+×£@R¸…ë‘@…ëQ¸¾"@R¸…ëQ,@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   2   4   G   ,   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿU   ÿÿÿÿ3   ¥îÛ   vertexV   ÿÿÿÿÿÿÿÿÿÿÿÿB   W   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ,@R¸…ë‘@       €      ğ?        ö(\Âu @                      ğ?
+        
+-DTû!	@edgeX   ÿÿÿÿÿÿÿÿÿÿÿÿE   -DTû!	@8   -DTû!@4   Y   unknown
+…ëQ¸¾"@R¸…ëQ,@R¸…ë‘@š™™™™ù*@R¸…ëQ,@ÍÌÌÌÌÌ@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ6   &   Æîß ATTRIB_XACIS_ID686idansoftattribÿÿÿÿÿÿÿÿZ   ÿÿÿÿ7   ¥îÛ    pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿš™™™™ù*@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ[   ÿÿÿÿ8   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿš™™™™ù*@R¸…ëQ,@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ;      Æîß ATTRIB_XACIS_ID137idansoftattribÿÿÿÿÿÿÿÿ\   ÿÿÿÿ=   ¥îÛ   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        ö(\Âu @                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ>   0   Æîß ATTRIB_XACIS_ID687idansoftattribÿÿÿÿÿÿÿÿ]   ÿÿÿÿ?   ¥îÛ !  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸¾"@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ^   ÿÿÿÿB   ¥îÛ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸¾"@R¸…ë%@R¸…ë‘@       €      ğ¿       €
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿD   3   Æîß ATTRIB_XACIS_ID689idansoftattribÿÿÿÿÿÿÿÿ_   ÿÿÿÿE   ¥îÛ "  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸¾"@R¸…ëQ,@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ`   ÿÿÿÿG   ¥îÛ   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ,@R¸…ë‘@       €      ğ?        ö(\Âu @                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿI   7   Æîß ATTRIB_XACIS_ID783string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿK   8   Æîß ATTRIB_XACIS_ID784string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   =   Æîß ATTRIB_XACIS_ID691string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   ?   Æîß ATTRIB_XACIS_ID786string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿS   B   Æîß ATTRIB_XACIS_ID688string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿV   E   Æîß ATTRIB_XACIS_ID788string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿX   G   Æîß ATTRIB_XACIS_ID693End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 8615 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000562.sab
+BIN000000015683
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@R¸…ëQ,@ìQ¸…+@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME	PECsolid4lump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@R¸…ëQ,@ìQ¸…+@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ 	PECsolid42          ÌÌÌ€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID155shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@R¸…ëQ,@ìQ¸…+@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID155string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_ID
+PEC|solid3face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+×£p=
+—%@¤p=
+×£@Ház®@áz®G!(@R¸…ëQ,@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_ID
+PEC|solid3string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAME
+PEC|solid3idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îÛ 3  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@¤p=
+×£@R¸…ë‘@loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+×£p=
+—%@¤p=
+×£@Ház®@áz®G!(@R¸…ëQ,@R¸…ë‘@      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ë%@R¸…ë‘@              ğ¿        R¸…ëQä?                      ğ?       €      ğ?R¸…ëQä?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   
+       Æîß ATTRIB_XACIS_LAYER_NAMEPECstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_LAYER_NAMEPEC	rgb_colorstattribÿÿÿÿÿÿÿÿ      	   Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îÛ 4  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+Âõ(\$@¤p=
+×£@¸…ëQø@)\Âõ¨)@¤p=
+×£@ìQ¸…+@loop!   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"      
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@¤p=
+×£@R¸…ë‘@      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@q=
+×£p@R¸…ë‘@              ğ¿        ffffffö?                      ğ?       €      ğ?ffffffö?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   $   %   &   
+   ÿÿÿÿinteger_attribname_attribgenattribÿÿÿÿÿÿÿÿ'          Æîß ATTRIB_XACIS_LAYERˆ  integer_attribname_attribgenattribÿÿÿÿÿÿÿÿ(         Æîß ATTRIB_XACIS_LAYERˆ  string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID141	rgb_colorstattribÿÿÿÿÿÿÿÿ)         Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ*   ÿÿÿÿ   ¥îÛ 5  face+   ÿÿÿÿÿÿÿÿÿÿÿÿ,   -      ÿÿÿÿ.   
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@=
+×£p=@ìQ¸…+@loop/   ÿÿÿÿÿÿÿÿÿÿÿÿ0   1      
+Âõ(\$@¤p=
+×£@¸…ëQø@)\Âõ¨)@¤p=
+×£@ìQ¸…+@       planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\B(@¤p=
+×£@R¸…ë‘@       €      ğ?              ğ?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   3   4   5   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ6      7   8      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   6   9   :   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;   <      &   =   ÿÿÿÿedge>   ÿÿÿÿÿÿÿÿÿÿÿÿ?         À@         @   A   unknown
+áz®G!(@¤p=
+×£@R¸…ë‘@áz®G!(@R¸…ëQ,@R¸…ë‘@	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ       Æîß     ™™é?    ™™é?    ™™é?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     ™™é?    ™™é?    ™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß ATTRIB_XACIS_ID143	rgb_colorstattribÿÿÿÿÿÿÿÿB         Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿC   ÿÿÿÿ   ¥îÛ 6  faceD   ÿÿÿÿÿÿÿÿÿÿÿÿE   F      ÿÿÿÿG   
+Âõ(\$@=
+×£p=@R¸…ë‘@)\Âõ¨)@¤p=
+×£@ìQ¸…+@loopH   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI      
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@=
+×£p=@ìQ¸…+@   .   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\B(@=
+×£p=@R¸…ë‘@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1loopJ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7      
+×£p=
+—%@¤p=
+×£@Ház®@áz®G!(@¤p=
+×£@\Âõ(@       coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿK   K   3   L      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿM   "   I   N      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   M   1   L   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   P   "   5   F   ÿÿÿÿedgeQ   ÿÿÿÿÿÿÿÿÿÿÿÿR   ĞÌÌÌÌÌğ¿S   ÌÌÌÌÌÌğ?"   T   unknown
+)\Âõ¨)@=
+×£p=@R¸…ë‘@)\Âõ¨)@¤p=
+×£@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$   #   U   V   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   W   #   8   
+0   ÿÿÿÿedgeX   ÿÿÿÿÿÿÿÿÿÿÿÿ?           Y   -DTû!	@#   Z   unknown
+×£p=
+—%@¤p=
+×£@Ház®@áz®G!(@¤p=
+×£@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ[   [   $   :   \   ÿÿÿÿedge]   ÿÿÿÿÿÿÿÿÿÿÿÿ@           ^   -DTû!	@$   _   unknown
+×£p=
+—%@R¸…ëQ,@Ház®@áz®G!(@R¸…ëQ,@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿU   %   [   `   
+=   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   U   W   a   =   ÿÿÿÿloopb   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   E   
+×£p=
+—%@¤p=
+×£@R¸…ë‘@áz®G!(@R¸…ëQ,@\Âõ(@   c   idansoftattribÿÿÿÿÿÿÿÿd   ÿÿÿÿ&   ¥îÛ :  vertexe   ÿÿÿÿÿÿÿÿÿÿÿÿa   f   vertexg   ÿÿÿÿÿÿÿÿÿÿÿÿ:   h   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿáz®G!(@R¸…ë%@R¸…ë‘@              ğ?        
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ*      Æîß ATTRIB_XACIS_ID145	rgb_colorstattribÿÿÿÿÿÿÿÿi   +      Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿj   ÿÿÿÿ,   ¥îÛ 7  facek   ÿÿÿÿÿÿÿÿÿÿÿÿl   =      ÿÿÿÿc   
+×£p=
+—%@¤p=
+×£@R¸…ë‘@áz®G!(@R¸…ëQ,@\Âõ(@loopm   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   ,   
+Âõ(\$@=
+×£p=@R¸…ë‘@)\Âõ¨)@¤p=
+×£@ìQ¸…+@   G   conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@q=
+×£p@R¸…ë‘@              ğ¿        ffffffö?                      ğ?       €      ğ?ffffffö?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn   n   2   N   
+-   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1   1   O   o      ÿÿÿÿedgep   ÿÿÿÿÿÿÿÿÿÿÿÿS           q   -DTû!	@3   r   unknown
+Âõ(\$@¤p=
+×£@¸…ëQø@)\Âõ¨)@¤p=
+×£@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   2   s   t   
+   ÿÿÿÿedgeu   ÿÿÿÿÿÿÿÿÿÿÿÿR           v   -DTû!	@2   w   unknown
+Âõ(\$@=
+×£p=@¸…ëQø@)\Âõ¨)@=
+×£p=@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿs   4   K   o   
+F   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   s   n   x   F   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿy   ÿÿÿÿ5   ¥îÛ >  vertexz   ÿÿÿÿÿÿÿÿÿÿÿÿ5   {   vertex|   ÿÿÿÿÿÿÿÿÿÿÿÿ5   }   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨)@q=
+×£p@R¸…ë‘@              ğ?        
+ĞÌÌÌÌÌğ¿
+ÌÌÌÌÌÌğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<   ;   6   V   =   ÿÿÿÿedge~   ÿÿÿÿÿÿÿÿÿÿÿÿ^         ÀY         @6      unknown
+×£p=
+—%@¤p=
+×£@R¸…ë‘@×£p=
+—%@R¸…ëQ,@R¸…ë‘@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   7   <   a   
+0   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿ€   ÿÿÿÿ8   ¥îÛ ;  vertex   ÿÿÿÿÿÿÿÿÿÿÿÿa   ‚   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        R¸…ëQä?                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   9   ;   `   \   ÿÿÿÿloopƒ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   l   
+×£p=
+—%@R¸…ëQ,@Ház®@áz®G!(@R¸…ëQ,@\Âõ(@   „   idansoftattribÿÿÿÿÿÿÿÿ…   ÿÿÿÿ:   ¥îÛ =  vertex†   ÿÿÿÿÿÿÿÿÿÿÿÿ:   ‡   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ,@R¸…ë‘@       €      ğ?        R¸…ëQä?                      ğ?
+        
+-DTû!	@edgeˆ   ÿÿÿÿÿÿÿÿÿÿÿÿ^   -DTû!	@@   -DTû!@;   ‰   unknown
+×£p=
+—%@R¸…ëQ,@R¸…ë‘@áz®G!(@R¸…ëQ,@\Âõ(@edgeŠ   ÿÿÿÿÿÿÿÿÿÿÿÿY   -DTû!	@?   -DTû!@W   ‹   unknown
+×£p=
+—%@¤p=
+×£@R¸…ë‘@áz®G!(@¤p=
+×£@\Âõ(@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   Æîß ATTRIB_XACIS_ID-1conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ë%@R¸…ë‘@              ğ¿        R¸…ëQä?                      ğ?       €      ğ?R¸…ëQä?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ>   &   Æîß ATTRIB_XACIS_ID697idansoftattribÿÿÿÿÿÿÿÿŒ   ÿÿÿÿ?   ¥îÛ G  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿáz®G!(@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ@   ¥îÛ F  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿáz®G!(@R¸…ëQ,@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿC      Æîß ATTRIB_XACIS_ID147	rgb_colorstattribÿÿÿÿÿÿÿÿ   D   ,   Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿE   ¥îÛ 8  face   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\      ÿÿÿÿ„   
+×£p=
+—%@R¸…ëQ,@Ház®@áz®G!(@R¸…ëQ,@\Âõ(@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI   I   P   x   
+-   ÿÿÿÿedge‘   ÿÿÿÿÿÿÿÿÿÿÿÿq   -DTû!	@S   -DTû!@K   ’   unknown
+Âõ(\$@¤p=
+×£@R¸…ë‘@)\Âõ¨)@¤p=
+×£@ìQ¸…+@idansoftattribÿÿÿÿÿÿÿÿ“   ÿÿÿÿL   ¥îÛ A  vertex”   ÿÿÿÿÿÿÿÿÿÿÿÿt   •   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        ffffffö?                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿP   O   M   t   F   ÿÿÿÿedge–   ÿÿÿÿÿÿÿÿÿÿÿÿq   ÌÌÌÌÌÌğ¿v   ĞÌÌÌÌÌğ?M   —   unknown
+Âõ(\$@=
+×£p=@R¸…ë‘@Âõ(\$@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ˜   ÿÿÿÿN   ¥îÛ ?  vertex™   ÿÿÿÿÿÿÿÿÿÿÿÿt   š   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@=
+×£p=@R¸…ë‘@       €      ğ?        ffffffö?                      ğ?
+        
+-DTû!	@edge›   ÿÿÿÿÿÿÿÿÿÿÿÿv   -DTû!	@R   -DTû!@n   œ   unknown
+Âõ(\$@=
+×£p=@R¸…ë‘@)\Âõ¨)@=
+×£p=@ìQ¸…+@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   5   Æîß ATTRIB_XACIS_ID702idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿR   ¥îÛ K  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨)@=
+×£p=@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿS   ¥îÛ J  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨)@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿŸ   ÿÿÿÿV   ¥îÛ <  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ×£p=
+—%@R¸…ë%@R¸…ë‘@       €      ğ¿       €
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿX   8   Æîß ATTRIB_XACIS_ID698idansoftattribÿÿÿÿÿÿÿÿ    ÿÿÿÿY   ¥îÛ H  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ×£p=
+—%@¤p=
+×£@R¸…ë‘@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   Æîß ATTRIB_XACIS_ID-1planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ…ëQ¸~'@R¸…ëQ,@R¸…ë‘@       €      ğ?              ğ?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ]   :   Æîß ATTRIB_XACIS_ID700idansoftattribÿÿÿÿÿÿÿÿ¡   ÿÿÿÿ^   ¥îÛ I  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ×£p=
+—%@R¸…ëQ,@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ¢   ÿÿÿÿ`   ¥îÛ E  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@R¸…ëQ,@R¸…ë‘@       €      ğ?        R¸…ëQä?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ£   ÿÿÿÿa   ¥îÛ C  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        R¸…ëQä?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿe   ?   Æîß ATTRIB_XACIS_ID798string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿg   @   Æîß ATTRIB_XACIS_ID799string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿj   ,   Æîß ATTRIB_XACIS_ID149	rgb_colorstattribÿÿÿÿÿÿÿÿ¤   k   E   Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ¥   ÿÿÿÿl   ¥îÛ 9  idansoftattribÿÿÿÿÿÿÿÿ¦   ÿÿÿÿo   ¥îÛ B  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@¤p=
+×£@R¸…ë‘@       €      ğ?        ffffffö?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿp   L   Æîß ATTRIB_XACIS_ID705idansoftattribÿÿÿÿÿÿÿÿ§   ÿÿÿÿq   ¥îÛ M  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\$@¤p=
+×£@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿ¨   ÿÿÿÿt   ¥îÛ @  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\$@q=
+×£p@R¸…ë‘@       €      ğ¿       €
+ÌÌÌÌÌÌğ¿
+ĞÌÌÌÌÌğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿu   N   Æîß ATTRIB_XACIS_ID703idansoftattribÿÿÿÿÿÿÿÿ©   ÿÿÿÿv   ¥îÛ L  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\$@=
+×£p=@R¸…ë‘@idansoftattribÿÿÿÿÿÿÿÿª   ÿÿÿÿx   ¥îÛ D  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@=
+×£p=@R¸…ë‘@       €      ğ?        ffffffö?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿz   R   Æîß ATTRIB_XACIS_ID807string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ|   S   Æîß ATTRIB_XACIS_ID808string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ~   V   Æîß ATTRIB_XACIS_ID699string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   Y   Æîß ATTRIB_XACIS_ID801string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ†   ^   Æîß ATTRIB_XACIS_ID803string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿˆ   `   Æîß ATTRIB_XACIS_ID713string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿŠ   a   Æîß ATTRIB_XACIS_ID708string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   E   Æîß ATTRIB_XACIS_ID151	rgb_colorstattribÿÿÿÿÿÿÿÿ«      l   Æîß     ™™é?    ™™é?    ™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   o   Æîß ATTRIB_XACIS_ID707string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ”   q   Æîß ATTRIB_XACIS_ID812string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ–   t   Æîß ATTRIB_XACIS_ID704string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ™   v   Æîß ATTRIB_XACIS_ID810string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ›   x   Æîß ATTRIB_XACIS_ID710string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¥   l   Æîß ATTRIB_XACIS_ID153End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 14966 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000593.sab
+BIN000000009329
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+Âõ(\%@        333333 @)\Âõ¨(@333333@ÍÌÌÌÌÌ#@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEPECstub3lump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+Âõ(\%@        333333 @)\Âõ¨(@333333@ÍÌÌÌÌÌ#@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ PECstub3Q          ÌÌÌ€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID165shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+Âõ(\%@        333333 @)\Âõ¨(@333333@ÍÌÌÌÌÌ#@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID165string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_ID	PEC|stub1face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+Âõ(\%@        333333 @)\Âõ¨(@333333@      "@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_ID	PEC|stub1string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAME	PEC|stub1idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îÛ R  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+Âõ(\%@        333333 @)\Âõ¨(@        ÍÌÌÌÌÌ#@loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+Âõ(\%@        333333 @)\Âõ¨(@333333@      "@      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333÷?      "@              ğ¿        ÍÌÌÌÌÌì?                      ğ?       €      ğ?ÍÌÌÌÌÌì?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   
+       Æîß ATTRIB_XACIS_LAYER_NAMEPECstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_LAYER_NAMEPEC	rgb_colorstattribÿÿÿÿÿÿÿÿ      	   Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îÛ S  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+Âõ(\%@              "@)\Âõ¨(@333333@ÍÌÌÌÌÌ#@loop!   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"      
+Âõ(\%@        333333 @)\Âõ¨(@        ÍÌÌÌÌÌ#@      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Â'@              "@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   $   %   &   
+   ÿÿÿÿinteger_attribname_attribgenattribÿÿÿÿÿÿÿÿ'          Æîß ATTRIB_XACIS_LAYERˆ  integer_attribname_attribgenattribÿÿÿÿÿÿÿÿ(         Æîß ATTRIB_XACIS_LAYERˆ  string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID157	rgb_colorstattribÿÿÿÿÿÿÿÿ)         Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ*   ÿÿÿÿ   ¥îÛ T  face+   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,      ÿÿÿÿ-   
+Âõ(\%@333333@333333 @)\Âõ¨(@333333@ÍÌÌÌÌÌ#@loop.   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%      
+Âõ(\%@              "@)\Âõ¨(@333333@ÍÌÌÌÌÌ#@       conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333÷?      "@              ğ¿        ÍÌÌÌÌÌì?                      ğ?       €      ğ?ÍÌÌÌÌÌì?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   /   #   0   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      "   0      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   1   2   3   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   5      &      ÿÿÿÿedge6   ÿÿÿÿÿÿÿÿÿÿÿÿ7   333333÷¿8   333333÷?   9   unknown
+)\Âõ¨(@              "@)\Âõ¨(@333333@      "@	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ       Æîß     ™™é?    ™™é?    ™™é?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     ™™é?    ™™é?    ™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß ATTRIB_XACIS_ID159	rgb_colorstattribÿÿÿÿÿÿÿÿ:         Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ;   ÿÿÿÿ   ¥îÛ U  loop<   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2      
+Âõ(\%@333333@333333 @)\Âõ¨(@333333@ÍÌÌÌÌÌ#@   -   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Â'@333333@      "@       €      ğ?              ğ?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   "   5   =   
+   ÿÿÿÿedge>   ÿÿÿÿÿÿÿÿÿÿÿÿ7           ?   -DTû!	@#   @   unknown
+Âõ(\%@        333333 @)\Âõ¨(@              "@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$   #   A   B   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   C   $   3   ,   ÿÿÿÿedgeD   ÿÿÿÿÿÿÿÿÿÿÿÿ8           E   -DTû!	@$   F   unknown
+Âõ(\%@333333@333333 @)\Âõ¨(@333333@      "@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   %   C   G   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   A   /   =      ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿH   ÿÿÿÿ&   ¥îÛ V  vertexI   ÿÿÿÿÿÿÿÿÿÿÿÿ=   J   vertexK   ÿÿÿÿÿÿÿÿÿÿÿÿ&   L   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨(@333333÷?      "@              ğ?        
+333333÷¿
+333333÷?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ*      Æîß ATTRIB_XACIS_ID161	rgb_colorstattribÿÿÿÿÿÿÿÿM   +      Æîß     ™™é?    ™™é?    ™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   Æîß ATTRIB_XACIS_ID-1edgeN   ÿÿÿÿÿÿÿÿÿÿÿÿ?   -DTû!	@7   -DTû!@/   O   unknown
+Âõ(\%@              "@)\Âõ¨(@        ÍÌÌÌÌÌ#@idansoftattribÿÿÿÿÿÿÿÿP   ÿÿÿÿ0   ¥îÛ W  vertexQ   ÿÿÿÿÿÿÿÿÿÿÿÿ=   R   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@              "@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ5   4   1   B      ÿÿÿÿedgeS   ÿÿÿÿÿÿÿÿÿÿÿÿE   333333÷¿?   333333÷?1   T   unknown
+Âõ(\%@              "@Âõ(\%@333333@      "@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   2   4   G   ,   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿU   ÿÿÿÿ3   ¥îÛ Y  vertexV   ÿÿÿÿÿÿÿÿÿÿÿÿ3   W   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333@      "@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+        
+-DTû!	@edgeX   ÿÿÿÿÿÿÿÿÿÿÿÿE   -DTû!	@8   -DTû!@4   Y   unknown
+Âõ(\%@333333@      "@)\Âõ¨(@333333@ÍÌÌÌÌÌ#@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ6   &   Æîß ATTRIB_XACIS_ID717idansoftattribÿÿÿÿÿÿÿÿZ   ÿÿÿÿ7   ¥îÛ ]  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨(@              "@idansoftattribÿÿÿÿÿÿÿÿ[   ÿÿÿÿ8   ¥îÛ \  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨(@333333@      "@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ;      Æîß ATTRIB_XACIS_ID163idansoftattribÿÿÿÿÿÿÿÿ\   ÿÿÿÿ=   ¥îÛ Z  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@              "@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ>   0   Æîß ATTRIB_XACIS_ID718idansoftattribÿÿÿÿÿÿÿÿ]   ÿÿÿÿ?   ¥îÛ ^  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\%@              "@idansoftattribÿÿÿÿÿÿÿÿ^   ÿÿÿÿB   ¥îÛ X  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\%@333333÷?      "@       €      ğ¿       €
+333333÷¿
+333333÷?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿD   3   Æîß ATTRIB_XACIS_ID720idansoftattribÿÿÿÿÿÿÿÿ_   ÿÿÿÿE   ¥îÛ _  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\%@333333@      "@idansoftattribÿÿÿÿÿÿÿÿ`   ÿÿÿÿG   ¥îÛ [  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333@      "@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿI   7   Æîß ATTRIB_XACIS_ID826string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿK   8   Æîß ATTRIB_XACIS_ID827string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   =   Æîß ATTRIB_XACIS_ID722string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   ?   Æîß ATTRIB_XACIS_ID829string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿS   B   Æîß ATTRIB_XACIS_ID719string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿV   E   Æîß ATTRIB_XACIS_ID831string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿX   G   Æîß ATTRIB_XACIS_ID724End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 8613 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000609.sab
+BIN000000009329
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+Âõ(\%@             €,@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEPECstub4lump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+Âõ(\%@             €,@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ PECstub4a          ÌÌÌ€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID175shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+Âõ(\%@             €,@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID175string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_ID	PEC|stub2face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+Âõ(\%@             €,@)\Âõ¨(@333333ó?ÍÌÌÌÌL.@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_ID	PEC|stub2string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAME	PEC|stub2idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îÛ b  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+Âõ(\%@             €,@)\Âõ¨(@        ÍÌÌÌÌ0@loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+Âõ(\%@             €,@)\Âõ¨(@333333ó?ÍÌÌÌÌL.@      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333ã?ÍÌÌÌÌL.@              ğ¿        ÍÌÌÌÌÌì?                      ğ?       €      ğ?ÍÌÌÌÌÌì?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   
+       Æîß ATTRIB_XACIS_LAYER_NAMEPECstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_LAYER_NAMEPEC	rgb_colorstattribÿÿÿÿÿÿÿÿ      	   Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îÛ c  face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+Âõ(\%@        ÍÌÌÌÌL.@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@loop!   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"      
+Âõ(\%@             €,@)\Âõ¨(@        ÍÌÌÌÌ0@      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Â'@        ÍÌÌÌÌL.@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   $   %   &   
+   ÿÿÿÿinteger_attribname_attribgenattribÿÿÿÿÿÿÿÿ'          Æîß ATTRIB_XACIS_LAYERˆ  integer_attribname_attribgenattribÿÿÿÿÿÿÿÿ(         Æîß ATTRIB_XACIS_LAYERˆ  string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID167	rgb_colorstattribÿÿÿÿÿÿÿÿ)         Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ*   ÿÿÿÿ   ¥îÛ d  face+   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,      ÿÿÿÿ-   
+Âõ(\%@333333ó?     €,@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@loop.   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%      
+Âõ(\%@        ÍÌÌÌÌL.@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@       conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333ã?ÍÌÌÌÌL.@              ğ¿        ÍÌÌÌÌÌì?                      ğ?       €      ğ?ÍÌÌÌÌÌì?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   /   #   0   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      "   0      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   1   2   3   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   5      &      ÿÿÿÿedge6   ÿÿÿÿÿÿÿÿÿÿÿÿ7   333333ã¿8   333333ã?   9   unknown
+)\Âõ¨(@        ÍÌÌÌÌL.@)\Âõ¨(@333333ó?ÍÌÌÌÌL.@	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ       Æîß     ™™é?    ™™é?    ™™é?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     ™™é?    ™™é?    ™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß ATTRIB_XACIS_ID169	rgb_colorstattribÿÿÿÿÿÿÿÿ:         Æîß     ™™é?    ™™é?    ™™é?idansoftattribÿÿÿÿÿÿÿÿ;   ÿÿÿÿ   ¥îÛ e  loop<   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2      
+Âõ(\%@333333ó?     €,@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@   -   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Â'@333333ó?ÍÌÌÌÌL.@       €      ğ?              ğ?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   "   5   =   
+   ÿÿÿÿedge>   ÿÿÿÿÿÿÿÿÿÿÿÿ7           ?   -DTû!	@#   @   unknown
+Âõ(\%@             €,@)\Âõ¨(@        ÍÌÌÌÌL.@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$   #   A   B   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   C   $   3   ,   ÿÿÿÿedgeD   ÿÿÿÿÿÿÿÿÿÿÿÿ8           E   -DTû!	@$   F   unknown
+Âõ(\%@333333ó?     €,@)\Âõ¨(@333333ó?ÍÌÌÌÌL.@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   %   C   G   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   A   /   =      ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿH   ÿÿÿÿ&   ¥îÛ f  vertexI   ÿÿÿÿÿÿÿÿÿÿÿÿ0   J   vertexK   ÿÿÿÿÿÿÿÿÿÿÿÿ3   L   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨(@333333ã?ÍÌÌÌÌL.@              ğ?        
+333333ã¿
+333333ã?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ*      Æîß ATTRIB_XACIS_ID171	rgb_colorstattribÿÿÿÿÿÿÿÿM   +      Æîß     ™™é?    ™™é?    ™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   Æîß ATTRIB_XACIS_ID-1edgeN   ÿÿÿÿÿÿÿÿÿÿÿÿ?   -DTû!	@7   -DTû!@/   O   unknown
+Âõ(\%@        ÍÌÌÌÌL.@)\Âõ¨(@        ÍÌÌÌÌ0@idansoftattribÿÿÿÿÿÿÿÿP   ÿÿÿÿ0   ¥îÛ g  vertexQ   ÿÿÿÿÿÿÿÿÿÿÿÿ0   R   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@        ÍÌÌÌÌL.@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ5   4   1   B      ÿÿÿÿedgeS   ÿÿÿÿÿÿÿÿÿÿÿÿE   333333ã¿?   333333ã?1   T   unknown
+Âõ(\%@        ÍÌÌÌÌL.@Âõ(\%@333333ó?ÍÌÌÌÌL.@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   2   4   G   ,   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿU   ÿÿÿÿ3   ¥îÛ i  vertexV   ÿÿÿÿÿÿÿÿÿÿÿÿB   W   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333ó?ÍÌÌÌÌL.@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+        
+-DTû!	@edgeX   ÿÿÿÿÿÿÿÿÿÿÿÿE   -DTû!	@8   -DTû!@4   Y   unknown
+Âõ(\%@333333ó?ÍÌÌÌÌL.@)\Âõ¨(@333333ó?ÍÌÌÌÌ0@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ6   &   Æîß ATTRIB_XACIS_ID728idansoftattribÿÿÿÿÿÿÿÿZ   ÿÿÿÿ7   ¥îÛ m  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨(@        ÍÌÌÌÌL.@idansoftattribÿÿÿÿÿÿÿÿ[   ÿÿÿÿ8   ¥îÛ l  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)\Âõ¨(@333333ó?ÍÌÌÌÌL.@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ;      Æîß ATTRIB_XACIS_ID173idansoftattribÿÿÿÿÿÿÿÿ\   ÿÿÿÿ=   ¥îÛ j  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@        ÍÌÌÌÌL.@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ>   0   Æîß ATTRIB_XACIS_ID729idansoftattribÿÿÿÿÿÿÿÿ]   ÿÿÿÿ?   ¥îÛ n  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\%@        ÍÌÌÌÌL.@idansoftattribÿÿÿÿÿÿÿÿ^   ÿÿÿÿB   ¥îÛ h  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\%@333333ã?ÍÌÌÌÌL.@       €      ğ¿       €
+333333ã¿
+333333ã?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿD   3   Æîß ATTRIB_XACIS_ID731idansoftattribÿÿÿÿÿÿÿÿ_   ÿÿÿÿE   ¥îÛ o  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÂõ(\%@333333ó?ÍÌÌÌÌL.@idansoftattribÿÿÿÿÿÿÿÿ`   ÿÿÿÿG   ¥îÛ k  ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\Âõ(Ü&@333333ó?ÍÌÌÌÌL.@       €      ğ?        ÍÌÌÌÌÌì?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿI   7   Æîß ATTRIB_XACIS_ID841string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿK   8   Æîß ATTRIB_XACIS_ID842string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   =   Æîß ATTRIB_XACIS_ID733string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   ?   Æîß ATTRIB_XACIS_ID844string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿS   B   Æîß ATTRIB_XACIS_ID730string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿV   E   Æîß ATTRIB_XACIS_ID846string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿX   G   Æîß ATTRIB_XACIS_ID735End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTMon Jan 30 00:05:14 2023      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 8613 
+$end 'sab'
+$end 'Design_0.setup/NativeGeometryFiles'
+$end 'AllReferencedFilesForProject'
+$begin 'ProjectPreview'
+	Thumbnail64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCABgAGADASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooA8h+PXxt8Ffs5/CTxl8ZviCmv3\
+HhfwZaae82m+FdEuvEfijX9Y17WtN8MeFfC/hvRbUr9u1/VfFWtaLptmJpLe0S41WOS9u7OzSe6h+O/\
+C/8AwVQ/Zi1SyupPG2k/HP4T6vb3720Xh3xR8E/G3j29vrAWlpcQ63a65+z7ZeNdESwknuLm3EE+rQ6\
+lHLpkzT2ENvJaT3Pxj+3l8eLf4y/F/UPhfpUn234f/s+eKtLOl6jYXGlmw1v43r4Y8ZaD8SL+S9s0u5\
+Nd0vQPDnjax8M2ccN9pX9m+JIfH2n+INI1S7svDt9ovxfX9K8H+EGR47hrCYnianioZnmNsQpYevCjK\
+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'
+	$begin 'DesignInfo'
+		DesignName='HFSSDesign1'
+		Notes=''
+		Factory='HFSS'
+		IsSolved=true
+		'Nominal Setups'[1: 'Setup1']
+		'Optimetrics Setups'[0:]
+		'Optimetrics Experiment Types'[0:]
+		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAMgDASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooAKKKKACiiigAooooAKK/n5+Jv7\
+fH7Sev/AB38ZeMvgd8U/COl/Azw7rE/hL4Z+Bdd+Gnhzxj4O+I2meHoNW0DxD8UPFviLSfEMGteINO1\
+nxRLd6n4RufDPinRdLn8N6R4c1G7tLuXUtVtJOp8Lf8ABTT9qTQZdRHjX4X/AAB+K0N1HYnSZPC2t/E\
+T9n6XQ5YWvRqSajFq0HxMHiqO5SXTjA0T6MbI2MwkW/F0hs/1uXgrxo8Jh8RQ+qYmviKVOr9XWIdGtT\
+dRKUqNV4qnQoQq0k37Ve3cFKLhCc52i/xqHjtwL9cxOGxEsZhaGGrVaX1l4ZVqFSNNuMa1JYWpiMROj\
+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'
+	$end 'DesignInfo'
+$end 'ProjectPreview'
