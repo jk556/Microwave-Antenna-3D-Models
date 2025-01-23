@@ -1,0 +1,2497 @@
+$begin 'AnsoftProject'
+	Created='Mon Jan 28 13:12:49 2019'
+	FileOwnedByWorkbench=false
+	Product='HFSS'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(15, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	$begin 'HFSSEnvironment'
+		Version(1, 0)
+	$end 'HFSSEnvironment'
+	$begin 'HFIEEnvironment'
+		Version(1, 0)
+	$end 'HFIEEnvironment'
+	$begin 'geometry3deditor'
+		Version(1, 0)
+	$end 'geometry3deditor'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	$begin 'GlobalVariables'
+		VariableProp('$cyllen', 'UD', '', '55mm', sa(i=true, int=false, Min='50mm', Max='70mm', IDisp='5mm'))
+	$end 'GlobalVariables'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1104, 10000, 1, 1, 0, false, false)
+			Materials(1104, 9500, 9, 2, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'vacuum'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+	$end 'Definitions'
+	DesignIDServer=2
+	MoveBackwards=false
+	$begin 'HFSSModel'
+		RepRewriteV2=true
+		Name='HFSSDesign1'
+		DesignID=0
+		'Use Advanced DC Extrapolation'=false
+		'Allow Material Override'=false
+		'Calculate Lossy Dielectrics'=true
+		$begin 'TemperatureSettings'
+			IncludeTemperatureDependence=false
+			EnableFeedback=false
+			Temperatures(297, '22cel', 326, '22cel', 354, '22cel', 382, '22cel', 410, '22cel')
+		$end 'TemperatureSettings'
+		ObjsEnabledForDeformation()
+		SolutionType='DrivenModal'
+		MaterialDensity=1
+		MassOfTissue=1
+		UseAutoDCThickness=true
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'ModelSetup'
+			$begin 'Editor3D Doc Preferences'
+				'Plane Background'=true
+				BackgroundColor1=16777215
+				BackgroundColor2=0
+				'Need Lights'=true
+				'Ambient Light'=8355711
+				'Num Lights'=2
+				Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+				Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+			$end 'Editor3D Doc Preferences'
+			$begin 'DesignDatasets'
+				NextUniqueID=0
+				MoveBackwards=false
+				DatasetType='DesignDatasetType'
+				$begin 'DatasetDefinitions'
+				$end 'DatasetDefinitions'
+			$end 'DesignDatasets'
+			$begin 'Properties'
+				VariableProp('cyllen', 'UD', '', '55mm')
+			$end 'Properties'
+			SnapMode=31
+			WorkingCS=1
+			$begin 'GeometryCore'
+				BlockVersionID=3
+				DataVersion=20
+				NativeKernel='ACIS'
+				NativeKernelVersionID=5
+				Units='mm'
+				InstanceID=-1
+				$begin 'ValidationOptions'
+					EntityCheckLevel='Strict'
+					IgnoreUnclassifiedObjects=false
+					SkipIntersectionChecks=false
+				$end 'ValidationOptions'
+				$begin 'GeometryOperations'
+					BlockVersionID=2
+					$begin 'AnsoftRangedIDServerManager'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=0
+							IDServerRangeMin=0
+							IDServerRangeMax=2146483647
+							NextUniqueID=2313
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=1
+							IDServerRangeMin=2146483648
+							IDServerRangeMax=2146485547
+							NextUniqueID=2146483654
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+					$end 'AnsoftRangedIDServerManager'
+					StartBackGroundFaceID=2146483648
+					$begin 'CoordinateSystems'
+					$end 'CoordinateSystems'
+					$begin 'UserDefinedModels'
+					$end 'UserDefinedModels'
+					$begin 'ToplevelParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Cylinder1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"vacuum"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Cylinder'
+									ID=5
+									ReferenceCoordSystemID=1
+									$begin 'CylinderParameters'
+										KernelVersion=5
+										XCenter='0mm'
+										YCenter='0mm'
+										ZCenter='0mm'
+										Radius='11mm'
+										Height='cyllen'
+										WhichAxis='Z'
+										NumSides='0'
+									$end 'CylinderParameters'
+									ParentPartID=6
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=3
+											NumWires=0
+											NumLoops=4
+											NumCoedges=4
+											NumEdges=2
+											NumVertices=2
+										$end 'Topology'
+										BodyID=6
+										StartFaceID=7
+										StartEdgeID=10
+										StartVertexID=12
+										NumNewFaces=3
+										NumNewEdges=2
+										NumNewVertices=2
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Substract'
+									ID=437
+									$begin 'SubtractParameters'
+										KernelVersion=5
+										KeepOriginals=false
+										BlankPart=6
+										NumToolParts=1
+										ToolParts(127)
+									$end 'SubtractParameters'
+									ParentPartID=6
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=15
+											NumWires=0
+											NumLoops=16
+											NumCoedges=74
+											NumEdges=37
+											NumVertices=25
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=2240
+										StartEdgeID=2253
+										StartVertexID=2289
+										NumNewFaces=13
+										NumNewEdges=36
+										NumNewVertices=24
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+												$begin 'Face'
+													NormalizedSerialNum=0
+													ID=2240
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=1.99952647845945
+															FcUVMid(5.55111512312578e-017, 9.00142100506182, 15)
+															$begin 'FcTolVts'
+																TolVt(-0.25, 10.9971587239614, 15, 0)
+																TolVt(0.25, 10.9971587239614, 15, 0)
+																TolVt(0.25, 7, 15, 0)
+																TolVt(-0.25, 7, 15, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=1
+													ID=2241
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 12, 12, 12)
+														$begin 'FaceGeometry'
+															Area=734.81531705749
+															FcUVMid(-0.25, 0, 25)
+															$begin 'FcTolVts'
+																TolVt(-0.25, 10.9971587239614, 0, 0)
+																TolVt(-0.25, 10.9971587239614, 15, 0)
+																TolVt(-0.25, 7, 15, 0)
+																TolVt(-0.25, 7, 25, 0)
+																TolVt(-0.25, 1, 25, 0)
+																TolVt(-0.25, 1, 35, 0)
+																TolVt(-0.25, -3, 35, 0)
+																TolVt(-0.25, -3, 45, 0)
+																TolVt(-0.25, -6, 45, 0)
+																TolVt(-0.25, -6, 50, 0)
+																TolVt(-0.25, -10.9971587239614, 50, 0)
+																TolVt(-0.25, -10.9971587239614, 0, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=2
+													ID=2242
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=1.5
+															FcUVMid(0, -4.5, 45)
+															$begin 'FcTolVts'
+																TolVt(0.25, -6, 45, 0)
+																TolVt(-0.25, -6, 45, 0)
+																TolVt(-0.25, -3, 45, 0)
+																TolVt(0.25, -3, 45, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=3
+													ID=2243
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=5
+															FcUVMid(0, -3, 40)
+															$begin 'FcTolVts'
+																TolVt(0.25, -3, 35, 0)
+																TolVt(0.25, -3, 45, 0)
+																TolVt(-0.25, -3, 45, 0)
+																TolVt(-0.25, -3, 35, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=4
+													ID=2244
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=2
+															FcUVMid(0, -1, 35)
+															$begin 'FcTolVts'
+																TolVt(0.25, -3, 35, 0)
+																TolVt(-0.25, -3, 35, 0)
+																TolVt(-0.25, 1, 35, 0)
+																TolVt(0.25, 1, 35, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=5
+													ID=2245
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=3
+															FcUVMid(0, 4, 25)
+															$begin 'FcTolVts'
+																TolVt(0.25, 1, 25, 0)
+																TolVt(-0.25, 1, 25, 0)
+																TolVt(-0.25, 7, 25, 0)
+																TolVt(0.25, 7, 25, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=6
+													ID=2246
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=5
+															FcUVMid(0, 7, 20)
+															$begin 'FcTolVts'
+																TolVt(0.25, 7, 15, 0)
+																TolVt(0.25, 7, 25, 0)
+																TolVt(-0.25, 7, 25, 0)
+																TolVt(-0.25, 7, 15, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=7
+													ID=2247
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=5
+															FcUVMid(0, 1, 30)
+															$begin 'FcTolVts'
+																TolVt(0.25, 1, 25, 0)
+																TolVt(0.25, 1, 35, 0)
+																TolVt(-0.25, 1, 35, 0)
+																TolVt(-0.25, 1, 25, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=8
+													ID=2248
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=2.49952647845945
+															FcUVMid(2.77555756156289e-017, -8.50142100506182, 50)
+															$begin 'FcTolVts'
+																TolVt(0.25, -10.9971587239614, 50, 0)
+																TolVt(-0.25, -10.9971587239614, 50, 0)
+																TolVt(-0.25, -6, 50, 0)
+																TolVt(0.25, -6, 50, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=9
+													ID=2249
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=2.5
+															FcUVMid(0, -6, 47.5)
+															$begin 'FcTolVts'
+																TolVt(0.25, -6, 45, 0)
+																TolVt(0.25, -6, 50, 0)
+																TolVt(-0.25, -6, 50, 0)
+																TolVt(-0.25, -6, 45, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=10
+													ID=2250
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 12, 12, 12)
+														$begin 'FaceGeometry'
+															Area=734.81531705749
+															FcUVMid(0.25, 0, 25)
+															$begin 'FcTolVts'
+																TolVt(0.25, 10.9971587239614, 15, 0)
+																TolVt(0.25, 10.9971587239614, 0, 0)
+																TolVt(0.25, -10.9971587239614, 0, 0)
+																TolVt(0.25, -10.9971587239614, 50, 0)
+																TolVt(0.25, -6, 50, 0)
+																TolVt(0.25, -6, 45, 0)
+																TolVt(0.25, -3, 45, 0)
+																TolVt(0.25, -3, 35, 0)
+																TolVt(0.25, 1, 35, 0)
+																TolVt(0.25, 1, 25, 0)
+																TolVt(0.25, 7, 25, 0)
+																TolVt(0.25, 7, 15, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=11
+													ID=2251
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 2, 2, 2)
+														$begin 'FaceGeometry'
+															Area=184.566829063723
+															FcUVMid(-5.625, 0, 0)
+															$begin 'FcTolVts'
+																TolVt(-0.25, 10.9971587239614, 0, 0)
+																TolVt(-0.25, -10.9971587239614, 0, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+												$begin 'Face'
+													NormalizedSerialNum=12
+													ID=2252
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 2, 2, 2)
+														$begin 'FaceGeometry'
+															Area=184.566829063723
+															FcUVMid(5.625, 0, 0)
+															$begin 'FcTolVts'
+																TolVt(0.25, -10.9971587239614, 0, 0)
+																TolVt(0.25, 10.9971587239614, 0, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+												$begin 'Edge'
+													NormalizedSerialNum=0
+													ID=2253
+													EdgeFaces(7, 2240)
+													$begin 'EdTolVts'
+														TolVt(0.25, 10.9971587239614, 15, 0)
+														TolVt(-0.25, 10.9971587239614, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(6.73555739531044e-016, 11, 15)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=1
+													ID=2254
+													EdgeFaces(2240, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, 7, 15, 0)
+														TolVt(0.25, 10.9971587239614, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, 8.99857936198069, 15)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=2
+													ID=2255
+													EdgeFaces(2240, 2246)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 7, 15, 0)
+														TolVt(0.25, 7, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, 7, 15)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=3
+													ID=2256
+													EdgeFaces(2240, 2241)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 10.9971587239614, 15, 0)
+														TolVt(-0.25, 7, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, 8.99857936198069, 15)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=4
+													ID=2257
+													EdgeFaces(7, 2241)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 10.9971587239614, 15, 0)
+														TolVt(-0.25, 10.9971587239614, 0, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, 10.9971587239614, 7.5)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=5
+													ID=2258
+													EdgeFaces(2241, 2246)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 7, 25, 0)
+														TolVt(-0.25, 7, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, 7, 20)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=6
+													ID=2259
+													EdgeFaces(2241, 2245)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 7, 25, 0)
+														TolVt(-0.25, 1, 25, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, 4, 25)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=7
+													ID=2260
+													EdgeFaces(2241, 2247)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 1, 35, 0)
+														TolVt(-0.25, 1, 25, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, 1, 30)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=8
+													ID=2261
+													EdgeFaces(2241, 2244)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 1, 35, 0)
+														TolVt(-0.25, -3, 35, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, -1, 35)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=9
+													ID=2262
+													EdgeFaces(2241, 2243)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -3, 45, 0)
+														TolVt(-0.25, -3, 35, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, -3, 40)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=10
+													ID=2263
+													EdgeFaces(2241, 2242)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -3, 45, 0)
+														TolVt(-0.25, -6, 45, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, -4.5, 45)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=11
+													ID=2264
+													EdgeFaces(2241, 2249)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -6, 50, 0)
+														TolVt(-0.25, -6, 45, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, -6, 47.5)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=12
+													ID=2265
+													EdgeFaces(2241, 2248)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -6, 50, 0)
+														TolVt(-0.25, -10.9971587239614, 50, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, -8.49857936198069, 50)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=13
+													ID=2266
+													EdgeFaces(7, 2241)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -10.9971587239614, 0, 0)
+														TolVt(-0.25, -10.9971587239614, 50, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, -10.9971587239614, 25)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=14
+													ID=2267
+													EdgeFaces(2241, 2251)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 10.9971587239614, 0, 0)
+														TolVt(-0.25, -10.9971587239614, 0, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-0.25, 0, 0)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=15
+													ID=2268
+													EdgeFaces(2242, 2249)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -6, 45, 0)
+														TolVt(0.25, -6, 45, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, -6, 45)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=16
+													ID=2269
+													EdgeFaces(2242, 2243)
+													$begin 'EdTolVts'
+														TolVt(0.25, -3, 45, 0)
+														TolVt(-0.25, -3, 45, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, -3, 45)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=17
+													ID=2270
+													EdgeFaces(2242, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, -6, 45, 0)
+														TolVt(0.25, -3, 45, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, -4.5, 45)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=18
+													ID=2271
+													EdgeFaces(2243, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, -3, 45, 0)
+														TolVt(0.25, -3, 35, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, -3, 40)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=19
+													ID=2272
+													EdgeFaces(2243, 2244)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -3, 35, 0)
+														TolVt(0.25, -3, 35, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, -3, 35)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=20
+													ID=2273
+													EdgeFaces(2244, 2247)
+													$begin 'EdTolVts'
+														TolVt(0.25, 1, 35, 0)
+														TolVt(-0.25, 1, 35, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, 1, 35)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=21
+													ID=2274
+													EdgeFaces(2244, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, -3, 35, 0)
+														TolVt(0.25, 1, 35, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, -1, 35)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=22
+													ID=2275
+													EdgeFaces(2245, 2247)
+													$begin 'EdTolVts'
+														TolVt(-0.25, 1, 25, 0)
+														TolVt(0.25, 1, 25, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, 1, 25)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=23
+													ID=2276
+													EdgeFaces(2245, 2246)
+													$begin 'EdTolVts'
+														TolVt(0.25, 7, 25, 0)
+														TolVt(-0.25, 7, 25, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, 7, 25)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=24
+													ID=2277
+													EdgeFaces(2245, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, 1, 25, 0)
+														TolVt(0.25, 7, 25, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, 4, 25)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=25
+													ID=2278
+													EdgeFaces(2246, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, 7, 25, 0)
+														TolVt(0.25, 7, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, 7, 20)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=26
+													ID=2279
+													EdgeFaces(2247, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, 1, 35, 0)
+														TolVt(0.25, 1, 25, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, 1, 30)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=27
+													ID=2280
+													EdgeFaces(7, 2248)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -10.9971587239614, 50, 0)
+														TolVt(0.25, -10.9971587239614, 50, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(6.73555739531044e-016, -11, 50)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=28
+													ID=2281
+													EdgeFaces(2248, 2249)
+													$begin 'EdTolVts'
+														TolVt(0.25, -6, 50, 0)
+														TolVt(-0.25, -6, 50, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0, -6, 50)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=29
+													ID=2282
+													EdgeFaces(2248, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, -10.9971587239614, 50, 0)
+														TolVt(0.25, -6, 50, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, -8.49857936198069, 50)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=30
+													ID=2283
+													EdgeFaces(2249, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, -6, 50, 0)
+														TolVt(0.25, -6, 45, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, -6, 47.5)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=31
+													ID=2284
+													EdgeFaces(7, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, 10.9971587239614, 0, 0)
+														TolVt(0.25, 10.9971587239614, 15, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, 10.9971587239614, 7.5)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=32
+													ID=2285
+													EdgeFaces(2250, 2252)
+													$begin 'EdTolVts'
+														TolVt(0.25, -10.9971587239614, 0, 0)
+														TolVt(0.25, 10.9971587239614, 0, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, 0, 0)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=33
+													ID=2286
+													EdgeFaces(7, 2250)
+													$begin 'EdTolVts'
+														TolVt(0.25, -10.9971587239614, 50, 0)
+														TolVt(0.25, -10.9971587239614, 0, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(0.25, -10.9971587239614, 25)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=34
+													ID=2287
+													EdgeFaces(7, 2251)
+													$begin 'EdTolVts'
+														TolVt(-0.25, -10.9971587239614, 0, 0)
+														TolVt(-0.25, 10.9971587239614, 0, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(-11, -1.34711147906209e-015, 0)
+												$end 'Edge'
+												$begin 'Edge'
+													NormalizedSerialNum=35
+													ID=2288
+													EdgeFaces(7, 2252)
+													$begin 'EdTolVts'
+														TolVt(0.25, 10.9971587239614, 0, 0)
+														TolVt(0.25, -10.9971587239614, 0, 0)
+													$end 'EdTolVts'
+													EdgeMidPoint(11, 0, 0)
+												$end 'Edge'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+												$begin 'Vertex'
+													NormalizedSerialNum=0
+													ID=2289
+													VtPos(-0.25, 10.9971587239614, 15)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=1
+													ID=2290
+													VtPos(0.25, 10.9971587239614, 15)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=2
+													ID=2291
+													VtPos(0.25, 7, 15)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=3
+													ID=2292
+													VtPos(-0.25, 7, 15)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=4
+													ID=2293
+													VtPos(-0.25, 10.9971587239614, 0)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=5
+													ID=2294
+													VtPos(-0.25, 7, 25)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=6
+													ID=2295
+													VtPos(-0.25, 1, 25)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=7
+													ID=2296
+													VtPos(-0.25, 1, 35)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=8
+													ID=2297
+													VtPos(-0.25, -3, 35)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=9
+													ID=2298
+													VtPos(-0.25, -3, 45)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=10
+													ID=2299
+													VtPos(-0.25, -6, 45)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=11
+													ID=2300
+													VtPos(-0.25, -6, 50)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=12
+													ID=2301
+													VtPos(-0.25, -10.9971587239614, 50)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=13
+													ID=2302
+													VtPos(-0.25, -10.9971587239614, 0)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=14
+													ID=2303
+													VtPos(0.25, -6, 45)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=15
+													ID=2304
+													VtPos(0.25, -3, 45)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=16
+													ID=2305
+													VtPos(0.25, -3, 35)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=17
+													ID=2306
+													VtPos(0.25, 1, 35)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=18
+													ID=2307
+													VtPos(0.25, 1, 25)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=19
+													ID=2308
+													VtPos(0.25, 7, 25)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=20
+													ID=2309
+													VtPos(0.25, -10.9971587239614, 50)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=21
+													ID=2310
+													VtPos(0.25, -6, 50)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=22
+													ID=2311
+													VtPos(0.25, 10.9971587239614, 0)
+												$end 'Vertex'
+												$begin 'Vertex'
+													NormalizedSerialNum=23
+													ID=2312
+													VtPos(0.25, -10.9971587239614, 0)
+												$end 'Vertex'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									BlankOperation=5
+									NumToolOperations=1
+									ToolOperations(154)
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box6'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"vacuum"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=296
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='45mm'
+										XSize='0.5mm'
+										YSize='5mm'
+										ZSize='5mm'
+									$end 'BoxParameters'
+									ParentPartID=297
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=297
+										StartFaceID=298
+										StartEdgeID=304
+										StartVertexID=316
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Unite'
+									ID=324
+									$begin 'UniteParameters'
+										KernelVersion=5
+										KeepOriginals=false
+										BlankPart=297
+										NumToolParts=4
+										ToolParts(410, 382, 354, 326)
+									$end 'UniteParameters'
+									ParentPartID=297
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=14
+											NumWires=0
+											NumLoops=14
+											NumCoedges=72
+											NumEdges=36
+											NumVertices=24
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									BlankOperation=296
+									NumToolOperations=4
+									ToolOperations(409, 381, 353, 325)
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'ToplevelParts'
+					$begin 'OperandParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=14
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='35mm'
+										XSize='0.5mm'
+										YSize='8mm'
+										ZSize='10mm'
+									$end 'BoxParameters'
+									ParentPartID=15
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=15
+										StartFaceID=16
+										StartEdgeID=22
+										StartVertexID=34
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box2'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=42
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='0mm'
+										XSize='0.5mm'
+										YSize='22mm'
+										ZSize='15mm'
+									$end 'BoxParameters'
+									ParentPartID=43
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=43
+										StartFaceID=44
+										StartEdgeID=50
+										StartVertexID=62
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box3'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=70
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='15mm'
+										XSize='0.5mm'
+										YSize='18mm'
+										ZSize='10mm'
+									$end 'BoxParameters'
+									ParentPartID=71
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=71
+										StartFaceID=72
+										StartEdgeID=78
+										StartVertexID=90
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box4'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=98
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='25mm'
+										XSize='0.5mm'
+										YSize='12mm'
+										ZSize='10mm'
+									$end 'BoxParameters'
+									ParentPartID=99
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=99
+										StartFaceID=100
+										StartEdgeID=106
+										StartVertexID=118
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box5'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=126
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='45mm'
+										XSize='0.5mm'
+										YSize='5mm'
+										ZSize='5mm'
+									$end 'BoxParameters'
+									ParentPartID=127
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=127
+										StartFaceID=128
+										StartEdgeID=134
+										StartVertexID=146
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='Unite'
+									ID=154
+									$begin 'UniteParameters'
+										KernelVersion=5
+										KeepOriginals=false
+										BlankPart=127
+										NumToolParts=4
+										ToolParts(99, 71, 43, 15)
+									$end 'UniteParameters'
+									ParentPartID=127
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=14
+											NumWires=0
+											NumLoops=14
+											NumCoedges=72
+											NumEdges=36
+											NumVertices=24
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									BlankOperation=126
+									NumToolOperations=4
+									ToolOperations(98, 70, 42, 14)
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box7'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=325
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='15mm'
+										XSize='0.5mm'
+										YSize='18mm'
+										ZSize='10mm'
+									$end 'BoxParameters'
+									ParentPartID=326
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=326
+										StartFaceID=327
+										StartEdgeID=333
+										StartVertexID=345
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box8'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=353
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='0mm'
+										XSize='0.5mm'
+										YSize='22mm'
+										ZSize='15mm'
+									$end 'BoxParameters'
+									ParentPartID=354
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=354
+										StartFaceID=355
+										StartEdgeID=361
+										StartVertexID=373
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box9'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=381
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='35mm'
+										XSize='0.5mm'
+										YSize='8mm'
+										ZSize='10mm'
+									$end 'BoxParameters'
+									ParentPartID=382
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=382
+										StartFaceID=383
+										StartEdgeID=389
+										StartVertexID=401
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box10'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='""'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Box'
+									ID=409
+									ReferenceCoordSystemID=1
+									$begin 'BoxParameters'
+										KernelVersion=5
+										XPosition='-0.25mm'
+										YPosition='-11mm'
+										ZPosition='25mm'
+										XSize='0.5mm'
+										YSize='12mm'
+										ZSize='10mm'
+									$end 'BoxParameters'
+									ParentPartID=410
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=410
+										StartFaceID=411
+										StartEdgeID=417
+										StartVertexID=429
+										NumNewFaces=6
+										NumNewEdges=12
+										NumNewVertices=8
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'OperandParts'
+					$begin 'Planes'
+					$end 'Planes'
+					$begin 'Points'
+					$end 'Points'
+					$begin 'GeometryEntityLists'
+					$end 'GeometryEntityLists'
+					$begin 'CachedNames'
+						$begin 'allobjects'
+							allobjects(-1)
+						$end 'allobjects'
+						$begin 'box'
+							box(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+						$end 'box'
+						$begin 'cylinder'
+							cylinder(1)
+						$end 'cylinder'
+						$begin 'global'
+							global(-1)
+						$end 'global'
+					$end 'CachedNames'
+				$end 'GeometryOperations'
+				$begin 'GeometryDependencies'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 5)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 437)
+						DependencyObject('GeometryBodyOperation', 5)
+						DependencyObject('GeometryBodyOperation', 154)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 296)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=5
+						DependencyObject('GeometryBodyOperation', 324)
+						DependencyObject('GeometryBodyOperation', 296)
+						DependencyObject('GeometryBodyOperation', 409)
+						DependencyObject('GeometryBodyOperation', 381)
+						DependencyObject('GeometryBodyOperation', 353)
+						DependencyObject('GeometryBodyOperation', 325)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 14)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 42)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 70)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 98)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 126)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=5
+						DependencyObject('GeometryBodyOperation', 154)
+						DependencyObject('GeometryBodyOperation', 126)
+						DependencyObject('GeometryBodyOperation', 98)
+						DependencyObject('GeometryBodyOperation', 70)
+						DependencyObject('GeometryBodyOperation', 42)
+						DependencyObject('GeometryBodyOperation', 14)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 325)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 353)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 381)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 409)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+				$end 'GeometryDependencies'
+			$end 'GeometryCore'
+			GroupByMaterial('-1'=true)
+			GroupSheetByMaterial()
+			$begin 'LastUserInputs'
+			$end 'LastUserInputs'
+		$end 'ModelSetup'
+		$begin 'BoundarySetup'
+			$begin 'GlobalBoundData'
+				PortImpedance='1'
+				GlobalMaterialEnv='vacuum'
+			$end 'GlobalBoundData'
+			$begin 'Boundaries'
+				NextUniqueID=24
+				MoveBackwards=false
+				$begin 'PerfE6'
+					ID=6
+					BoundType='Perfect E'
+					Faces(7)
+					ParentBndID=-1
+					InfGroundPlane=false
+				$end 'PerfE6'
+				$begin 'PerfE7'
+					ID=9
+					BoundType='Perfect E'
+					Faces(298, 300, 301, 302, 303, 331, 356, 359, 411)
+					ParentBndID=-1
+					InfGroundPlane=false
+				$end 'PerfE7'
+				$begin '1'
+					ID=12
+					BoundType='Wave Port'
+					Faces(9)
+					NumModes=2
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					UseLineModeAlignment=false
+					DoDeembed=false
+					DeembedDist='0mm'
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=true
+							$begin 'IntLine'
+								$begin 'GeometryPosition'
+									IsAttachedToEntity=true
+									EntityID=11
+									PositionType='OnEdge'
+									UParam=-0.25
+									VParam=0
+									XPosition='0'
+									YPosition='0'
+									ZPosition='0'
+								$end 'GeometryPosition'
+								$begin 'GeometryPosition'
+									IsAttachedToEntity=true
+									EntityID=11
+									PositionType='OnEdge'
+									UParam=0.25
+									VParam=0
+									XPosition='0'
+									YPosition='0'
+									ZPosition='0'
+								$end 'GeometryPosition'
+							$end 'IntLine'
+							CharImp='Zpi'
+							AlignmentGroup=0
+							RenormImp='50ohm'
+						$end 'Mode1'
+						$begin 'Mode2'
+							ModeNum=2
+							UseIntLine=true
+							$begin 'IntLine'
+								$begin 'GeometryPosition'
+									IsAttachedToEntity=true
+									EntityID=13
+									PositionType='OnVertex'
+									UParam=0
+									VParam=0
+									XPosition='0'
+									YPosition='0'
+									ZPosition='0'
+								$end 'GeometryPosition'
+								$begin 'GeometryPosition'
+									IsAttachedToEntity=true
+									EntityID=11
+									PositionType='EdgeCenter'
+									UParam=0
+									VParam=0
+									XPosition='0'
+									YPosition='0'
+									ZPosition='0'
+								$end 'GeometryPosition'
+							$end 'IntLine'
+							CharImp='Zpi'
+							AlignmentGroup=0
+							RenormImp='50ohm'
+						$end 'Mode2'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true, true)
+					UseAnalyticAlignment=false
+				$end '1'
+				$begin '2'
+					ID=22
+					BoundType='Wave Port'
+					Faces(2252)
+					NumModes=1
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					UseLineModeAlignment=false
+					DoDeembed=false
+					DeembedDist='0mm'
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=false
+							RenormImp='50ohm'
+						$end 'Mode1'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true)
+					UseAnalyticAlignment=false
+				$end '2'
+				$begin '3'
+					ID=23
+					BoundType='Wave Port'
+					Faces(2251)
+					NumModes=1
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					UseLineModeAlignment=false
+					DoDeembed=false
+					DeembedDist='0mm'
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=false
+							RenormImp='50ohm'
+						$end 'Mode1'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true)
+					UseAnalyticAlignment=false
+				$end '3'
+			$end 'Boundaries'
+			$begin 'ProductSpecificData'
+				$begin 'PMLData'
+					$begin 'PMLGroups'
+					$end 'PMLGroups'
+				$end 'PMLData'
+				$begin 'SortOrder'
+					Port[1: -1]
+					Terminal[1: -1]
+				$end 'SortOrder'
+			$end 'ProductSpecificData'
+		$end 'BoundarySetup'
+		$begin 'ArrayDefinition'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'ArrayDefinition'
+		$begin 'MeshSetup'
+			$begin 'MeshSettings'
+				$begin 'GlobalSurfApproximation'
+					SurfDevChoice=0
+					NormalDevChoice=1
+					AspectRatioChoice=1
+					PullToTrueSurf=false
+					SetFacePreservationLevel=0
+				$end 'GlobalSurfApproximation'
+				MeshMethod='Auto'
+			$end 'MeshSettings'
+			$begin 'MeshOperations'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'MeshOperations'
+		$end 'MeshSetup'
+		$begin 'AnalysisSetup'
+			$begin 'HfssGlobalData'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'HfssGlobalData'
+			$begin 'SolveSetups'
+				NextUniqueID=1
+				MoveBackwards=false
+				$begin 'Setup1'
+					ID=0
+					SetupType='HfssDriven'
+					Frequency='8GHz'
+					PortsOnly=false
+					MaxDeltaS=0.02
+					UseMatrixConv=false
+					MaximumPasses=6
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					IsEnabled=true
+					BasisOrder=1
+					UseIterativeSolver=false
+					DoLambdaRefine=true
+					DoMaterialLambda=true
+					SetLambdaTarget=false
+					Target=0.3333
+					UseMaxTetIncrease=false
+					PortAccuracy=2
+					UseABCOnPort=false
+					SetPortMinMaxTri=false
+					PortMinTri=100
+					PortMaxTri=500
+					EnableSolverDomains=false
+					SaveRadFieldsOnly=false
+					SaveAnyFields=true
+					NoAdditionalRefinementOnImport=false
+					$begin 'Sweeps'
+						NextUniqueID=2
+						MoveBackwards=false
+						$begin 'Sweep'
+							ID=1
+							IsEnabled=true
+							SetupType='LinearStep'
+							StartValue='8GHz'
+							StopValue='12GHz'
+							StepSize='0.2GHz'
+							Type='Fast'
+							SaveFields=true
+							SaveRadFields=false
+							GenerateFieldsForAllFreqs=false
+							ExtrapToDC=false
+						$end 'Sweep'
+					$end 'Sweeps'
+					DerivativesOnlyForLastPass=false
+				$end 'Setup1'
+			$end 'SolveSetups'
+		$end 'AnalysisSetup'
+		$begin 'Optimetrics'
+			$begin 'OptimetricsSetups'
+				NextUniqueID=4
+				MoveBackwards=false
+				$begin 'ParametricSetup1'
+					ID=2
+					SetupType='OptiParametric'
+					IsEnabled=true
+					NextUniqueID=1
+					MoveBackwards=false
+					GoalSetupVersion=0
+					Version=0
+					$begin 'ProdOptiSetupData'
+						SaveFields=false
+						CopyMesh=false
+					$end 'ProdOptiSetupData'
+					$begin 'StartingPoint'
+					$end 'StartingPoint'
+					'Sim. Setups'(35)
+					$begin 'Sweeps'
+						$begin 'SweepDefinition'
+							Variable='$cyllen'
+							Data='LIN 55mm 70mm 3mm'
+							OffsetF1=false
+							Synchronize=0
+						$end 'SweepDefinition'
+					$end 'Sweeps'
+					$begin 'Sweep Operations'
+					$end 'Sweep Operations'
+					$begin 'Goals'
+					$end 'Goals'
+				$end 'ParametricSetup1'
+				$begin 'SensitivitySetup1'
+					ID=3
+					SetupType='OptiSensitivity'
+					IsEnabled=true
+					NextUniqueID=1
+					MoveBackwards=false
+					GoalSetupVersion=0
+					Version=0
+					$begin 'ProdOptiSetupData'
+						SaveFields=false
+						CopyMesh=false
+					$end 'ProdOptiSetupData'
+					$begin 'StartingPoint'
+						$cyllen='55mm'
+					$end 'StartingPoint'
+					MaxIterations=10
+					PriorPSetup=-1
+					PreSolvePSetup=true
+					$begin 'Variables'
+						$cyllen(i=true, int=false, Min='54mm', Max='56mm', IDisp='2mm')
+					$end 'Variables'
+					$begin 'LCS'
+					$end 'LCS'
+					$begin 'Goals'
+						$begin 'Goal'
+							$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+								DesignID=0
+								SolutionID=906
+								$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+									ReportType=0
+									SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+								$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+							$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+							Calculation='dB(S(1:1,1:1))'
+							Name='dB(S(1:1,1:1))'
+							$begin 'Ranges'
+								Range(Var='Freq', Type='d', DiscreteValues='8GHz')
+							$end 'Ranges'
+						$end 'Goal'
+					$end 'Goals'
+					'Master Goal'=0
+					MasterError=0.001
+					'Perform Worst Case Analysis'=false
+				$end 'SensitivitySetup1'
+			$end 'OptimetricsSetups'
+		$end 'Optimetrics'
+		$begin 'Solutions'
+			FieldType='NoIncidentWave'
+			IncludePortPostProcessing=false
+			SourceEntry(ID=12, Index=0, Terminal=false, Terminated=false, Magnitude='1W', Phase='0deg')
+			SourceEntry(ID=12, Index=1, Terminal=false, Terminated=false, Magnitude='1W', Phase='90deg')
+			SourceEntry(ID=22, Index=0, Terminal=false, Terminated=false, Magnitude='0W', Phase='0deg')
+			SourceEntry(ID=23, Index=0, Terminal=false, Terminated=false, Magnitude='0W', Phase='0deg')
+			$begin 'Contexts'
+				NextUniqueID=1
+				MoveBackwards=false
+			$end 'Contexts'
+		$end 'Solutions'
+		$begin 'PortFieldDisplay'
+			$begin 'PortFieldDisplay'
+				ScaleFactor=5
+				Solution='Setup1 : LastAdaptive'
+				Frequency='8GHz'
+			$end 'PortFieldDisplay'
+		$end 'PortFieldDisplay'
+		$begin 'FieldsReporter'
+			$begin 'FieldsCalculator'
+				Line_Discretization=1000
+			$end 'FieldsCalculator'
+			$begin 'PlotDefaults'
+				Default_SolutionId=37
+				Default_PlotFolder='Automatic'
+				Default_Phase='0deg'
+				Default_Freq='8GHz'
+			$end 'PlotDefaults'
+			$begin 'FieldsPlotManagerID'
+				NextUniqueID=13
+				MoveBackwards=false
+				NumQuantityType=0
+				NumPlots=0
+			$end 'FieldsPlotManagerID'
+			$begin 'Report3dInGeomWnd'
+				Report3dNum=0
+			$end 'Report3dInGeomWnd'
+		$end 'FieldsReporter'
+		$begin 'RadField'
+			$begin 'FarFieldSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'FarFieldSetups'
+			$begin 'ArraySetup'
+				UseOption='NoArray'
+				$begin 'RegularArray'
+					NumUCells='10'
+					NumVCells='10'
+					CellUDist='10mm'
+					CellVDist='10mm'
+					UDirnX='1'
+					UDirnY='0'
+					UDirnZ='0'
+					VDirnX='0'
+					VDirnY='1'
+					VDirnZ='0'
+					FirstCellPosX='0mm'
+					FirstCellPosY='0mm'
+					FirstCellPosZ='0mm'
+					Behavior='UseSlaveSettings'
+					ScanAnglePhi='45deg'
+					ScanAngleTheta='45deg'
+					UDirnPhaseShift='0deg'
+					VDirnPhaseShift='0deg'
+				$end 'RegularArray'
+				$begin 'CustomArray'
+					NumCells=0
+					$begin 'Cell'
+					$end 'Cell'
+				$end 'CustomArray'
+			$end 'ArraySetup'
+			$begin 'NearFieldSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'NearFieldSetups'
+			RadFieldComputationVersion=1.4
+			RadfieldHeaderFile='RAD45E5698415486685697.tmp'
+		$end 'RadField'
+		$begin 'SolutionManager'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=35
+				Name='Setup1'
+				$begin 'Solution'
+					ID=36
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Pass'
+								Column='1;2;3;4;5;6'
+								Units=''
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='8GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='cyllen'
+								Column='55mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='$cyllen'
+								Column='50mm;53.3333333333333mm;54mm;54.2mm;54.4mm;54.6mm;54.8mm;55mm;55.2mm;55.4mm;55.6mm;55.8mm;56mm;56.6666666666667mm;58mm;60mm;61mm;62mm;64mm;66mm;67mm;70mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=37
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='8GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='cyllen'
+								Column='55mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='$cyllen'
+								Column='50mm;53.3333333333333mm;54mm;54.2mm;54.4mm;54.6mm;54.8mm;55mm;55.2mm;55.4mm;55.6mm;55.8mm;56mm;56.6666666666667mm;58mm;60mm;61mm;62mm;64mm;66mm;67mm;70mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=906
+					Name='Sweep'
+					$begin 'SimDataExtractor'
+						SimValue('S(1:1,1:1)', 2, 90, false, SimValueID=1081, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('S(1:1,1:2)', 2, 90, false, SimValueID=1082, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('S(1:2,1:1)', 2, 90, false, SimValueID=1083, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('S(1:2,1:2)', 2, 90, false, SimValueID=1084, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'PostprocessSweep'
+								Variable='Freq'
+								RegularSweep=1
+								Units='GHz'
+								Minimum=8000000000
+								Maximum=12000000000
+								Increment=200000000
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='cyllen'
+								Column='55mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='$cyllen'
+								Column='50mm;53.3333333333333mm;54mm;54.2mm;54.4mm;54.6mm;54.8mm;55mm;55.2mm;55.4mm;55.6mm;55.8mm;56mm;58mm;60mm;61mm;62mm;64mm;66mm;67mm;70mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=936
+				$begin 'Setup'
+					N='Setup1'
+					V=1092
+					Soln(N='AdaptivePass', V=1092)
+					Soln(N='LastAdaptive', V=1092)
+					Soln(N='Sweep', V=1092)
+				$end 'Setup'
+			$end 'Version ID Map'
+			$begin 'ID Map'
+				$begin 'Setup'
+					N='Setup1'
+					I=35
+					Soln(N='AdaptivePass', I=36)
+					Soln(N='LastAdaptive', I=37)
+					Soln(N='Sweep', I=906)
+				$end 'Setup'
+			$end 'ID Map'
+		$end 'SolutionManager'
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+			$begin 'Setup_0'
+				AnimationName='Animation1'
+				Description='Swept variable Phase'
+				SweptVariable='Phase'
+				SweptValues[36: '0deg', '10deg', '20deg', '30deg', '40deg', '50deg', '60deg', '70deg', '80deg', '90deg', '100deg', '110deg', '120deg', '130deg', '140deg', '150deg', '160deg', '170deg', '180deg', '190deg', '200deg', '210deg', '220deg', '230deg', '240deg', '250deg', '260deg', '270deg', '280deg', '290deg', '300deg', '310deg', '320deg', '330deg', '340deg', '350deg']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_0'
+		$end 'AnimationSetups'
+		CacheHeaderFile='HDR6F9F6984154867184014.tmp'
+	$end 'HFSSModel'
+	$begin 'DataInstances'
+		$begin 'Instance'
+			DesignEditor='HFSSDesign1'
+			$begin 'HfssDesignInstance'
+				DesignInstanceID=1
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 78, 78, 1007, 364), OrientationMatrix(0.0983301475644112, 0.528760671615601, -0.618957579135895, 0, 0.0703194737434387, 0.615654051303864, 0.537021577358246, 0, 0.81108283996582, -0.117493450641632, 0.0284612085670233, 0, 53.8851776123047, -22.6998729705811, -135.10791015625, 1, 0, 40.6255989074707, 110.527297973633, -43.5296783447266, -11.3731803894043, 4.7886962890625, 263.861755371094), Drawings[2: 'Cylinder1', 'Box6'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+						$end 'Reports'
+						NextUniqueID=45
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=82
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+				$begin 'Properties'
+				$end 'Properties'
+				$begin 'UserDefinedDocument'
+					$begin 'Data'
+					$end 'Data'
+				$end 'UserDefinedDocument'
+			$end 'HfssDesignInstance'
+		$end 'Instance'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+$end 'AnsoftProject'
+$begin 'ProjectPreview'
+	Thumbnail64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCABgAGADASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooAK82+KXxl+D/wO8P2fiz41/Fb4\
+bfB/wAK6jrFv4d0/wATfFLx14X+H/h++8QXdlqGpWuhWes+LNUtLa51iXTtI1W4jtUkad4NMuJVQxwy\
+Mv8AJR+2B/wU1+J/7cmladpHhS28Q/BX9nHUNP1G5s/Amh+NtUj8V/GTQPE9tf2tlffHXUPD8NhEfD1\
+14E1WKzvPh3BNq/hpbnU9VfWtV8Yq2hP4f/N/RPA/gvw1dyX/AIc8IeF/D99LbvaS3miaBpOlXctpJJ\
+FM9tJcWFpG727TQQOUJKloUYjKgj9eyjwmxuKw9LEZtmH9nVJ6uhCmqs1HW3NU9ooRk9HZRqJJ2bvdL\
+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\
+9mQqeC5ZKU53S6L/MKKKK/JzvCiiigD//Z'
+	$begin 'DesignInfo'
+		DesignName='HFSSDesign1'
+		Notes=''
+		Factory='HFSS'
+		IsSolved=true
+		'Nominal Setups'[1: 'Setup1']
+		'Optimetrics Setups'[2: 'ParametricSetup1', 'SensitivitySetup1']
+		'Optimetrics Experiment Types'[2: 0, 2]
+		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAMgDASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooAKKKKACiiigAooooAKKK82+KXx\
+l+D/wADvD9n4s+NfxW+G3wf8K6jrFv4d0/xN8UvHXhf4f8Ah++8QXdlqGpWuhWes+LNUtLa51iXTtI1\
+W4jtUkad4NMuJVQxwyMt06c6s406UHUqT0UYptt9kldv5A2lq3ZHpNFfHn/Dw/8AYA/6Pl/Y8/8AEmf\
+gr/8ANtXvXwt+Mvwf+OPh+88WfBT4rfDb4weFdO1i48O6h4m+Fvjrwv8AEDw/Y+ILSy0/UrrQrzWfCe\
+qXdtbaxFp2r6VcSWryLOkGp28rII5o2bargsZQh7SvhKtGntzTpzirvbVpISlF6KSb9T0miiiuYYUUU\
+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\
+KACiiigAooooAKKKKACiiigAooooA//2Q=='
+	$end 'DesignInfo'
+$end 'ProjectPreview'

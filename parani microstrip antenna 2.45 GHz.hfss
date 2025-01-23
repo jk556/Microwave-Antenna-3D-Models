@@ -1,0 +1,4059 @@
+$begin 'AnsoftProject'
+  Created='Mon Mar 07 12:19:29 2005'
+  Product='HFSS'
+  NextUniqueID=0
+  MoveBackwards=false
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=0
+    MoveBackwards=false
+    $begin 'DatasetDefinitions'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1110194265
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+      $begin 'Rogers RO4003 (tm)'
+        permittivity='3.38'
+        dielectric_loss_tangent='0.0027'
+        ModTime=1110194421
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'Rogers RO4003 (tm)'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1110194263, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'HFSS')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='DrivenTerminal'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      SnapMode=31
+      GroupByMaterial=true
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='mm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=329
+          MoveBackwards=false
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='GND'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=5
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='19.6mm'
+                    ZStart='0mm'
+                    Width='46.6mm'
+                    Height='89.1mm'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=6
+                    StartFaceID=-1
+                    StartEdgeID=7
+                    StartVertexID=11
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=15
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=6
+                  $end 'LocalOperationParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=16
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=5
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Substrate'
+                Flags=''
+                Color='(192 192 192)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='Rogers RO4003 (tm)'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=45
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='0mm'
+                    ZPosition='0mm'
+                    XSize='46.6mm'
+                    YSize='108.7mm'
+                    ZSize='0.2032mm'
+                  $end 'BoxParameters'
+                  ParentPartID=46
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=46
+                    StartFaceID=47
+                    StartEdgeID=53
+                    StartVertexID=65
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Feed'
+                Flags=''
+                Color='(255 128 64)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='Rogers RO4003 (tm)'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=73
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='23.07mm'
+                    YStart='19.54mm'
+                    ZStart='0.2032mm'
+                    Width='0.46mm'
+                    Height='89.16mm'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=74
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=74
+                    StartFaceID=-1
+                    StartEdgeID=75
+                    StartVertexID=79
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=83
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=74
+                  $end 'LocalOperationParameters'
+                  ParentPartID=74
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=84
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=73
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Unite'
+                  ID=268
+                  $begin 'UniteParameters'
+                    KeepOriginals=false
+                    BlankPart=74
+                    NumToolParts=2
+                    ToolParts(215, 242)
+                  $end 'UniteParameters'
+                  ParentPartID=74
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=3
+                      NumCoedges=13
+                      NumEdges=13
+                      NumVertices=13
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=325
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                  BlankOperation=83
+                  NumToolOperations=2
+                  ToolOperations(234, 261)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Source'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=172
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='23.07mm'
+                    YStart='108.7mm'
+                    ZStart='0mm'
+                    Width='0.2032mm'
+                    Height='0.46mm'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=173
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=173
+                    StartFaceID=-1
+                    StartEdgeID=174
+                    StartVertexID=178
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=182
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=173
+                  $end 'LocalOperationParameters'
+                  ParentPartID=173
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=183
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=172
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Air'
+                Flags=''
+                Color='(255 255 255)'
+                Transparency=1
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=186
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='-60mm'
+                    YPosition='-60mm'
+                    ZPosition='0mm'
+                    XSize='166.6mm'
+                    YSize='208.7mm'
+                    ZSize='100mm'
+                  $end 'BoxParameters'
+                  ParentPartID=187
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=187
+                    StartFaceID=188
+                    StartEdgeID=194
+                    StartVertexID=206
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Patch1'
+                Flags=''
+                Color='(255 128 64)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='RegularPolygon'
+                  ID=214
+                  ReferenceCoordSystemID=1
+                  $begin 'RegularPolygonParameters'
+                    XCenter='23.3mm'
+                    YCenter='8mm'
+                    ZCenter='0.2032mm'
+                    XStart='23.3mm'
+                    YStart='20mm'
+                    ZStart='0.2032mm'
+                    NumSides='3'
+                    WhichAxis='Z'
+                  $end 'RegularPolygonParameters'
+                  ParentPartID=215
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=215
+                    StartFaceID=-1
+                    StartEdgeID=216
+                    StartVertexID=219
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=222
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=215
+                  $end 'LocalOperationParameters'
+                  ParentPartID=215
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=223
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=214
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=234
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=215
+                    NumToolParts=1
+                    ToolParts(225)
+                  $end 'SubtractParameters'
+                  ParentPartID=215
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=6
+                      NumEdges=6
+                      NumVertices=6
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=305
+                    StartVertexID=308
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                  BlankOperation=222
+                  NumToolOperations=1
+                  ToolOperations(232)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Cut1'
+                Flags=''
+                Color='(255 128 64)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='RegularPolygon'
+                  ID=224
+                  ReferenceCoordSystemID=1
+                  $begin 'RegularPolygonParameters'
+                    XCenter='23.3mm'
+                    YCenter='8mm'
+                    ZCenter='0.2032mm'
+                    XStart='23.3mm'
+                    YStart='19.6mm'
+                    ZStart='0.2032mm'
+                    NumSides='3'
+                    WhichAxis='Z'
+                  $end 'RegularPolygonParameters'
+                  ParentPartID=225
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=225
+                    StartFaceID=-1
+                    StartEdgeID=226
+                    StartVertexID=229
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=232
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=225
+                  $end 'LocalOperationParameters'
+                  ParentPartID=225
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=233
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=224
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Patch2'
+                Flags=''
+                Color='(255 128 64)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='RegularPolygon'
+                  ID=241
+                  ReferenceCoordSystemID=1
+                  $begin 'RegularPolygonParameters'
+                    XCenter='23.3mm'
+                    YCenter='12mm'
+                    ZCenter='0.2032mm'
+                    XStart='23.3mm'
+                    YStart='20mm'
+                    ZStart='0.2032mm'
+                    NumSides='3'
+                    WhichAxis='Z'
+                  $end 'RegularPolygonParameters'
+                  ParentPartID=242
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=242
+                    StartFaceID=-1
+                    StartEdgeID=243
+                    StartVertexID=246
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=249
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=242
+                  $end 'LocalOperationParameters'
+                  ParentPartID=242
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=250
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=241
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=261
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=242
+                    NumToolParts=1
+                    ToolParts(252)
+                  $end 'SubtractParameters'
+                  ParentPartID=242
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=6
+                      NumEdges=6
+                      NumVertices=6
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=319
+                    StartVertexID=322
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                  BlankOperation=249
+                  NumToolOperations=1
+                  ToolOperations(259)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Cut2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='RegularPolygon'
+                  ID=251
+                  ReferenceCoordSystemID=1
+                  $begin 'RegularPolygonParameters'
+                    XCenter='23.3mm'
+                    YCenter='12mm'
+                    ZCenter='0.2032mm'
+                    XStart='23.3mm'
+                    YStart='8.2mm'
+                    ZStart='0.2032mm'
+                    NumSides='3'
+                    WhichAxis='Z'
+                  $end 'RegularPolygonParameters'
+                  ParentPartID=252
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=252
+                    StartFaceID=-1
+                    StartEdgeID=253
+                    StartVertexID=256
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=259
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=252
+                  $end 'LocalOperationParameters'
+                  ParentPartID=252
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=260
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=251
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 5)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('GeometryBodyOperation', 5)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 45)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 73)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 83)
+            DependencyObject('GeometryBodyOperation', 73)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=3
+            DependencyObject('GeometryBodyOperation', 268)
+            DependencyObject('GeometryBodyOperation', 83)
+            DependencyObject('GeometryBodyOperation', 234)
+            DependencyObject('GeometryBodyOperation', 261)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 172)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 182)
+            DependencyObject('GeometryBodyOperation', 172)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 186)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 214)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 222)
+            DependencyObject('GeometryBodyOperation', 214)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 234)
+            DependencyObject('GeometryBodyOperation', 222)
+            DependencyObject('GeometryBodyOperation', 232)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 224)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 232)
+            DependencyObject('GeometryBodyOperation', 224)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 241)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 249)
+            DependencyObject('GeometryBodyOperation', 241)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 261)
+            DependencyObject('GeometryBodyOperation', 249)
+            DependencyObject('GeometryBodyOperation', 259)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 251)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 259)
+            DependencyObject('GeometryBodyOperation', 251)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=18
+        MoveBackwards=false
+        $begin 'FiniteCond_Patch'
+          ID=11
+          BoundType='Finite Conductivity'
+          UseMaterial=false
+          Material='vacuum'
+          Conductivity='58000000'
+          Permeability='1'
+          InfGroundPlane=false
+          Objects(74)
+        $end 'FiniteCond_Patch'
+        $begin 'FiniteCond_GND'
+          ID=12
+          BoundType='Finite Conductivity'
+          UseMaterial=false
+          Material='vacuum'
+          Conductivity='58000000'
+          Permeability='1'
+          InfGroundPlane=false
+          Objects(6)
+        $end 'FiniteCond_GND'
+        $begin 'Rad_AIR'
+          ID=13
+          BoundType='Radiation'
+          Faces(191, 190, 188, 193, 192)
+        $end 'Rad_AIR'
+        $begin 'LumpPort1'
+          ID=17
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=177
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=175
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(173)
+        $end 'LumpPort1'
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=7
+        MoveBackwards=false
+        $begin 'Setup1'
+          ID=6
+          SetupType='HfssDriven'
+          Frequency='2.45GHz'
+          PortsOnly=false
+          MaxDeltaS=0.02
+          UseMatrixConv=false
+          MaximumPasses=3
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.3333
+          PortAccuracy=2
+          SetPortMinMaxTri=false
+          PortMinTri=100
+          PortMaxTri=500
+          $begin 'Sweeps'
+            NextUniqueID=1
+            MoveBackwards=false
+            $begin 'Sweep1'
+              ID=0
+              Type='Discrete'
+              SetupType='LinearCount'
+              StartFreq='1GHz'
+              StopFreq='10GHz'
+              Count=301
+              SaveFields=true
+              ExtrapToDC=false
+            $end 'Sweep1'
+          $end 'Sweeps'
+        $end 'Setup1'
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='NoIncidentWave'
+      Entry(ID=17, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=17, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+      $begin 'PortFieldDisplay'
+        ScaleFactor=5
+        Solution='Setup1 : LastAdaptive'
+        Frequency='2.45GHz'
+        ColorR=255
+        ColorG=1
+        ColorB=1
+      $end 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'PlotDefaults'
+        Default_SolutionId=368
+        Default_PlotFolder='Automatic'
+        Default_Phase='0deg'
+        Default_Freq='2.45GHz'
+      $end 'PlotDefaults'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=1
+        MoveBackwards=false
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+      $begin 'FarFieldSetups'
+        NextUniqueID=3
+        MoveBackwards=false
+        $begin 'Infinite Sphere1'
+          Type='Infinite Sphere'
+          ID=2
+          UseCustomRadiationSurface=false
+          ThetaStart='0deg'
+          ThetaStop='180deg'
+          ThetaStep='3deg'
+          PhiStart='0deg'
+          PhiStop='360deg'
+          PhiStep='90deg'
+          UseLocalCS=false
+        $end 'Infinite Sphere1'
+      $end 'FarFieldSetups'
+      $begin 'ArraySetup'
+        UseOption='NoArray'
+        $begin 'RegularArray'
+          NumUCells='10'
+          NumVCells='10'
+          CellUDist='10mm'
+          CellVDist='10mm'
+          UDirnX='1'
+          UDirnY='0'
+          UDirnZ='0'
+          VDirnX='0'
+          VDirnY='1'
+          VDirnZ='0'
+          FirstCellPosX='0mm'
+          FirstCellPosY='0mm'
+          FirstCellPosZ='0mm'
+          UseScanAngle=true
+          ScanAnglePhi='45deg'
+          ScanAngleTheta='45deg'
+          UDirnPhaseShift='0deg'
+          VDirnPhaseShift='0deg'
+        $end 'RegularArray'
+        $begin 'CustomArray'
+          NumCells=0
+          $begin 'Cell'
+          $end 'Cell'
+        $end 'CustomArray'
+      $end 'ArraySetup'
+      $begin 'NearFieldSetups'
+        NextUniqueID=3
+        MoveBackwards=false
+      $end 'NearFieldSetups'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=364
+        Name='Setup1'
+        $begin 'Solution'
+          ID=366
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=368
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            SimValue('rETheta', 2, 67, false, 0, 0, 2, 0, false, false, 2, 1, 0, 1)
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=1.5707963267949
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=3.14159265358979
+                Increment=0.0523598775598299
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            $begin 'SolutionPointSets'
+              $begin 'SolutionPointSet'
+                name='LastAdaptive:SolutionPointSet 2'
+                CurrentIndex=6
+                SolutionVersion=521
+                SimValueContext(0, 0, 2, 0, false, false, 2, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Phi'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Phi'
+                      RegularSweep=1
+                      Units='deg'
+                      Minimum=0
+                      Maximum=6.28318530717959
+                      Increment=1.5707963267949
+                    $end 'SweepBase'
+                  $end 'Phi'
+                  $begin 'Theta'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Theta'
+                      RegularSweep=1
+                      Units='deg'
+                      Minimum=0
+                      Maximum=3.14159265358979
+                      Increment=0.0523598775598299
+                    $end 'SweepBase'
+                  $end 'Theta'
+                  $begin 'Freq'
+                    All=false
+                    Indices(0)
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      Column='2.45GHz'
+                      Units='GHz'
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='LastAdaptive:SolutionPointSet 2:Trace2D 1'
+                    X(Desc='Phi', CatID=1, FuncID=0, IsInteger=false, Units='deg', X='Phi')
+                    Y(Desc='rETheta', CatID=58, FuncID=11, IsInteger=false, Units='', Y='dB(rETheta)')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+            $end 'SolutionPointSets'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=370
+          Name='Sweep1'
+          $begin 'SimDataExtractor'
+            SimValue('St(LumpPort1,LumpPort1)', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='1GHz;1.03GHz;1.06GHz;1.09GHz;1.12GHz;1.15GHz;1.18GHz;1.21GHz;1.24GHz;1.27GHz;1.3GHz;1.33GHz;1.36GHz;1.39GHz;1.42GHz;1.45GHz;1.48GHz;1.51GHz;1.54GHz;1.57GHz;1.6GHz;1.63GHz;1.66GHz;1.69GHz;1.72GHz;1.75GHz;1.78GHz;1.81GHz;1.84GHz;1.87GHz;1.9GHz;1.93GHz;1.96GHz;1.99GHz;2.02GHz;2.05GHz;2.08GHz;2.11GHz;2.14GHz;2.17GHz;2.2GHz;2.23GHz;2.26GHz;2.29GHz;2.32GHz;2.35GHz;2.38GHz;2.41GHz;2.44GHz;2.47GHz;2.5GHz;2.53GHz;2.56GHz;2.59GHz;2.62GHz;2.65GHz;2.68GHz;2.71GHz;2.74GHz;2.77GHz;2.8GHz;2.83GHz;2.86GHz;2.89GHz;2.92GHz;2.95GHz;2.98GHz;3.01GHz;3.04GHz;3.07GHz;3.1GHz;3.13GHz;3.16GHz;3.19GHz;3.22GHz;3.25GHz;3.28GHz;3.31GHz;3.34GHz;3.37GHz;3.4GHz;3.43GHz;3.46GHz;3.49GHz;3.52GHz;3.55GHz;3.58GHz;3.61GHz;3.64GHz;3.67GHz;3.7GHz;3.73GHz;3.76GHz;3.79GHz;3.82GHz;3.85GHz;3.88GHz;3.91GHz;3.94GHz;3.97GHz;4GHz;4.03GHz;4.06GHz;4.09GHz;4.12GHz;4.15GHz;4.18GHz;4.21GHz;4.24GHz;4.27GHz;4.3GHz;4.33GHz;4.36GHz;4.39GHz;4.42GHz;4.45GHz;4.48GHz;4.51GHz;4.54GHz;4.57GHz;4.6GHz;4.63GHz;4.66GHz;4.69GHz;4.72GHz;4.75GHz;4.78GHz;4.81GHz;4.84GHz;4.87GHz;4.9GHz;4.93GHz;4.96GHz;4.99GHz;5.02GHz;5.05GHz;5.08GHz;5.11GHz;5.14GHz;5.17GHz;5.2GHz;5.23GHz;5.26GHz;5.29GHz;5.32GHz;5.35GHz;5.38GHz;5.41GHz;5.44GHz;5.47GHz;5.5GHz;5.53GHz;5.56GHz;5.59GHz;5.62GHz;5.65GHz;5.68GHz;5.71GHz;5.74GHz;5.77GHz;5.8GHz;5.83GHz;5.86GHz;5.89GHz;5.92GHz;5.95GHz;5.98GHz;6.01GHz;6.04GHz;6.07GHz;6.1GHz;6.13GHz;6.16GHz;6.19GHz;6.22GHz;6.25GHz;6.28GHz;6.31GHz;6.34GHz;6.37GHz;6.4GHz;6.43GHz;6.46GHz;6.49GHz;6.52GHz;6.55GHz;6.58GHz;6.61GHz;6.64GHz;6.67GHz;6.7GHz;6.73GHz;6.76GHz;6.79GHz;6.82GHz;6.85GHz;6.88GHz;6.91GHz;6.94GHz;6.97GHz;7GHz;7.03GHz;7.06GHz;7.09GHz;7.12GHz;7.15GHz;7.18GHz;7.21GHz;7.24GHz;7.27GHz;7.3GHz;7.33GHz;7.36GHz;7.39GHz;7.42GHz;7.45GHz;7.48GHz;7.51GHz;7.54GHz;7.57GHz;7.6GHz;7.63GHz;7.66GHz;7.69GHz;7.72GHz;7.75GHz;7.78GHz;7.81GHz;7.84GHz;7.87GHz;7.9GHz;7.93GHz;7.96GHz;7.99GHz;8.02GHz;8.05GHz;8.08GHz;8.11GHz;8.14GHz;8.17GHz;8.2GHz;8.23GHz;8.26GHz;8.29GHz;8.32GHz;8.35GHz;8.38GHz;8.41GHz;8.44GHz;8.47GHz;8.5GHz;8.53GHz;8.56GHz;8.59GHz;8.62GHz;8.65GHz;8.68GHz;8.71GHz;8.74GHz;8.77GHz;8.8GHz;8.83GHz;8.86GHz;8.89GHz;8.92GHz;8.95GHz;8.98GHz;9.01GHz;9.04GHz;9.07GHz;9.1GHz;9.13GHz;9.16GHz;9.19GHz;9.22GHz;9.25GHz;9.28GHz;9.31GHz;9.34GHz;9.37GHz;9.4GHz;9.43GHz;9.46GHz;9.49GHz;9.52GHz;9.55GHz;9.58GHz;9.61GHz;9.64GHz;9.67GHz;9.7GHz;9.73GHz;9.76GHz;9.79GHz;9.82GHz;9.85GHz;9.88GHz;9.91GHz;9.94GHz;9.97GHz;10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            $begin 'SolutionPointSets'
+              $begin 'SolutionPointSet'
+                name='Sweep1:SolutionPointSet 1'
+                CurrentIndex=11
+                SolutionVersion=521
+                SimValueContext(3, 0, 2, 0, true, false, -1, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Freq'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      Column='1GHz;1.03GHz;1.06GHz;1.09GHz;1.12GHz;1.15GHz;1.18GHz;1.21GHz;1.24GHz;1.27GHz;1.3GHz;1.33GHz;1.36GHz;1.39GHz;1.42GHz;1.45GHz;1.48GHz;1.51GHz;1.54GHz;1.57GHz;1.6GHz;1.63GHz;1.66GHz;1.69GHz;1.72GHz;1.75GHz;1.78GHz;1.81GHz;1.84GHz;1.87GHz;1.9GHz;1.93GHz;1.96GHz;1.99GHz;2.02GHz;2.05GHz;2.08GHz;2.11GHz;2.14GHz;2.17GHz;2.2GHz;2.23GHz;2.26GHz;2.29GHz;2.32GHz;2.35GHz;2.38GHz;2.41GHz;2.44GHz;2.47GHz;2.5GHz;2.53GHz;2.56GHz;2.59GHz;2.62GHz;2.65GHz;2.68GHz;2.71GHz;2.74GHz;2.77GHz;2.8GHz;2.83GHz;2.86GHz;2.89GHz;2.92GHz;2.95GHz;2.98GHz;3.01GHz;3.04GHz;3.07GHz;3.1GHz;3.13GHz;3.16GHz;3.19GHz;3.22GHz;3.25GHz;3.28GHz;3.31GHz;3.34GHz;3.37GHz;3.4GHz;3.43GHz;3.46GHz;3.49GHz;3.52GHz;3.55GHz;3.58GHz;3.61GHz;3.64GHz;3.67GHz;3.7GHz;3.73GHz;3.76GHz;3.79GHz;3.82GHz;3.85GHz;3.88GHz;3.91GHz;3.94GHz;3.97GHz;4GHz;4.03GHz;4.06GHz;4.09GHz;4.12GHz;4.15GHz;4.18GHz;4.21GHz;4.24GHz;4.27GHz;4.3GHz;4.33GHz;4.36GHz;4.39GHz;4.42GHz;4.45GHz;4.48GHz;4.51GHz;4.54GHz;4.57GHz;4.6GHz;4.63GHz;4.66GHz;4.69GHz;4.72GHz;4.75GHz;4.78GHz;4.81GHz;4.84GHz;4.87GHz;4.9GHz;4.93GHz;4.96GHz;4.99GHz;5.02GHz;5.05GHz;5.08GHz;5.11GHz;5.14GHz;5.17GHz;5.2GHz;5.23GHz;5.26GHz;5.29GHz;5.32GHz;5.35GHz;5.38GHz;5.41GHz;5.44GHz;5.47GHz;5.5GHz;5.53GHz;5.56GHz;5.59GHz;5.62GHz;5.65GHz;5.68GHz;5.71GHz;5.74GHz;5.77GHz;5.8GHz;5.83GHz;5.86GHz;5.89GHz;5.92GHz;5.95GHz;5.98GHz;6.01GHz;6.04GHz;6.07GHz;6.1GHz;6.13GHz;6.16GHz;6.19GHz;6.22GHz;6.25GHz;6.28GHz;6.31GHz;6.34GHz;6.37GHz;6.4GHz;6.43GHz;6.46GHz;6.49GHz;6.52GHz;6.55GHz;6.58GHz;6.61GHz;6.64GHz;6.67GHz;6.7GHz;6.73GHz;6.76GHz;6.79GHz;6.82GHz;6.85GHz;6.88GHz;6.91GHz;6.94GHz;6.97GHz;7GHz;7.03GHz;7.06GHz;7.09GHz;7.12GHz;7.15GHz;7.18GHz;7.21GHz;7.24GHz;7.27GHz;7.3GHz;7.33GHz;7.36GHz;7.39GHz;7.42GHz;7.45GHz;7.48GHz;7.51GHz;7.54GHz;7.57GHz;7.6GHz;7.63GHz;7.66GHz;7.69GHz;7.72GHz;7.75GHz;7.78GHz;7.81GHz;7.84GHz;7.87GHz;7.9GHz;7.93GHz;7.96GHz;7.99GHz;8.02GHz;8.05GHz;8.08GHz;8.11GHz;8.14GHz;8.17GHz;8.2GHz;8.23GHz;8.26GHz;8.29GHz;8.32GHz;8.35GHz;8.38GHz;8.41GHz;8.44GHz;8.47GHz;8.5GHz;8.53GHz;8.56GHz;8.59GHz;8.62GHz;8.65GHz;8.68GHz;8.71GHz;8.74GHz;8.77GHz;8.8GHz;8.83GHz;8.86GHz;8.89GHz;8.92GHz;8.95GHz;8.98GHz;9.01GHz;9.04GHz;9.07GHz;9.1GHz;9.13GHz;9.16GHz;9.19GHz;9.22GHz;9.25GHz;9.28GHz;9.31GHz;9.34GHz;9.37GHz;9.4GHz;9.43GHz;9.46GHz;9.49GHz;9.52GHz;9.55GHz;9.58GHz;9.61GHz;9.64GHz;9.67GHz;9.7GHz;9.73GHz;9.76GHz;9.79GHz;9.82GHz;9.85GHz;9.88GHz;9.91GHz;9.94GHz;9.97GHz;10GHz'
+                      Units='GHz'
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 1:Trace2D 1'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(LumpPort1,LumpPort1)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(LumpPort1,LumpPort1))')
+                  $end 'Trace2D'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 1:Trace2D 2'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(LumpPort1,LumpPort1)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(LumpPort1,LumpPort1))')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+              $begin 'SolutionPointSet'
+                name='Sweep1:SolutionPointSet 2'
+                CurrentIndex=5
+                SolutionVersion=521
+                SimValueContext(3, 0, 2, 0, true, false, -1, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Freq'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      Column='1GHz;1.03GHz;1.06GHz;1.09GHz;1.12GHz;1.15GHz;1.18GHz;1.21GHz;1.24GHz;1.27GHz;1.3GHz;1.33GHz;1.36GHz;1.39GHz;1.42GHz;1.45GHz;1.48GHz;1.51GHz;1.54GHz;1.57GHz;1.6GHz;1.63GHz;1.66GHz;1.69GHz;1.72GHz;1.75GHz;1.78GHz;1.81GHz;1.84GHz;1.87GHz;1.9GHz;1.93GHz;1.96GHz;1.99GHz;2.02GHz;2.05GHz;2.08GHz;2.11GHz;2.14GHz;2.17GHz;2.2GHz;2.23GHz;2.26GHz;2.29GHz;2.32GHz;2.35GHz;2.38GHz;2.41GHz;2.44GHz;2.47GHz;2.5GHz;2.53GHz;2.56GHz;2.59GHz;2.62GHz;2.65GHz;2.68GHz;2.71GHz;2.74GHz;2.77GHz;2.8GHz;2.83GHz;2.86GHz;2.89GHz;2.92GHz;2.95GHz;2.98GHz;3.01GHz;3.04GHz;3.07GHz;3.1GHz;3.13GHz;3.16GHz;3.19GHz;3.22GHz;3.25GHz;3.28GHz;3.31GHz;3.34GHz;3.37GHz;3.4GHz;3.43GHz;3.46GHz;3.49GHz;3.52GHz;3.55GHz;3.58GHz;3.61GHz;3.64GHz;3.67GHz;3.7GHz;3.73GHz;3.76GHz;3.79GHz;3.82GHz;3.85GHz;3.88GHz;3.91GHz;3.94GHz;3.97GHz;4GHz;4.03GHz;4.06GHz;4.09GHz;4.12GHz;4.15GHz;4.18GHz;4.21GHz;4.24GHz;4.27GHz;4.3GHz;4.33GHz;4.36GHz;4.39GHz;4.42GHz;4.45GHz;4.48GHz;4.51GHz;4.54GHz;4.57GHz;4.6GHz;4.63GHz;4.66GHz;4.69GHz;4.72GHz;4.75GHz;4.78GHz;4.81GHz;4.84GHz;4.87GHz;4.9GHz;4.93GHz;4.96GHz;4.99GHz;5.02GHz;5.05GHz;5.08GHz;5.11GHz;5.14GHz;5.17GHz;5.2GHz;5.23GHz;5.26GHz;5.29GHz;5.32GHz;5.35GHz;5.38GHz;5.41GHz;5.44GHz;5.47GHz;5.5GHz;5.53GHz;5.56GHz;5.59GHz;5.62GHz;5.65GHz;5.68GHz;5.71GHz;5.74GHz;5.77GHz;5.8GHz;5.83GHz;5.86GHz;5.89GHz;5.92GHz;5.95GHz;5.98GHz;6.01GHz;6.04GHz;6.07GHz;6.1GHz;6.13GHz;6.16GHz;6.19GHz;6.22GHz;6.25GHz;6.28GHz;6.31GHz;6.34GHz;6.37GHz;6.4GHz;6.43GHz;6.46GHz;6.49GHz;6.52GHz;6.55GHz;6.58GHz;6.61GHz;6.64GHz;6.67GHz;6.7GHz;6.73GHz;6.76GHz;6.79GHz;6.82GHz;6.85GHz;6.88GHz;6.91GHz;6.94GHz;6.97GHz;7GHz;7.03GHz;7.06GHz;7.09GHz;7.12GHz;7.15GHz;7.18GHz;7.21GHz;7.24GHz;7.27GHz;7.3GHz;7.33GHz;7.36GHz;7.39GHz;7.42GHz;7.45GHz;7.48GHz;7.51GHz;7.54GHz;7.57GHz;7.6GHz;7.63GHz;7.66GHz;7.69GHz;7.72GHz;7.75GHz;7.78GHz;7.81GHz;7.84GHz;7.87GHz;7.9GHz;7.93GHz;7.96GHz;7.99GHz;8.02GHz;8.05GHz;8.08GHz;8.11GHz;8.14GHz;8.17GHz;8.2GHz;8.23GHz;8.26GHz;8.29GHz;8.32GHz;8.35GHz;8.38GHz;8.41GHz;8.44GHz;8.47GHz;8.5GHz;8.53GHz;8.56GHz;8.59GHz;8.62GHz;8.65GHz;8.68GHz;8.71GHz;8.74GHz;8.77GHz;8.8GHz;8.83GHz;8.86GHz;8.89GHz;8.92GHz;8.95GHz;8.98GHz;9.01GHz;9.04GHz;9.07GHz;9.1GHz;9.13GHz;9.16GHz;9.19GHz;9.22GHz;9.25GHz;9.28GHz;9.31GHz;9.34GHz;9.37GHz;9.4GHz;9.43GHz;9.46GHz;9.49GHz;9.52GHz;9.55GHz;9.58GHz;9.61GHz;9.64GHz;9.67GHz;9.7GHz;9.73GHz;9.76GHz;9.79GHz;9.82GHz;9.85GHz;9.88GHz;9.91GHz;9.94GHz;9.97GHz;10GHz'
+                      Units='GHz'
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 2:Trace2D 1'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(LumpPort1,LumpPort1)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(LumpPort1,LumpPort1))')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+              $begin 'SolutionPointSet'
+                name='Sweep1:SolutionPointSet 3'
+                CurrentIndex=2
+                SolutionVersion=521
+                SimValueContext(3, 0, 2, 0, true, false, -1, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Freq'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      Column='1GHz;1.03GHz;1.06GHz;1.09GHz;1.12GHz;1.15GHz;1.18GHz;1.21GHz;1.24GHz;1.27GHz;1.3GHz;1.33GHz;1.36GHz;1.39GHz;1.42GHz;1.45GHz;1.48GHz;1.51GHz;1.54GHz;1.57GHz;1.6GHz;1.63GHz;1.66GHz;1.69GHz;1.72GHz;1.75GHz;1.78GHz;1.81GHz;1.84GHz;1.87GHz;1.9GHz;1.93GHz;1.96GHz;1.99GHz;2.02GHz;2.05GHz;2.08GHz;2.11GHz;2.14GHz;2.17GHz;2.2GHz;2.23GHz;2.26GHz;2.29GHz;2.32GHz;2.35GHz;2.38GHz;2.41GHz;2.44GHz;2.47GHz;2.5GHz;2.53GHz;2.56GHz;2.59GHz;2.62GHz;2.65GHz;2.68GHz;2.71GHz;2.74GHz;2.77GHz;2.8GHz;2.83GHz;2.86GHz;2.89GHz;2.92GHz;2.95GHz;2.98GHz;3.01GHz;3.04GHz;3.07GHz;3.1GHz;3.13GHz;3.16GHz;3.19GHz;3.22GHz;3.25GHz;3.28GHz;3.31GHz;3.34GHz;3.37GHz;3.4GHz;3.43GHz;3.46GHz;3.49GHz;3.52GHz;3.55GHz;3.58GHz;3.61GHz;3.64GHz;3.67GHz;3.7GHz;3.73GHz;3.76GHz;3.79GHz;3.82GHz;3.85GHz;3.88GHz;3.91GHz;3.94GHz;3.97GHz;4GHz;4.03GHz;4.06GHz;4.09GHz;4.12GHz;4.15GHz;4.18GHz;4.21GHz;4.24GHz;4.27GHz;4.3GHz;4.33GHz;4.36GHz;4.39GHz;4.42GHz;4.45GHz;4.48GHz;4.51GHz;4.54GHz;4.57GHz;4.6GHz;4.63GHz;4.66GHz;4.69GHz;4.72GHz;4.75GHz;4.78GHz;4.81GHz;4.84GHz;4.87GHz;4.9GHz;4.93GHz;4.96GHz;4.99GHz;5.02GHz;5.05GHz;5.08GHz;5.11GHz;5.14GHz;5.17GHz;5.2GHz;5.23GHz;5.26GHz;5.29GHz;5.32GHz;5.35GHz;5.38GHz;5.41GHz;5.44GHz;5.47GHz;5.5GHz;5.53GHz;5.56GHz;5.59GHz;5.62GHz;5.65GHz;5.68GHz;5.71GHz;5.74GHz;5.77GHz;5.8GHz;5.83GHz;5.86GHz;5.89GHz;5.92GHz;5.95GHz;5.98GHz;6.01GHz;6.04GHz;6.07GHz;6.1GHz;6.13GHz;6.16GHz;6.19GHz;6.22GHz;6.25GHz;6.28GHz;6.31GHz;6.34GHz;6.37GHz;6.4GHz;6.43GHz;6.46GHz;6.49GHz;6.52GHz;6.55GHz;6.58GHz;6.61GHz;6.64GHz;6.67GHz;6.7GHz;6.73GHz;6.76GHz;6.79GHz;6.82GHz;6.85GHz;6.88GHz;6.91GHz;6.94GHz;6.97GHz;7GHz;7.03GHz;7.06GHz;7.09GHz;7.12GHz;7.15GHz;7.18GHz;7.21GHz;7.24GHz;7.27GHz;7.3GHz;7.33GHz;7.36GHz;7.39GHz;7.42GHz;7.45GHz;7.48GHz;7.51GHz;7.54GHz;7.57GHz;7.6GHz;7.63GHz;7.66GHz;7.69GHz;7.72GHz;7.75GHz;7.78GHz;7.81GHz;7.84GHz;7.87GHz;7.9GHz;7.93GHz;7.96GHz;7.99GHz;8.02GHz;8.05GHz;8.08GHz;8.11GHz;8.14GHz;8.17GHz;8.2GHz;8.23GHz;8.26GHz;8.29GHz;8.32GHz;8.35GHz;8.38GHz;8.41GHz;8.44GHz;8.47GHz;8.5GHz;8.53GHz;8.56GHz;8.59GHz;8.62GHz;8.65GHz;8.68GHz;8.71GHz;8.74GHz;8.77GHz;8.8GHz;8.83GHz;8.86GHz;8.89GHz;8.92GHz;8.95GHz;8.98GHz;9.01GHz;9.04GHz;9.07GHz;9.1GHz;9.13GHz;9.16GHz;9.19GHz;9.22GHz;9.25GHz;9.28GHz;9.31GHz;9.34GHz;9.37GHz;9.4GHz;9.43GHz;9.46GHz;9.49GHz;9.52GHz;9.55GHz;9.58GHz;9.61GHz;9.64GHz;9.67GHz;9.7GHz;9.73GHz;9.76GHz;9.79GHz;9.82GHz;9.85GHz;9.88GHz;9.91GHz;9.94GHz;9.97GHz;10GHz'
+                      Units='GHz'
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 3:Trace2D 1'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(LumpPort1,LumpPort1)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(LumpPort1,LumpPort1))')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+            $end 'SolutionPointSets'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=529
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=532
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'Version ID Map'
+        V=511
+        $begin 'Setup'
+          N='Setup1'
+          V=521
+          Soln(N='Adaptive_1', V=521)
+          Soln(N='LastAdaptive', V=521)
+          Soln(N='Sweep1', V=521)
+          Soln(N='Adaptive_2', V=0)
+          Soln(N='Adaptive_3', V=0)
+        $end 'Setup'
+      $end 'Version ID Map'
+      $begin 'ID Map'
+        $begin 'Setup'
+          N='Setup1'
+          I=364
+          Soln(N='Adaptive_1', I=366)
+          Soln(N='LastAdaptive', I=368)
+          Soln(N='Sweep1', I=370)
+          Soln(N='Adaptive_2', I=529)
+          Soln(N='Adaptive_3', I=532)
+        $end 'Setup'
+      $end 'ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(5, -1, -1, -4, -30, 132, 174, 949, 639), OrientationMatrix(0.00492641562595963, -0.00348350242711604, -0.00348350126296282, 0, -0.00492641562595963, -0.00348350242711604, -0.00348350126296282, 0, 0, 0.00492641469463706, -0.00492641655728221, 0, 0.103701055049896, -0.0106617957353592, -94.3180084228516, 1, 0, -1.2529274225235, 1.2529274225235, -1, 1, 4.80000019073486, 184.79997253418), Drawings[5: 'GND', 'Substrate', 'Feed', 'Source', 'Air'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+            'XY Plot 1'(Report2D())
+            'XY Plot 2'(Report2D())
+            'Radiation Pattern 1'(Report2D())
+            'XY Plot 3'(Report2D())
+            'XY Plot 4'(Report2D(View(WindowPos(3, -1, -1, -4, -30, 22, 29, 839, 494))))
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+          $begin 'Report2D'
+            name='XY Plot 1'
+            ReportType=1
+            DisplayType=1
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 1:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='XYPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='XY Plot 1'
+              DateLabel='<12 Mar 2005>'
+              TimeLabel='<12:50:04>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=1
+              UserSelectedTrace=-1
+              Rho=0
+              RhoMin=0
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Freq'
+                  AxisLabel='DEFAULT'
+                  AxisMax=10000000000
+                  AxisMin=0
+                  AxisMajorDivision=5
+                  AxisMinorDivision=4
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='Giga'
+                    BaseType='Frequency'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(St(LumpPort1,LumpPort1))'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=-40
+                  AxisMajorDivision=4
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=1
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+          $begin 'Report2D'
+            name='XY Plot 2'
+            ReportType=1
+            DisplayType=1
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 1:Trace2D 2'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='XYPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='XY Plot 2'
+              DateLabel='<12 Mar 2005>'
+              TimeLabel='<14:05:49>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=1
+              UserSelectedTrace=-1
+              Rho=0
+              RhoMin=0
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Freq'
+                  AxisLabel='DEFAULT'
+                  AxisMax=10000000000
+                  AxisMin=0
+                  AxisMajorDivision=5
+                  AxisMinorDivision=4
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='Giga'
+                    BaseType='Frequency'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(St(LumpPort1,LumpPort1))'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=-25
+                  AxisMajorDivision=5
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=1
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+          $begin 'Report2D'
+            name='Radiation Pattern 1'
+            ReportType=3
+            DisplayType=3
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='LastAdaptive:SolutionPointSet 2:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='MagAngPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='Radiation Pattern 1'
+              DateLabel='<12 Mar 2005>'
+              TimeLabel='<14:07:18>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=2
+              UserSelectedTrace=-1
+              Rho=-14
+              RhoMin=-51.7224
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Phi'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=0
+                  AxisMajorDivision=3
+                  AxisMinorDivision=10
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='Angle'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(rETheta)'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=0
+                  AxisMajorDivision=0
+                  AxisMinorDivision=0
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=3
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=2129936
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+                $begin 'TraceInfo1'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo1'
+                $begin 'TraceInfo2'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo2'
+                $begin 'TraceInfo3'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo3'
+                $begin 'TraceInfo4'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo4'
+                $begin 'TraceInfo5'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo5'
+                $begin 'TraceInfo6'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo6'
+                $begin 'TraceInfo7'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo7'
+                $begin 'TraceInfo8'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=2129936
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo8'
+                $begin 'TraceInfo9'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo9'
+                $begin 'TraceInfo10'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo10'
+                $begin 'TraceInfo11'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo11'
+                $begin 'TraceInfo12'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo12'
+                $begin 'TraceInfo13'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo13'
+                $begin 'TraceInfo14'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo14'
+                $begin 'TraceInfo15'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo15'
+                $begin 'TraceInfo16'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo16'
+                $begin 'TraceInfo17'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo17'
+                $begin 'TraceInfo18'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo18'
+                $begin 'TraceInfo19'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo19'
+                $begin 'TraceInfo20'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo20'
+                $begin 'TraceInfo21'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo21'
+                $begin 'TraceInfo22'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo22'
+                $begin 'TraceInfo23'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=2129936
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo23'
+                $begin 'TraceInfo24'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo24'
+                $begin 'TraceInfo25'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo25'
+                $begin 'TraceInfo26'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo26'
+                $begin 'TraceInfo27'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo27'
+                $begin 'TraceInfo28'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo28'
+                $begin 'TraceInfo29'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo29'
+                $begin 'TraceInfo30'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo30'
+                $begin 'TraceInfo31'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo31'
+                $begin 'TraceInfo32'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo32'
+                $begin 'TraceInfo33'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo33'
+                $begin 'TraceInfo34'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo34'
+                $begin 'TraceInfo35'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo35'
+                $begin 'TraceInfo36'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo36'
+                $begin 'TraceInfo37'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo37'
+                $begin 'TraceInfo38'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=2129936
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo38'
+                $begin 'TraceInfo39'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo39'
+                $begin 'TraceInfo40'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo40'
+                $begin 'TraceInfo41'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo41'
+                $begin 'TraceInfo42'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo42'
+                $begin 'TraceInfo43'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo43'
+                $begin 'TraceInfo44'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo44'
+                $begin 'TraceInfo45'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo45'
+                $begin 'TraceInfo46'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo46'
+                $begin 'TraceInfo47'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo47'
+                $begin 'TraceInfo48'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo48'
+                $begin 'TraceInfo49'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo49'
+                $begin 'TraceInfo50'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo50'
+                $begin 'TraceInfo51'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo51'
+                $begin 'TraceInfo52'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo52'
+                $begin 'TraceInfo53'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=2129936
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo53'
+                $begin 'TraceInfo54'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo54'
+                $begin 'TraceInfo55'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=8421376
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo55'
+                $begin 'TraceInfo56'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=65280
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo56'
+                $begin 'TraceInfo57'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=255
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo57'
+                $begin 'TraceInfo58'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=65280
+                    ColorOdd=16711680
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo58'
+                $begin 'TraceInfo59'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16776960
+                    ColorOdd=8388736
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo59'
+                $begin 'TraceInfo60'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=16776960
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo60'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+                $begin 'RhoAxisAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'RhoAxisAttr'
+                $begin 'CircAxisAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'CircAxisAttr'
+                $begin 'CircularGridsAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'CircularGridsAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+          $begin 'Report2D'
+            name='XY Plot 3'
+            ReportType=1
+            DisplayType=1
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 2:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='XYPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='XY Plot 3'
+              DateLabel='<13 Mar 2005>'
+              TimeLabel='<18:44:04>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=1
+              UserSelectedTrace=-1
+              Rho=0
+              RhoMin=0
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Freq'
+                  AxisLabel='DEFAULT'
+                  AxisMax=10000000000
+                  AxisMin=0
+                  AxisMajorDivision=5
+                  AxisMinorDivision=4
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='Giga'
+                    BaseType='Frequency'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(St(LumpPort1,LumpPort1))'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=-30
+                  AxisMajorDivision=3
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=1
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+          $begin 'Report2D'
+            name='XY Plot 4'
+            ReportType=1
+            DisplayType=1
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 3:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='XYPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='XY Plot 4'
+              DateLabel='<14 Mar 2005>'
+              TimeLabel='<14:54:57>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=1
+              UserSelectedTrace=-1
+              Rho=0
+              RhoMin=0
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Freq'
+                  AxisLabel='DEFAULT'
+                  AxisMax=10000000000
+                  AxisMin=0
+                  AxisMajorDivision=5
+                  AxisMinorDivision=4
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='Giga'
+                    BaseType='Frequency'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(St(LumpPort1,LumpPort1))'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=-30
+                  AxisMajorDivision=3
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=1
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=100
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'

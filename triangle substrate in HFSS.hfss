@@ -1,0 +1,553 @@
+$begin 'AnsoftProject'
+  Created='Wed Mar 07 13:19:15 2007'
+  Product='HFSS'
+  NextUniqueID=0
+  MoveBackwards=false
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=0
+    MoveBackwards=false
+    $begin 'DatasetDefinitions'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1173253740
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1173253739, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'HFSS')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='DrivenModal'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      SnapMode=31
+      GroupByMaterial=true
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='mm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=33
+          MoveBackwards=false
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Polyline'
+                  ID=5
+                  ReferenceCoordSystemID=1
+                  $begin 'PolylineParameters'
+                    IsPolylineClosed=true
+                    $begin 'PolylinePoints'
+                      $begin 'PLPoint'
+                        X='0.6mm'
+                        Y='0.5mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='2.1mm'
+                        Y='0.7mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='1.4mm'
+                        Y='1.7mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='0.6mm'
+                        Y='0.5mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                    $end 'PolylinePoints'
+                    $begin 'PolylineSegments'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=0
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=1
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=2
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                    $end 'PolylineSegments'
+                  $end 'PolylineParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=6
+                    StartFaceID=-1
+                    StartEdgeID=7
+                    StartVertexID=10
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=13
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=6
+                  $end 'LocalOperationParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=14
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=5
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Connect'
+                  ID=26
+                  $begin 'ConnectParameters'
+                    NumConnectParts=2
+                    ConnectParts(6, 16)
+                  $end 'ConnectParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=5
+                      NumWires=0
+                      NumLoops=5
+                      NumCoedges=18
+                      NumEdges=9
+                      NumVertices=6
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=27
+                    StartEdgeID=30
+                    StartVertexID=-1
+                    NumNewFaces=3
+                    NumNewEdges=3
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  NumConnectOperations=2
+                  ConnectOperations(13, 25)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Polyline'
+                  ID=15
+                  ReferenceCoordSystemID=1
+                  $begin 'PolylineParameters'
+                    IsPolylineClosed=true
+                    $begin 'PolylinePoints'
+                      $begin 'PLPoint'
+                        X='0.6mm'
+                        Y='0.5mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='2.1mm'
+                        Y='0.7mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='1.4mm'
+                        Y='1.7mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='0.6mm'
+                        Y='0.5mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                    $end 'PolylinePoints'
+                    $begin 'PolylineSegments'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=0
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=1
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=2
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                    $end 'PolylineSegments'
+                  $end 'PolylineParameters'
+                  ParentPartID=16
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=16
+                    StartFaceID=-1
+                    StartEdgeID=17
+                    StartVertexID=20
+                    NumNewFaces=0
+                    NumNewEdges=3
+                    NumNewVertices=3
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=23
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=16
+                  $end 'LocalOperationParameters'
+                  ParentPartID=16
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=24
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=15
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Move'
+                  ID=25
+                  ReferenceCoordSystemID=1
+                  $begin 'TranslateParameters'
+                    PartID=16
+                    TranslateVectorX='0mm'
+                    TranslateVectorY='0mm'
+                    TranslateVectorZ='0.1mm'
+                  $end 'TranslateParameters'
+                  ParentPartID=16
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=23
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 5)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 13)
+            DependencyObject('GeometryBodyOperation', 5)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 26)
+            DependencyObject('GeometryBodyOperation', 13)
+            DependencyObject('GeometryBodyOperation', 25)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 23)
+            DependencyObject('GeometryBodyOperation', 15)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 25)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 23)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='ScatteredFields'
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+      $begin 'PortFieldDisplay'
+        ScaleFactor=5
+        ColorR=255
+        ColorG=1
+        ColorB=1
+      $end 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'PlotDefaults'
+        Default_SolutionId=-1
+        Default_PlotFolder='Automatic'
+      $end 'PlotDefaults'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=0
+        MoveBackwards=false
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+      $begin 'FarFieldSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'FarFieldSetups'
+      $begin 'ArraySetup'
+        UseOption='NoArray'
+        $begin 'RegularArray'
+          NumUCells='10'
+          NumVCells='10'
+          CellUDist='10mm'
+          CellVDist='10mm'
+          UDirnX='1'
+          UDirnY='0'
+          UDirnZ='0'
+          VDirnX='0'
+          VDirnY='1'
+          VDirnZ='0'
+          FirstCellPosX='0mm'
+          FirstCellPosY='0mm'
+          FirstCellPosZ='0mm'
+          UseScanAngle=true
+          ScanAnglePhi='45deg'
+          ScanAngleTheta='45deg'
+          UDirnPhaseShift='0deg'
+          VDirnPhaseShift='0deg'
+        $end 'RegularArray'
+        $begin 'CustomArray'
+          NumCells=0
+          $begin 'Cell'
+          $end 'Cell'
+        $end 'CustomArray'
+      $end 'ArraySetup'
+      $begin 'NearFieldSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'NearFieldSetups'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'Version ID Map'
+        V=4
+      $end 'Version ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -4, -30, 0, 0, 829, 543), OrientationMatrix(-0.187082871794701, -0.299999982118607, 0.474341660737991, 0, 0.561248660087585, -0.100000001490116, 0.15811388194561, 0, 0, 0.5, 0.316227793693542, 0, 4.1245448301197e-007, 1.93440450857452e-006, -99.6683197021484, 1, 0, -1.06084656715393, 1.06084656715393, -1, 1, 4.80000019073486, 194.536636352539), Drawings[1: 'Polyline1'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'
