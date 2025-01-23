@@ -1,0 +1,2950 @@
+$begin 'AnsoftProject'
+  Created='Tue Oct 03 10:27:25 2006'
+  Product='HFSS'
+  NextUniqueID=0
+  MoveBackwards=false
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=0
+    MoveBackwards=false
+    $begin 'DatasetDefinitions'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1159863932
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+      $begin 'copper'
+        permeability='0.999991'
+        conductivity='58000000'
+        ModTime=1159866170
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'copper'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1159863931, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'HFSS')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='Eigenmode'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      SnapMode=31
+      GroupByMaterial=true
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='cm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=584
+          MoveBackwards=false
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Outer'
+                Flags=''
+                Color='(255 64 64)'
+                Transparency=0.8
+                PartCoordinateSystem=1
+                MaterialName='copper'
+                SolveInside=false
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Circle'
+                  ID=11
+                  ReferenceCoordSystemID=1
+                  $begin 'CircleParameters'
+                    XCenter='0cm'
+                    YCenter='0cm'
+                    ZCenter='0cm'
+                    Radius='5.1cm'
+                    WhichAxis='Z'
+                  $end 'CircleParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=12
+                    StartFaceID=-1
+                    StartEdgeID=13
+                    StartVertexID=14
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=1
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=15
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=12
+                  $end 'LocalOperationParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=16
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=11
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=23
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=12
+                    NumToolParts=1
+                    ToolParts(18)
+                  $end 'SubtractParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=2
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=24
+                    StartVertexID=25
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=1
+                  $end 'OperationIdentity'
+                  BlankOperation=15
+                  NumToolOperations=1
+                  ToolOperations(21)
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=321
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=12
+                    NumToolParts=1
+                    ToolParts(312)
+                  $end 'SubtractParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=33
+                      NumEdges=33
+                      NumVertices=33
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=322
+                    StartVertexID=354
+                    NumNewFaces=0
+                    NumNewEdges=32
+                    NumNewVertices=31
+                  $end 'OperationIdentity'
+                  BlankOperation=23
+                  NumToolOperations=1
+                  ToolOperations(320)
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Rotate'
+                  ID=400
+                  ReferenceCoordSystemID=1
+                  $begin 'RotateParameters'
+                    PartID=12
+                    RotateAxis='Z'
+                    RotateAngle='45deg'
+                  $end 'RotateParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=33
+                      NumEdges=33
+                      NumVertices=33
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=321
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Rotate'
+                  ID=401
+                  ReferenceCoordSystemID=1
+                  $begin 'RotateParameters'
+                    PartID=12
+                    RotateAxis='Z'
+                    RotateAngle='22.5deg'
+                  $end 'RotateParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=33
+                      NumEdges=33
+                      NumVertices=33
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=400
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Rotate'
+                  ID=402
+                  ReferenceCoordSystemID=1
+                  $begin 'RotateParameters'
+                    PartID=12
+                    RotateAxis='Z'
+                    RotateAngle='11.25deg'
+                  $end 'RotateParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=2
+                      NumCoedges=33
+                      NumEdges=33
+                      NumVertices=33
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=401
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAlongVector'
+                  ID=406
+                  ReferenceCoordSystemID=1
+                  $begin 'VectorSweepParameters'
+                    ProfileID=12
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepVectorX='0cm'
+                    SweepVectorY='0cm'
+                    SweepVectorZ='3.5cm'
+                  $end 'VectorSweepParameters'
+                  ParentPartID=12
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=35
+                      NumWires=0
+                      NumLoops=38
+                      NumCoedges=196
+                      NumEdges=98
+                      NumVertices=66
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=407
+                    StartEdgeID=442
+                    StartVertexID=507
+                    NumNewFaces=35
+                    NumNewEdges=65
+                    NumNewVertices=33
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=402
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='inner'
+                Flags=''
+                Color='(0 217 217)'
+                Transparency=0.7
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Cylinder'
+                  ID=540
+                  ReferenceCoordSystemID=1
+                  $begin 'CylinderParameters'
+                    XCenter='0cm'
+                    YCenter='0cm'
+                    ZCenter='0cm'
+                    Radius='2cm'
+                    Height='3.5cm'
+                    WhichAxis='Z'
+                  $end 'CylinderParameters'
+                  ParentPartID=541
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=541
+                    StartFaceID=542
+                    StartEdgeID=545
+                    StartVertexID=547
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Bottom'
+                Flags=''
+                Color='(255 255 0)'
+                Transparency=0.8
+                PartCoordinateSystem=1
+                MaterialName='copper'
+                SolveInside=false
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Circle'
+                  ID=549
+                  ReferenceCoordSystemID=1
+                  $begin 'CircleParameters'
+                    XCenter='0cm'
+                    YCenter='0cm'
+                    ZCenter='0cm'
+                    Radius='5.1cm'
+                    WhichAxis='Z'
+                  $end 'CircleParameters'
+                  ParentPartID=550
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=550
+                    StartFaceID=-1
+                    StartEdgeID=551
+                    StartVertexID=552
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=1
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=553
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=550
+                  $end 'LocalOperationParameters'
+                  ParentPartID=550
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=554
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=549
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Top'
+                Flags=''
+                Color='(255 255 0)'
+                Transparency=0.8
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Circle'
+                  ID=561
+                  ReferenceCoordSystemID=1
+                  $begin 'CircleParameters'
+                    XCenter='0cm'
+                    YCenter='0cm'
+                    ZCenter='3.5cm'
+                    Radius='5.1cm'
+                    WhichAxis='Z'
+                  $end 'CircleParameters'
+                  ParentPartID=562
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=562
+                    StartFaceID=-1
+                    StartEdgeID=563
+                    StartVertexID=564
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=1
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=565
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=562
+                  $end 'LocalOperationParameters'
+                  ParentPartID=562
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=566
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=561
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Circle2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Circle'
+                  ID=17
+                  ReferenceCoordSystemID=1
+                  $begin 'CircleParameters'
+                    XCenter='0cm'
+                    YCenter='0cm'
+                    ZCenter='0cm'
+                    Radius='4cm'
+                    WhichAxis='Z'
+                  $end 'CircleParameters'
+                  ParentPartID=18
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=18
+                    StartFaceID=-1
+                    StartEdgeID=19
+                    StartVertexID=20
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=1
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=21
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=18
+                  $end 'LocalOperationParameters'
+                  ParentPartID=18
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=1
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=22
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=17
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Polyline'
+                  ID=32
+                  ReferenceCoordSystemID=1
+                  $begin 'PolylineParameters'
+                    IsPolylineClosed=false
+                    $begin 'PolylinePoints'
+                      $begin 'PLPoint'
+                        X='0cm'
+                        Y='0cm'
+                        Z='0cm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='5cm'
+                        Y='0cm'
+                        Z='0cm'
+                      $end 'PLPoint'
+                    $end 'PolylinePoints'
+                    $begin 'PolylineSegments'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=0
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                    $end 'PolylineSegments'
+                  $end 'PolylineParameters'
+                  ParentPartID=33
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=33
+                    StartFaceID=-1
+                    StartEdgeID=34
+                    StartVertexID=35
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Rotate'
+                  ID=37
+                  ReferenceCoordSystemID=1
+                  $begin 'RotateParameters'
+                    PartID=33
+                    RotateAxis='Z'
+                    RotateAngle='45deg'
+                  $end 'RotateParameters'
+                  ParentPartID=33
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=32
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=114
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=33
+                $end 'CloneToOperation'
+                $begin 'Operation'
+                  OperationType='Unite'
+                  ID=125
+                  $begin 'UniteParameters'
+                    KeepOriginals=false
+                    BlankPart=33
+                    NumToolParts=2
+                    ToolParts(116, 121)
+                  $end 'UniteParameters'
+                  ParentPartID=33
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  BlankOperation=37
+                  NumToolOperations=2
+                  ToolOperations(115, 120)
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=126
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=33
+                  $end 'LocalOperationParameters'
+                  ParentPartID=33
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=127
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=125
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=256
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='45deg'
+                    NumClones=8
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=33
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=115
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=116
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=116
+                    StartFaceID=-1
+                    StartEdgeID=117
+                    StartVertexID=118
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=2
+                    OldFaceIDs()
+                    OldEdgeIDs(34)
+                    OldVertexIDs(35, 36)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=114
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Polyline'
+                  ID=120
+                  ReferenceCoordSystemID=1
+                  $begin 'PolylineParameters'
+                    IsPolylineClosed=false
+                    $begin 'PolylinePoints'
+                      $begin 'PLPoint'
+                        X='1.91341716182545cm'
+                        Y='4.61939766255643cm'
+                        Z='0cm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='2.77785116509801cm'
+                        Y='4.15734806151272cm'
+                        Z='0cm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='3.53553390593274cm'
+                        Y='3.53553390593273cm'
+                        Z='0cm'
+                      $end 'PLPoint'
+                    $end 'PolylinePoints'
+                    $begin 'PolylineSegments'
+                      $begin 'PLSegment'
+                        SegmentType='AngularArc'
+                        StartIndex=0
+                        NoOfPoints=3
+                        ArcAngle='-22.5deg'
+                        ArcCenterX='0cm'
+                        ArcCenterY='0cm'
+                        ArcCenterZ='0cm'
+                        ArcPlane='XY'
+                      $end 'PLSegment'
+                    $end 'PolylineSegments'
+                  $end 'PolylineParameters'
+                  ParentPartID=121
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=121
+                    StartFaceID=-1
+                    StartEdgeID=122
+                    StartVertexID=123
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=257
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=258
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=258
+                    StartFaceID=259
+                    StartEdgeID=260
+                    StartVertexID=263
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_3'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=266
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=1
+                  $end 'CloneFromParameters'
+                  ParentPartID=267
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=267
+                    StartFaceID=268
+                    StartEdgeID=269
+                    StartVertexID=272
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_4'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=275
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=2
+                  $end 'CloneFromParameters'
+                  ParentPartID=276
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=276
+                    StartFaceID=277
+                    StartEdgeID=278
+                    StartVertexID=281
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_5'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=284
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=3
+                  $end 'CloneFromParameters'
+                  ParentPartID=285
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=285
+                    StartFaceID=286
+                    StartEdgeID=287
+                    StartVertexID=290
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_6'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=293
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=4
+                  $end 'CloneFromParameters'
+                  ParentPartID=294
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=294
+                    StartFaceID=295
+                    StartEdgeID=296
+                    StartVertexID=299
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_7'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=302
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=5
+                  $end 'CloneFromParameters'
+                  ParentPartID=303
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=303
+                    StartFaceID=304
+                    StartEdgeID=305
+                    StartVertexID=308
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Polyline1_8'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=311
+                  $begin 'CloneFromParameters'
+                    SourcePartID=33
+                    WhichClone=6
+                  $end 'CloneFromParameters'
+                  ParentPartID=312
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=3
+                      NumEdges=3
+                      NumVertices=3
+                    $end 'Topology'
+                    BodyID=312
+                    StartFaceID=313
+                    StartEdgeID=314
+                    StartVertexID=317
+                    NumNewFaces=1
+                    NumNewEdges=3
+                    NumNewVertices=3
+                    OldFaceIDs(127)
+                    OldEdgeIDs(122, 34, 117)
+                    OldVertexIDs(119, 36, 35)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=256
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Unite'
+                  ID=320
+                  $begin 'UniteParameters'
+                    KeepOriginals=false
+                    BlankPart=312
+                    NumToolParts=7
+                    ToolParts(33, 258, 267, 276, 285, 294, 303)
+                  $end 'UniteParameters'
+                  ParentPartID=312
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=8
+                      NumWires=0
+                      NumLoops=8
+                      NumCoedges=24
+                      NumEdges=24
+                      NumVertices=17
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  BlankOperation=311
+                  NumToolOperations=7
+                  ToolOperations(126, 257, 266, 275, 284, 293, 302)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 11)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('GeometryBodyOperation', 11)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 23)
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('GeometryBodyOperation', 21)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 321)
+            DependencyObject('GeometryBodyOperation', 23)
+            DependencyObject('GeometryBodyOperation', 320)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 400)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 321)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 401)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 400)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 402)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 401)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 406)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 402)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 540)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 549)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 553)
+            DependencyObject('GeometryBodyOperation', 549)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 561)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 565)
+            DependencyObject('GeometryBodyOperation', 561)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 17)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 21)
+            DependencyObject('GeometryBodyOperation', 17)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 32)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 37)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 32)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 114)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=3
+            DependencyObject('GeometryBodyOperation', 125)
+            DependencyObject('GeometryBodyOperation', 37)
+            DependencyObject('GeometryBodyOperation', 115)
+            DependencyObject('GeometryBodyOperation', 120)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 126)
+            DependencyObject('GeometryBodyOperation', 125)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 115)
+            DependencyObject('GeometryOperation', 114)
+            DependencyObject('GeometryBodyOperation', 37)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 120)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 257)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 266)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 275)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 284)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 293)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 302)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 311)
+            DependencyObject('GeometryOperation', 256)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=8
+            DependencyObject('GeometryBodyOperation', 320)
+            DependencyObject('GeometryBodyOperation', 311)
+            DependencyObject('GeometryBodyOperation', 126)
+            DependencyObject('GeometryBodyOperation', 257)
+            DependencyObject('GeometryBodyOperation', 266)
+            DependencyObject('GeometryBodyOperation', 275)
+            DependencyObject('GeometryBodyOperation', 284)
+            DependencyObject('GeometryBodyOperation', 293)
+            DependencyObject('GeometryBodyOperation', 302)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=7
+        MoveBackwards=false
+        $begin 'PerfE1'
+          ID=6
+          BoundType='Perfect E'
+          InfGroundPlane=false
+          Objects(550, 562, 12, 541)
+        $end 'PerfE1'
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=2
+        MoveBackwards=false
+        $begin 'SkinDepth1'
+          Type='SkinDepthBased'
+          ID=1
+          Objects(541, 12)
+          RestrictElem=true
+          NumMaxElem='1000'
+          SkinDepth='0.1mm'
+          SurfTriMaxLength='2.04cm'
+          NumLayers='2'
+        $end 'SkinDepth1'
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=22
+        MoveBackwards=false
+        $begin 'Setup1'
+          ID=11
+          SetupType='HfssEigen'
+          MinimumFrequency='9GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup1'
+        $begin 'Setup2'
+          ID=13
+          SetupType='HfssEigen'
+          MinimumFrequency='10GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup2'
+        $begin 'Setup3'
+          ID=14
+          SetupType='HfssEigen'
+          MinimumFrequency='11GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup3'
+        $begin 'Setup4'
+          ID=15
+          SetupType='HfssEigen'
+          MinimumFrequency='12GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup4'
+        $begin 'Setup5'
+          ID=16
+          SetupType='HfssEigen'
+          MinimumFrequency='13GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup5'
+        $begin 'Setup6'
+          ID=17
+          SetupType='HfssEigen'
+          MinimumFrequency='14GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup6'
+        $begin 'Setup7'
+          ID=18
+          SetupType='HfssEigen'
+          MinimumFrequency='15GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=10
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup7'
+        $begin 'Setup8'
+          ID=19
+          SetupType='HfssEigen'
+          MinimumFrequency='16GHz'
+          NumModes=20
+          MaxDeltaFreq=10
+          ConvergeOnRealFreq=false
+          MaximumPasses=20
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.25
+        $end 'Setup8'
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='NoIncidentWave'
+      Entry(ID=-10, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=-10, Index=1, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=2, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=3, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=4, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=5, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=6, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=7, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=8, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=9, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=10, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=11, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=12, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=13, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=14, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=15, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=16, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=17, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=18, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=-10, Index=19, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+      $begin 'PortFieldDisplay'
+        ScaleFactor=5
+        ColorR=255
+        ColorG=1
+        ColorB=1
+      $end 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'PlotDefaults'
+        Default_SolutionId=168
+        Default_PlotFolder='Automatic'
+        Default_Phase='0deg'
+      $end 'PlotDefaults'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=14
+        MoveBackwards=false
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=164
+        Name='Setup1'
+        $begin 'Solution'
+          ID=166
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=168
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=285
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=192
+        Name='Setup2'
+        $begin 'Solution'
+          ID=194
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=196
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=291
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=294
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=207
+        Name='Setup3'
+        $begin 'Solution'
+          ID=209
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=211
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=300
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=219
+        Name='Setup4'
+        $begin 'Solution'
+          ID=221
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=223
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=306
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=309
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=234
+        Name='Setup5'
+        $begin 'Solution'
+          ID=236
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=238
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=315
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=246
+        Name='Setup6'
+        $begin 'Solution'
+          ID=248
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=250
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=321
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=258
+        Name='Setup7'
+        $begin 'Solution'
+          ID=260
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=262
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=327
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=270
+        Name='Setup8'
+        $begin 'Solution'
+          ID=272
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=274
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=333
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'Version ID Map'
+        V=0
+        $begin 'Setup'
+          N='Setup1'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup2'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+          Soln(N='Adaptive_3', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup3'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup4'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+          Soln(N='Adaptive_3', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup5'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup6'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup7'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup8'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+        $end 'Setup'
+      $end 'Version ID Map'
+      $begin 'ID Map'
+        $begin 'Setup'
+          N='Setup1'
+          I=164
+          Soln(N='Adaptive_1', I=166)
+          Soln(N='LastAdaptive', I=168)
+          Soln(N='Adaptive_2', I=285)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup2'
+          I=192
+          Soln(N='Adaptive_1', I=194)
+          Soln(N='LastAdaptive', I=196)
+          Soln(N='Adaptive_2', I=291)
+          Soln(N='Adaptive_3', I=294)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup3'
+          I=207
+          Soln(N='Adaptive_1', I=209)
+          Soln(N='LastAdaptive', I=211)
+          Soln(N='Adaptive_2', I=300)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup4'
+          I=219
+          Soln(N='Adaptive_1', I=221)
+          Soln(N='LastAdaptive', I=223)
+          Soln(N='Adaptive_2', I=306)
+          Soln(N='Adaptive_3', I=309)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup5'
+          I=234
+          Soln(N='Adaptive_1', I=236)
+          Soln(N='LastAdaptive', I=238)
+          Soln(N='Adaptive_2', I=315)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup6'
+          I=246
+          Soln(N='Adaptive_1', I=248)
+          Soln(N='LastAdaptive', I=250)
+          Soln(N='Adaptive_2', I=321)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup7'
+          I=258
+          Soln(N='Adaptive_1', I=260)
+          Soln(N='LastAdaptive', I=262)
+          Soln(N='Adaptive_2', I=327)
+        $end 'Setup'
+        $begin 'Setup'
+          N='Setup8'
+          I=270
+          Soln(N='Adaptive_1', I=272)
+          Soln(N='LastAdaptive', I=274)
+          Soln(N='Adaptive_2', I=333)
+        $end 'Setup'
+      $end 'ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(3, 0, 605, -4, -30, 44, 58, 1071, 487), OrientationMatrix(-0.057761438190937, -0.0926243588328362, 0.146451950073242, 0, 0.173284292221069, -0.0308747887611389, 0.0488173253834248, 0, 0, 0.154373914003372, 0.0976346507668495, 0, -9.55107680056244e-007, -0.270155310630798, -121.644256591797, 1, 0, -1.62341773509979, 1.62341773509979, -1, 1, 4.80000019073486, 238.146774291992), Drawings[5: 'Outer', 'inner', 'Bottom', 'Top', 'SkinDepth1'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'

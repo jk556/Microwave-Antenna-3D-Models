@@ -1,0 +1,2284 @@
+$begin 'AnsoftProject'
+  Created='Tue Oct 19 14:15:54 2004'
+  Product='HFSS'
+  NextUniqueID=0
+  MoveBackwards=false
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=4
+    MoveBackwards=false
+    $begin 'DatasetDefinitions'
+      $begin 'ds_tande1'
+        ID=0
+        $begin 'Coordinates'
+          $begin 'Coordinate'
+            X=4000000000
+            Y=0.001
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=8000000000
+            Y=0.001
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=12000000000
+            Y=0.002
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=16000000000
+            Y=0.002
+          $end 'Coordinate'
+        $end 'Coordinates'
+      $end 'ds_tande1'
+      $begin 'ds_tandm1'
+        ID=1
+        $begin 'Coordinates'
+          $begin 'Coordinate'
+            X=4000000000
+            Y=0
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=8000000000
+            Y=0
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=12000000000
+            Y=0
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=16000000000
+            Y=0
+          $end 'Coordinate'
+        $end 'Coordinates'
+      $end 'ds_tandm1'
+      $begin 'ds_epsr1'
+        ID=2
+        $begin 'Coordinates'
+          $begin 'Coordinate'
+            X=4000000000
+            Y=2
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=8000000000
+            Y=2
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=12000000000
+            Y=1
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=16000000000
+            Y=1
+          $end 'Coordinate'
+        $end 'Coordinates'
+      $end 'ds_epsr1'
+      $begin 'ds_mur1'
+        ID=3
+        $begin 'Coordinates'
+          $begin 'Coordinate'
+            X=4000000000
+            Y=1
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=8000000000
+            Y=1
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=12000000000
+            Y=1
+          $end 'Coordinate'
+          $begin 'Coordinate'
+            X=16000000000
+            Y=1
+          $end 'Coordinate'
+        $end 'Coordinates'
+      $end 'ds_mur1'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'GlobalVariables'
+    VariableProp('$offset', 'UD', '', '0.03mm')
+  $end 'GlobalVariables'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1098220322
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+      $begin 'copper'
+        permeability='0.999991'
+        conductivity='58000000'
+        ModTime=1098220519
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'copper'
+      $begin 'air'
+        permittivity='1.0006'
+        permeability='1.0000004'
+        ModTime=1098222597
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'air'
+      $begin 'ferrite'
+        permittivity='pwlx(dataset(\'ds_epsr1\'),Freq)'
+        permeability='pwlx(dataset(\'ds_mur1\'),Freq)'
+        conductivity='0.01'
+        dielectric_loss_tangent='pwlx(dataset(\'ds_tande1\'),Freq)'
+        magnetic_loss_tangent='pwlx(dataset(\'ds_tandm1\'),Freq)'
+        saturation_mag='139Gauss'
+        delta_H='225Oe'
+        ModTime=1098336570
+        Library=''
+        LibLocation='Project'
+      $end 'ferrite'
+      $begin 'aluminum'
+        permeability='1.000021'
+        conductivity='38000000'
+        ModTime=1098507693
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'aluminum'
+      $begin 'gallium_arsenide'
+        permittivity='12.9'
+        dielectric_loss_tangent='0.006'
+        ModTime=1098512133
+        Library=''
+        LibLocation='Project'
+      $end 'gallium_arsenide'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1098220321, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'HFSS')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='DrivenTerminal'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      $begin 'Properties'
+        VariableProp('offset', 'UD', '', '0.025mm')
+        VariableProp('width', 'UD', '', '0.05526mm')
+      $end 'Properties'
+      SnapMode=4
+      GroupByMaterial=true
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='mm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=318
+          MoveBackwards=false
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Substrate'
+                Flags=''
+                Color='(162 234 149)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='gallium_arsenide'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=5
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='0mm'
+                    ZPosition='0mm'
+                    XSize='2.7mm'
+                    YSize='3mm'
+                    ZSize='0.1mm'
+                  $end 'BoxParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=6
+                    StartFaceID=7
+                    StartEdgeID=13
+                    StartVertexID=25
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='CloneTo'
+                  ID=187
+                  $begin 'CloneToParameters'
+                    ClonedPart=6
+                  $end 'CloneToParameters'
+                  ParentPartID=6
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='ustrip1'
+                Flags=''
+                Color='(255 128 0)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='aluminum'
+                SolveInside=false
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=33
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='1.5mm-offset'
+                    ZPosition='0.1mm'
+                    XSize='2.7mm'
+                    YSize='-width'
+                    ZSize='0.004mm'
+                  $end 'BoxParameters'
+                  ParentPartID=34
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=34
+                    StartFaceID=35
+                    StartEdgeID=41
+                    StartVertexID=53
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='ustrip2'
+                Flags=''
+                Color='(255 128 0)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='aluminum'
+                SolveInside=false
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=61
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='1.5mm+offset'
+                    ZPosition='0.1mm'
+                    XSize='2.7mm'
+                    YSize='width'
+                    ZSize='0.004mm'
+                  $end 'BoxParameters'
+                  ParentPartID=62
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=62
+                    StartFaceID=63
+                    StartEdgeID=69
+                    StartVertexID=81
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='GroundPlane'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=137
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='0mm'
+                    Width='2.7mm'
+                    Height='3mm'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=138
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=138
+                    StartFaceID=-1
+                    StartEdgeID=139
+                    StartVertexID=143
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=147
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=138
+                  $end 'LocalOperationParameters'
+                  ParentPartID=138
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=148
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=137
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Box1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0.9
+                PartCoordinateSystem=1
+                MaterialName='air'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=226
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='0mm'
+                    ZPosition='0mm'
+                    XSize='2.7mm'
+                    YSize='3mm'
+                    ZSize='0.6mm'
+                  $end 'BoxParameters'
+                  ParentPartID=227
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=227
+                    StartFaceID=228
+                    StartEdgeID=234
+                    StartVertexID=246
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=1
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=254
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='1.1mm'
+                    ZStart='0mm'
+                    Width='0.8mm'
+                    Height='0.5mm'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=255
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=255
+                    StartFaceID=-1
+                    StartEdgeID=256
+                    StartVertexID=260
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=264
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=255
+                  $end 'LocalOperationParameters'
+                  ParentPartID=255
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=265
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=254
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAlongLine'
+                  ID=278
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateToAlongLineParameters'
+                    XComponent='2.7mm'
+                    YComponent='0mm'
+                    ZComponent='0mm'
+                    NumClones=2
+                  $end 'DuplicateToAlongLineParameters'
+                  ParentPartID=255
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=1
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAlongLine'
+                  ID=279
+                  $begin 'CloneFromParameters'
+                    SourcePartID=255
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=280
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=280
+                    StartFaceID=281
+                    StartEdgeID=282
+                    StartVertexID=286
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(265)
+                    OldEdgeIDs(256, 257, 258, 259)
+                    OldVertexIDs(260, 261, 262, 263)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=278
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 5)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=0
+            DependencyObject('GeometryOperation', 187)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 33)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 61)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 137)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 147)
+            DependencyObject('GeometryBodyOperation', 137)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 226)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 254)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 264)
+            DependencyObject('GeometryBodyOperation', 254)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 278)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 279)
+            DependencyObject('GeometryOperation', 278)
+            DependencyObject('GeometryBodyOperation', 264)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=14
+        MoveBackwards=false
+        $begin 'PerfE1'
+          ID=7
+          BoundType='Perfect E'
+          InfGroundPlane=true
+          Objects(138)
+        $end 'PerfE1'
+        $begin 'Rad1'
+          ID=9
+          BoundType='Radiation'
+          Faces(232, 228, 231, 230, 233)
+        $end 'Rad1'
+        $begin 'WavePort1'
+          ID=11
+          BoundType='Wave Port'
+          NumModes=2
+          PolarizeEField=false
+          DoDeembed=false
+          DeembedDist='0mm'
+          RenormImp='50Ohm'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=256
+                  PositionType='OnEdge'
+                  UParam=0.5657875
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=75
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+            $begin 'T2'
+              TermNum=2
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=256
+                  PositionType='OnEdge'
+                  UParam=0.4342125
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=47
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T2'
+          $end 'Terminals'
+          Faces(265)
+        $end 'WavePort1'
+        $begin 'WavePort2'
+          ID=12
+          BoundType='Wave Port'
+          NumModes=2
+          PolarizeEField=false
+          DoDeembed=false
+          DeembedDist='0mm'
+          RenormImp='50Ohm'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=282
+                  PositionType='OnEdge'
+                  UParam=0.5657875
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=73
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+            $begin 'T2'
+              TermNum=2
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=282
+                  PositionType='OnEdge'
+                  UParam=0.4342125
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=45
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T2'
+          $end 'Terminals'
+          Faces(281)
+        $end 'WavePort2'
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=1
+        MoveBackwards=false
+        $begin 'Setup1'
+          ID=0
+          SetupType='HfssDriven'
+          Frequency='10GHz'
+          PortsOnly=false
+          MaxDeltaS=0.02
+          UseMatrixConv=false
+          MaximumPasses=20
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.3333
+          PortAccuracy=0.2
+          SetPortMinMaxTri=false
+          PortMinTri=100
+          PortMaxTri=500
+          $begin 'Sweeps'
+            NextUniqueID=1
+            MoveBackwards=false
+            $begin 'Sweep1'
+              ID=0
+              Type='Fast'
+              SetupType='LinearStep'
+              StartFreq='8GHz'
+              StopFreq='12GHz'
+              StepSize='0.01GHz'
+              SaveFields=true
+              ExtrapToDC=false
+            $end 'Sweep1'
+          $end 'Sweeps'
+        $end 'Setup1'
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='NoIncidentWave'
+      Entry(ID=11, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=11, Index=1, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=12, Index=0, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=12, Index=1, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+      Entry(ID=11, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=11, Index=1, Terminal=true, Terminated=true, Resistance=50, Reactance=0)
+      Entry(ID=12, Index=0, Terminal=true, Terminated=true, Resistance=50, Reactance=0)
+      Entry(ID=12, Index=1, Terminal=true, Terminated=true, Resistance=50, Reactance=0)
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+      $begin 'PortFieldDisplay'
+        ScaleFactor=5
+        Solution='Setup1 : LastAdaptive'
+        Frequency='10GHz'
+        ColorR=255
+        ColorG=1
+        ColorB=1
+      $end 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'PlotDefaults'
+        Default_SolutionId=53
+        Default_PlotFolder='Automatic'
+        Default_Phase='0deg'
+        Default_Freq='8GHz'
+      $end 'PlotDefaults'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=18
+        MoveBackwards=false
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+      $begin 'FarFieldSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'FarFieldSetups'
+      $begin 'ArraySetup'
+        UseOption='NoArray'
+        $begin 'RegularArray'
+          NumUCells='10'
+          NumVCells='10'
+          CellUDist='10mm'
+          CellVDist='10mm'
+          UDirnX='1'
+          UDirnY='0'
+          UDirnZ='0'
+          VDirnX='0'
+          VDirnY='1'
+          VDirnZ='0'
+          FirstCellPosX='0mm'
+          FirstCellPosY='0mm'
+          FirstCellPosZ='0mm'
+          UseScanAngle=true
+          ScanAnglePhi='45deg'
+          ScanAngleTheta='45deg'
+          UDirnPhaseShift='0deg'
+          VDirnPhaseShift='0deg'
+        $end 'RegularArray'
+        $begin 'CustomArray'
+          NumCells=0
+          $begin 'Cell'
+          $end 'Cell'
+        $end 'CustomArray'
+      $end 'ArraySetup'
+      $begin 'NearFieldSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'NearFieldSetups'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=47
+        Name='Setup1'
+        $begin 'Solution'
+          ID=53
+          Name='Sweep1'
+          $begin 'SimDataExtractor'
+            SimValue('St(WavePort1:T1,WavePort1:T1)', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+            SimValue('St(WavePort1:T1,WavePort1:T2)', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+            SimValue('St(WavePort1:T1,WavePort2:T1)', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+            SimValue('St(WavePort1:T1,WavePort2:T2)', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='Freq'
+                RegularSweep=1
+                Units='GHz'
+                Minimum=8000000000
+                Maximum=12000000000
+                Increment=10000000
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='Time'
+                RegularSweep=1
+                Units='s'
+                Minimum=0
+                Maximum=5e-008
+                Increment=4.16666666666667e-011
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            $begin 'SolutionPointSets'
+              $begin 'SolutionPointSet'
+                name='Sweep1:SolutionPointSet 1'
+                CurrentIndex=5
+                SolutionVersion=312
+                SimValueContext(3, 0, 2, 0, true, false, -1, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Freq'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      RegularSweep=1
+                      Units='GHz'
+                      Minimum=8000000000
+                      Maximum=12000000000
+                      Increment=10000000
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 1:Trace2D 1'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(WavePort1:T1,WavePort1:T1)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(WavePort1:T1,WavePort1:T1))')
+                  $end 'Trace2D'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 1:Trace2D 2'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(WavePort1:T1,WavePort1:T2)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(WavePort1:T1,WavePort1:T2))')
+                  $end 'Trace2D'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 1:Trace2D 3'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(WavePort1:T1,WavePort2:T1)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(WavePort1:T1,WavePort2:T1))')
+                  $end 'Trace2D'
+                  $begin 'Trace2D'
+                    name='Sweep1:SolutionPointSet 1:Trace2D 4'
+                    X(Desc='Freq', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='Freq')
+                    Y(Desc='St(WavePort1:T1,WavePort2:T2)', CatID=34, FuncID=11, IsInteger=false, Units='', Y='dB(St(WavePort1:T1,WavePort2:T2))')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+            $end 'SolutionPointSets'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=319
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=321
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=326
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=329
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=332
+          Name='Adaptive_4'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=335
+          Name='Adaptive_5'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=338
+          Name='Adaptive_6'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=341
+          Name='Adaptive_7'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=344
+          Name='Adaptive_8'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=347
+          Name='Adaptive_9'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=350
+          Name='Adaptive_10'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=353
+          Name='Adaptive_11'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=356
+          Name='Adaptive_12'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='10GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='0.025mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='width'
+                Column='0.05526mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$offset'
+                Column='0.03mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'Version ID Map'
+        V=278
+        $begin 'Setup'
+          N='Setup1'
+          V=278
+          Soln(N='Sweep1', V=312)
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='LastAdaptive', V=0)
+          Soln(N='Adaptive_2', V=0)
+          Soln(N='Adaptive_3', V=0)
+          Soln(N='Adaptive_4', V=0)
+          Soln(N='Adaptive_5', V=0)
+          Soln(N='Adaptive_6', V=0)
+          Soln(N='Adaptive_7', V=0)
+          Soln(N='Adaptive_8', V=0)
+          Soln(N='Adaptive_9', V=0)
+          Soln(N='Adaptive_10', V=0)
+          Soln(N='Adaptive_11', V=0)
+          Soln(N='Adaptive_12', V=0)
+        $end 'Setup'
+      $end 'Version ID Map'
+      $begin 'ID Map'
+        $begin 'Setup'
+          N='Setup1'
+          I=47
+          Soln(N='Sweep1', I=53)
+          Soln(N='Adaptive_1', I=319)
+          Soln(N='LastAdaptive', I=321)
+          Soln(N='Adaptive_2', I=326)
+          Soln(N='Adaptive_3', I=329)
+          Soln(N='Adaptive_4', I=332)
+          Soln(N='Adaptive_5', I=335)
+          Soln(N='Adaptive_6', I=338)
+          Soln(N='Adaptive_7', I=341)
+          Soln(N='Adaptive_8', I=344)
+          Soln(N='Adaptive_9', I=347)
+          Soln(N='Adaptive_10', I=350)
+          Soln(N='Adaptive_11', I=353)
+          Soln(N='Adaptive_12', I=356)
+        $end 'Setup'
+      $end 'ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+      $begin 'Setup_0'
+        AnimationName='Animation1'
+        Description='Swept variable Phase'
+        SweptVariable='Phase'
+        SweptValues[9: '0deg', '20deg', '40deg', '60deg', '80deg', '100deg', '120deg', '140deg', '160deg']
+        UseDesignInstance=true
+        DesignPoint=''
+        IntrinsicVarVals=''
+      $end 'Setup_0'
+      $begin 'Setup_1'
+        AnimationName='Animation2'
+        Description='Swept variable Phase'
+        SweptVariable='Phase'
+        SweptValues[25: '0deg', '7.2deg', '14.4deg', '21.6deg', '28.8deg', '36deg', '43.2deg', '50.4deg', '57.6deg', '64.8deg', '72deg', '79.2deg', '86.4deg', '93.6deg', '100.8deg', '108deg', '115.2deg', '122.4deg', '129.6deg', '136.8deg', '144deg', '151.2deg', '158.4deg', '165.6deg', '172.8deg']
+        UseDesignInstance=true
+        DesignPoint=''
+        IntrinsicVarVals=''
+      $end 'Setup_1'
+      $begin 'Setup_2'
+        AnimationName='Animation3'
+        Description='Swept variable Phase'
+        SweptVariable='Phase'
+        SweptValues[10: '0deg', '18deg', '36deg', '54deg', '72deg', '90deg', '108deg', '126deg', '144deg', '162deg']
+        UseDesignInstance=true
+        DesignPoint=''
+        IntrinsicVarVals=''
+      $end 'Setup_2'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -4, -23, 132, 132, 780, 494), OrientationMatrix(0.191447466611862, -0.117272093892097, 0.520295321941376, 0, 0.523676097393036, 0.146125853061676, -0.159756064414978, 0, -0.101105779409409, 0.5347980260849, 0.1577437967062, 0, -1.01869106292725, -0.194571167230606, -76.2083969116211, 1, 0, -0.853227257728577, 0.853227257728577, -0.630745947360992, 0.630745947360992, 4.80000019073486, 146.612396240234), Drawings[7: 'Substrate', 'ustrip1', 'ustrip2', 'GroundPlane', 'Box1', 'Rectangle1', 'Rectangle1_1'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+            'XY Plot 1'(Report2D())
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+          $begin 'Report2D'
+            name='XY Plot 1'
+            ReportType=1
+            DisplayType=1
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 1:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 1:Trace2D 2'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 1:Trace2D 3'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+              $begin 'Graph2D'
+                TraceName='Sweep1:SolutionPointSet 1:Trace2D 4'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='XYPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='XY Plot 1'
+              DateLabel='<23 Oct 2004>'
+              TimeLabel='<13:13:56>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=true
+              ZoomType=1
+              $begin 'zoomrect'
+                RectLeft=0
+                RectTop=0
+                RectRight=6000
+                RectBottom=6000
+              $end 'zoomrect'
+              UserSelectedTrace=-1
+              Rho=0
+              RhoMin=0
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Freq'
+                  AxisLabel='DEFAULT'
+                  AxisMax=10150000000
+                  AxisMin=9900000000
+                  AxisMajorDivision=5
+                  AxisMinorDivision=5
+                  AxisManualRescale=true
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='Giga'
+                    BaseType='Frequency'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=1237736
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='Y 1 '
+                  AxisLabel='DEFAULT'
+                  AxisMax=-9
+                  AxisMin=-12
+                  AxisMajorDivision=3
+                  AxisMinorDivision=5
+                  AxisManualRescale=true
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=1237736
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=1
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+                $begin 'TraceInfo1'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=255
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo1'
+                $begin 'TraceInfo2'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=2129936
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo2'
+                $begin 'TraceInfo3'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=8388863
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo3'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=2147351544
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=2147351544
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=110
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=2147351544
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=110
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'

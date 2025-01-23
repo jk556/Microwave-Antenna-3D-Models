@@ -1,0 +1,5012 @@
+$begin 'AnsoftProject'
+  Created='Mon Mar 05 09:21:42 2007'
+  Product='HFSS'
+  NextUniqueID=0
+  MoveBackwards=false
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=0
+    MoveBackwards=false
+    $begin 'DatasetDefinitions'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1173057478
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+      $begin 'Rogers RT/duroid 5880 (tm)'
+        permittivity='2.2'
+        dielectric_loss_tangent='0.0009'
+        ModTime=1173057718
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'Rogers RT/duroid 5880 (tm)'
+      $begin 'copper'
+        permeability='0.999991'
+        conductivity='58000000'
+        ModTime=1173057726
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'copper'
+      $begin 'air'
+        permittivity='1.0006'
+        permeability='1.0000004'
+        ModTime=1173058848
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'air'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1173057477, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'HFSS')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='DrivenTerminal'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      SnapMode=31
+      GroupByMaterial=true
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='mm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=1376
+          MoveBackwards=false
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='substrate'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='Rogers RT/duroid 5880 (tm)'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=5
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='0mm'
+                    Width='3.2mm'
+                    Height='45.254mm'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=6
+                    StartFaceID=-1
+                    StartEdgeID=7
+                    StartVertexID=11
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=15
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=6
+                  $end 'LocalOperationParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=16
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=5
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=17
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=6
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='360deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=943
+                    StartEdgeID=946
+                    StartVertexID=948
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=15
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=101
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=6
+                    NumToolParts=1
+                    ToolParts(30)
+                  $end 'SubtractParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=4
+                      NumWires=0
+                      NumLoops=8
+                      NumCoedges=8
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=975
+                    StartEdgeID=976
+                    StartVertexID=978
+                    NumNewFaces=1
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  BlankOperation=17
+                  NumToolOperations=1
+                  ToolOperations(41)
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=393
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='11.25deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=6
+                $end 'CloneToOperation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=725
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=4
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=6
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle3'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='copper'
+                SolveInside=false
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=53
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='0mm'
+                    Width='3.2mm'
+                    Height='45mm'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=54
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=54
+                    StartFaceID=-1
+                    StartEdgeID=55
+                    StartVertexID=59
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=63
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=54
+                  $end 'LocalOperationParameters'
+                  ParentPartID=54
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=64
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=53
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=65
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=54
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='360deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=54
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=907
+                    StartEdgeID=910
+                    StartVertexID=912
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=63
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=111
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=54
+                    NumToolParts=1
+                    ToolParts(78)
+                  $end 'SubtractParameters'
+                  ParentPartID=54
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=4
+                      NumWires=0
+                      NumLoops=8
+                      NumCoedges=8
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=914
+                    StartEdgeID=915
+                    StartVertexID=917
+                    NumNewFaces=1
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  BlankOperation=65
+                  NumToolOperations=1
+                  ToolOperations(89)
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=364
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='11.25deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=54
+                $end 'CloneToOperation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=548
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=4
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=54
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Polyline'
+                  ID=160
+                  ReferenceCoordSystemID=1
+                  $begin 'PolylineParameters'
+                    IsPolylineClosed=false
+                    $begin 'PolylinePoints'
+                      $begin 'PLPoint'
+                        X='45.2538661762762mm'
+                        Y='-0.110054984815995mm'
+                        Z='0mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='45.2538661762762mm'
+                        Y='-0.110054984815995mm'
+                        Z='0.22mm'
+                      $end 'PLPoint'
+                    $end 'PolylinePoints'
+                    $begin 'PolylineSegments'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=0
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                    $end 'PolylineSegments'
+                  $end 'PolylineParameters'
+                  ParentPartID=161
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=161
+                    StartFaceID=-1
+                    StartEdgeID=162
+                    StartVertexID=163
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=165
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=161
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='0.27868deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=161
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=166
+                    StartEdgeID=167
+                    StartVertexID=171
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=160
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Rotate'
+                  ID=175
+                  ReferenceCoordSystemID=1
+                  $begin 'RotateParameters'
+                    PartID=161
+                    RotateAxis='Z'
+                    RotateAngle='5.625deg'
+                  $end 'RotateParameters'
+                  ParentPartID=161
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=165
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Unite'
+                  ID=176
+                  $begin 'UniteParameters'
+                    KeepOriginals=false
+                    BlankPart=161
+                    NumToolParts=1
+                    ToolParts(122)
+                  $end 'UniteParameters'
+                  ParentPartID=161
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=177
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=2
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  BlankOperation=175
+                  NumToolOperations=1
+                  ToolOperations(126)
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=434
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='11.25deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=161
+                $end 'CloneToOperation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=633
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=4
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=161
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=179
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='44.5mm'
+                    YStart='-0.5mm'
+                    ZStart='0mm'
+                    Width='1mm'
+                    Height='1mm'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=180
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=180
+                    StartFaceID=-1
+                    StartEdgeID=181
+                    StartVertexID=185
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=189
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=180
+                  $end 'LocalOperationParameters'
+                  ParentPartID=180
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=190
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=179
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Rotate'
+                  ID=191
+                  ReferenceCoordSystemID=1
+                  $begin 'RotateParameters'
+                    PartID=180
+                    RotateAxis='Z'
+                    RotateAngle='5.625deg'
+                  $end 'RotateParameters'
+                  ParentPartID=180
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=0
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  TranformBaseOperationID=189
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=422
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='11.25deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=180
+                $end 'CloneToOperation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=691
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=4
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=180
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='airbox'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='air'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=216
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='-3mm'
+                    Width='48mm'
+                    Height='9mm'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=217
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=217
+                    StartFaceID=-1
+                    StartEdgeID=218
+                    StartVertexID=222
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=226
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=217
+                  $end 'LocalOperationParameters'
+                  ParentPartID=217
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=227
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=216
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=240
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=217
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='-360deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=217
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=454
+                    StartEdgeID=457
+                    StartVertexID=459
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=226
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=542
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=217
+                    NumToolParts=1
+                    ToolParts(523)
+                  $end 'SubtractParameters'
+                  ParentPartID=217
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=4
+                      NumWires=0
+                      NumLoops=8
+                      NumCoedges=8
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=543
+                    StartEdgeID=544
+                    StartVertexID=546
+                    NumNewFaces=1
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  BlankOperation=240
+                  NumToolOperations=1
+                  ToolOperations(534)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=634
+                  $begin 'CloneFromParameters'
+                    SourcePartID=161
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=635
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=635
+                    StartFaceID=636
+                    StartEdgeID=637
+                    StartVertexID=645
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(166)
+                    OldEdgeIDs(167, 168, 169, 177, 130, 131, 128, 178)
+                    OldVertexIDs(171, 172, 173, 174, 134, 135, 132, 133)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=633
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=810
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=635
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=692
+                  $begin 'CloneFromParameters'
+                    SourcePartID=180
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=693
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=693
+                    StartFaceID=694
+                    StartEdgeID=695
+                    StartVertexID=699
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(190)
+                    OldEdgeIDs(181, 182, 183, 184)
+                    OldVertexIDs(185, 186, 187, 188)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=691
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=888
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=693
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=811
+                  $begin 'CloneFromParameters'
+                    SourcePartID=635
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=812
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=812
+                    StartFaceID=813
+                    StartEdgeID=814
+                    StartVertexID=822
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(636)
+                    OldEdgeIDs(637, 638, 639, 640, 641, 642, 643, 644)
+                    OldVertexIDs(645, 646, 647, 648, 649, 650, 651, 652)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=810
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=980
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=812
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=889
+                  $begin 'CloneFromParameters'
+                    SourcePartID=693
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=890
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=890
+                    StartFaceID=891
+                    StartEdgeID=892
+                    StartVertexID=896
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(694)
+                    OldEdgeIDs(695, 696, 697, 698)
+                    OldVertexIDs(699, 700, 701, 702)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=888
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=1000
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=890
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=981
+                  $begin 'CloneFromParameters'
+                    SourcePartID=812
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=982
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=982
+                    StartFaceID=983
+                    StartEdgeID=984
+                    StartVertexID=992
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(813)
+                    OldEdgeIDs(814, 815, 816, 817, 818, 819, 820, 821)
+                    OldVertexIDs(822, 823, 824, 825, 826, 827, 828, 829)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=980
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=1012
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=982
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1001
+                  $begin 'CloneFromParameters'
+                    SourcePartID=890
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=1002
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1002
+                    StartFaceID=1003
+                    StartEdgeID=1004
+                    StartVertexID=1008
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(891)
+                    OldEdgeIDs(892, 893, 894, 895)
+                    OldVertexIDs(896, 897, 898, 899)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1000
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=1032
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=2
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=1002
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1013
+                  $begin 'CloneFromParameters'
+                    SourcePartID=982
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=1014
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1014
+                    StartFaceID=1015
+                    StartEdgeID=1016
+                    StartVertexID=1024
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(983)
+                    OldEdgeIDs(984, 985, 986, 987, 988, 989, 990, 991)
+                    OldVertexIDs(992, 993, 994, 995, 996, 997, 998, 999)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1012
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=1044
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=12
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=1014
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1033
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1002
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=1034
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1034
+                    StartFaceID=1035
+                    StartEdgeID=1036
+                    StartVertexID=1040
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1003)
+                    OldEdgeIDs(1004, 1005, 1006, 1007)
+                    OldVertexIDs(1008, 1009, 1010, 1011)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1032
+                $end 'Operation'
+                $begin 'CloneToOperation'
+                  OperationType='DuplicateAroundAxis'
+                  ID=1254
+                  ReferenceCoordSystemID=1
+                  $begin 'DuplicateAroundAxisParameters'
+                    WhichAxis='Z'
+                    AngleStr='22.5deg'
+                    NumClones=12
+                  $end 'DuplicateAroundAxisParameters'
+                  ParentPartID=1034
+                $end 'CloneToOperation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1045
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=1046
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1046
+                    StartFaceID=1047
+                    StartEdgeID=1048
+                    StartVertexID=1056
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1064
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=1
+                  $end 'CloneFromParameters'
+                  ParentPartID=1065
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1065
+                    StartFaceID=1066
+                    StartEdgeID=1067
+                    StartVertexID=1075
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_3'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1083
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=2
+                  $end 'CloneFromParameters'
+                  ParentPartID=1084
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1084
+                    StartFaceID=1085
+                    StartEdgeID=1086
+                    StartVertexID=1094
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_4'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1102
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=3
+                  $end 'CloneFromParameters'
+                  ParentPartID=1103
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1103
+                    StartFaceID=1104
+                    StartEdgeID=1105
+                    StartVertexID=1113
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_5'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1121
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=4
+                  $end 'CloneFromParameters'
+                  ParentPartID=1122
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1122
+                    StartFaceID=1123
+                    StartEdgeID=1124
+                    StartVertexID=1132
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_6'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1140
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=5
+                  $end 'CloneFromParameters'
+                  ParentPartID=1141
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1141
+                    StartFaceID=1142
+                    StartEdgeID=1143
+                    StartVertexID=1151
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_7'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1159
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=6
+                  $end 'CloneFromParameters'
+                  ParentPartID=1160
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1160
+                    StartFaceID=1161
+                    StartEdgeID=1162
+                    StartVertexID=1170
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_8'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1178
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=7
+                  $end 'CloneFromParameters'
+                  ParentPartID=1179
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1179
+                    StartFaceID=1180
+                    StartEdgeID=1181
+                    StartVertexID=1189
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_9'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1197
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=8
+                  $end 'CloneFromParameters'
+                  ParentPartID=1198
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1198
+                    StartFaceID=1199
+                    StartEdgeID=1200
+                    StartVertexID=1208
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_10'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1216
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=9
+                  $end 'CloneFromParameters'
+                  ParentPartID=1217
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1217
+                    StartFaceID=1218
+                    StartEdgeID=1219
+                    StartVertexID=1227
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='element_1_1_1_1_11'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1235
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1014
+                    WhichClone=10
+                  $end 'CloneFromParameters'
+                  ParentPartID=1236
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=8
+                      NumEdges=8
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=1236
+                    StartFaceID=1237
+                    StartEdgeID=1238
+                    StartVertexID=1246
+                    NumNewFaces=1
+                    NumNewEdges=8
+                    NumNewVertices=8
+                    OldFaceIDs(1015)
+                    OldEdgeIDs(1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023)
+                    OldVertexIDs(1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1044
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1255
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=0
+                  $end 'CloneFromParameters'
+                  ParentPartID=1256
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1256
+                    StartFaceID=1257
+                    StartEdgeID=1258
+                    StartVertexID=1262
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1266
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=1
+                  $end 'CloneFromParameters'
+                  ParentPartID=1267
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1267
+                    StartFaceID=1268
+                    StartEdgeID=1269
+                    StartVertexID=1273
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_3'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1277
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=2
+                  $end 'CloneFromParameters'
+                  ParentPartID=1278
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1278
+                    StartFaceID=1279
+                    StartEdgeID=1280
+                    StartVertexID=1284
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_4'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1288
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=3
+                  $end 'CloneFromParameters'
+                  ParentPartID=1289
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1289
+                    StartFaceID=1290
+                    StartEdgeID=1291
+                    StartVertexID=1295
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_5'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1299
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=4
+                  $end 'CloneFromParameters'
+                  ParentPartID=1300
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1300
+                    StartFaceID=1301
+                    StartEdgeID=1302
+                    StartVertexID=1306
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_6'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1310
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=5
+                  $end 'CloneFromParameters'
+                  ParentPartID=1311
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1311
+                    StartFaceID=1312
+                    StartEdgeID=1313
+                    StartVertexID=1317
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_7'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1321
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=6
+                  $end 'CloneFromParameters'
+                  ParentPartID=1322
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1322
+                    StartFaceID=1323
+                    StartEdgeID=1324
+                    StartVertexID=1328
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_8'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1332
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=7
+                  $end 'CloneFromParameters'
+                  ParentPartID=1333
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1333
+                    StartFaceID=1334
+                    StartEdgeID=1335
+                    StartVertexID=1339
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_9'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1343
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=8
+                  $end 'CloneFromParameters'
+                  ParentPartID=1344
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1344
+                    StartFaceID=1345
+                    StartEdgeID=1346
+                    StartVertexID=1350
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_10'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1354
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=9
+                  $end 'CloneFromParameters'
+                  ParentPartID=1355
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1355
+                    StartFaceID=1356
+                    StartEdgeID=1357
+                    StartVertexID=1361
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='feed_1_1_1_1_11'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='DuplicateBodyAroundAxis'
+                  ID=1365
+                  $begin 'CloneFromParameters'
+                    SourcePartID=1034
+                    WhichClone=10
+                  $end 'CloneFromParameters'
+                  ParentPartID=1366
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=1366
+                    StartFaceID=1367
+                    StartEdgeID=1368
+                    StartVertexID=1372
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                    OldFaceIDs(1035)
+                    OldEdgeIDs(1036, 1037, 1038, 1039)
+                    OldVertexIDs(1040, 1041, 1042, 1043)
+                  $end 'OperationIdentity'
+                  PlaceHolderOpnId=1254
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=29
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='0mm'
+                    Width='3.2mm'
+                    Height='45mm'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=30
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=30
+                    StartFaceID=-1
+                    StartEdgeID=31
+                    StartVertexID=35
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=39
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=30
+                  $end 'LocalOperationParameters'
+                  ParentPartID=30
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=40
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=29
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=41
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=30
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='360deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=30
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=968
+                    StartEdgeID=971
+                    StartVertexID=973
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=39
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle4'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=77
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='0mm'
+                    Width='3.2mm'
+                    Height='44mm'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=78
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=78
+                    StartFaceID=-1
+                    StartEdgeID=79
+                    StartVertexID=83
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=87
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=78
+                  $end 'LocalOperationParameters'
+                  ParentPartID=78
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=88
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=77
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=89
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=78
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='360deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=78
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=900
+                    StartEdgeID=903
+                    StartVertexID=905
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=87
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='patch'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Polyline'
+                  ID=121
+                  ReferenceCoordSystemID=1
+                  $begin 'PolylineParameters'
+                    IsPolylineClosed=false
+                    $begin 'PolylinePoints'
+                      $begin 'PLPoint'
+                        X='45.254mm'
+                        Y='0mm'
+                        Z='0.22mm'
+                      $end 'PLPoint'
+                      $begin 'PLPoint'
+                        X='45.254mm'
+                        Y='0mm'
+                        Z='2.82mm'
+                      $end 'PLPoint'
+                    $end 'PolylinePoints'
+                    $begin 'PolylineSegments'
+                      $begin 'PLSegment'
+                        SegmentType='Line'
+                        StartIndex=0
+                        NoOfPoints=2
+                      $end 'PLSegment'
+                    $end 'PolylineSegments'
+                  $end 'PolylineParameters'
+                  ParentPartID=122
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=1
+                      NumEdges=1
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=122
+                    StartFaceID=-1
+                    StartEdgeID=123
+                    StartVertexID=124
+                    NumNewFaces=0
+                    NumNewEdges=1
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=126
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=122
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='11.25deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=122
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=127
+                    StartEdgeID=128
+                    StartVertexID=132
+                    NumNewFaces=1
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=121
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='airbox1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='air'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=522
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0mm'
+                    YStart='0mm'
+                    ZStart='-3mm'
+                    Width='40mm'
+                    Height='9mm'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=523
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=523
+                    StartFaceID=-1
+                    StartEdgeID=524
+                    StartVertexID=528
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=532
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=523
+                  $end 'LocalOperationParameters'
+                  ParentPartID=523
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=533
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=522
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='SweepAroundAxis'
+                  ID=534
+                  ReferenceCoordSystemID=1
+                  $begin 'AxisSweepParameters'
+                    ProfileID=523
+                    DraftAngle='0deg'
+                    DraftType='Round'
+                    SweepAxis='Z'
+                    SweepAngle='-360deg'
+                  $end 'AxisSweepParameters'
+                  ParentPartID=523
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=3
+                      NumWires=0
+                      NumLoops=4
+                      NumCoedges=4
+                      NumEdges=2
+                      NumVertices=2
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=535
+                    StartEdgeID=538
+                    StartVertexID=540
+                    NumNewFaces=3
+                    NumNewEdges=2
+                    NumNewVertices=2
+                  $end 'OperationIdentity'
+                  SweepProfileOperationID=532
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 5)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('GeometryBodyOperation', 5)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 17)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 15)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 101)
+            DependencyObject('GeometryBodyOperation', 17)
+            DependencyObject('GeometryBodyOperation', 41)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 393)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 725)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 53)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 63)
+            DependencyObject('GeometryBodyOperation', 53)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 65)
+            DependencyObject('GeometryBodyOperation', 63)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 111)
+            DependencyObject('GeometryBodyOperation', 65)
+            DependencyObject('GeometryBodyOperation', 89)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 364)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 548)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 160)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 165)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 160)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 175)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 165)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 176)
+            DependencyObject('GeometryBodyOperation', 175)
+            DependencyObject('GeometryBodyOperation', 126)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 434)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 633)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 179)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 189)
+            DependencyObject('GeometryBodyOperation', 179)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 191)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 189)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 422)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 691)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 216)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 226)
+            DependencyObject('GeometryBodyOperation', 216)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 240)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 226)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 542)
+            DependencyObject('GeometryBodyOperation', 240)
+            DependencyObject('GeometryBodyOperation', 534)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 634)
+            DependencyObject('GeometryOperation', 633)
+            DependencyObject('GeometryBodyOperation', 176)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 810)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 692)
+            DependencyObject('GeometryOperation', 691)
+            DependencyObject('GeometryBodyOperation', 191)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 888)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 811)
+            DependencyObject('GeometryOperation', 810)
+            DependencyObject('GeometryBodyOperation', 634)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 980)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 889)
+            DependencyObject('GeometryOperation', 888)
+            DependencyObject('GeometryBodyOperation', 692)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 1000)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 981)
+            DependencyObject('GeometryOperation', 980)
+            DependencyObject('GeometryBodyOperation', 811)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 1012)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1001)
+            DependencyObject('GeometryOperation', 1000)
+            DependencyObject('GeometryBodyOperation', 889)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 1032)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1013)
+            DependencyObject('GeometryOperation', 1012)
+            DependencyObject('GeometryBodyOperation', 981)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1033)
+            DependencyObject('GeometryOperation', 1032)
+            DependencyObject('GeometryBodyOperation', 1001)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1045)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1064)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1083)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1102)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1121)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1140)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1159)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1178)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1197)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1216)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1235)
+            DependencyObject('GeometryOperation', 1044)
+            DependencyObject('GeometryBodyOperation', 1013)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1255)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1266)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1277)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1288)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1299)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1310)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1321)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1332)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1343)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1354)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 1365)
+            DependencyObject('GeometryOperation', 1254)
+            DependencyObject('GeometryBodyOperation', 1033)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 29)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 39)
+            DependencyObject('GeometryBodyOperation', 29)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 41)
+            DependencyObject('GeometryBodyOperation', 39)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 77)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 87)
+            DependencyObject('GeometryBodyOperation', 77)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 89)
+            DependencyObject('GeometryBodyOperation', 87)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 121)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 126)
+            DependencyObject('CoordinateSystem', 1)
+            DependencyObject('GeometryBodyOperation', 121)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 522)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 532)
+            DependencyObject('GeometryBodyOperation', 522)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=2
+            DependencyObject('GeometryBodyOperation', 534)
+            DependencyObject('GeometryBodyOperation', 532)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=28
+        MoveBackwards=false
+        $begin 'Rad1'
+          ID=10
+          BoundType='Radiation'
+          Faces(454, 455, 456, 543)
+        $end 'Rad1'
+        $begin 'PerfE1'
+          ID=27
+          BoundType='Perfect E'
+          InfGroundPlane=false
+          Objects(161, 635, 812, 982, 1014, 1046, 1217, 1236, 1065, 1084, 1103, 1122, 1141, 1160, 1179, 1198)
+        $end 'PerfE1'
+        $begin 'LumpPort1'
+          ID=0
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=185
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=186
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(180)
+        $end 'LumpPort1'
+        $begin 'LumpPort2'
+          ID=6
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=699
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=700
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(693)
+        $end 'LumpPort2'
+        $begin 'LumpPort3'
+          ID=13
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=896
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=897
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(890)
+        $end 'LumpPort3'
+        $begin 'LumpPort4'
+          ID=14
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1008
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1009
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1002)
+        $end 'LumpPort4'
+        $begin 'LumpPort5'
+          ID=15
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1040
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1041
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1034)
+        $end 'LumpPort5'
+        $begin 'LumpPort6'
+          ID=16
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1262
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1263
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1256)
+        $end 'LumpPort6'
+        $begin 'LumpPort7'
+          ID=17
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1273
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1274
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1267)
+        $end 'LumpPort7'
+        $begin 'LumpPort8'
+          ID=18
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1284
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1285
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1278)
+        $end 'LumpPort8'
+        $begin 'LumpPort9'
+          ID=19
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1295
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1296
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1289)
+        $end 'LumpPort9'
+        $begin 'LumpPort10'
+          ID=20
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1306
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1307
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1300)
+        $end 'LumpPort10'
+        $begin 'LumpPort11'
+          ID=21
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1317
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1318
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1311)
+        $end 'LumpPort11'
+        $begin 'LumpPort12'
+          ID=22
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1328
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1329
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1322)
+        $end 'LumpPort12'
+        $begin 'LumpPort13'
+          ID=23
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1339
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1340
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1333)
+        $end 'LumpPort13'
+        $begin 'LumpPort14'
+          ID=24
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1350
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1351
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1344)
+        $end 'LumpPort14'
+        $begin 'LumpPort15'
+          ID=25
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1361
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1362
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1355)
+        $end 'LumpPort15'
+        $begin 'LumpPort16'
+          ID=26
+          BoundType='Lumped Port'
+          $begin 'Terminals'
+            $begin 'T1'
+              TermNum=1
+              $begin 'TermLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1372
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=1373
+                  PositionType='OnVertex'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'TermLine'
+            $end 'T1'
+          $end 'Terminals'
+          Resistance='50Ohm'
+          Reactance='0Ohm'
+          Objects(1366)
+        $end 'LumpPort16'
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=1
+        MoveBackwards=false
+        $begin 'Setup1'
+          ID=0
+          SetupType='HfssDriven'
+          Frequency='35GHz'
+          PortsOnly=false
+          MaxDeltaS=0.02
+          UseMatrixConv=false
+          MaximumPasses=5
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.3333
+          PortAccuracy=2
+          SetPortMinMaxTri=false
+          PortMinTri=100
+          PortMaxTri=500
+          $begin 'Sweeps'
+            NextUniqueID=1
+            MoveBackwards=false
+            $begin 'Sweep1'
+              ID=0
+              Type='Fast'
+              SetupType='LinearStep'
+              StartFreq='34GHz'
+              StopFreq='36GHz'
+              StepSize='0.1GHz'
+              SaveFields=true
+              ExtrapToDC=false
+            $end 'Sweep1'
+          $end 'Sweeps'
+        $end 'Setup1'
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='NoIncidentWave'
+      Entry(ID=0, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=6, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=13, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=14, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=15, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=16, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=17, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=18, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=19, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=20, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=21, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=22, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=23, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=24, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=25, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=26, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=0, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=6, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=13, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=14, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=15, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=16, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=17, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=18, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=19, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=20, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=21, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=22, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=23, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=24, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=25, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+      Entry(ID=26, Index=0, Terminal=true, Terminated=false, Resistance=50, Reactance=0)
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+      $begin 'PortFieldDisplay'
+        ScaleFactor=5
+        Solution='Setup1 : LastAdaptive'
+        Frequency='35GHz'
+        ColorR=255
+        ColorG=1
+        ColorB=1
+      $end 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'PlotDefaults'
+        Default_SolutionId=55
+        Default_PlotFolder='Automatic'
+        Default_Phase='0deg'
+        Default_Freq='35GHz'
+      $end 'PlotDefaults'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=1
+        MoveBackwards=false
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+      $begin 'FarFieldSetups'
+        NextUniqueID=3
+        MoveBackwards=false
+        $begin 'Infinite Sphere1'
+          Type='Infinite Sphere'
+          ID=2
+          UseCustomRadiationSurface=false
+          ThetaStart='0deg'
+          ThetaStop='180deg'
+          ThetaStep='10deg'
+          PhiStart='0deg'
+          PhiStop='360deg'
+          PhiStep='1deg'
+          UseLocalCS=false
+        $end 'Infinite Sphere1'
+      $end 'FarFieldSetups'
+      $begin 'ArraySetup'
+        UseOption='NoArray'
+        $begin 'RegularArray'
+          NumUCells='10'
+          NumVCells='10'
+          CellUDist='10mm'
+          CellVDist='10mm'
+          UDirnX='1'
+          UDirnY='0'
+          UDirnZ='0'
+          VDirnX='0'
+          VDirnY='1'
+          VDirnZ='0'
+          FirstCellPosX='0mm'
+          FirstCellPosY='0mm'
+          FirstCellPosZ='0mm'
+          UseScanAngle=true
+          ScanAnglePhi='45deg'
+          ScanAngleTheta='45deg'
+          UDirnPhaseShift='0deg'
+          VDirnPhaseShift='0deg'
+        $end 'RegularArray'
+        $begin 'CustomArray'
+          NumCells=0
+          $begin 'Cell'
+          $end 'Cell'
+        $end 'CustomArray'
+      $end 'ArraySetup'
+      $begin 'NearFieldSetups'
+        NextUniqueID=3
+        MoveBackwards=false
+      $end 'NearFieldSetups'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=51
+        Name='Setup1'
+        $begin 'Solution'
+          ID=53
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='35GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=55
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            SimValue('GainTheta', 1, 67, true, 0, 0, 2, 0, false, false, 2, 1, 0, 1)
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='35GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.174532925199433
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=3.14159265358979
+                Increment=0.174532925199433
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            $begin 'SolutionPointSets'
+              $begin 'SolutionPointSet'
+                name='LastAdaptive:SolutionPointSet 3'
+                CurrentIndex=2
+                SolutionVersion=982
+                SimValueContext(0, 0, 2, 0, false, false, 2, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Phi'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Phi'
+                      RegularSweep=1
+                      Units='deg'
+                      Minimum=0
+                      Maximum=6.28318530717959
+                      Increment=0.0174532925199433
+                    $end 'SweepBase'
+                  $end 'Phi'
+                  $begin 'Theta'
+                    All=false
+                    Indices(9)
+                    $begin 'SweepBase'
+                      Variable='Theta'
+                      RegularSweep=1
+                      Units='deg'
+                      Minimum=0
+                      Maximum=3.14159265358979
+                      Increment=0.174532925199433
+                    $end 'SweepBase'
+                    $begin 'SubColumns'
+                      SubsweepColumn(V='0deg;10deg;20deg;30deg;40deg;50deg;60deg;70deg;80deg;90deg;100deg;110deg;120deg;130deg;140deg;150deg;160deg;170deg;180deg')
+                    $end 'SubColumns'
+                  $end 'Theta'
+                  $begin 'Freq'
+                    All=false
+                    Indices(0)
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      Column='35GHz'
+                      Units='GHz'
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='LastAdaptive:SolutionPointSet 3:Trace2D 1'
+                    X(Desc='Phi', CatID=1, FuncID=0, IsInteger=false, Units='deg', X='Phi')
+                    Y(Desc='GainTheta', CatID=28, FuncID=11, IsInteger=false, Units='', Y='dB(GainTheta)')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+              $begin 'SolutionPointSet'
+                name='LastAdaptive:SolutionPointSet 1'
+                CurrentIndex=2
+                SolutionVersion=982
+                SimValueContext(0, 0, 2, 0, false, false, 2, 1, 0, 1)
+                $begin 'SubSweeps'
+                  $begin 'Phi'
+                    All=true
+                    Indices()
+                    $begin 'SweepBase'
+                      Variable='Phi'
+                      RegularSweep=1
+                      Units='deg'
+                      Minimum=0
+                      Maximum=6.28318530717959
+                      Increment=0.0174532925199433
+                    $end 'SweepBase'
+                  $end 'Phi'
+                  $begin 'Theta'
+                    All=false
+                    Indices(9)
+                    $begin 'SweepBase'
+                      Variable='Theta'
+                      RegularSweep=1
+                      Units='deg'
+                      Minimum=0
+                      Maximum=3.14159265358979
+                      Increment=0.174532925199433
+                    $end 'SweepBase'
+                    $begin 'SubColumns'
+                      SubsweepColumn(V='0deg;10deg;20deg;30deg;40deg;50deg;60deg;70deg;80deg;90deg;100deg;110deg;120deg;130deg;140deg;150deg;160deg;170deg;180deg')
+                    $end 'SubColumns'
+                  $end 'Theta'
+                  $begin 'Freq'
+                    All=false
+                    Indices(0)
+                    $begin 'SweepBase'
+                      Variable='Freq'
+                      Column='35GHz'
+                      Units='GHz'
+                    $end 'SweepBase'
+                  $end 'Freq'
+                $end 'SubSweeps'
+                $begin 'Traces'
+                  $begin 'Trace2D'
+                    name='LastAdaptive:SolutionPointSet 1:Trace2D 1'
+                    X(Desc='Phi', CatID=1, FuncID=0, IsInteger=false, Units='deg', X='Phi')
+                    Y(Desc='GainTheta', CatID=28, FuncID=11, IsInteger=false, Units='', Y='dB(GainTheta)')
+                  $end 'Trace2D'
+                $end 'Traces'
+              $end 'SolutionPointSet'
+            $end 'SolutionPointSets'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=57
+          Name='Sweep1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'PostprocessSweep'
+                Variable='Freq'
+                RegularSweep=1
+                Units='GHz'
+                Minimum=34000000000
+                Maximum=36000000000
+                Increment=100000000
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=63
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='35GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=66
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='35GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=69
+          Name='Adaptive_4'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='35GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=72
+          Name='Adaptive_5'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='35GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'Version ID Map'
+        V=866
+        $begin 'Setup'
+          N='Setup1'
+          V=965
+          Soln(N='Adaptive_1', V=982)
+          Soln(N='LastAdaptive', V=982)
+          Soln(N='Sweep1', V=982)
+          Soln(N='Adaptive_2', V=982)
+          Soln(N='Adaptive_3', V=982)
+          Soln(N='Adaptive_4', V=982)
+          Soln(N='Adaptive_5', V=982)
+        $end 'Setup'
+      $end 'Version ID Map'
+      $begin 'ID Map'
+        $begin 'Setup'
+          N='Setup1'
+          I=51
+          Soln(N='Adaptive_1', I=53)
+          Soln(N='LastAdaptive', I=55)
+          Soln(N='Sweep1', I=57)
+          Soln(N='Adaptive_2', I=63)
+          Soln(N='Adaptive_3', I=66)
+          Soln(N='Adaptive_4', I=69)
+          Soln(N='Adaptive_5', I=72)
+        $end 'Setup'
+      $end 'ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(5, 298, 498, -4, -30, 0, 0, 136, 201), OrientationMatrix(-0.0114376218989491, -0.0093560004606843, 0.00467096688225865, 0, 0.010017697699368, -0.00781769119203091, 0.00887131877243519, 0, -0.00299942516721785, 0.0095666479319334, 0.0118175214156508, 0, 0.00449901865795255, -0.0143499718979001, -24.6263370513916, 1, 0, -1.12024033069611, 1.12024033069611, -0.99999988079071, 0.99999988079071, 4.80000019073486, 44.4172172546387), Drawings[35: 'substrate', 'Rectangle3', 'element', 'feed', 'airbox', 'element_1', 'feed_1', 'element_1_1', 'feed_1_1', 'element_1_1_1', 'feed_1_1_1', 'element_1_1_1_1', 'feed_1_1_1_1', 'element_1_1_1_1_1', 'element_1_1_1_1_2', 'element_1_1_1_1_3', 'element_1_1_1_1_4', 'element_1_1_1_1_5', 'element_1_1_1_1_6', 'element_1_1_1_1_7', 'element_1_1_1_1_8', 'element_1_1_1_1_9', 'element_1_1_1_1_10', 'element_1_1_1_1_11', 'feed_1_1_1_1_1', 'feed_1_1_1_1_2', 'feed_1_1_1_1_3', 'feed_1_1_1_1_4', 'feed_1_1_1_1_5', 'feed_1_1_1_1_6', 'feed_1_1_1_1_7', 'feed_1_1_1_1_8', 'feed_1_1_1_1_9', 'feed_1_1_1_1_10', 'feed_1_1_1_1_11'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+            'Radiation Pattern 1'(Report2D(View(WindowPos(5, 138, 498, -4, -30, 44, 58, 706, 416))))
+            'XY Plot 1'(Report2D(View(WindowPos(3, -6, 462, -4, -30, 66, 87, 728, 445))))
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+          $begin 'Report2D'
+            name='Radiation Pattern 1'
+            ReportType=3
+            DisplayType=3
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='LastAdaptive:SolutionPointSet 3:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='MagAngPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='Radiation Pattern 1'
+              DateLabel='<07 Mar 2007>'
+              TimeLabel='<21:18:06>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=2
+              UserSelectedTrace=-1
+              Rho=11
+              RhoMin=-5.86348
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Phi'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=0
+                  AxisMajorDivision=8
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='Angle'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(GainTheta)'
+                  AxisLabel='DEFAULT'
+                  AxisMax=0
+                  AxisMin=0
+                  AxisMajorDivision=0
+                  AxisMinorDivision=0
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=3
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=2129936
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=110
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=110
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+                $begin 'RhoAxisAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'RhoAxisAttr'
+                $begin 'CircAxisAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'CircAxisAttr'
+                $begin 'CircularGridsAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                  $begin 'Attribute'
+                    Color=12130560
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'CircularGridsAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+          $begin 'Report2D'
+            name='XY Plot 1'
+            ReportType=3
+            DisplayType=1
+            Title=''
+            Domain=''
+            $begin 'Graph2Ds'
+              $begin 'Graph2D'
+                TraceName='LastAdaptive:SolutionPointSet 1:Trace2D 1'
+                Type='Continuous'
+                Axis='Y1'
+              $end 'Graph2D'
+            $end 'Graph2Ds'
+            $begin 'PlotInfo'
+              PlotType='XYPlot'
+              Frozen=false
+              MarkDirty=false
+              Subtitle=''
+              Filename='HFSSModel1'
+              CircuitTitle='<Design>'
+              Title='XY Plot 1'
+              DateLabel='<08 Mar 2007>'
+              TimeLabel='<09:00:26>'
+              Name='Ansoft Corporation'
+              DefaultTitle=false
+              Arrows=false
+              ZoomMode=false
+              ZoomType=1
+              UserSelectedTrace=-1
+              Rho=0
+              RhoMin=0
+              MarkerType='NoMarker'
+              MarkerScale='Mag-Phase'
+              UserSelectedMarkerPoint=0
+              SymbolDisplay=false
+              SymbolInterval=15
+              $begin 'Axis'
+                $begin 'Axis0'
+                  AxisType='XAxis'
+                  AxisIndex=0
+                  AxisScale='Linear'
+                  AxisName='Phi'
+                  AxisLabel='DEFAULT'
+                  AxisMax=400
+                  AxisMin=0
+                  AxisMajorDivision=4
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='Angle'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis0'
+                $begin 'Axis1'
+                  AxisType='YAxis'
+                  AxisIndex=1
+                  AxisScale='Linear'
+                  AxisName='dB(GainTheta)'
+                  AxisLabel='DEFAULT'
+                  AxisMax=15
+                  AxisMin=-10
+                  AxisMajorDivision=5
+                  AxisMinorDivision=5
+                  AxisManualRescale=false
+                  AxisAutoUnits=true
+                  AxisSide='Left'
+                  $begin 'Units'
+                    UnitFieldWidth=4
+                    UnitPrecision=2
+                    ScientificNotation=0
+                    CircuitUnits='NoUnits'
+                    BaseType='None'
+                  $end 'Units'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'Axis1'
+              $end 'Axis'
+              DisplayMinorGrid=true
+              InitialGrid=1
+              DisplayGridLabel=true
+              DisplayTraceLabel=false
+              $begin 'Trace'
+                $begin 'TraceInfo0'
+                  TraceType='Continuous'
+                  $begin 'Attribute'
+                    Color=16711680
+                    ColorOdd=0
+                    LineWidth=10
+                    LineStyle=0
+                    FillStyle=600
+                    Visible=false
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=160
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TraceInfo0'
+              $end 'Trace'
+              $begin 'AllAttributes'
+                BackGroundColor=16777215
+                ContrastColor=16777215
+                $begin 'TitleAttr'
+                  $begin 'Attribute'
+                    Color=0
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=168
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'TitleAttr'
+                $begin 'MajorGridAttr'
+                  $begin 'Attribute'
+                    Color=8421504
+                    ColorOdd=65535
+                    LineWidth=8
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=110
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MajorGridAttr'
+                $begin 'MinorGridAttr'
+                  $begin 'Attribute'
+                    Color=12632256
+                    ColorOdd=65535
+                    LineWidth=1
+                    LineStyle=0
+                    FillStyle=0
+                    Visible=true
+                    $begin 'Font'
+                      FaceName='Arial'
+                      FontHeight=110
+                      FontWeight=700
+                      FontOrientation=0
+                      FontEscapement=0
+                      FontItalics=false
+                      FontUnderline=false
+                      FontStrikeOut=false
+                    $end 'Font'
+                  $end 'Attribute'
+                $end 'MinorGridAttr'
+              $end 'AllAttributes'
+            $end 'PlotInfo'
+          $end 'Report2D'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'
