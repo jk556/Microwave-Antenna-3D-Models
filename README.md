@@ -1,5 +1,11 @@
 # Microwave-Antenna-3D-Models
-3D models of many microwave devices will be uploaded here. first version of files will be in Ansys Electronics suite and Ansoft HFSS format.
+3D models of many microwave devices will be uploaded here. first version of files will be in Ansys Electronics suite and Ansoft HFSS format. some of files are in cst format.
+
+## usage:
+### Virtual Antenna an Microwave Lab.
+### supplementary Material for Microwave and Antenna Courses
+### Start point of learning simulation and research!
+### Automatic dataset generation for designing using AI and ML!
 
 ## citation:
 please cite this paper:
