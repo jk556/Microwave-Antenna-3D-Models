@@ -1,0 +1,761 @@
+$begin 'AnsoftProject'
+  Created='Tue Feb 11 11:30:58 2003'
+  Product='HFSS'
+  NextUniqueID=0
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=0
+    $begin 'DatasetDefinitions'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'GlobalVariables'
+    VariableProp('$width', 'UD', '', '14.8570192mm', oa(i=true, Min='6.5mm', Max='19.5mm', MinStep='0.13mm', MaxStep='1.3mm'), sta(i=true, Dist='Gaussian', Tol='10%', StdD='0.2mm', Min='-3', Max='3'), ta(i=true, Step='1.3mm', Min='6.5mm', Max='19.5mm'))
+    VariableProp('$length', 'UD', '', '7.824547736mm', oa(i=true, Min='6mm', Max='18mm', MinStep='0.12mm', MaxStep='1.2mm'), sa(i=true, Min='6mm', Max='18mm', IDisp='1mm'), sta(i=true, Dist='Gaussian', Tol='10%', StdD='0.2mm', Min='-3', Max='3'), ta(i=true, Step='1.2mm', Min='6mm', Max='18mm'))
+    VariableProp('$height', 'UD', '', '0.45*$width')
+  $end 'GlobalVariables'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1044981057
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1044981056, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'Hfss')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='DrivenModal'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      $begin 'Properties'
+        VariableProp('Ystart', 'UD', '', '8mm+$length')
+      $end 'Properties'
+      SnapMode=31
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='mm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=89
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='wr90'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0.400000005960464
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=5
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0'
+                    YPosition='0'
+                    ZPosition='0'
+                    XSize='11.43mm'
+                    YSize='8mm'
+                    ZSize='5.08mm'
+                  $end 'BoxParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=6
+                    StartFaceID=7
+                    StartEdgeID=13
+                    StartVertexID=25
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='matchingsection'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0.400000005960464
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=33
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='8mm'
+                    ZPosition='0mm'
+                    XSize='$width'
+                    YSize='$length'
+                    ZSize='$height'
+                  $end 'BoxParameters'
+                  ParentPartID=34
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=34
+                    StartFaceID=35
+                    StartEdgeID=41
+                    StartVertexID=53
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='wr137'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0.400000005960464
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=61
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0mm'
+                    YPosition='Ystart'
+                    ZPosition='0mm'
+                    XSize='17.4mm'
+                    YSize='10mm'
+                    ZSize='7.9mm'
+                  $end 'BoxParameters'
+                  ParentPartID=62
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=62
+                    StartFaceID=63
+                    StartEdgeID=69
+                    StartVertexID=81
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 5)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 33)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 61)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=3
+        $begin 'PerfH1'
+          ID=0
+          BoundType='Perfect H'
+          Faces(66, 38, 10)
+        $end 'PerfH1'
+        $begin 'WavePort1'
+          ID=1
+          BoundType='Wave Port'
+          NumModes=1
+          PolarizeEField=false
+          DoDeembed=false
+          DeembedDist='0mm'
+          DoRenorm=false
+          RenormValue='50Ohm'
+          $begin 'Modes'
+            $begin 'Mode1'
+              ModeNum=1
+              UseIntLine=false
+            $end 'Mode1'
+          $end 'Modes'
+          Faces(9)
+        $end 'WavePort1'
+        $begin 'WavePort2'
+          ID=2
+          BoundType='Wave Port'
+          NumModes=1
+          PolarizeEField=false
+          DoDeembed=false
+          DeembedDist='0mm'
+          DoRenorm=false
+          RenormValue='50Ohm'
+          $begin 'Modes'
+            $begin 'Mode1'
+              ModeNum=1
+              UseIntLine=false
+            $end 'Mode1'
+          $end 'Modes'
+          Faces(67)
+        $end 'WavePort2'
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=0
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=1
+        $begin 'Setup1'
+          ID=0
+          SetupType='HfssDriven'
+          Frequency='8GHz'
+          PortsOnly=false
+          MaxDeltaS=0.0002
+          UseMatrixConv=false
+          MaximumPasses=8
+          MinimumPasses=3
+          MinimumConvergedPasses=3
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.2
+          PortAccuracy=0.2
+          SetPortMinMaxTri=true
+          PortMinTri=25
+          PortMaxTri=100
+          $begin 'Sweeps'
+            NextUniqueID=0
+          $end 'Sweeps'
+        $end 'Setup1'
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=4
+        $begin 'ParametricSetup1'
+          ID=0
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(10)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='$width'
+              Data='LIN 12mm 17mm 2.5mm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+            $begin 'SweepDefinition'
+              Variable='$length'
+              Data='LIN 8mm 12mm 2mm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=28
+              Calculation='returnloss'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+            $end 'Goal'
+            $begin 'Goal'
+              Solution=28
+              Calculation='reflect'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'ParametricSetup1'
+        $begin 'OptimizationSetup1'
+          ID=1
+          SetupType='OptiOptimization'
+          NextUniqueID=1
+          Version=0
+          SaveFields=false
+          $begin 'StartingPoint'
+            $length='8mm'
+            $width='14.5mm'
+          $end 'StartingPoint'
+          Optimizer='Quasi Newton'
+          MaxIterations=65
+          PriorPSetup=0
+          PreSolvePSetup=true
+          $begin 'Variables'
+            $length(i=true, Min='6mm', Max='18mm', MinStep='0.001mm', MaxStep='1.2mm')
+            $width(i=true, Min='6.5mm', Max='19.5mm', MinStep='0.001mm', MaxStep='1.3mm')
+          $end 'Variables'
+          $begin 'LCS'
+          $end 'LCS'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=28
+              Calculation='reflect'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+              Condition='<='
+              $begin 'GoalValue'
+                GoalValueType='Independent'
+                Format='Real/Imag'
+                bG(v='[0.0001]')
+              $end 'GoalValue'
+              Weight='[1]'
+            $end 'Goal'
+          $end 'Goals'
+          Acceptable_Cost=0.0002
+          Noise=0.0001
+          UpdateDesign=true
+          UpdateIteration=5
+          KeepReportAxis=true
+          UpdateDesignWhenDone=true
+        $end 'OptimizationSetup1'
+        $begin 'SensitivitySetup1'
+          ID=2
+          SetupType='OptiSensitivity'
+          NextUniqueID=1
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          MaxIterations=20
+          PriorPSetup=-1
+          PreSolvePSetup=true
+          $begin 'Variables'
+          $end 'Variables'
+          $begin 'LCS'
+          $end 'LCS'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=28
+              Calculation='returnloss'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+            $end 'Goal'
+            $begin 'Goal'
+              Solution=28
+              Calculation='reflect'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+          'Master Goal'=1
+          MasterError=0.001
+        $end 'SensitivitySetup1'
+        $begin 'StatisticalSetup1'
+          ID=3
+          SetupType='OptiStatistical'
+          NextUniqueID=1
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          MaxIterations=50
+          PriorPSetup=-1
+          $begin 'Variables'
+          $end 'Variables'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=28
+              Calculation='returnloss'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+            $end 'Goal'
+            $begin 'Goal'
+              Solution=28
+              Calculation='reflect'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='8GHz', Stop='8GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'StatisticalSetup1'
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='NoIncidentWave'
+      Entry(ID=1, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+      Entry(ID=2, Index=0, Terminal=false, Terminated=false, Magnitude=0, Phase=0)
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=1
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+      $begin 'FarFieldSetups'
+        NextUniqueID=0
+      $end 'FarFieldSetups'
+      $begin 'ArraySetup'
+        UseOption='NoArray'
+        $begin 'RegularArray'
+          NumUCells='10'
+          NumVCells='10'
+          CellUDist='10mm'
+          CellVDist='10mm'
+          UDirnX='1'
+          UDirnY='0'
+          UDirnZ='0'
+          VDirnX='0'
+          VDirnY='1'
+          VDirnZ='0'
+          FirstCellPosX='0mm'
+          FirstCellPosY='0mm'
+          FirstCellPosZ='0mm'
+          UseScanAngle=true
+          ScanAnglePhi='45deg'
+          ScanAngleTheta='45deg'
+          UDirnPhaseShift='0deg'
+          VDirnPhaseShift='0deg'
+        $end 'RegularArray'
+        $begin 'CustomArray'
+          NumCells=0
+          $begin 'Cell'
+          $end 'Cell'
+        $end 'CustomArray'
+      $end 'ArraySetup'
+      $begin 'NearFieldSetups'
+        NextUniqueID=0
+      $end 'NearFieldSetups'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'OutputVariables'
+        reflect('mag(S(WavePort1,WavePort1))', 1, 'NoUnit', 2, '', 3, 0, 2, 0, false, false, -1)
+        returnloss('dB(reflect)', 1, 'NoUnit', 2, '', 3, 0, 2, 0, false, false, -1)
+      $end 'OutputVariables'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=10
+        Name='Setup1'
+        $begin 'Solution'
+          ID=12
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=14
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=16
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=18
+          Name='Adaptive_4'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=20
+          Name='Adaptive_5'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=22
+          Name='Adaptive_6'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=24
+          Name='Adaptive_7'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=26
+          Name='Adaptive_8'
+          $begin 'SimDataExtractor'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=28
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='8GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='Ystart'
+                Column='16mm;18mm;20mm;15.331501553mm;16.668498447mm;15.502197724mm;15.936855385mm;15.824547736mm;15.699896305mm;15.84555736mm;15.769656773mm;16.049163033mm;15.829002244mm;15.857985065mm;15.999154876mm;15.964126911mm;15.131022228mm;15.873373221mm;15.643270482mm;16.230440287mm;16.654496684mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$width'
+                Column='12mm;13mm;13.77579335mm;14.5mm;14.73239408mm;14.81771184mm;14.84113971mm;14.84923199mm;14.85401886mm;14.8570192mm;14.85825437mm;14.86629085mm;14.86668351mm;14.8728987mm;14.90458811mm;14.91807802mm;14.93409928mm;14.96055119mm;15.01117936mm;15.10376195mm;15.22420665mm;17mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$length'
+                Column='7.131022228mm;7.331501553mm;7.502197724mm;7.643270482mm;7.699896305mm;7.769656773mm;7.824547736mm;7.829002244mm;7.84555736mm;7.857985065mm;7.873373221mm;7.936855385mm;7.964126911mm;7.999154876mm;8mm;8.049163033mm;8.230440287mm;8.654496684mm;8.668498447mm;10mm;12mm'
+                Units='mm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='$height'
+                Column='5.4mm;5.85mm;6.1991070075mm;6.525mm;6.629577336mm;6.667970328mm;6.6785128695mm;6.6821543955mm;6.684308487mm;6.68565864mm;6.6862144665mm;6.6898308825mm;6.6900075795mm;6.692804415mm;6.7070646495mm;6.713135109mm;6.720344676mm;6.7322480355mm;6.755030712mm;6.7966928775mm;6.8508929925mm;7.65mm'
+                Units='mm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'Version ID Map'
+        V=6
+        $begin 'Setup'
+          N='Setup1'
+          V=0
+          Soln(N='Adaptive_1', V=0)
+          Soln(N='Adaptive_2', V=0)
+          Soln(N='Adaptive_3', V=0)
+          Soln(N='Adaptive_4', V=0)
+          Soln(N='Adaptive_5', V=0)
+          Soln(N='Adaptive_6', V=0)
+          Soln(N='Adaptive_7', V=0)
+          Soln(N='Adaptive_8', V=0)
+          Soln(N='LastAdaptive', V=0)
+        $end 'Setup'
+      $end 'Version ID Map'
+      $begin 'ID Map'
+        $begin 'Setup'
+          N='Setup1'
+          I=10
+          Soln(N='Adaptive_1', I=12)
+          Soln(N='Adaptive_2', I=14)
+          Soln(N='Adaptive_3', I=16)
+          Soln(N='Adaptive_4', I=18)
+          Soln(N='Adaptive_5', I=20)
+          Soln(N='Adaptive_6', I=22)
+          Soln(N='Adaptive_7', I=24)
+          Soln(N='Adaptive_8', I=26)
+          Soln(N='LastAdaptive', I=28)
+        $end 'Setup'
+      $end 'ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -4, -23, 22, 22, 642, 417), OrientationMatrix(-0.0211460385471582, -0.0181519351899624, 0.0640180930495262, 0, 0.0664134994149208, -0.00158451439347118, 0.0214879997074604, 0, -0.00413354486227036, 0.0674015209078789, 0.0177459586411715, 0, -0.795906364917755, -0.0845462828874588, -97.1854934692383, 1, 0, -1.31166350841522, 1.31166350841522, -1, 1, 4.80000019073486, 187.672241210938), Drawings[3: 'wr90', 'matchingsection', 'wr137'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'
