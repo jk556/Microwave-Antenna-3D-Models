@@ -1,0 +1,2843 @@
+$begin 'AnsoftProject'
+	Created='Thu Dec 21 19:14:25 2017'
+	FileOwnedByWorkbench=false
+	Product='HFSS'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(15, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	$begin 'HFSSEnvironment'
+		Version(1, 0)
+	$end 'HFSSEnvironment'
+	$begin 'HFIEEnvironment'
+		Version(1, 0)
+	$end 'HFIEEnvironment'
+	$begin 'geometry3deditor'
+		Version(1, 0)
+	$end 'geometry3deditor'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1104, 10000, 1, 1, 0, false, false)
+			Materials(1104, 9500, 9, 2, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'vacuum'
+			$begin 'air'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1.0006'
+				permeability='1.0000004'
+				thermal_conductivity='0.026'
+				mass_density='1.1614'
+				specific_heat='1007'
+				ModTime=1132068239
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'air'
+			$begin 'pec'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				conductivity='1e+030'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'pec'
+			$begin 'Teflon (tm)'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='2.1'
+				dielectric_loss_tangent='0.001'
+				thermal_conductivity='0.25'
+				mass_density='2250'
+				specific_heat='1400'
+				youngs_modulus='496000000'
+				poissons_ratio='0.3'
+				thermal_expansion_coeffcient='1.35e-006'
+				ModTime=1132068241
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'Teflon (tm)'
+			$begin 'FR4_epoxy'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='4.4'
+				dielectric_loss_tangent='0.02'
+				thermal_conductivity='0.294'
+				mass_density='1900'
+				specific_heat='1150'
+				youngs_modulus='11000000000'
+				poissons_ratio='0.28'
+				thermal_expansion_coeffcient='1.5e-005'
+				ModTime=1132068239
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'FR4_epoxy'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+	$end 'Definitions'
+	DesignIDServer=2
+	MoveBackwards=false
+	$begin 'HFSSModel'
+		RepRewriteV2=true
+		Name='HFSSDesign1'
+		DesignID=0
+		'Use Advanced DC Extrapolation'=false
+		'Allow Material Override'=false
+		'Calculate Lossy Dielectrics'=true
+		$begin 'TemperatureSettings'
+			IncludeTemperatureDependence=false
+			EnableFeedback=false
+			Temperatures(6, '22cel', 46, '22cel', 74, '22cel', 90, '22cel', 118, '22cel', 146, '22cel', 186, '22cel')
+		$end 'TemperatureSettings'
+		ObjsEnabledForDeformation()
+		SolutionType='DrivenModal'
+		MaterialDensity=1
+		MassOfTissue=1
+		UseAutoDCThickness=true
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'ModelSetup'
+			$begin 'Editor3D Doc Preferences'
+				'Plane Background'=true
+				BackgroundColor1=16777215
+				BackgroundColor2=0
+				'Need Lights'=true
+				'Ambient Light'=8355711
+				'Num Lights'=2
+				Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+				Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+			$end 'Editor3D Doc Preferences'
+			$begin 'DesignDatasets'
+				NextUniqueID=0
+				MoveBackwards=false
+				DatasetType='DesignDatasetType'
+				$begin 'DatasetDefinitions'
+				$end 'DatasetDefinitions'
+			$end 'DesignDatasets'
+			SnapMode=31
+			WorkingCS=1
+			$begin 'GeometryCore'
+				BlockVersionID=3
+				DataVersion=1
+				NativeKernel='ACIS'
+				NativeKernelVersionID=5
+				Units='mm'
+				InstanceID=-1
+				$begin 'ValidationOptions'
+					EntityCheckLevel='Strict'
+					IgnoreUnclassifiedObjects=false
+					SkipIntersectionChecks=false
+				$end 'ValidationOptions'
+				$begin 'GeometryOperations'
+					BlockVersionID=2
+					$begin 'AnsoftRangedIDServerManager'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=0
+							IDServerRangeMin=0
+							IDServerRangeMax=2146483647
+							NextUniqueID=225
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=1
+							IDServerRangeMin=2146483648
+							IDServerRangeMax=2146485547
+							NextUniqueID=2146483654
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+					$end 'AnsoftRangedIDServerManager'
+					StartBackGroundFaceID=2146483648
+					$begin 'CoordinateSystems'
+					$end 'CoordinateSystems'
+					$begin 'UserDefinedModels'
+					$end 'UserDefinedModels'
+					$begin 'ToplevelParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Ground'
+								Flags=''
+								Color='(128 128 128)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=5
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=6
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=8
+											NumWires=0
+											NumLoops=10
+											NumCoedges=36
+											NumEdges=18
+											NumVertices=12
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000006.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='shield'
+								Flags=''
+								Color='(128 128 128)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=45
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=46
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000046.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='core'
+								Flags=''
+								Color='(128 128 128)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=73
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=74
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=4
+											NumWires=0
+											NumLoops=4
+											NumCoedges=12
+											NumEdges=6
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000074.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Region'
+								Flags=''
+								Color='(255 0 0)'
+								Transparency=1
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"vacuum"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=89
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=90
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000090.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Cylinder1'
+								Flags=''
+								Color='(255 255 255)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"Teflon (tm)"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=117
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=118
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=8
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000118.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='substrate'
+								Flags=''
+								Color='(255 128 0)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"FR4_epoxy"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=145
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=146
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=8
+											NumWires=0
+											NumLoops=10
+											NumCoedges=36
+											NumEdges=18
+											NumVertices=12
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000146.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='patch'
+								Flags=''
+								Color='(128 128 128)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=185
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='C:\\Users\\hozor14\\Desktop\\patch_antenna.step'
+									$end 'NativeBodyParameters'
+									ParentPartID=186
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=8
+											NumWires=0
+											NumLoops=10
+											NumCoedges=36
+											NumEdges=18
+											NumVertices=12
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000186.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'ToplevelParts'
+					$begin 'OperandParts'
+					$end 'OperandParts'
+					$begin 'Planes'
+					$end 'Planes'
+					$begin 'Points'
+					$end 'Points'
+					$begin 'GeometryEntityLists'
+					$end 'GeometryEntityLists'
+					$begin 'CachedNames'
+						$begin 'allobjects'
+							allobjects(-1)
+						$end 'allobjects'
+						$begin 'core'
+							core(-1)
+						$end 'core'
+						$begin 'cylinder'
+							cylinder(1)
+						$end 'cylinder'
+						$begin 'global'
+							global(-1)
+						$end 'global'
+						$begin 'ground'
+							ground(-1)
+						$end 'ground'
+						$begin 'patch'
+							patch(-1)
+						$end 'patch'
+						$begin 'region'
+							region(-1)
+						$end 'region'
+						$begin 'shield'
+							shield(-1)
+						$end 'shield'
+						$begin 'substrate'
+							substrate(-1)
+						$end 'substrate'
+					$end 'CachedNames'
+				$end 'GeometryOperations'
+				$begin 'GeometryDependencies'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 5)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 45)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 73)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 89)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 117)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 145)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 185)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+				$end 'GeometryDependencies'
+			$end 'GeometryCore'
+			GroupByMaterial('-1'=true)
+			GroupSheetByMaterial()
+			$begin 'LastUserInputs'
+			$end 'LastUserInputs'
+		$end 'ModelSetup'
+		$begin 'BoundarySetup'
+			$begin 'GlobalBoundData'
+				PortImpedance='1'
+				GlobalMaterialEnv='vacuum'
+			$end 'GlobalBoundData'
+			$begin 'Boundaries'
+				NextUniqueID=2
+				MoveBackwards=false
+				$begin 'Rad1'
+					ID=0
+					BoundType='Radiation'
+					Faces(91, 92, 93, 94, 95, 96)
+					ParentBndID=-1
+					IsIncidentField=false
+					IsEnforcedField=false
+					IsFssReference=false
+					IsForPML=false
+					UseAdaptiveIE=false
+					IncludeInPostproc=true
+				$end 'Rad1'
+				$begin '1'
+					ID=1
+					BoundType='Wave Port'
+					Faces(123)
+					NumModes=1
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					UseLineModeAlignment=false
+					DoDeembed=false
+					DeembedDist='0mm'
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=false
+						$end 'Mode1'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true)
+					UseAnalyticAlignment=false
+				$end '1'
+			$end 'Boundaries'
+			$begin 'ProductSpecificData'
+				$begin 'PMLData'
+					$begin 'PMLGroups'
+					$end 'PMLGroups'
+				$end 'PMLData'
+				$begin 'SortOrder'
+					Port[1: -1]
+					Terminal[1: -1]
+				$end 'SortOrder'
+			$end 'ProductSpecificData'
+		$end 'BoundarySetup'
+		$begin 'ArrayDefinition'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'ArrayDefinition'
+		$begin 'MeshSetup'
+			$begin 'MeshSettings'
+				$begin 'GlobalSurfApproximation'
+					SurfDevChoice=0
+					NormalDevChoice=1
+					AspectRatioChoice=1
+					PullToTrueSurf=false
+					SetFacePreservationLevel=0
+				$end 'GlobalSurfApproximation'
+				MeshMethod='Auto'
+			$end 'MeshSettings'
+			$begin 'MeshOperations'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'MeshOperations'
+		$end 'MeshSetup'
+		$begin 'AnalysisSetup'
+			$begin 'HfssGlobalData'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'HfssGlobalData'
+			$begin 'SolveSetups'
+				NextUniqueID=1
+				MoveBackwards=false
+				$begin 'Setup1'
+					ID=0
+					SetupType='HfssDriven'
+					Frequency='17.7GHz'
+					PortsOnly=false
+					MaxDeltaS=0.01
+					UseMatrixConv=false
+					MaximumPasses=20
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					IsEnabled=true
+					BasisOrder=1
+					UseIterativeSolver=false
+					DoLambdaRefine=true
+					DoMaterialLambda=true
+					SetLambdaTarget=false
+					Target=0.3333
+					UseMaxTetIncrease=false
+					PortAccuracy=2
+					UseABCOnPort=false
+					SetPortMinMaxTri=false
+					PortMinTri=100
+					PortMaxTri=500
+					EnableSolverDomains=false
+					SaveRadFieldsOnly=false
+					SaveAnyFields=true
+					NoAdditionalRefinementOnImport=false
+					$begin 'Sweeps'
+						NextUniqueID=1
+						MoveBackwards=false
+						$begin 'Sweep'
+							ID=0
+							IsEnabled=true
+							SetupType='LinearStep'
+							StartValue='14GHz'
+							StopValue='20GHz'
+							StepSize='0.01GHz'
+							Type='Fast'
+							SaveFields=true
+							SaveRadFields=false
+							GenerateFieldsForAllFreqs=false
+							ExtrapToDC=false
+						$end 'Sweep'
+					$end 'Sweeps'
+					DerivativesOnlyForLastPass=false
+				$end 'Setup1'
+			$end 'SolveSetups'
+		$end 'AnalysisSetup'
+		$begin 'Optimetrics'
+			$begin 'OptimetricsSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'OptimetricsSetups'
+		$end 'Optimetrics'
+		$begin 'Solutions'
+			FieldType='NoIncidentWave'
+			IncludePortPostProcessing=false
+			SourceEntry(ID=1, Index=0, Terminal=false, Terminated=false, Magnitude='1W', Phase='0deg')
+			$begin 'Contexts'
+				NextUniqueID=1
+				MoveBackwards=false
+			$end 'Contexts'
+		$end 'Solutions'
+		$begin 'PortFieldDisplay'
+			$begin 'PortFieldDisplay'
+				ScaleFactor=5
+			$end 'PortFieldDisplay'
+		$end 'PortFieldDisplay'
+		$begin 'FieldsReporter'
+			$begin 'FieldsCalculator'
+				Line_Discretization=1000
+			$end 'FieldsCalculator'
+			$begin 'PlotDefaults'
+				Default_SolutionId=13
+				Default_PlotFolder='Automatic'
+				Default_Phase='0deg'
+				Default_Freq='17.7GHz'
+			$end 'PlotDefaults'
+			$begin 'FieldsPlotManagerID'
+				NextUniqueID=0
+				MoveBackwards=false
+				NumQuantityType=0
+				NumPlots=0
+			$end 'FieldsPlotManagerID'
+			$begin 'Report3dInGeomWnd'
+				Report3dNum=0
+			$end 'Report3dInGeomWnd'
+		$end 'FieldsReporter'
+		$begin 'RadField'
+			$begin 'FarFieldSetups'
+				NextUniqueID=2
+				MoveBackwards=false
+				$begin 'Infinite Sphere1'
+					Type='Infinite Sphere'
+					ID=0
+					VersionID=1
+					UseCustomRadiationSurface=false
+					ThetaStart='-180deg'
+					ThetaStop='180deg'
+					ThetaStep='5deg'
+					PhiStart='0deg'
+					PhiStop='360deg'
+					PhiStep='5deg'
+					UseLocalCS=false
+				$end 'Infinite Sphere1'
+			$end 'FarFieldSetups'
+			$begin 'ArraySetup'
+				UseOption='NoArray'
+				$begin 'RegularArray'
+					NumUCells='10'
+					NumVCells='10'
+					CellUDist='10mm'
+					CellVDist='10mm'
+					UDirnX='1'
+					UDirnY='0'
+					UDirnZ='0'
+					VDirnX='0'
+					VDirnY='1'
+					VDirnZ='0'
+					FirstCellPosX='0mm'
+					FirstCellPosY='0mm'
+					FirstCellPosZ='0mm'
+					Behavior='UseSlaveSettings'
+					ScanAnglePhi='45deg'
+					ScanAngleTheta='45deg'
+					UDirnPhaseShift='0deg'
+					VDirnPhaseShift='0deg'
+				$end 'RegularArray'
+				$begin 'CustomArray'
+					NumCells=0
+					$begin 'Cell'
+					$end 'Cell'
+				$end 'CustomArray'
+			$end 'ArraySetup'
+			$begin 'NearFieldSetups'
+				NextUniqueID=2
+				MoveBackwards=false
+			$end 'NearFieldSetups'
+			RadFieldComputationVersion=1.4
+			RadfieldHeaderFile='RAD5B0F939615138710651.tmp'
+		$end 'RadField'
+		$begin 'SolutionManager'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=11
+				Name='Setup1'
+				$begin 'Solution'
+					ID=12
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Pass'
+								Column='1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20'
+								Units=''
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='17.7GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=13
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='17.7GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=15
+					Name='Sweep'
+					$begin 'SimDataExtractor'
+						SimValue('S(1,1)', 2, 90, false, SimValueID=16, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'PostprocessSweep'
+								Variable='Freq'
+								RegularSweep=1
+								Units='GHz'
+								Minimum=14000000000
+								Maximum=20000000000
+								Increment=10000000
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=8
+				$begin 'Setup'
+					N='Setup1'
+					V=0
+					Soln(N='AdaptivePass', V=0)
+					Soln(N='LastAdaptive', V=0)
+					Soln(N='Sweep', V=0)
+				$end 'Setup'
+			$end 'Version ID Map'
+			$begin 'ID Map'
+				$begin 'Setup'
+					N='Setup1'
+					I=11
+					Soln(N='AdaptivePass', I=12)
+					Soln(N='LastAdaptive', I=13)
+					Soln(N='Sweep', I=15)
+				$end 'Setup'
+			$end 'ID Map'
+		$end 'SolutionManager'
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+		CacheHeaderFile='HDR5B0F939615138710652.tmp'
+	$end 'HFSSModel'
+	$begin 'DataInstances'
+		$begin 'Instance'
+			DesignEditor='HFSSDesign1'
+			$begin 'HfssDesignInstance'
+				DesignInstanceID=1
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 0, 0, 878, 343), OrientationMatrix(-0.0219518598169088, 0.0466890409588814, -0.0105908047407866, 0, 0.0477060861885548, 0.0203538127243519, -0.00915264338254929, 0, -0.00402078684419394, -0.0134078664705157, -0.0507738031446934, 0, -0.110733509063721, 0.291288137435913, -5.26283550262451, 1, 0, -1.07150459289551, 0.945268392562866, -0.506426692008972, 0.748398423194885, 1.04670190811157, 10.5352668762207), Drawings[7: 'Ground', 'shield', 'core', 'Region', 'Cylinder1', 'substrate', 'patch'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+							$begin 'XY Plot 1'
+								ReportID=1
+								ReportName='XY Plot 1'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=0
+											SolutionID=15
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=0
+												SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=0
+									VersionID=1
+									Name='dB(S(1,1))'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='Freq'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='dB(S(1,1))'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Specifiable'
+												SubsweepChoiceType='All'
+												SweepVariableName='Freq'
+											$end '0'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=1
+								$end 'TraceDef'
+							$end 'XY Plot 1'
+						$end 'Reports'
+						NextUniqueID=2
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=2
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+						$begin 'XY Plot 1'
+							ReportID=1
+							$begin 'Report2D'
+								name='XY Plot 1'
+								ReportID=1
+								ReportType=0
+								DisplayType=1
+								Title=''
+								Domain=''
+								$begin 'Graph2DsV2'
+									$begin 'Graph2D'
+										TraceDefID=0
+										Type='Continuous'
+										Axis='Y1'
+									$end 'Graph2D'
+								$end 'Graph2DsV2'
+								$begin 'PlotDisplayDataManager'
+									NextUniqueID=23
+									MoveBackwards=false
+									$begin 'PlotHeaderDataSource'
+										CompanyName=''
+										ShowDesignName=true
+										ProjectFileName=''
+									$end 'PlotHeaderDataSource'
+									StockNameIDMap(AxisX=1, AxisY1=2, AxisY2=8, AxisY3=9, AxisY4=10, Grid=11, Header=0, Legend=5, XYHorizScroller=7)
+									$begin 'SourceList'
+									$end 'SourceList'
+									$begin 'DocAttributes'
+										$begin 'PlotAttributeStoreMap'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=11
+													$begin 'CartesianGridDescAttribute'
+														ShowXMinor=true
+														ShowYMinor=true
+														ShowXMajor=true
+														ShowYMajor=true
+														ShowBorder=true
+													$end 'CartesianGridDescAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=21
+													$begin 'CurveCartesianAttribute'
+														YAxis='Y1'
+													$end 'CurveCartesianAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=21
+													$begin 'CurveRenderAttribute'
+														$begin 'LineRenderAttribute'
+															LineStyle='Solid'
+															LineWidth=1
+															LineColor(R=255, G=0, B=0)
+														$end 'LineRenderAttribute'
+														TraceType='Continuous'
+														SymbolType='HorizontalLeftTriangle'
+														SymbolColor(R=0, G=25, B=185)
+														ShowSymbols=false
+														SymbolFrequency=15
+														ShowArrows=false
+													$end 'CurveRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=0
+													$begin 'HeaderRenderAttribute'
+														$begin 'TitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-19
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TitleFont'
+														$begin 'SubtitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-13
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'SubtitleFont'
+													$end 'HeaderRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=5
+													$begin 'LegendRenderAttribute'
+														$begin 'LegendTableAttrib'
+															$begin 'TableRenderAttribute'
+																$begin 'TableFontAttrib'
+																	$begin 'FontAttribute'
+																		$begin 'Font'
+																			Height=-11
+																			Width=0
+																			Escapement=0
+																			Orientation=0
+																			Weight=400
+																			Italic=0
+																			Underline=0
+																			StrikeOut=0
+																			CharSet=0
+																			OutPrecision=7
+																			ClipPrecision=48
+																			Quality=6
+																			PitchAndFamily=0
+																			FaceName='Arial'
+																		$end 'Font'
+																		Color(R=0, G=0, B=0)
+																	$end 'FontAttribute'
+																$end 'TableFontAttrib'
+																$begin 'TableTitleFontAttrib'
+																	$begin 'FontAttribute'
+																		$begin 'Font'
+																			Height=-11
+																			Width=0
+																			Escapement=0
+																			Orientation=0
+																			Weight=400
+																			Italic=0
+																			Underline=0
+																			StrikeOut=0
+																			CharSet=0
+																			OutPrecision=7
+																			ClipPrecision=48
+																			Quality=6
+																			PitchAndFamily=0
+																			FaceName='Arial'
+																		$end 'Font'
+																		Color(R=0, G=0, B=0)
+																	$end 'FontAttribute'
+																$end 'TableTitleFontAttrib'
+																TableBorderLineWidth=1
+																TableBorderLineColor=0
+																TableGridLineWidth=1
+																TableGridLineColor=12632256
+																TableBackgroundColor=16777215
+																TableHeaderBackgroundColor=14408667
+															$end 'TableRenderAttribute'
+														$end 'LegendTableAttrib'
+														ShowTraceName=true
+														ShowSolutionName=true
+														ShowVariationKey=true
+														DockMode='None'
+													$end 'LegendRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=1
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=2
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=8
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=9
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=10
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocAttributes'
+									$begin 'DocDefaultAttributes'
+										$begin 'PlotAttributeStoreMap'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocDefaultAttributes'
+									$begin 'PerViewPlotAttributeStoreMap'
+										$begin 'MapItem'
+											ItemID=20
+											$begin 'PlotAttributeStoreMap'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=731
+																Left=790
+																Bottom=9775
+																Right=9019
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=12
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=731
+																Left=790
+																Bottom=9775
+																Right=9019
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=19
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=75
+																Left=75
+																Bottom=9925
+																Right=601
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=15
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=9019
+																Bottom=9925
+																Right=9925
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=731
+																Left=790
+																Bottom=9775
+																Right=9019
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=16
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=626
+																Bottom=730
+																Right=9019
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=731
+																Left=790
+																Bottom=9775
+																Right=9019
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'CartesianCurveGroupLayoutAttribute'
+															X_spc=100000000
+															X_fwd=3
+															X_fpr=2
+															Y1_spc=0.2
+															Y1_fwd=3
+															Y1_fpr=2
+														$end 'CartesianCurveGroupLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=6
+														$begin 'DockableOverlayLayoutAttribute'
+															$begin 'Dock_0'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=4850
+																		Left=701
+																		Bottom=9850
+																		Right=8201
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_0'
+														$end 'DockableOverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+											$end 'PlotAttributeStoreMap'
+											PlotType=1
+										$end 'MapItem'
+									$end 'PerViewPlotAttributeStoreMap'
+									IsViewAttribServer=false
+									ViewID=-1
+									$begin 'SourceIDMap'
+										IDMapItem(0, 0, -1, 21)
+									$end 'SourceIDMap'
+									$begin 'TraceCharacteristicsMgr'
+									$end 'TraceCharacteristicsMgr'
+									$begin 'CartesianXMarkerManager'
+										RefMarkerID=-1
+										CurrentMarkerID=-1
+										$begin 'ReferenceCurves'
+										$end 'ReferenceCurves'
+									$end 'CartesianXMarkerManager'
+									$begin 'CartesianYMarkerManager'
+									$end 'CartesianYMarkerManager'
+									XAxisStackID=-1
+									$begin 'AllTransSrcDwg'
+										$begin 'PT'
+											ID=1
+											TransSrcDwg(-1, 0, 19, 1, 15, 2, 16, 5, 6, 11, 12, 21, 22)
+										$end 'PT'
+									$end 'AllTransSrcDwg'
+									$begin 'AllPtSVID'
+										PtID(1, -1, 4)
+									$end 'AllPtSVID'
+								$end 'PlotDisplayDataManager'
+							$end 'Report2D'
+						$end 'XY Plot 1'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+						$begin 'XY Plot 1'
+							ReportID=1
+							$begin 'WindowInfoList'
+								$begin 'Report2D'
+									$begin 'ViewInfo'
+										$begin 'WrapperView'
+											ID(20)
+										$end 'WrapperView'
+										$begin 'WrapperDoc'
+											HiddenDrawings()
+											$begin 'DispType'
+												PlotType=1
+												$begin 'CurveMed'
+													$begin 'MedCamera'
+														$begin 'svrc'
+															svid=4
+															view(20, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 9.91837511620795e-039, 1.05612221880154e-038)))
+														$end 'svrc'
+													$end 'MedCamera'
+												$end 'CurveMed'
+											$end 'DispType'
+										$end 'WrapperDoc'
+										WindowPos(WindowPos(5, -1, -1, -8, -31, 78, 78, 960, 425))
+									$end 'ViewInfo'
+								$end 'Report2D'
+							$end 'WindowInfoList'
+						$end 'XY Plot 1'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+				$begin 'Properties'
+				$end 'Properties'
+				$begin 'UserDefinedDocument'
+					$begin 'Data'
+					$end 'Data'
+				$end 'UserDefinedDocument'
+			$end 'HfssDesignInstance'
+		$end 'Instance'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+$end 'AnsoftProject'
+$begin 'AllReferencedFilesForProject'
+$begin 'Design_0.setup/NativeGeometryFiles'
+NumFiles= 7
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000006.sab
+BIN000000020369
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      À      ÀœÄ °rh‘¿      @      @        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEGroundlump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      À      ÀœÄ °rh‘¿      @      @        	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ Ground           €€€€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID135shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+      À      ÀœÄ °rh‘¿      @      @        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID135string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_IDGroundface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+{®GázÄ¿z‰i—y¤¼Ä °rh‘¿Ház®G@Âõ(\ò?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_IDGroundstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAMEGround	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+{®GázÄ¿Âõ(\ò¿Ä °rh‘¿Ház®G@z‰i—y¤<        loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+{®GázÄ¿z‰i—y¤¼Ä °rh‘¿Ház®G@Âõ(\ò?              
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿Âõ(\ò?                      ğ?       €      ğ?Âõ(\ò?
+	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß     à?    à?    à?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ    	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      À      À              @      @        loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+{®GázÄ¿Âõ(\ò¿Ä °rh‘¿Ház®G@z‰i—y¤<              
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿Âõ(\ò?                      ğ?       €      ğ?Âõ(\ò?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "       #   
+   ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ$      	   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ%         ¥îÛ    	fctd_markeyeattribÿÿÿÿÿÿÿÿ&   ÿÿÿÿ   ¥îß face'   ÿÿÿÿÿÿÿÿÿÿÿÿ(   )      ÿÿÿÿ*   
+
+      À      ÀœÄ °rh‘¿      @      @Ä °rh‘¿loop+   ÿÿÿÿÿÿÿÿÿÿÿÿ,   -      
+      À      À              @      @              planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                              ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.   /      #      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0      1   2   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   0   3   4   
+   ÿÿÿÿedge5   ÿÿÿÿÿÿÿÿÿÿÿÿ6   Ä °rh¿7   Ä °rh?   8   unknown
+Ház®G@z‰i—y¤¼Ä °rh‘¿Ház®G@                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID131	rgb_colorstattribÿÿÿÿÿÿÿÿ9         Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ:         ¥îÛ 	   	fctd_markeyeattribÿÿÿÿÿÿÿÿ;   ÿÿÿÿ   ¥îß face<   ÿÿÿÿÿÿÿÿÿÿÿÿ=   >      ÿÿÿÿ?   
+
+      À      ÀœÄ °rh‘¿      @      À        loop@   ÿÿÿÿÿÿÿÿÿÿÿÿA   B      
+      À      ÀœÄ °rh‘¿      @      @œÄ °rh‘¿   *   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                œÄ °rh‘¿                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1loopC   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD      
+{®GázÄ¿Âõ(\ò¿        Ház®G@Âõ(\ò?              coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F   G   H      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI       J   K   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    I   D   L   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   I   M   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   D   !   2   ,   ÿÿÿÿedgeN   ÿÿÿÿÿÿÿÿÿÿÿÿO   -DTû!	@6   -DTû!@!   P   unknown
+{®GázÄ¿w‰i—y¤¼        Ház®G@Âõ(\ò?        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   J   "   4   A   ÿÿÿÿedgeQ   ÿÿÿÿÿÿÿÿÿÿÿÿ7           R   -DTû!	@"   S   unknown
+{®GázÄ¿z‰i—y¤¼Ä °rh‘¿Ház®G@Âõ(\ò?Ä °rh‘¿idansoftattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ#   ¥îÛ    vertexU   ÿÿÿÿÿÿÿÿÿÿÿÿ2   V   vertexW   ÿÿÿÿÿÿÿÿÿÿÿÿK   X   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿHáz®G@z‰i—y¤¼Ä °rh¿       €              ğ¿
+Ä °rh¿
+Ä °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ%      Æîß ATTRIB_XACIS_ID179	rgb_colorstattribÿÿÿÿÿÿÿÿY   &      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿZ   '      ¥îÛ 
+   	fctd_markeyeattribÿÿÿÿÿÿÿÿ[   ÿÿÿÿ(   ¥îß face\   ÿÿÿÿÿÿÿÿÿÿÿÿ]   ^      ÿÿÿÿ_   
+
+      À      ÀœÄ °rh‘¿      À      @        loop`   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿa   (   
+      À      ÀœÄ °rh‘¿      @      À           ?   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ÀœÄ °rh¿              ğ?              ğ?               €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   Æîß ATTRIB_XACIS_ID-1loopb   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ      
+{®GázÄ¿Âõ(\ò¿Ä °rh‘¿Ház®G@Âõ(\ò?Ä °rh‘¿   *   
+coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿc   d   e   f   )   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1   1   /   L   ,   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿg   -   h   i      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   g   j   k      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿl   m   -   H   
+n   ÿÿÿÿedgeo   ÿÿÿÿÿÿÿÿÿÿÿÿp         Àq         @-   r   unknown
+      @      À              @      @        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   .   0   M      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   3   .   K   A   ÿÿÿÿedges   ÿÿÿÿÿÿÿÿÿÿÿÿR   -DTû!	@7   -DTû!@.   t   unknown
+{®GázÄ¿Âõ(\ò¿Ä °rh‘¿Ház®G@w‰i—y¤<Ä °rh‘¿edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿ6           O   -DTû!	@/   v   unknown
+{®GázÄ¿Âõ(\ò¿        Ház®G@z‰i—y¤<        edgew   ÿÿÿÿÿÿÿÿÿÿÿÿR   Ä °rh¿O   Ä °rh?0   x   unknown
+{®GázÄ¿z‰i—y¤¼Ä °rh‘¿{®GázÄ¿z‰i—y¤<        idansoftattribÿÿÿÿÿÿÿÿy   ÿÿÿÿ2   ¥îÛ    vertexz   ÿÿÿÿÿÿÿÿÿÿÿÿM   {   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ¿Âõ(\ò?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ|   ÿÿÿÿ4   ¥îÛ    vertex}   ÿÿÿÿÿÿÿÿÿÿÿÿM   ~   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        Ä °rh‘¿                      ğ?Âõ(\ò?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ5   #   Æîß ATTRIB_XACIS_ID1008idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ6   ¥îÛ "   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿHáz®G@                idansoftattribÿÿÿÿÿÿÿÿ€   ÿÿÿÿ7   ¥îÛ !   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿHáz®G@z‰i—y¤¼Ä °rh‘¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ:      Æîß ATTRIB_XACIS_ID197	rgb_colorstattribÿÿÿÿÿÿÿÿ   ;      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ‚   <   (   ¥îÛ    	fctd_markeyeattribÿÿÿÿÿÿÿÿƒ   ÿÿÿÿ=   ¥îß face„   ÿÿÿÿÿÿÿÿÿÿÿÿ…   †      ÿÿÿÿ‡   
+
+      À      @œÄ °rh‘¿      @      @        loopˆ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‰   =   
+      À      ÀœÄ °rh‘¿      À      @           _   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À        œÄ °rh¿      ğ?                              ğ?       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿŠ   j   ‹   Œ   >   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   B   Š      )   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿB            )   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿm   l   B   f   
+n   ÿÿÿÿedge‘   ÿÿÿÿÿÿÿÿÿÿÿÿ’         À“         @B   ”   unknown
+      @      ÀœÄ °rh‘¿      @      @œÄ °rh‘¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   •   –      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   ˜   E   i   
+†   ÿÿÿÿedge™   ÿÿÿÿÿÿÿÿÿÿÿÿq         Àš         @E   ›   unknown
+      À      @              @      @        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿa   œ   F   k   
+>   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿ         Àp         @F   Ÿ   unknown
+      À      À              @      À        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿe   G   œ       n   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   e   —   ¡   
+n   ÿÿÿÿloop¢   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿl   …   
+      @      ÀœÄ °rh‘¿      @      @           £   
+idansoftattribÿÿÿÿÿÿÿÿ¤   ÿÿÿÿH   ¥îÛ    vertex¥   ÿÿÿÿÿÿÿÿÿÿÿÿ    ¦   vertex§   ÿÿÿÿÿÿÿÿÿÿÿÿ¡   ¨   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @                              ğ?        
+      À
+      @idansoftattribÿÿÿÿÿÿÿÿ©   ÿÿÿÿK   ¥îÛ    ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        Ä °rh‘¿                      ğ?Âõ(\ò?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿª   ÿÿÿÿL   ¥îÛ    ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ¿Âõ(\ò?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ«   ÿÿÿÿM   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®GázÄ¿z‰i—y¤<Ä °rh¿       €              ğ?
+Ä °rh¿
+Ä °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   2   Æîß ATTRIB_XACIS_ID1009idansoftattribÿÿÿÿÿÿÿÿ¬   ÿÿÿÿO   ¥îÛ #   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®GázÄ¿z‰i—y¤<        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   4   Æîß ATTRIB_XACIS_ID1011idansoftattribÿÿÿÿÿÿÿÿ­   ÿÿÿÿR   ¥îÛ $   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®GázÄ¿z‰i—y¤¼Ä °rh‘¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿU   6   Æîß ATTRIB_XACIS_ID1157string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿW   7   Æîß ATTRIB_XACIS_ID1158string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿZ      Æîß ATTRIB_XACIS_ID159	rgb_colorstattribÿÿÿÿÿÿÿÿ®   [   (   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ¯   \   =   ¥îÛ    	fctd_markeyeattribÿÿÿÿÿÿÿÿ°   ÿÿÿÿ]   ¥îß face±   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn      ÿÿÿÿ£   
+
+      @      ÀœÄ °rh‘¿      @      @        loop²   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   ]   
+      À      @œÄ °rh‘¿      @      @           ‡   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @œÄ °rh¿              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ^   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ³   •   ˜   ´   ^   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿœ   a   c      
+>   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ•   ³   a   Œ   
+^   ÿÿÿÿedgeµ   ÿÿÿÿÿÿÿÿÿÿÿÿ   œÄ °rh¿¶   œÄ °rh?a   ·   unknown
+      À      ÀœÄ °rh‘¿      À      À        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿd   c   ³   ¸   )   ÿÿÿÿedge¹   ÿÿÿÿÿÿÿÿÿÿÿÿ“         À¶         @c   º   unknown
+      À      ÀœÄ °rh‘¿      @      ÀœÄ °rh‘¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ˜   —   d      
+†   ÿÿÿÿedge»   ÿÿÿÿÿÿÿÿÿÿÿÿ¼         À’         @d   ½   unknown
+      À      @œÄ °rh‘¿      @      @œÄ °rh‘¿idansoftattribÿÿÿÿÿÿÿÿ¾   ÿÿÿÿf   ¥îÛ    vertex¿   ÿÿÿÿÿÿÿÿÿÿÿÿ¡   À   vertexÁ   ÿÿÿÿÿÿÿÿÿÿÿÿ    Â   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @        œÄ °rh‘¿              ğ¿        
+      À
+      @coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‰   ‹   g   –   
+^   ÿÿÿÿedgeÃ   ÿÿÿÿÿÿÿÿÿÿÿÿš         À         @g   Ä   unknown
+      À      À              À      @        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   h   m   ¡   †   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿh      ‰   ´   
+†   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÅ   ÿÿÿÿi   ¥îÛ    vertexÆ   ÿÿÿÿÿÿÿÿÿÿÿÿ´   Ç   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @              ğ¿                
+      À
+      @coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿj   Š   l       
+>   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÈ   ÿÿÿÿk   ¥îÛ    vertexÉ   ÿÿÿÿÿÿÿÿÿÿÿÿŒ   Ê   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              À              ğ?                
+      À
+      @edgeË   ÿÿÿÿÿÿÿÿÿÿÿÿp   œÄ °rh¿“   œÄ °rh?œ   Ì   unknown
+      @      ÀœÄ °rh‘¿      @      À        edgeÍ   ÿÿÿÿÿÿÿÿÿÿÿÿq   œÄ °rh¿’   œÄ °rh?—   Î   unknown
+      @      @œÄ °rh‘¿      @      @        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn   Æîß ATTRIB_XACIS_ID-1planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @        œÄ °rh¿      ğ¿                                      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿo   H   Æîß ATTRIB_XACIS_ID1099idansoftattribÿÿÿÿÿÿÿÿÏ   ÿÿÿÿp   ¥îÛ %   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      À        idansoftattribÿÿÿÿÿÿÿÿĞ   ÿÿÿÿq   ¥îÛ &   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      @        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿs   K   Æîß ATTRIB_XACIS_ID1064string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿu   L   Æîß ATTRIB_XACIS_ID1097string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿw   M   Æîß ATTRIB_XACIS_ID1010string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿz   O   Æîß ATTRIB_XACIS_ID1160string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ}   R   Æîß ATTRIB_XACIS_ID1162string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‚   (   Æîß ATTRIB_XACIS_ID145	rgb_colorstattribÿÿÿÿÿÿÿÿÑ   ƒ   =   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿÒ   „   ]   ¥îÛ    	fctd_markeyeattribÿÿÿÿÿÿÿÿÓ   ÿÿÿÿ…   ¥îß string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ†   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‹   ‰      ¸   
+^   ÿÿÿÿedgeÔ   ÿÿÿÿÿÿÿÿÿÿÿÿš   œÄ °rh¿¼   œÄ °rh?‰   Õ   unknown
+      À      @œÄ °rh‘¿      À      @        idansoftattribÿÿÿÿÿÿÿÿÖ   ÿÿÿÿŒ   ¥îÛ    vertex×   ÿÿÿÿÿÿÿÿÿÿÿÿ¸   Ø   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      ÀœÄ °rh¿                      ğ¿
+œÄ °rh¿
+œÄ °rh?edgeÙ   ÿÿÿÿÿÿÿÿÿÿÿÿ¶         À¼         @   Ú   unknown
+      À      ÀœÄ °rh‘¿      À      @œÄ °rh‘¿idansoftattribÿÿÿÿÿÿÿÿÛ   ÿÿÿÿ   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ÀœÄ °rh‘¿      ğ¿                
+      À
+      @idansoftattribÿÿÿÿÿÿÿÿÜ   ÿÿÿÿ   ¥îÛ    vertexİ   ÿÿÿÿÿÿÿÿÿÿÿÿ´   Ş   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @œÄ °rh‘¿      ğ?                
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   f   Æîß ATTRIB_XACIS_ID1065idansoftattribÿÿÿÿÿÿÿÿß   ÿÿÿÿ’   ¥îÛ )   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      @œÄ °rh‘¿idansoftattribÿÿÿÿÿÿÿÿà   ÿÿÿÿ“   ¥îÛ *   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      ÀœÄ °rh‘¿idansoftattribÿÿÿÿÿÿÿÿá   ÿÿÿÿ–   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À                              ğ¿        
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ™   i   Æîß ATTRIB_XACIS_ID1016idansoftattribÿÿÿÿÿÿÿÿâ   ÿÿÿÿš   ¥îÛ '   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      @        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   k   Æîß ATTRIB_XACIS_ID1040idansoftattribÿÿÿÿÿÿÿÿã   ÿÿÿÿ   ¥îÛ (   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      À        idansoftattribÿÿÿÿÿÿÿÿä   ÿÿÿÿ    ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      ÀœÄ °rh¿                      ğ¿
+œÄ °rh¿
+œÄ °rh?idansoftattribÿÿÿÿÿÿÿÿå   ÿÿÿÿ¡   ¥îÛ     straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      @œÄ °rh¿                      ğ¿
+œÄ °rh¿
+œÄ °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¥   p   Æîß ATTRIB_XACIS_ID1211string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ§   q   Æîß ATTRIB_XACIS_ID1166string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¯   =   Æîß ATTRIB_XACIS_ID143	rgb_colorstattribÿÿÿÿÿÿÿÿæ   °   ]   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿç   ±   …   ¥îÛ    idansoftattribÿÿÿÿÿÿÿÿè   ÿÿÿÿ´   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      @œÄ °rh¿                      ğ¿
+œÄ °rh¿
+œÄ °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿµ   Œ   Æîß ATTRIB_XACIS_ID1035idansoftattribÿÿÿÿÿÿÿÿé   ÿÿÿÿ¶   ¥îÛ +   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      ÀœÄ °rh‘¿idansoftattribÿÿÿÿÿÿÿÿê   ÿÿÿÿ¸   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À        œÄ °rh‘¿              ğ?        
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¹      Æîß ATTRIB_XACIS_ID1038string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ»      Æîß ATTRIB_XACIS_ID1014idansoftattribÿÿÿÿÿÿÿÿë   ÿÿÿÿ¼   ¥îÛ ,   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      @œÄ °rh‘¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¿   ’   Æîß ATTRIB_XACIS_ID1167string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÁ   “   Æîß ATTRIB_XACIS_ID1209string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÃ   –   Æîß ATTRIB_XACIS_ID1036string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÆ   š   Æîß ATTRIB_XACIS_ID1171string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÉ      Æîß ATTRIB_XACIS_ID1205string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿË       Æîß ATTRIB_XACIS_ID1039string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÍ   ¡   Æîß ATTRIB_XACIS_ID1013string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÒ   ]   Æîß ATTRIB_XACIS_ID133	rgb_colorstattribÿÿÿÿÿÿÿÿì   Ó   …   Æîß     à?    à?    à?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÔ   ´   Æîß ATTRIB_XACIS_ID1015string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ×   ¶   Æîß ATTRIB_XACIS_ID1203string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÙ   ¸   Æîß ATTRIB_XACIS_ID1034string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿİ   ¼   Æîß ATTRIB_XACIS_ID1169string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿç   …   Æîß ATTRIB_XACIS_ID181End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 19652 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000046.sab
+BIN000000015161
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@Âõ(\ò?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEshieldlump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@Âõ(\ò?        	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ shield.           €€€€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID151shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@Âõ(\ò?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID151string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_IDshieldface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+ìQ¸…ëÁ?…¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_IDshieldstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAMEshield	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+{®GázÄ¿z‰i—y¤¼‰A`åĞ"ÀHáz®G@Âõ(\ò?        loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+ìQ¸…ëÁ?…¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?              
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿…ëQ¸…ë?                      ğ?       €      ğ?…ëQ¸…ë?
+	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß     à?    à?    à?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ /   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@z‰i—y¤<        loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+{®GázÄ¿z‰i—y¤¼‰A`åĞ"ÀHáz®G@Âõ(\ò?              conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿Âõ(\ò?                      ğ?       €      ğ?Âõ(\ò?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "   #   $   
+   ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ%      	   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ&         ¥îÛ 0   	fctd_markeyeattribÿÿÿÿÿÿÿÿ'   ÿÿÿÿ   ¥îß face(   ÿÿÿÿÿÿÿÿÿÿÿÿ)   *      ÿÿÿÿ+   
+
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…¨“v7[<        loop,   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@z‰i—y¤<              conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿Âõ(\ò?                      ğ?       €      ğ?Âõ(\ò?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.   /   -   0   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      2   3      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   1   4   5      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ6   7      $   *   ÿÿÿÿedge8   ÿÿÿÿÿÿÿÿÿÿÿÿ9   ‰A`åĞ"ø¿:   ‰A`åĞ"ø?   ;   unknown
+Ãõ(\Âı?h¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID137	rgb_colorstattribÿÿÿÿÿÿÿÿ<         Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ=         ¥îÛ 1   	fctd_markeyeattribÿÿÿÿÿÿÿÿ>   ÿÿÿÿ   ¥îß face?   ÿÿÿÿÿÿÿÿÿÿÿÿ@   A      ÿÿÿÿB   
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@Âõ(\ò?‰A`åĞ"ÀloopC   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#      
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…¨“v7[<           +   
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿…ëQ¸…ë?                      ğ?       €      ğ?…ëQ¸…ë?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   E       0      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF       G   H   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    F   I   J   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL   ‰A`åĞ"ø¿M   ‰A`åĞ"ø?    N   unknown
+Ház®G@z‰i—y¤¼‰A`åĞ"ÀHáz®G@                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   O   P   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿQ   Q   !   3   
+R   ÿÿÿÿedgeS   ÿÿÿÿÿÿÿÿÿÿÿÿ9           T   -DTû!	@!   U   unknown
+ìQ¸…ëÁ?                Ãõ(\Âı?…ëQ¸…ë?        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿV   V   "   5   
+W   ÿÿÿÿedgeX   ÿÿÿÿÿÿÿÿÿÿÿÿY   -DTû!	@:   -DTû!@"   Z   unknown
+ìQ¸…ëÁ?…¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?‰A`åĞ"ÀcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   #   V   [   *   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   O   Q   \   *   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿ]   ÿÿÿÿ$   ¥îÛ 5   vertex^   ÿÿÿÿÿÿÿÿÿÿÿÿ$   _   vertex`   ÿÿÿÿÿÿÿÿÿÿÿÿ$   a   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Âı?h¨“v7[¼‰A`åĞ"ø¿       €              ğ¿
+‰A`åĞ"ø¿
+‰A`åĞ"ø?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ&      Æîß ATTRIB_XACIS_ID149	rgb_colorstattribÿÿÿÿÿÿÿÿb   '      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿc   (      ¥îÛ 2   	fctd_markeyeattribÿÿÿÿÿÿÿÿd   ÿÿÿÿ)   ¥îß facee   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿf      ÿÿÿÿg   
+{®GázÄ¿Âõ(\ò¿        Ház®G@Âõ(\ò?        looph   ÿÿÿÿÿÿÿÿÿÿÿÿW   i   )   
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@Âõ(\ò?‰A`åĞ"À   B   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[¼‰A`åĞ"À       €              ğ¿              ğ¿       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿj   -   k   l   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   j   i   m   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   .   j   n   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿi   i   .   H   A   ÿÿÿÿedgeo   ÿÿÿÿÿÿÿÿÿÿÿÿp   -DTû!	@L   -DTû!@.   q   unknown
+{®GázÄ¿w‰i—y¤¼‰A`åĞ"ÀHáz®G@Âõ(\ò?‰A`åĞ"Àcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿk   k   /   J   f   ÿÿÿÿedger   ÿÿÿÿÿÿÿÿÿÿÿÿM           s   -DTû!	@/   t   unknown
+{®GázÄ¿                Ház®G@Âõ(\ò?        idansoftattribÿÿÿÿÿÿÿÿu   ÿÿÿÿ0   ¥îÛ 9   vertexv   ÿÿÿÿÿÿÿÿÿÿÿÿ0   w   vertexx   ÿÿÿÿÿÿÿÿÿÿÿÿ0   y   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿHáz®G@z‰i—y¤¼‰A`åĞ"ø¿                      ğ?
+‰A`åĞ"ø¿
+‰A`åĞ"ø?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   6   1   P   *   ÿÿÿÿedgez   ÿÿÿÿÿÿÿÿÿÿÿÿY   ‰A`åĞ"ø¿T   ‰A`åĞ"ø?1   {   unknown
+ìQ¸…ëÁ?h¨“v7[<‰A`åĞ"ÀìQ¸…ëÁ?h¨“v7[<        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   2   7   \   
+R   ÿÿÿÿloop|   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   @   
+ìQ¸…ëÁ?…ëQ¸…ë¿        Ãõ(\Âı?…ëQ¸…ë?           g   idansoftattribÿÿÿÿÿÿÿÿ}   ÿÿÿÿ3   ¥îÛ 6   vertex~   ÿÿÿÿÿÿÿÿÿÿÿÿP      ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?…ëQ¸…ë?                      ğ?
+        
+-DTû!	@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   4   6   [   
+W   ÿÿÿÿloop€   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿV   )   
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?‰A`åĞ"À   B   idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ5   ¥îÛ 8   vertex‚   ÿÿÿÿÿÿÿÿÿÿÿÿ5   ƒ   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿…ëQ¸…ë?                      ğ?
+-DTû!	@
+-DTû!@edge„   ÿÿÿÿÿÿÿÿÿÿÿÿ:           Y   -DTû!	@6   …   unknown
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?h¨“v7[<‰A`åĞ"Àedge†   ÿÿÿÿÿÿÿÿÿÿÿÿT   -DTû!	@9   -DTû!@7   ‡   unknown
+ìQ¸…ëÁ?…ëQ¸…ë¿        Ãõ(\Âı?…¨“v7[<        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ8   $   Æîß ATTRIB_XACIS_ID1019idansoftattribÿÿÿÿÿÿÿÿˆ   ÿÿÿÿ9   ¥îÛ B   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Âı?                idansoftattribÿÿÿÿÿÿÿÿ‰   ÿÿÿÿ:   ¥îÛ A   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Âı?        ‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ=      Æîß ATTRIB_XACIS_ID233	rgb_colorstattribÿÿÿÿÿÿÿÿŠ   >      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ‹   ?   )   ¥îÛ 3   	fctd_markeyeattribÿÿÿÿÿÿÿÿŒ   ÿÿÿÿ@   ¥îß loop   ÿÿÿÿÿÿÿÿÿÿÿÿR   I   @   
+{®GázÄ¿Âõ(\ò¿        Ház®G@Âõ(\ò?           g   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<               €              ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   G   E   m   A   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   D   F   n      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI   I   D   l   f   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿs   -DTû!	@M   -DTû!@D      unknown
+{®GázÄ¿Âõ(\ò¿        Ház®G@z‰i—y¤<        edge   ÿÿÿÿÿÿÿÿÿÿÿÿL           p   -DTû!	@E   ‘   unknown
+{®GázÄ¿Âõ(\ò¿‰A`åĞ"ÀHáz®G@z‰i—y¤<‰A`åĞ"Àedge’   ÿÿÿÿÿÿÿÿÿÿÿÿs   ‰A`åĞ"ø¿p   ‰A`åĞ"ø?F   “   unknown
+{®GázÄ¿z‰i—y¤<‰A`åĞ"À{®GázÄ¿z‰i—y¤<        idansoftattribÿÿÿÿÿÿÿÿ”   ÿÿÿÿH   ¥îÛ :   vertex•   ÿÿÿÿÿÿÿÿÿÿÿÿn   –   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿Âõ(\ò?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ—   ÿÿÿÿJ   ¥îÛ <   vertex˜   ÿÿÿÿÿÿÿÿÿÿÿÿn   ™   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?Âõ(\ò?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿK   0   Æîß ATTRIB_XACIS_ID1045idansoftattribÿÿÿÿÿÿÿÿš   ÿÿÿÿL   ¥îÛ F   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿHáz®G@        ‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿ›   ÿÿÿÿM   ¥îÛ E   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿHáz®G@                idansoftattribÿÿÿÿÿÿÿÿœ   ÿÿÿÿP   ¥îÛ 7   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<‰A`åĞ"ø¿       €              ğ?
+‰A`åĞ"ø¿
+‰A`åĞ"ø?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿR   Æîß ATTRIB_XACIS_ID-1string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿS   3   Æîß ATTRIB_XACIS_ID1020idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿT   ¥îÛ C   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   Æîß ATTRIB_XACIS_ID-1string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿX   5   Æîß ATTRIB_XACIS_ID1022idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿY   ¥îÛ D   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<‰A`åĞ"ÀidansoftattribÿÿÿÿÿÿÿÿŸ   ÿÿÿÿ[   ¥îÛ ?   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿…ëQ¸…ë?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ    ÿÿÿÿ\   ¥îÛ @   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?…ëQ¸…ë?                      ğ?
+-DTû!	@
+-DTû!@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ^   9   Æîß ATTRIB_XACIS_ID1176string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ`   :   Æîß ATTRIB_XACIS_ID1177string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿc      Æîß ATTRIB_XACIS_ID221	rgb_colorstattribÿÿÿÿÿÿÿÿ¡   d   )   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ¢   e   @   ¥îÛ 4   string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿf   Æîß ATTRIB_XACIS_ID-1idansoftattribÿÿÿÿÿÿÿÿ£   ÿÿÿÿl   ¥îÛ =   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?Âõ(\ò?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ¤   ÿÿÿÿm   ¥îÛ >   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿Âõ(\ò?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ¥   ÿÿÿÿn   ¥îÛ ;   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®GázÄ¿z‰i—y¤<‰A`åĞ"ø¿       €       €      ğ¿
+‰A`åĞ"ø¿
+‰A`åĞ"ø?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿo   H   Æîß ATTRIB_XACIS_ID1046idansoftattribÿÿÿÿÿÿÿÿ¦   ÿÿÿÿp   ¥îÛ G   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®GázÄ¿z‰i—y¤<‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿr   J   Æîß ATTRIB_XACIS_ID1048idansoftattribÿÿÿÿÿÿÿÿ§   ÿÿÿÿs   ¥îÛ H   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ{®GázÄ¿z‰i—y¤<        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿv   L   Æîß ATTRIB_XACIS_ID1220string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿx   M   Æîß ATTRIB_XACIS_ID1221string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿz   P   Æîß ATTRIB_XACIS_ID1021string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ~   T   Æîß ATTRIB_XACIS_ID1179string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‚   Y   Æîß ATTRIB_XACIS_ID1181string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ„   [   Æîß ATTRIB_XACIS_ID1136string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ†   \   Æîß ATTRIB_XACIS_ID1073string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‹   )   Æîß ATTRIB_XACIS_ID209	rgb_colorstattribÿÿÿÿÿÿÿÿ¨   Œ   @   Æîß     à?    à?    à?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   l   Æîß ATTRIB_XACIS_ID1074string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   m   Æîß ATTRIB_XACIS_ID1137string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ’   n   Æîß ATTRIB_XACIS_ID1047string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ•   p   Æîß ATTRIB_XACIS_ID1223string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ˜   s   Æîß ATTRIB_XACIS_ID1225string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¢   @   Æîß ATTRIB_XACIS_ID165End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 14444 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000074.sab
+BIN000000009136
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      è?      Ğ¿‰A`åĞ"À      ô?      Ğ?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEcorelump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      è?      Ğ¿‰A`åĞ"À      ô?      Ğ?¾Ÿ/İ$ê?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ coreJ           €€€€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID175shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+      è?      Ğ¿‰A`åĞ"À      ô?      Ğ?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID175string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_IDcoreface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      è?\3&¦¼‰A`åĞ"À      ô?      Ğ?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_IDcorestring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAMEcore	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      è?      Ğ¿‰A`åĞ"À      ô?\3&¦<¾Ÿ/İ$ê?loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      è?\3&¦¼‰A`åĞ"À      ô?      Ğ?¾Ÿ/İ$ê?      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß     à?    à?    à?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ K   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      è?      Ğ¿‰A`åĞ"À      ô?      Ğ?‰A`åĞ"Àloop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      è?      Ğ¿‰A`åĞ"À      ô?\3&¦<¾Ÿ/İ$ê?      conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "       #   
+   ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ$      	   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ%         ¥îÛ L   	fctd_markeyeattribÿÿÿÿÿÿÿÿ&   ÿÿÿÿ   ¥îß face'   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(      ÿÿÿÿ)   
+      è?      Ğ¿¾Ÿ/İ$ê?      ô?      Ğ?¾Ÿ/İ$ê?loop*   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+      
+      è?      Ğ¿‰A`åĞ"À      ô?      Ğ?‰A`åĞ"À      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿              ğ¿       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   -      #      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.      /   0   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   .   1   2   
+   ÿÿÿÿedge3   ÿÿÿÿÿÿÿÿÿÿÿÿ4   xé&1¬ş¿5   yé&1¬ş?   6   unknown
+      ô?\3&¦¼‰A`åĞ"À      ô?        ¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID157	rgb_colorstattribÿÿÿÿÿÿÿÿ7         Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ8         ¥îÛ M   	fctd_markeyeattribÿÿÿÿÿÿÿÿ9   ÿÿÿÿ   ¥îß loop:   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      
+      è?      Ğ¿¾Ÿ/İ$ê?      ô?      Ğ?¾Ÿ/İ$ê?   )   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ¾Ÿ/İ$ê?                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   /   -   ;      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<       =   >   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    <   +   ;   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   <   ?   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   +   !   0      ÿÿÿÿedge@   ÿÿÿÿÿÿÿÿÿÿÿÿA   -DTû!	@4   -DTû!@!   B   unknown
+      è?\3&¦¼‰A`åĞ"À      ô?      Ğ?‰A`åĞ"Àcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   =   "   2   (   ÿÿÿÿedgeC   ÿÿÿÿÿÿÿÿÿÿÿÿ5           D   -DTû!	@"   E   unknown
+      è?        ¾Ÿ/İ$ê?      ô?      Ğ?¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿF   ÿÿÿÿ#   ¥îÛ O   vertexG   ÿÿÿÿÿÿÿÿÿÿÿÿ#   H   vertexI   ÿÿÿÿÿÿÿÿÿÿÿÿ#   J   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼š™™™™™ñ¿                      ğ?
+xé&1¬ş¿
+yé&1¬ş?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ%      Æîß ATTRIB_XACIS_ID163	rgb_colorstattribÿÿÿÿÿÿÿÿK   &      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿL   '      ¥îÛ N   string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(   Æîß ATTRIB_XACIS_ID-1edgeM   ÿÿÿÿÿÿÿÿÿÿÿÿ4           A   -DTû!	@-   N   unknown
+      è?      Ğ¿‰A`åĞ"À      ô?\3&¦<‰A`åĞ"Àcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   ,   .   ?      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1   1   ,   >   (   ÿÿÿÿedgeO   ÿÿÿÿÿÿÿÿÿÿÿÿD   -DTû!	@5   -DTû!@,   P   unknown
+      è?      Ğ¿¾Ÿ/İ$ê?      ô?\3&¦<¾Ÿ/İ$ê?edgeQ   ÿÿÿÿÿÿÿÿÿÿÿÿD   yé&1¬ş¿A   xé&1¬ş?.   R   unknown
+      è?\3&¦<‰A`åĞ"À      è?\3&¦<¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿS   ÿÿÿÿ0   ¥îÛ P   vertexT   ÿÿÿÿÿÿÿÿÿÿÿÿ?   U   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿV   ÿÿÿÿ2   ¥îÛ R   vertexW   ÿÿÿÿÿÿÿÿÿÿÿÿ?   X   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ¾Ÿ/İ$ê?                      ğ?      Ğ?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ3   #   Æîß ATTRIB_XACIS_ID1060idansoftattribÿÿÿÿÿÿÿÿY   ÿÿÿÿ4   ¥îÛ V   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?        ‰A`åĞ"ÀidansoftattribÿÿÿÿÿÿÿÿZ   ÿÿÿÿ5   ¥îÛ U   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?        ¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ8      Æîß ATTRIB_XACIS_ID177	rgb_colorstattribÿÿÿÿÿÿÿÿ[   9      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ\   ÿÿÿÿ;   ¥îÛ T   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿      Ğ?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ]   ÿÿÿÿ>   ¥îÛ S   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ¾Ÿ/İ$ê?                      ğ?      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ^   ÿÿÿÿ?   ¥îÛ Q   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<š™™™™™ñ¿       €       €      ğ¿
+yé&1¬ş¿
+xé&1¬ş?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ@   0   Æîß ATTRIB_XACIS_ID1061idansoftattribÿÿÿÿÿÿÿÿ_   ÿÿÿÿA   ¥îÛ W   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿC   2   Æîß ATTRIB_XACIS_ID1042idansoftattribÿÿÿÿÿÿÿÿ`   ÿÿÿÿD   ¥îÛ X   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿG   4   Æîß ATTRIB_XACIS_ID1245string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿI   5   Æîß ATTRIB_XACIS_ID1215string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿL      Æîß ATTRIB_XACIS_ID147string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿM   ;   Æîß ATTRIB_XACIS_ID1071string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿO   >   Æîß ATTRIB_XACIS_ID1043string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   ?   Æîß ATTRIB_XACIS_ID1062string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿT   A   Æîß ATTRIB_XACIS_ID1247string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿW   D   Æîß ATTRIB_XACIS_ID1216End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 8420 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000090.sab
+BIN000000014355
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      !À      !À‰A`åĞ"À      !@      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMERegionlump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      !À      !À‰A`åĞ"À      !@      !@V-Ò7@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ RegionZ             ÿ€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID193shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+      !À      !À‰A`åĞ"À      !@      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID193string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_IDRegionface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      !À      !ÀV-Ò7@      !@      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_IDRegionstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAMERegion	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      !À      !À‰A`åĞ"À      !@      !@‰A`åĞ"Àloop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      !À      !ÀV-Ò7@      !@      !@V-Ò7@      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                V-Ò7@                      ğ?      ğ?       €        	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß       ğ?                	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß       ğ?                idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ [   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      !À      !À‰A`åĞ"À      !@      !ÀV-Ò7@loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      !À      !À‰A`åĞ"À      !@      !@‰A`åĞ"À      
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                ‰A`åĞ"À                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "   #   $      ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ%      	   Æîß       ğ?                idansoftattribÿÿÿÿÿÿÿÿ&         ¥îÛ \   	fctd_markeyeattribÿÿÿÿÿÿÿÿ'   ÿÿÿÿ   ¥îß face(   ÿÿÿÿÿÿÿÿÿÿÿÿ)   *      ÿÿÿÿ+   
+
+      !À      !À‰A`åĞ"À      !À      !@V-Ò7@loop,   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      
+      !À      !À‰A`åĞ"À      !@      !ÀV-Ò7@      
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              !Àçû©ñÒÍ$@              ğ?              ğ?               €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.   /   0   1      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2      3   4      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   2   5   6      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   8      $   
+9   ÿÿÿÿedge:   ÿÿÿÿÿÿÿÿÿÿÿÿ;         !À<         !@   =   unknown
+      !@      !ÀV-Ò7@      !@      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID187	rgb_colorstattribÿÿÿÿÿÿÿÿ>         Æîß       ğ?                idansoftattribÿÿÿÿÿÿÿÿ?         ¥îÛ ]   	fctd_markeyeattribÿÿÿÿÿÿÿÿ@   ÿÿÿÿ   ¥îß faceA   ÿÿÿÿÿÿÿÿÿÿÿÿB   C      ÿÿÿÿD   
+
+      !À      !@‰A`åĞ"À      !@      !@V-Ò7@loopE   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF      
+      !À      !À‰A`åĞ"À      !À      !@V-Ò7@   +   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À        çû©ñÒÍ$@      ğ?                              ğ?       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   5   H   I      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ       G   K      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    J   L   M      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8   7       1   
+9   ÿÿÿÿedgeN   ÿÿÿÿÿÿÿÿÿÿÿÿO         !ÀP         !@    Q   unknown
+      !@      !À‰A`åĞ"À      !@      !@‰A`åĞ"Àcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   R   S      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿT   U   !   4   
+C   ÿÿÿÿedgeV   ÿÿÿÿÿÿÿÿÿÿÿÿ<         !ÀW         !@!   X   unknown
+      !À      !@V-Ò7@      !@      !@V-Ò7@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   Y   "   6   
+   ÿÿÿÿedgeZ   ÿÿÿÿÿÿÿÿÿÿÿÿ[         !À;         !@"   \   unknown
+      !À      !ÀV-Ò7@      !@      !ÀV-Ò7@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   #   Y   ]   9   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   0   T   ^   
+9   ÿÿÿÿloop_   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   B   
+      !@      !À‰A`åĞ"À      !@      !@V-Ò7@   `   
+idansoftattribÿÿÿÿÿÿÿÿa   ÿÿÿÿ$   ¥îÛ a   vertexb   ÿÿÿÿÿÿÿÿÿÿÿÿ]   c   vertexd   ÿÿÿÿÿÿÿÿÿÿÿÿ^   e   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@        V-Ò7@              ğ?        
+      !À
+      !@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ&      Æîß ATTRIB_XACIS_ID223	rgb_colorstattribÿÿÿÿÿÿÿÿf   '      Æîß       ğ?                idansoftattribÿÿÿÿÿÿÿÿg   (      ¥îÛ ^   	fctd_markeyeattribÿÿÿÿÿÿÿÿh   ÿÿÿÿ)   ¥îß facei   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9      ÿÿÿÿ`   
+
+      !@      !À‰A`åĞ"À      !@      !@V-Ò7@loopj   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿT   )   
+      !À      !@‰A`åĞ"À      !@      !@V-Ò7@   D   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              !@çû©ñÒÍ$@              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿk   R   U   l   *   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿY   -   .   K   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿR   k   -   I   
+*   ÿÿÿÿedgem   ÿÿÿÿÿÿÿÿÿÿÿÿ[   K+‡Ö*Àn   I+‡Ö*@-   o   unknown
+      !À      !À‰A`åĞ"À      !À      !ÀV-Ò7@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   .   k   p      ÿÿÿÿedgeq   ÿÿÿÿÿÿÿÿÿÿÿÿP         !Àn         !@.   r   unknown
+      !À      !À‰A`åĞ"À      !@      !À‰A`åĞ"ÀcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿU   T   /   M   
+C   ÿÿÿÿedges   ÿÿÿÿÿÿÿÿÿÿÿÿt         !ÀO         !@/   u   unknown
+      !À      !@‰A`åĞ"À      !@      !@‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿv   ÿÿÿÿ1   ¥îÛ e   vertexw   ÿÿÿÿÿÿÿÿÿÿÿÿ1   x   vertexy   ÿÿÿÿÿÿÿÿÿÿÿÿ1   z   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@        ‰A`åĞ"À              ğ¿        
+      !À
+      !@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   H   2   S   
+*   ÿÿÿÿedge{   ÿÿÿÿÿÿÿÿÿÿÿÿW         !À[         !@2   |   unknown
+      !À      !ÀV-Ò7@      !À      !@V-Ò7@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL   3   8   ^   C   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   L   F   l   
+C   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿ}   ÿÿÿÿ4   ¥îÛ b   vertex~   ÿÿÿÿÿÿÿÿÿÿÿÿl      straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              !@V-Ò7@      ğ¿                
+      !À
+      !@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ5   G   7   ]   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿ€   ÿÿÿÿ6   ¥îÛ d   vertex   ÿÿÿÿÿÿÿÿÿÿÿÿS   ‚   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              !ÀV-Ò7@      ğ?                
+      !À
+      !@edgeƒ   ÿÿÿÿÿÿÿÿÿÿÿÿ;   K+‡Ö*ÀP   I+‡Ö*@Y   „   unknown
+      !@      !À‰A`åĞ"À      !@      !ÀV-Ò7@edge…   ÿÿÿÿÿÿÿÿÿÿÿÿ<   K+‡Ö*ÀO   I+‡Ö*@T   †   unknown
+      !@      !@‰A`åĞ"À      !@      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   Æîß ATTRIB_XACIS_ID-1planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@        çû©ñÒÍ$@      ğ¿                                      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ:   $   Æîß ATTRIB_XACIS_ID1054idansoftattribÿÿÿÿÿÿÿÿ‡   ÿÿÿÿ;   ¥îÛ m   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@      !ÀV-Ò7@idansoftattribÿÿÿÿÿÿÿÿˆ   ÿÿÿÿ<   ¥îÛ n   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ?      Æîß ATTRIB_XACIS_ID161	rgb_colorstattribÿÿÿÿÿÿÿÿ‰   @      Æîß       ğ?                idansoftattribÿÿÿÿÿÿÿÿŠ   A   )   ¥îÛ _   	fctd_markeyeattribÿÿÿÿÿÿÿÿ‹   ÿÿÿÿB   ¥îß string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH   F   J   p   
+*   ÿÿÿÿedgeŒ   ÿÿÿÿÿÿÿÿÿÿÿÿW   K+‡Ö*Àt   I+‡Ö*@F      unknown
+      !À      !@‰A`åĞ"À      !À      !@V-Ò7@idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿI   ¥îÛ i   vertex   ÿÿÿÿÿÿÿÿÿÿÿÿK      straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À      !Àçû©ñÒÍ$@                      ğ¿
+K+‡Ö*À
+I+‡Ö*@edge‘   ÿÿÿÿÿÿÿÿÿÿÿÿn         !Àt         !@J   ’   unknown
+      !À      !À‰A`åĞ"À      !À      !@‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿ“   ÿÿÿÿK   ¥îÛ f   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              !À‰A`åĞ"À      ğ¿                
+      !À
+      !@idansoftattribÿÿÿÿÿÿÿÿ”   ÿÿÿÿM   ¥îÛ h   vertex•   ÿÿÿÿÿÿÿÿÿÿÿÿp   –   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              !@‰A`åĞ"À      ğ?                
+      !À
+      !@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   1   Æîß ATTRIB_XACIS_ID1052idansoftattribÿÿÿÿÿÿÿÿ—   ÿÿÿÿO   ¥îÛ q   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@      !@‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿ˜   ÿÿÿÿP   ¥îÛ r   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@      !À‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿ™   ÿÿÿÿS   ¥îÛ c   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À        V-Ò7@              ğ¿        
+      !À
+      !@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿV   4   Æîß ATTRIB_XACIS_ID1110idansoftattribÿÿÿÿÿÿÿÿš   ÿÿÿÿW   ¥îÛ o   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À      !@V-Ò7@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿZ   6   Æîß ATTRIB_XACIS_ID1069idansoftattribÿÿÿÿÿÿÿÿ›   ÿÿÿÿ[   ¥îÛ p   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À      !ÀV-Ò7@idansoftattribÿÿÿÿÿÿÿÿœ   ÿÿÿÿ]   ¥îÛ j   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@      !Àçû©ñÒÍ$@                      ğ¿
+K+‡Ö*À
+I+‡Ö*@idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ^   ¥îÛ l   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !@      !@çû©ñÒÍ$@                      ğ¿
+K+‡Ö*À
+I+‡Ö*@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿb   ;   Æîß ATTRIB_XACIS_ID1230string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿd   <   Æîß ATTRIB_XACIS_ID1235string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿg      Æîß ATTRIB_XACIS_ID183	rgb_colorstattribÿÿÿÿÿÿÿÿ   h   )   Æîß       ğ?                idansoftattribÿÿÿÿÿÿÿÿŸ   i   B   ¥îÛ `   idansoftattribÿÿÿÿÿÿÿÿ    ÿÿÿÿl   ¥îÛ k   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À      !@çû©ñÒÍ$@                      ğ¿
+K+‡Ö*À
+I+‡Ö*@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿm   I   Æîß ATTRIB_XACIS_ID1067idansoftattribÿÿÿÿÿÿÿÿ¡   ÿÿÿÿn   ¥îÛ s   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À      !À‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿ¢   ÿÿÿÿp   ¥îÛ g   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À        ‰A`åĞ"À              ğ?        
+      !À
+      !@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿq   K   Æîß ATTRIB_XACIS_ID1068string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿs   M   Æîß ATTRIB_XACIS_ID1139idansoftattribÿÿÿÿÿÿÿÿ£   ÿÿÿÿt   ¥îÛ t   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      !À      !@‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿw   O   Æîß ATTRIB_XACIS_ID1233string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿy   P   Æîß ATTRIB_XACIS_ID1231string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ{   S   Æîß ATTRIB_XACIS_ID1103string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ~   W   Æîß ATTRIB_XACIS_ID1302string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   [   Æîß ATTRIB_XACIS_ID1254string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿƒ   ]   Æîß ATTRIB_XACIS_ID1051string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ…   ^   Æîß ATTRIB_XACIS_ID1053string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿŠ   )   Æîß ATTRIB_XACIS_ID211	rgb_colorstattribÿÿÿÿÿÿÿÿ¤   ‹   B   Æîß       ğ?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿŒ   l   Æîß ATTRIB_XACIS_ID1101string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   n   Æîß ATTRIB_XACIS_ID1255string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   p   Æîß ATTRIB_XACIS_ID1102string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ•   t   Æîß ATTRIB_XACIS_ID1303string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿŸ   B   Æîß ATTRIB_XACIS_ID153End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 13638 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000118.sab
+BIN000000015176
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME	Cylinder1lump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?        	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ 	Cylinder1v           ÿÿÿ€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID219shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID219string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_ID	Cylinder1face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+ìQ¸…ëÁ?…¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_ID	Cylinder1string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAME	Cylinder1	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      è?\3&¦¼‰A`åĞ"À      ô?      Ğ?        loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+ìQ¸…ëÁ?…¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?              conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿…ëQ¸…ë?                      ğ?       €      ğ?…ëQ¸…ë?
+	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß       ğ?      ğ?      ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß       ğ?      ğ?      ğ?idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ w   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      è?      Ğ¿‰A`åĞ"À      ô?\3&¦<        loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      è?\3&¦¼‰A`åĞ"À      ô?      Ğ?              
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "   #   $   
+   ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ%      	   Æîß       ğ?      ğ?      ğ?idansoftattribÿÿÿÿÿÿÿÿ&         ¥îÛ x   	fctd_markeyeattribÿÿÿÿÿÿÿÿ'   ÿÿÿÿ   ¥îß face(   ÿÿÿÿÿÿÿÿÿÿÿÿ)   *      ÿÿÿÿ+   
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…¨“v7[<        loop,   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      
+      è?      Ğ¿‰A`åĞ"À      ô?\3&¦<              
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.   /   -   0   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      2   3   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   1   4   5   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ6   7      $   *   ÿÿÿÿedge8   ÿÿÿÿÿÿÿÿÿÿÿÿ9   ‰A`åĞ"ø¿:   ‰A`åĞ"ø?   ;   unknown
+Ãõ(\Âı?h¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID191	rgb_colorstattribÿÿÿÿÿÿÿÿ<         Æîß       ğ?      ğ?      ğ?idansoftattribÿÿÿÿÿÿÿÿ=         ¥îÛ y   	fctd_markeyeattribÿÿÿÿÿÿÿÿ>   ÿÿÿÿ   ¥îß face?   ÿÿÿÿÿÿÿÿÿÿÿÿ@   A      ÿÿÿÿB   
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?‰A`åĞ"ÀloopC   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#      
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…¨“v7[<           +   conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"ø¿                      ğ¿…ëQ¸…ë?                      ğ?       €      ğ?…ëQ¸…ë?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   E       0      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF       G   H   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    F   I   J   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL   š™™™™™ñ¿M   xé&1¬ş?    N   unknown
+      ô?\3&¦¼‰A`åĞ"À      ô?                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   O   P   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿQ   Q   !   3   A   ÿÿÿÿedgeR   ÿÿÿÿÿÿÿÿÿÿÿÿS   -DTû!	@9   -DTû!@!   T   unknown
+ìQ¸…ëÁ?…¨“v7[¼‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?‰A`åĞ"ÀcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿU   U   "   5   V   ÿÿÿÿedgeW   ÿÿÿÿÿÿÿÿÿÿÿÿ:           X   -DTû!	@"   Y   unknown
+ìQ¸…ëÁ?                Ãõ(\Âı?…ëQ¸…ë?        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   #   U   Z   
+*   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   O   Q   [   
+*   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿ\   ÿÿÿÿ$   ¥îÛ }   vertex]   ÿÿÿÿÿÿÿÿÿÿÿÿ3   ^   vertex_   ÿÿÿÿÿÿÿÿÿÿÿÿ5   `   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Âı?h¨“v7[¼‰A`åĞ"ø¿                      ğ?
+‰A`åĞ"ø¿
+‰A`åĞ"ø?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ&      Æîß ATTRIB_XACIS_ID189	rgb_colorstattribÿÿÿÿÿÿÿÿa   '      Æîß       ğ?      ğ?      ğ?idansoftattribÿÿÿÿÿÿÿÿb   (      ¥îÛ z   	fctd_markeyeattribÿÿÿÿÿÿÿÿc   ÿÿÿÿ)   ¥îß faced   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿV      ÿÿÿÿe   
+ìQ¸…ëÁ?…ëQ¸…ë¿        Ãõ(\Âı?…ëQ¸…ë?        loopf   ÿÿÿÿÿÿÿÿÿÿÿÿg   Q   )   
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?…ëQ¸…ë?‰A`åĞ"À   B   planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿              ğ¿       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿh   -   i   j   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   h   k   l   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   .   h   m   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿk   k   .   H   n   ÿÿÿÿedgeo   ÿÿÿÿÿÿÿÿÿÿÿÿp   -DTû!	@L   -DTû!@.   q   unknown
+      è?\3&¦¼              ô?      Ğ?        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿi   i   /   J   g   ÿÿÿÿedger   ÿÿÿÿÿÿÿÿÿÿÿÿM           s   -DTû!	@/   t   unknown
+      è?        ‰A`åĞ"À      ô?      Ğ?‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿu   ÿÿÿÿ0   ¥îÛ    vertexv   ÿÿÿÿÿÿÿÿÿÿÿÿH   w   vertexx   ÿÿÿÿÿÿÿÿÿÿÿÿ0   y   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼š™™™™™ñ¿       €              ğ¿
+š™™™™™ñ¿
+xé&1¬ş?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   6   1   P   *   ÿÿÿÿedgez   ÿÿÿÿÿÿÿÿÿÿÿÿX   ‰A`åĞ"ø¿S   ‰A`åĞ"ø?1   {   unknown
+ìQ¸…ëÁ?h¨“v7[<‰A`åĞ"ÀìQ¸…ëÁ?h¨“v7[<        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2   2   7   [   A   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿ|   ÿÿÿÿ3   ¥îÛ ~   vertex}   ÿÿÿÿÿÿÿÿÿÿÿÿ3   ~   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿…ëQ¸…ë?                      ğ?
+-DTû!	@
+-DTû!@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ4   4   6   Z   V   ÿÿÿÿloop   ÿÿÿÿÿÿÿÿÿÿÿÿn   4   @   
+ìQ¸…ëÁ?…ëQ¸…ë¿        Ãõ(\Âı?…ëQ¸…ë?           e   idansoftattribÿÿÿÿÿÿÿÿ€   ÿÿÿÿ5   ¥îÛ €   vertex   ÿÿÿÿÿÿÿÿÿÿÿÿP   ‚   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?…ëQ¸…ë?                      ğ?
+        
+-DTû!	@edgeƒ   ÿÿÿÿÿÿÿÿÿÿÿÿX   -DTû!	@:   -DTû!@6   „   unknown
+ìQ¸…ëÁ?…ëQ¸…ë¿        Ãõ(\Âı?…¨“v7[<        edge…   ÿÿÿÿÿÿÿÿÿÿÿÿ9           S   -DTû!	@7   †   unknown
+ìQ¸…ëÁ?…ëQ¸…ë¿‰A`åĞ"ÀÃõ(\Âı?h¨“v7[<‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ8   $   Æîß ATTRIB_XACIS_ID1114idansoftattribÿÿÿÿÿÿÿÿ‡   ÿÿÿÿ9   ¥îÛ Š   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Âı?        ‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿˆ   ÿÿÿÿ:   ¥îÛ ‰   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÃõ(\Âı?                string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ=      Æîß ATTRIB_XACIS_ID141	rgb_colorstattribÿÿÿÿÿÿÿÿ‰   >      Æîß       ğ?      ğ?      ğ?idansoftattribÿÿÿÿÿÿÿÿŠ   ?   )   ¥îÛ {   	fctd_markeyeattribÿÿÿÿÿÿÿÿ‹   ÿÿÿÿ@   ¥îß planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   Æîß ATTRIB_XACIS_ID-1loopŒ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI   )   
+      è?      Ğ¿‰A`åĞ"À      ô?      Ğ?‰A`åĞ"À   B   coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   D   F   m      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI   I   D   j   g   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿs   -DTû!	@M   -DTû!@D      unknown
+      è?      Ğ¿‰A`åĞ"À      ô?\3&¦<‰A`åĞ"ÀcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   G   E   l   n   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿL           p   -DTû!	@E      unknown
+      è?      Ğ¿              ô?\3&¦<        edge‘   ÿÿÿÿÿÿÿÿÿÿÿÿs   xé&1¬ş¿p   š™™™™™ñ?F   ’   unknown
+      è?\3&¦<‰A`åĞ"À      è?\3&¦<        loop“   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   @   
+      è?      Ğ¿              ô?      Ğ?           e   idansoftattribÿÿÿÿÿÿÿÿ”   ÿÿÿÿH   ¥îÛ ‚   vertex•   ÿÿÿÿÿÿÿÿÿÿÿÿH   –   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ¿      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ—   ÿÿÿÿJ   ¥îÛ „   vertex˜   ÿÿÿÿÿÿÿÿÿÿÿÿm   ™   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À               €      ğ?      Ğ?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿK   0   Æîß ATTRIB_XACIS_ID1029idansoftattribÿÿÿÿÿÿÿÿš   ÿÿÿÿL   ¥îÛ    pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼        idansoftattribÿÿÿÿÿÿÿÿ›   ÿÿÿÿM   ¥îÛ    pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?        ‰A`åĞ"Àidansoftattribÿÿÿÿÿÿÿÿœ   ÿÿÿÿP   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<‰A`åĞ"ø¿       €       €      ğ¿
+‰A`åĞ"ø¿
+‰A`åĞ"ø?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿR   3   Æîß ATTRIB_XACIS_ID1058idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿS   ¥îÛ ‹   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿV   Æîß ATTRIB_XACIS_ID-1string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿW   5   Æîß ATTRIB_XACIS_ID1116idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿX   ¥îÛ Œ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQ¸…ëÁ?h¨“v7[<        idansoftattribÿÿÿÿÿÿÿÿŸ   ÿÿÿÿZ   ¥îÛ ‡   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?…ëQ¸…ë?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ    ÿÿÿÿ[   ¥îÛ ˆ   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À                      ğ¿…ëQ¸…ë?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ]   9   Æîß ATTRIB_XACIS_ID1240string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ_   :   Æîß ATTRIB_XACIS_ID1321string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿb      Æîß ATTRIB_XACIS_ID207	rgb_colorstattribÿÿÿÿÿÿÿÿ¡   c   )   Æîß       ğ?      ğ?      ğ?idansoftattribÿÿÿÿÿÿÿÿ¢   d   @   ¥îÛ |   string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿg   Æîß ATTRIB_XACIS_ID-1idansoftattribÿÿÿÿÿÿÿÿ£   ÿÿÿÿj   ¥îÛ …   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ‰A`åĞ"À               €      ğ?      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ¤   ÿÿÿÿl   ¥îÛ †   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ¿      Ğ?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ¥   ÿÿÿÿm   ¥îÛ ƒ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<š™™™™™ñ¿       €              ğ?
+xé&1¬ş¿
+š™™™™™ñ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn   Æîß ATTRIB_XACIS_ID-1string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿo   H   Æîß ATTRIB_XACIS_ID1112idansoftattribÿÿÿÿÿÿÿÿ¦   ÿÿÿÿp   ¥îÛ    pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿr   J   Æîß ATTRIB_XACIS_ID1056idansoftattribÿÿÿÿÿÿÿÿ§   ÿÿÿÿs   ¥îÛ    pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<‰A`åĞ"Àstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿv   L   Æîß ATTRIB_XACIS_ID1194string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿx   M   Æîß ATTRIB_XACIS_ID1195string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿz   P   Æîß ATTRIB_XACIS_ID1115string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ}   S   Æîß ATTRIB_XACIS_ID1241string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   X   Æîß ATTRIB_XACIS_ID1323string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿƒ   Z   Æîß ATTRIB_XACIS_ID1134string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ…   [   Æîß ATTRIB_XACIS_ID1057string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿŠ   )   Æîß ATTRIB_XACIS_ID155	rgb_colorstattribÿÿÿÿÿÿÿÿ¨   ‹   @   Æîß       ğ?      ğ?      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   j   Æîß ATTRIB_XACIS_ID1030string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   l   Æîß ATTRIB_XACIS_ID1032string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   m   Æîß ATTRIB_XACIS_ID1031string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ•   p   Æîß ATTRIB_XACIS_ID1199string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ˜   s   Æîß ATTRIB_XACIS_ID1197string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¢   @   Æîß ATTRIB_XACIS_ID235End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 14459 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000146.sab
+BIN000000020384
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      À      À              @      @š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME	substratelump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      À      À              @      @š™™™™™é?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ 	substrate’            €ÿ€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID225shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+      À      À              @      @š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID225string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_ID	substrateface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      è?\3&¦¼              ô?      Ğ?š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_ID	substratestring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAME	substrate	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      è?      Ğ¿              ô?\3&¦<š™™™™™é?loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      è?\3&¦¼              ô?      Ğ?š™™™™™é?      
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß       ğ?    à?        	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ “   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      À      Àš™™™™™é?      @      @š™™™™™é?loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      è?      Ğ¿              ô?\3&¦<š™™™™™é?      
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "       #   
+   ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ$      	   Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿ%         ¥îÛ ”   	fctd_markeyeattribÿÿÿÿÿÿÿÿ&   ÿÿÿÿ   ¥îß face'   ÿÿÿÿÿÿÿÿÿÿÿÿ(   )      ÿÿÿÿ*   
+
+      À      À              @      @        loop+   ÿÿÿÿÿÿÿÿÿÿÿÿ,   -      
+      À      Àš™™™™™é?      @      @š™™™™™é?      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                š™™™™™é?                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.   /      #      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0      1   2   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   0   3   4   
+   ÿÿÿÿedge5   ÿÿÿÿÿÿÿÿÿÿÿÿ6   š™™™™™Ù¿7   š™™™™™Ù?   8   unknown
+      ô?\3&¦¼              ô?\3&¦¼š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID139	rgb_colorstattribÿÿÿÿÿÿÿÿ9         Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿ:         ¥îÛ •   	fctd_markeyeattribÿÿÿÿÿÿÿÿ;   ÿÿÿÿ   ¥îß face<   ÿÿÿÿÿÿÿÿÿÿÿÿ=   >      ÿÿÿÿ?   
+
+      À      À              @      Àš™™™™™é?loop@   ÿÿÿÿÿÿÿÿÿÿÿÿA   B      
+      À      À              @      @           *   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                              ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1loopC   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1      
+      è?      Ğ¿š™™™™™é?      ô?      Ğ?š™™™™™é?      coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   E   F   G      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH       I   J   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    H   K   L   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   H   M   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿK   K   !   2   ,   ÿÿÿÿedgeN   ÿÿÿÿÿÿÿÿÿÿÿÿO   -DTû!	@6   -DTû!@!   P   unknown
+      è?\3&¦¼š™™™™™é?      ô?      Ğ?š™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI   I   "   4   A   ÿÿÿÿedgeQ   ÿÿÿÿÿÿÿÿÿÿÿÿ7           R   -DTû!	@"   S   unknown
+      è?\3&¦¼              ô?      Ğ?        idansoftattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ#   ¥îÛ ›   vertexU   ÿÿÿÿÿÿÿÿÿÿÿÿ#   V   vertexW   ÿÿÿÿÿÿÿÿÿÿÿÿ#   X   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼š™™™™™Ù?       €              ğ¿
+š™™™™™Ù¿
+š™™™™™Ù?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ%      Æîß ATTRIB_XACIS_ID199	rgb_colorstattribÿÿÿÿÿÿÿÿY   &      Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿZ   '      ¥îÛ –   	fctd_markeyeattribÿÿÿÿÿÿÿÿ[   ÿÿÿÿ(   ¥îß face\   ÿÿÿÿÿÿÿÿÿÿÿÿ]   ^      ÿÿÿÿ_   
+
+      À      À              À      @š™™™™™é?loop`   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿa   (   
+      À      À              @      Àš™™™™™é?   ?   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              Àš™™™™™Ù?              ğ?              ğ?               €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   Æîß ATTRIB_XACIS_ID-1loopb   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI      
+      è?      Ğ¿              ô?      Ğ?           *   
+coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿc   d   e   f   )   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿg   -   h   i      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   g   j   k      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿl   m   -   G   
+n   ÿÿÿÿedgeo   ÿÿÿÿÿÿÿÿÿÿÿÿp         Àq         @-   r   unknown
+      @      Àš™™™™™é?      @      @š™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   .   0   M      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   3   .   J   A   ÿÿÿÿedges   ÿÿÿÿÿÿÿÿÿÿÿÿR   -DTû!	@7   -DTû!@.   t   unknown
+      è?      Ğ¿              ô?\3&¦<        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1   1   /   L   ,   ÿÿÿÿedgeu   ÿÿÿÿÿÿÿÿÿÿÿÿ6           O   -DTû!	@/   v   unknown
+      è?      Ğ¿š™™™™™é?      ô?\3&¦<š™™™™™é?edgew   ÿÿÿÿÿÿÿÿÿÿÿÿR   š™™™™™Ù¿O   š™™™™™Ù?0   x   unknown
+      è?\3&¦¼              è?\3&¦<š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿy   ÿÿÿÿ2   ¥îÛ œ   vertexz   ÿÿÿÿÿÿÿÿÿÿÿÿ2   {   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™é?                      ğ¿      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ|   ÿÿÿÿ4   ¥îÛ    vertex}   ÿÿÿÿÿÿÿÿÿÿÿÿ4   ~   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?      Ğ?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ5   #   Æîß ATTRIB_XACIS_ID1024idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ6   ¥îÛ ®   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿ€   ÿÿÿÿ7   ¥îÛ ­   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ:      Æîß ATTRIB_XACIS_ID173	rgb_colorstattribÿÿÿÿÿÿÿÿ   ;      Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿ‚   <   (   ¥îÛ —   	fctd_markeyeattribÿÿÿÿÿÿÿÿƒ   ÿÿÿÿ=   ¥îß face„   ÿÿÿÿÿÿÿÿÿÿÿÿ…   †      ÿÿÿÿ‡   
+
+      À      @              @      @š™™™™™é?loopˆ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‰   =   
+      À      À              À      @š™™™™™é?   _   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À        š™™™™™Ù?      ğ?                              ğ?       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿŠ   j   ‹   Œ   >   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   B   Š      )   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿB            )   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿm   l   B   f   
+n   ÿÿÿÿedge‘   ÿÿÿÿÿÿÿÿÿÿÿÿ’         À“         @B   ”   unknown
+      @      À              @      @        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   D   •   –      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   ˜   D   i   
+†   ÿÿÿÿedge™   ÿÿÿÿÿÿÿÿÿÿÿÿq         Àš         @D   ›   unknown
+      À      @š™™™™™é?      @      @š™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿa   œ   E   k   
+>   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿ         Àp         @E   Ÿ   unknown
+      À      Àš™™™™™é?      @      Àš™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿe   F   œ       n   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   e   —   ¡   
+n   ÿÿÿÿloop¢   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿl   …   
+      @      À              @      @š™™™™™é?   £   
+idansoftattribÿÿÿÿÿÿÿÿ¤   ÿÿÿÿG   ¥îÛ ¡   vertex¥   ÿÿÿÿÿÿÿÿÿÿÿÿG   ¦   vertex§   ÿÿÿÿÿÿÿÿÿÿÿÿG   ¨   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @        š™™™™™é?              ğ?        
+      À
+      @idansoftattribÿÿÿÿÿÿÿÿ©   ÿÿÿÿJ   ¥îÛ Ÿ   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?                                      ğ?      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿª   ÿÿÿÿL   ¥îÛ     ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™é?                      ğ¿      Ğ?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ«   ÿÿÿÿM   ¥îÛ    straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<š™™™™™Ù?       €              ğ?
+š™™™™™Ù¿
+š™™™™™Ù?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   2   Æîß ATTRIB_XACIS_ID1025idansoftattribÿÿÿÿÿÿÿÿ¬   ÿÿÿÿO   ¥îÛ ¯   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   4   Æîß ATTRIB_XACIS_ID1027idansoftattribÿÿÿÿÿÿÿÿ­   ÿÿÿÿR   ¥îÛ °   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦¼        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿU   6   Æîß ATTRIB_XACIS_ID1185string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿW   7   Æîß ATTRIB_XACIS_ID1186string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿZ      Æîß ATTRIB_XACIS_ID229	rgb_colorstattribÿÿÿÿÿÿÿÿ®   [   (   Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿ¯   \   =   ¥îÛ ˜   	fctd_markeyeattribÿÿÿÿÿÿÿÿ°   ÿÿÿÿ]   ¥îß face±   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn      ÿÿÿÿ£   
+
+      @      À              @      @š™™™™™é?loop²   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   ]   
+      À      @              @      @š™™™™™é?   ‡   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @š™™™™™Ù?              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ^   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ³   •   ˜   ´   ^   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿœ   a   c      
+>   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ•   ³   a   Œ   
+^   ÿÿÿÿedgeµ   ÿÿÿÿÿÿÿÿÿÿÿÿ   š™™™™™Ù¿¶   š™™™™™Ù?a   ·   unknown
+      À      À              À      Àš™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿd   c   ³   ¸   )   ÿÿÿÿedge¹   ÿÿÿÿÿÿÿÿÿÿÿÿ“         À¶         @c   º   unknown
+      À      À              @      À        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ˜   —   d      
+†   ÿÿÿÿedge»   ÿÿÿÿÿÿÿÿÿÿÿÿ¼         À’         @d   ½   unknown
+      À      @              @      @        idansoftattribÿÿÿÿÿÿÿÿ¾   ÿÿÿÿf   ¥îÛ ¥   vertex¿   ÿÿÿÿÿÿÿÿÿÿÿÿf   À   vertexÁ   ÿÿÿÿÿÿÿÿÿÿÿÿf   Â   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @                              ğ¿        
+      À
+      @coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‰   ‹   g   –   
+^   ÿÿÿÿedgeÃ   ÿÿÿÿÿÿÿÿÿÿÿÿš         À         @g   Ä   unknown
+      À      Àš™™™™™é?      À      @š™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   h   m   ¡   †   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿh      ‰   ´   
+†   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÅ   ÿÿÿÿi   ¥îÛ ¢   vertexÆ   ÿÿÿÿÿÿÿÿÿÿÿÿi   Ç   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @š™™™™™é?      ğ¿                
+      À
+      @coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿj   Š   l       
+>   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÈ   ÿÿÿÿk   ¥îÛ ¤   vertexÉ   ÿÿÿÿÿÿÿÿÿÿÿÿ–   Ê   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              Àš™™™™™é?      ğ?                
+      À
+      @edgeË   ÿÿÿÿÿÿÿÿÿÿÿÿp   š™™™™™Ù¿“   š™™™™™Ù?œ   Ì   unknown
+      @      À              @      Àš™™™™™é?edgeÍ   ÿÿÿÿÿÿÿÿÿÿÿÿq   š™™™™™Ù¿’   š™™™™™Ù?—   Î   unknown
+      @      @              @      @š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn   Æîß ATTRIB_XACIS_ID-1planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @        š™™™™™Ù?      ğ¿                                      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿo   G   Æîß ATTRIB_XACIS_ID1079idansoftattribÿÿÿÿÿÿÿÿÏ   ÿÿÿÿp   ¥îÛ ±   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      Àš™™™™™é?idansoftattribÿÿÿÿÿÿÿÿĞ   ÿÿÿÿq   ¥îÛ ²   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      @š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿs   J   Æîß ATTRIB_XACIS_ID1124string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿu   L   Æîß ATTRIB_XACIS_ID1090string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿw   M   Æîß ATTRIB_XACIS_ID1026string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿz   O   Æîß ATTRIB_XACIS_ID1188string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ}   R   Æîß ATTRIB_XACIS_ID1190string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‚   (   Æîß ATTRIB_XACIS_ID215	rgb_colorstattribÿÿÿÿÿÿÿÿÑ   ƒ   =   Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿÒ   „   ]   ¥îÛ ™   	fctd_markeyeattribÿÿÿÿÿÿÿÿÓ   ÿÿÿÿ…   ¥îß string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ†   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‹   ‰      ¸   
+^   ÿÿÿÿedgeÔ   ÿÿÿÿÿÿÿÿÿÿÿÿš   š™™™™™Ù¿¼   š™™™™™Ù?‰   Õ   unknown
+      À      @              À      @š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿÖ   ÿÿÿÿŒ   ¥îÛ ©   vertex×   ÿÿÿÿÿÿÿÿÿÿÿÿ¸   Ø   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      Àš™™™™™Ù?                      ğ¿
+š™™™™™Ù¿
+š™™™™™Ù?edgeÙ   ÿÿÿÿÿÿÿÿÿÿÿÿ¶         À¼         @   Ú   unknown
+      À      À              À      @        idansoftattribÿÿÿÿÿÿÿÿÛ   ÿÿÿÿ   ¥îÛ ¦   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              À              ğ¿                
+      À
+      @idansoftattribÿÿÿÿÿÿÿÿÜ   ÿÿÿÿ   ¥îÛ ¨   vertexİ   ÿÿÿÿÿÿÿÿÿÿÿÿ¸   Ş   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @              ğ?                
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   f   Æîß ATTRIB_XACIS_ID1077idansoftattribÿÿÿÿÿÿÿÿß   ÿÿÿÿ’   ¥îÛ µ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      @        idansoftattribÿÿÿÿÿÿÿÿà   ÿÿÿÿ“   ¥îÛ ¶   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      À        idansoftattribÿÿÿÿÿÿÿÿá   ÿÿÿÿ–   ¥îÛ £   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À        š™™™™™é?              ğ¿        
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ™   i   Æîß ATTRIB_XACIS_ID1091idansoftattribÿÿÿÿÿÿÿÿâ   ÿÿÿÿš   ¥îÛ ³   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      @š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   k   Æîß ATTRIB_XACIS_ID1093idansoftattribÿÿÿÿÿÿÿÿã   ÿÿÿÿ   ¥îÛ ´   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      Àš™™™™™é?idansoftattribÿÿÿÿÿÿÿÿä   ÿÿÿÿ    ¥îÛ ª   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      Àš™™™™™Ù?                      ğ¿
+š™™™™™Ù¿
+š™™™™™Ù?idansoftattribÿÿÿÿÿÿÿÿå   ÿÿÿÿ¡   ¥îÛ ¬   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      @š™™™™™Ù?                      ğ¿
+š™™™™™Ù¿
+š™™™™™Ù?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¥   p   Æîß ATTRIB_XACIS_ID1265string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ§   q   Æîß ATTRIB_XACIS_ID1270string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¯   =   Æîß ATTRIB_XACIS_ID213	rgb_colorstattribÿÿÿÿÿÿÿÿæ   °   ]   Æîß       ğ?    à?        idansoftattribÿÿÿÿÿÿÿÿç   ±   …   ¥îÛ š   idansoftattribÿÿÿÿÿÿÿÿè   ÿÿÿÿ´   ¥îÛ «   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      @š™™™™™Ù?                      ğ¿
+š™™™™™Ù¿
+š™™™™™Ù?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿµ   Œ   Æîß ATTRIB_XACIS_ID1142idansoftattribÿÿÿÿÿÿÿÿé   ÿÿÿÿ¶   ¥îÛ ·   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      À        idansoftattribÿÿÿÿÿÿÿÿê   ÿÿÿÿ¸   ¥îÛ §   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À                              ğ?        
+      À
+      @string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¹      Æîß ATTRIB_XACIS_ID1144string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ»      Æîß ATTRIB_XACIS_ID1126idansoftattribÿÿÿÿÿÿÿÿë   ÿÿÿÿ¼   ¥îÛ ¸   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      @        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¿   ’   Æîß ATTRIB_XACIS_ID1268string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÁ   “   Æîß ATTRIB_XACIS_ID1266string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÃ   –   Æîß ATTRIB_XACIS_ID1092string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÆ   š   Æîß ATTRIB_XACIS_ID1290string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÉ      Æîß ATTRIB_XACIS_ID1292string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿË       Æîß ATTRIB_XACIS_ID1076string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÍ   ¡   Æîß ATTRIB_XACIS_ID1078string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÒ   ]   Æîß ATTRIB_XACIS_ID201	rgb_colorstattribÿÿÿÿÿÿÿÿì   Ó   …   Æîß       ğ?    à?        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÔ   ´   Æîß ATTRIB_XACIS_ID1127string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ×   ¶   Æîß ATTRIB_XACIS_ID1353string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÙ   ¸   Æîß ATTRIB_XACIS_ID1141string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿİ   ¼   Æîß ATTRIB_XACIS_ID1336string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿç   …   Æîß ATTRIB_XACIS_ID167End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 19667 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000186.sab
+BIN000000020364
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      ş¿      ş¿š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEpatchlump   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      ş¿      ş¿š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+propertiesansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ patchº           €€€€string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   Æîß ATTRIB_XACIS_ID231shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	   ÿÿÿÿ   
+      ş¿      ş¿š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ
+          Æîß ATTRIB_XACIS_ID231string_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XSTEP_PRODUCT_IDpatchface   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      è?\3&¦¼š™™™™™é?      ô?      Ğ?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ          Æîß ATTRIB_XSTEP_PRODUCT_IDpatchstring_attribname_attribgenattribÿÿÿÿÿÿÿÿ         Æîß ATTRIB_XACIS_NAMEpatch	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      è?      Ğ¿š™™™™™é?      ô?\3&¦<¾Ÿ/İ$ê?loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      è?\3&¦¼š™™™™™é?      ô?      Ğ?¾Ÿ/İ$ê?      
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ
+       Æîß     à?    à?    à?	rgb_colorstattribÿÿÿÿÿÿÿÿÿÿÿÿ      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ      	   ¥îÛ »   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+      ş¿      ş¿¾Ÿ/İ$ê?      ş?      ş?¾Ÿ/İ$ê?loop   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      è?      Ğ¿š™™™™™é?      ô?\3&¦<¾Ÿ/İ$ê?      
+conesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™ñ¿                      ğ¿      Ğ?                      ğ?       €      ğ?      Ğ?
+string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   "       #   
+   ÿÿÿÿ	rgb_colorstattribÿÿÿÿÿÿÿÿ$      	   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ%         ¥îÛ ¼   	fctd_markeyeattribÿÿÿÿÿÿÿÿ&   ÿÿÿÿ   ¥îß face'   ÿÿÿÿÿÿÿÿÿÿÿÿ(   )      ÿÿÿÿ*   
+
+      ş¿      ş¿š™™™™™é?      ş?      ş?š™™™™™é?loop+   ÿÿÿÿÿÿÿÿÿÿÿÿ,   -      
+      ş¿      ş¿¾Ÿ/İ$ê?      ş?      ş?¾Ÿ/İ$ê?      planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                ¾Ÿ/İ$ê?                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ.   /      #      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0      1   2   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   0   3   4   
+   ÿÿÿÿedge5   ÿÿÿÿÿÿÿÿÿÿÿÿ6   €Ä °rh¿7   €Ä °rh?   8   unknown
+      ô?\3&¦¼š™™™™™é?      ô?        ¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   Æîß ATTRIB_XACIS_ID217	rgb_colorstattribÿÿÿÿÿÿÿÿ9         Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ:         ¥îÛ ½   	fctd_markeyeattribÿÿÿÿÿÿÿÿ;   ÿÿÿÿ   ¥îß face<   ÿÿÿÿÿÿÿÿÿÿÿÿ=   >      ÿÿÿÿ?   
+
+      ş¿      ş¿š™™™™™é?      ş?      ş¿¾Ÿ/İ$ê?loop@   ÿÿÿÿÿÿÿÿÿÿÿÿA   B      
+      ş¿      ş¿š™™™™™é?      ş?      ş?š™™™™™é?   *   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                š™™™™™é?                      ğ?      ğ?       €        string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   Æîß ATTRIB_XACIS_ID-1loopC   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD      
+      è?      Ğ¿¾Ÿ/İ$ê?      ô?      Ğ?¾Ÿ/İ$ê?      coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F   G   H      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿI       J   K   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ    I   D   L   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   !   I   M   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   D   !   2   ,   ÿÿÿÿedgeN   ÿÿÿÿÿÿÿÿÿÿÿÿO   -DTû!	@6   -DTû!@!   P   unknown
+      è?\3&¦¼¾Ÿ/İ$ê?      ô?      Ğ?¾Ÿ/İ$ê?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   J   "   4   A   ÿÿÿÿedgeQ   ÿÿÿÿÿÿÿÿÿÿÿÿ7           R   -DTû!	@"   S   unknown
+      è?\3&¦¼š™™™™™é?      ô?      Ğ?š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ#   ¥îÛ Ã   vertexU   ÿÿÿÿÿÿÿÿÿÿÿÿ#   V   vertexW   ÿÿÿÿÿÿÿÿÿÿÿÿ#   X   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼¬Zd;ßé?       €              ğ¿
+€Ä °rh¿
+€Ä °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ%      Æîß ATTRIB_XACIS_ID185	rgb_colorstattribÿÿÿÿÿÿÿÿY   &      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿZ   '      ¥îÛ ¾   	fctd_markeyeattribÿÿÿÿÿÿÿÿ[   ÿÿÿÿ(   ¥îß face\   ÿÿÿÿÿÿÿÿÿÿÿÿ]   ^      ÿÿÿÿ_   
+
+      ş¿      ş¿š™™™™™é?      ş¿      ş?¾Ÿ/İ$ê?loop`   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿa   (   
+      ş¿      ş¿š™™™™™é?      ş?      ş¿¾Ÿ/İ$ê?   ?   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ş¿¬Zd;ßé?              ğ?              ğ?               €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   Æîß ATTRIB_XACIS_ID-1loopb   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ      
+      è?      Ğ¿š™™™™™é?      ô?      Ğ?š™™™™™é?   *   
+coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿc   d   e   f   )   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1   1   /   L   ,   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿg   -   h   i      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-   g   j   k      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿl   m   -   H   
+n   ÿÿÿÿedgeo   ÿÿÿÿÿÿÿÿÿÿÿÿp         ş¿q         ş?-   r   unknown
+      ş?      ş¿¾Ÿ/İ$ê?      ş?      ş?¾Ÿ/İ$ê?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   .   0   M      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ3   3   .   K   A   ÿÿÿÿedges   ÿÿÿÿÿÿÿÿÿÿÿÿR   -DTû!	@7   -DTû!@.   t   unknown
+      è?      Ğ¿š™™™™™é?      ô?\3&¦<š™™™™™é?edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿ6           O   -DTû!	@/   v   unknown
+      è?      Ğ¿¾Ÿ/İ$ê?      ô?\3&¦<¾Ÿ/İ$ê?edgew   ÿÿÿÿÿÿÿÿÿÿÿÿR   €Ä °rh¿O   €Ä °rh?0   x   unknown
+      è?\3&¦¼š™™™™™é?      è?\3&¦<¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿy   ÿÿÿÿ2   ¥îÛ Ä   vertexz   ÿÿÿÿÿÿÿÿÿÿÿÿM   {   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ¾Ÿ/İ$ê?                      ğ¿      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿ|   ÿÿÿÿ4   ¥îÛ Æ   vertex}   ÿÿÿÿÿÿÿÿÿÿÿÿM   ~   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™é?                      ğ?      Ğ?                      ğ?
+        
+-DTû!	@string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ5   #   Æîß ATTRIB_XACIS_ID1105idansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ6   ¥îÛ Ö   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?        ¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿ€   ÿÿÿÿ7   ¥îÛ Õ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?\3&¦¼š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ:      Æîß ATTRIB_XACIS_ID195	rgb_colorstattribÿÿÿÿÿÿÿÿ   ;      Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ‚   <   (   ¥îÛ ¿   	fctd_markeyeattribÿÿÿÿÿÿÿÿƒ   ÿÿÿÿ=   ¥îß face„   ÿÿÿÿÿÿÿÿÿÿÿÿ…   †      ÿÿÿÿ‡   
+
+      ş¿      ş?š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?loopˆ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‰   =   
+      ş¿      ş¿š™™™™™é?      ş¿      ş?¾Ÿ/İ$ê?   _   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿        ¬Zd;ßé?      ğ?                              ğ?       €string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿŠ   j   ‹   Œ   >   ÿÿÿÿstring_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   B   Š      )   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿB            )   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿm   l   B   f   
+n   ÿÿÿÿedge‘   ÿÿÿÿÿÿÿÿÿÿÿÿ’         ş¿“         ş?B   ”   unknown
+      ş?      ş¿š™™™™™é?      ş?      ş?š™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   •   –      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   ˜   E   i   
+†   ÿÿÿÿedge™   ÿÿÿÿÿÿÿÿÿÿÿÿq         ş¿š         ş?E   ›   unknown
+      ş¿      ş?¾Ÿ/İ$ê?      ş?      ş?¾Ÿ/İ$ê?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿa   œ   F   k   
+>   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿ         ş¿p         ş?F   Ÿ   unknown
+      ş¿      ş¿¾Ÿ/İ$ê?      ş?      ş¿¾Ÿ/İ$ê?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿe   G   œ       n   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿG   e   —   ¡   
+n   ÿÿÿÿloop¢   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿl   …   
+      ş?      ş¿š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?   £   
+idansoftattribÿÿÿÿÿÿÿÿ¤   ÿÿÿÿH   ¥îÛ É   vertex¥   ÿÿÿÿÿÿÿÿÿÿÿÿ    ¦   vertex§   ÿÿÿÿÿÿÿÿÿÿÿÿi   ¨   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?        ¾Ÿ/İ$ê?              ğ?        
+      ş¿
+      ş?idansoftattribÿÿÿÿÿÿÿÿ©   ÿÿÿÿK   ¥îÛ Ç   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        š™™™™™é?                      ğ?      Ğ?                      ğ?
+-DTû!	@
+-DTû!@idansoftattribÿÿÿÿÿÿÿÿª   ÿÿÿÿL   ¥îÛ È   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ğ?        ¾Ÿ/İ$ê?                      ğ¿      Ğ?                      ğ?
+        
+-DTû!	@idansoftattribÿÿÿÿÿÿÿÿ«   ÿÿÿÿM   ¥îÛ Å   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<¬Zd;ßé?       €              ğ?
+€Ä °rh¿
+€Ä °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿN   2   Æîß ATTRIB_XACIS_ID1119idansoftattribÿÿÿÿÿÿÿÿ¬   ÿÿÿÿO   ¥îÛ ×   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦<¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿQ   4   Æîß ATTRIB_XACIS_ID1146idansoftattribÿÿÿÿÿÿÿÿ­   ÿÿÿÿR   ¥îÛ Ø   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      è?\3&¦¼š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿU   6   Æîß ATTRIB_XACIS_ID1308string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿW   7   Æîß ATTRIB_XACIS_ID1309string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿZ      Æîß ATTRIB_XACIS_ID227	rgb_colorstattribÿÿÿÿÿÿÿÿ®   [   (   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿ¯   \   =   ¥îÛ À   	fctd_markeyeattribÿÿÿÿÿÿÿÿ°   ÿÿÿÿ]   ¥îß face±   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn      ÿÿÿÿ£   
+
+      ş?      ş¿š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?loop²   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—   ]   
+      ş¿      ş?š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?   ‡   
+planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ş?¬Zd;ßé?              ğ¿                       €      ğ¿string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ^   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ³   •   ˜   ´   ^   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿœ   a   c      
+>   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ•   ³   a   Œ   
+^   ÿÿÿÿedgeµ   ÿÿÿÿÿÿÿÿÿÿÿÿ   €Ä °rh¿¶   €Ä °rh?a   ·   unknown
+      ş¿      ş¿š™™™™™é?      ş¿      ş¿¾Ÿ/İ$ê?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿd   c   ³   ¸   )   ÿÿÿÿedge¹   ÿÿÿÿÿÿÿÿÿÿÿÿ“         ş¿¶         ş?c   º   unknown
+      ş¿      ş¿š™™™™™é?      ş?      ş¿š™™™™™é?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ˜   —   d      
+†   ÿÿÿÿedge»   ÿÿÿÿÿÿÿÿÿÿÿÿ¼         ş¿’         ş?d   ½   unknown
+      ş¿      ş?š™™™™™é?      ş?      ş?š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿ¾   ÿÿÿÿf   ¥îÛ Í   vertex¿   ÿÿÿÿÿÿÿÿÿÿÿÿf   À   vertexÁ   ÿÿÿÿÿÿÿÿÿÿÿÿf   Â   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?        š™™™™™é?              ğ¿        
+      ş¿
+      ş?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‰   ‹   g   –   
+^   ÿÿÿÿedgeÃ   ÿÿÿÿÿÿÿÿÿÿÿÿš         ş¿         ş?g   Ä   unknown
+      ş¿      ş¿¾Ÿ/İ$ê?      ş¿      ş?¾Ÿ/İ$ê?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   h   m   ¡   †   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿh      ‰   ´   
+†   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÅ   ÿÿÿÿi   ¥îÛ Ê   vertexÆ   ÿÿÿÿÿÿÿÿÿÿÿÿ´   Ç   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ş?¾Ÿ/İ$ê?      ğ¿                
+      ş¿
+      ş?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿj   Š   l       
+>   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÈ   ÿÿÿÿk   ¥îÛ Ì   vertexÉ   ÿÿÿÿÿÿÿÿÿÿÿÿ–   Ê   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ş¿¾Ÿ/İ$ê?      ğ?                
+      ş¿
+      ş?edgeË   ÿÿÿÿÿÿÿÿÿÿÿÿp   €Ä °rh¿“   €Ä °rh?œ   Ì   unknown
+      ş?      ş¿š™™™™™é?      ş?      ş¿¾Ÿ/İ$ê?edgeÍ   ÿÿÿÿÿÿÿÿÿÿÿÿq   €Ä °rh¿’   €Ä °rh?—   Î   unknown
+      ş?      ş?š™™™™™é?      ş?      ş?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿn   Æîß ATTRIB_XACIS_ID-1planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?        ¬Zd;ßé?      ğ¿                                      ğ?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿo   H   Æîß ATTRIB_XACIS_ID1088idansoftattribÿÿÿÿÿÿÿÿÏ   ÿÿÿÿp   ¥îÛ Ù   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?      ş¿¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿĞ   ÿÿÿÿq   ¥îÛ Ú   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?      ş?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿs   K   Æîß ATTRIB_XACIS_ID1106string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿu   L   Æîß ATTRIB_XACIS_ID1108string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿw   M   Æîß ATTRIB_XACIS_ID1107string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿz   O   Æîß ATTRIB_XACIS_ID1313string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ}   R   Æîß ATTRIB_XACIS_ID1311string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‚   (   Æîß ATTRIB_XACIS_ID205	rgb_colorstattribÿÿÿÿÿÿÿÿÑ   ƒ   =   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿÒ   „   ]   ¥îÛ Á   	fctd_markeyeattribÿÿÿÿÿÿÿÿÓ   ÿÿÿÿ…   ¥îß string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ†   Æîß ATTRIB_XACIS_ID-1coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ‹   ‰      ¸   
+^   ÿÿÿÿedgeÔ   ÿÿÿÿÿÿÿÿÿÿÿÿš   €Ä °rh¿¼   €Ä °rh?‰   Õ   unknown
+      ş¿      ş?š™™™™™é?      ş¿      ş?¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿÖ   ÿÿÿÿŒ   ¥îÛ Ñ   vertex×   ÿÿÿÿÿÿÿÿÿÿÿÿ¸   Ø   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿      ş¿¬Zd;ßé?                      ğ¿
+€Ä °rh¿
+€Ä °rh?edgeÙ   ÿÿÿÿÿÿÿÿÿÿÿÿ¶         ş¿¼         ş?   Ú   unknown
+      ş¿      ş¿š™™™™™é?      ş¿      ş?š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿÛ   ÿÿÿÿ   ¥îÛ Î   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ş¿š™™™™™é?      ğ¿                
+      ş¿
+      ş?idansoftattribÿÿÿÿÿÿÿÿÜ   ÿÿÿÿ   ¥îÛ Ğ   vertexİ   ÿÿÿÿÿÿÿÿÿÿÿÿ¸   Ş   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              ş?š™™™™™é?      ğ?                
+      ş¿
+      ş?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ‘   f   Æîß ATTRIB_XACIS_ID1087idansoftattribÿÿÿÿÿÿÿÿß   ÿÿÿÿ’   ¥îÛ İ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?      ş?š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿà   ÿÿÿÿ“   ¥îÛ Ş   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?      ş¿š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿá   ÿÿÿÿ–   ¥îÛ Ë   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿        ¾Ÿ/İ$ê?              ğ¿        
+      ş¿
+      ş?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ™   i   Æîß ATTRIB_XACIS_ID1084idansoftattribÿÿÿÿÿÿÿÿâ   ÿÿÿÿš   ¥îÛ Û   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿      ş?¾Ÿ/İ$ê?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ   k   Æîß ATTRIB_XACIS_ID1121idansoftattribÿÿÿÿÿÿÿÿã   ÿÿÿÿ   ¥îÛ Ü   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿      ş¿¾Ÿ/İ$ê?idansoftattribÿÿÿÿÿÿÿÿä   ÿÿÿÿ    ¥îÛ Ò   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?      ş¿¬Zd;ßé?                      ğ¿
+€Ä °rh¿
+€Ä °rh?idansoftattribÿÿÿÿÿÿÿÿå   ÿÿÿÿ¡   ¥îÛ Ô   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş?      ş?¬Zd;ßé?                      ğ¿
+€Ä °rh¿
+€Ä °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¥   p   Æîß ATTRIB_XACIS_ID1283string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ§   q   Æîß ATTRIB_XACIS_ID1274string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¯   =   Æîß ATTRIB_XACIS_ID203	rgb_colorstattribÿÿÿÿÿÿÿÿæ   °   ]   Æîß     à?    à?    à?idansoftattribÿÿÿÿÿÿÿÿç   ±   …   ¥îÛ Â   idansoftattribÿÿÿÿÿÿÿÿè   ÿÿÿÿ´   ¥îÛ Ó   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿      ş?¬Zd;ßé?                      ğ¿
+€Ä °rh¿
+€Ä °rh?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿµ   Œ   Æîß ATTRIB_XACIS_ID1130idansoftattribÿÿÿÿÿÿÿÿé   ÿÿÿÿ¶   ¥îÛ ß   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿      ş¿š™™™™™é?idansoftattribÿÿÿÿÿÿÿÿê   ÿÿÿÿ¸   ¥îÛ Ï   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿        š™™™™™é?              ğ?        
+      ş¿
+      ş?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¹      Æîß ATTRIB_XACIS_ID1132string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ»      Æîß ATTRIB_XACIS_ID1082idansoftattribÿÿÿÿÿÿÿÿë   ÿÿÿÿ¼   ¥îÛ à   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ş¿      ş?š™™™™™é?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ¿   ’   Æîß ATTRIB_XACIS_ID1275string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÁ   “   Æîß ATTRIB_XACIS_ID1284string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÃ   –   Æîß ATTRIB_XACIS_ID1120string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÆ   š   Æîß ATTRIB_XACIS_ID1279string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÉ      Æîß ATTRIB_XACIS_ID1329string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿË       Æîß ATTRIB_XACIS_ID1086string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÍ   ¡   Æîß ATTRIB_XACIS_ID1081string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÒ   ]   Æîß ATTRIB_XACIS_ID169	rgb_colorstattribÿÿÿÿÿÿÿÿì   Ó   …   Æîß     à?    à?    à?string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÔ   ´   Æîß ATTRIB_XACIS_ID1083string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿ×   ¶   Æîß ATTRIB_XACIS_ID1340string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿÙ   ¸   Æîß ATTRIB_XACIS_ID1129string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿİ   ¼   Æîß ATTRIB_XACIS_ID1277string_attribname_attribgenattribÿÿÿÿÿÿÿÿÿÿÿÿç   …   Æîß ATTRIB_XACIS_ID171End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTThu Dec 21 19:39:18 2017      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 19647 
+$end 'sab'
+$end 'Design_0.setup/NativeGeometryFiles'
+$end 'AllReferencedFilesForProject'
+$begin 'ProjectPreview'
+	Thumbnail64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCABgAGADASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAoor5B/av8TeJPE1hoH7Kfwu8Qa34X+\
+MH7SeieJ4j4v8Parf8AhTW/hT+zv4R8SfDjwx+0z8a/C3jmzuEk8M/FHRPCPxW0DTPAD2cGr3qfET4h\
+eEtRvdDuPB+l+L9W0TKtVVGnKo1zcuy6yk3aMV5yk1FebO7LcDPMsdh8HGoqMarbnUkm40qUIudatNL\
+Xko0ozqztrywdrs8u8Nf8FK/g34u8ZfHPRfDPwo/aj8V/D39n342+LP2afHHxt+HPwE8VfGTwbcftBe\
+AtK8Oat43+GGj/AA2+CsniP4nr/ZcWv3ENx4n1D4f6f4HkutBntrTxRczX2hLq/bf8PHP2ItM/0f4jf\
+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'
+	$begin 'DesignInfo'
+		DesignName='HFSSDesign1'
+		Notes=''
+		Factory='HFSS'
+		IsSolved=false
+		'Nominal Setups'[1: 'Setup1']
+		'Optimetrics Setups'[0:]
+		'Optimetrics Experiment Types'[0:]
+		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAMgDASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooAKKKKACiiigAor81f+Cqn7UHxW\
+/Zq/ZO+KF7+zhd6JB+0tq3wu+Mnjb4eX+u6ND4o0j4e+B/gb8Ntd+K/xl+Mvifw8skkkOiaT4R0GDw/\
+oWpXenal4fX4nfFv4b6D4lt/7K8RyE+o/wDCtv28vA/7nwV+1D8EvjL4Z0H/AE/TNF/aL/Zw1HRfjJ8\
+QfL/4md74U8Y/tA/s/fFfw14R8FfbNQe703T/ABBpHwOvf+Ef0qSxuL/wz4y1OwvZtc4pY2P1irhqdC\
+pWlQjCU3Hk5Y8/NZe9OMnK0eZqMXo47tpH0tLhmrLJ8vznF5rhMsoZrVxFLDU67xPtazw3sVUmvY4ar\
+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'
+	$end 'DesignInfo'
+$end 'ProjectPreview'
