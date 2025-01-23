@@ -1,0 +1,3147 @@
+$begin 'AnsoftProject'
+  Created='Sat Nov 11 09:37:19 2006'
+  Product='HFSS'
+  NextUniqueID=0
+  MoveBackwards=false
+  $begin 'Desktop'
+    Version(1, 0)
+  $end 'Desktop'
+  $begin 'DesignMgrEnvironment'
+    CompInstCounter=1
+    GPortCounter=0
+    NetworkDataCounter=0
+    NetCounter=0
+  $end 'DesignMgrEnvironment'
+  $begin 'Datasets'
+    NextUniqueID=0
+    MoveBackwards=false
+    $begin 'DatasetDefinitions'
+    $end 'DatasetDefinitions'
+  $end 'Datasets'
+  $begin 'Definitions'
+    $begin 'Folders'
+      Definitions(7338, 10000, 1, 1, 0, false, false)
+      Materials(7338, 9001, 9, 3, 1, false, false)
+    $end 'Folders'
+    $begin 'Materials'
+      $begin 'vacuum'
+        permittivity='1'
+        ModTime=1163230411
+        Library='Materials'
+        LibLocation='SysLibrary '
+      $end 'vacuum'
+    $end 'Materials'
+    $begin 'Symbols'
+    $end 'Symbols'
+    $begin 'Footprints'
+    $end 'Footprints'
+    $begin 'Padstacks'
+    $end 'Padstacks'
+    $begin 'DefInfo'
+      HFSSModel1(4294967295, 0, '', 1163230410, '', '', '', '', '', '', '', '', '', 'Project')
+    $end 'DefInfo'
+    $begin 'Compdefs'
+      $begin 'HFSSModel1'
+        Refbase='U'
+        NumParts=1
+        $begin 'SimModels'
+        $end 'SimModels'
+        $begin 'Properties'
+          TextProp('Representation', 'SD', '', 'HFSSModel1')
+          TextProp('Owner', 'SD', '', 'HFSS')
+        $end 'Properties'
+      $end 'HFSSModel1'
+    $end 'Compdefs'
+  $end 'Definitions'
+  $begin 'HFSSEnvironment'
+    Version(1, 0)
+  $end 'HFSSEnvironment'
+  $begin 'geometry3deditor'
+    Version(1, 0)
+  $end 'geometry3deditor'
+  $begin 'HFSSModel'
+    Name='HFSSModel1'
+    SolutionType='DrivenModal'
+    MaterialDensity=1
+    MassOfTissue=1
+    $begin 'ModelSetup'
+      $begin 'Editor3D Doc Preferences'
+        'Plane Background'=true
+        BackgroundColor1=16777215
+        BackgroundColor2=0
+        'Need Lights'=true
+        'Ambient Light'=8355711
+        'Num Lights'=2
+        Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+        Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+      $end 'Editor3D Doc Preferences'
+      $begin 'Properties'
+        VariableProp('a', 'UD', '', '8.636cm')
+        VariableProp('L', 'UD', '', '50cm')
+        VariableProp('offset', 'UD', '', '1.35cm', ta(i=true, Step='0.1407cm', Min='0.7035cm', Max='2.1105cm'))
+        VariableProp('wx', 'UD', '', '3.6cm')
+        VariableProp('x1', 'UD', '', 'a*0.5+offset-wx*0.5')
+        VariableProp('wy', 'UD', '', '6cm')
+        VariableProp('hs', 'UD', '', '8cm')
+        VariableProp('x2', 'UD', '', 'a*0.5-offset+wx*0.5')
+        VariableProp('svs', 'UD', '', '10cm')
+        VariableProp('b', 'UD', '', '4.318cm')
+        VariableProp('y1', 'UD', '', 'L-hs')
+        VariableProp('y2', 'UD', '', 'y1-svs')
+        VariableProp('y3', 'UD', '', 'y2-svs')
+        VariableProp('y4', 'UD', '', 'y3-svs')
+        VariableProp('m', 'UD', '', '2cm')
+        VariableProp('p', 'UD', '', '22.182cm')
+        VariableProp('q', 'UD', '', '64cm')
+        VariableProp('s', 'UD', '', '30cm')
+      $end 'Properties'
+      SnapMode=31
+      GroupByMaterial=true
+      $begin 'GeometryCore'
+        NativeKernel='ACIS'
+        Units='cm'
+        InstanceID=-1
+        $begin 'GeometryOperations'
+          NextUniqueID=490
+          MoveBackwards=false
+          $begin 'CoordinateSystems'
+          $end 'CoordinateSystems'
+          $begin 'ToplevelParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=5
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='a'
+                    Height='L'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=6
+                    StartFaceID=-1
+                    StartEdgeID=7
+                    StartVertexID=11
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=15
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=6
+                  $end 'LocalOperationParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=16
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=5
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='Substract'
+                  ID=113
+                  $begin 'SubtractParameters'
+                    KeepOriginals=false
+                    BlankPart=6
+                    NumToolParts=4
+                    ToolParts(54, 66, 78, 90)
+                  $end 'SubtractParameters'
+                  ParentPartID=6
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=5
+                      NumCoedges=20
+                      NumEdges=20
+                      NumVertices=20
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=-1
+                    StartEdgeID=114
+                    StartVertexID=130
+                    NumNewFaces=0
+                    NumNewEdges=16
+                    NumNewVertices=16
+                  $end 'OperationIdentity'
+                  BlankOperation=15
+                  NumToolOperations=4
+                  ToolOperations(63, 75, 87, 99)
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle6'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=146
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='0cm'
+                    ZStart='b'
+                    Width='L'
+                    Height='-b'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=147
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=147
+                    StartFaceID=-1
+                    StartEdgeID=148
+                    StartVertexID=152
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=156
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=147
+                  $end 'LocalOperationParameters'
+                  ParentPartID=147
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=157
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=146
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle7'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=158
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='a'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='L'
+                    Height='b'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=159
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=159
+                    StartFaceID=-1
+                    StartEdgeID=160
+                    StartVertexID=164
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=168
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=159
+                  $end 'LocalOperationParameters'
+                  ParentPartID=159
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=169
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=158
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle9'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=182
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='L'
+                    ZStart='0cm'
+                    Width='b'
+                    Height='a'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=183
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=183
+                    StartFaceID=-1
+                    StartEdgeID=184
+                    StartVertexID=188
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=192
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=183
+                  $end 'LocalOperationParameters'
+                  ParentPartID=183
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=193
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=182
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle10'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0.6
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=194
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='0cm'
+                    ZStart='b'
+                    Width='a'
+                    Height='L'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=195
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=195
+                    StartFaceID=-1
+                    StartEdgeID=196
+                    StartVertexID=200
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=204
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=195
+                  $end 'LocalOperationParameters'
+                  ParentPartID=195
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=205
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=194
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Box1'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=217
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='0cm'
+                    YPosition='0cm'
+                    ZPosition='b'
+                    XSize='a'
+                    YSize='L'
+                    ZSize='-b'
+                  $end 'BoxParameters'
+                  ParentPartID=218
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=218
+                    StartFaceID=219
+                    StartEdgeID=225
+                    StartVertexID=237
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle17'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=326
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='0cm'
+                    ZStart='B'
+                    Width='-b'
+                    Height='a'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=327
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=327
+                    StartFaceID=-1
+                    StartEdgeID=328
+                    StartVertexID=332
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=336
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=327
+                  $end 'LocalOperationParameters'
+                  ParentPartID=327
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=337
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=326
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle18'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=366
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='a'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='p'
+                    Height='q'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=367
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=367
+                    StartFaceID=-1
+                    StartEdgeID=368
+                    StartVertexID=372
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=376
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=367
+                  $end 'LocalOperationParameters'
+                  ParentPartID=367
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=377
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=366
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle19'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=378
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='-p'
+                    Height='q'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=379
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=379
+                    StartFaceID=-1
+                    StartEdgeID=380
+                    StartVertexID=384
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=388
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=379
+                  $end 'LocalOperationParameters'
+                  ParentPartID=379
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=389
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=378
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle20'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=390
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='0cm'
+                    YStart='L'
+                    ZStart='0cm'
+                    Width='a'
+                    Height='q-L'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=391
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=391
+                    StartFaceID=-1
+                    StartEdgeID=392
+                    StartVertexID=396
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=400
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=391
+                  $end 'LocalOperationParameters'
+                  ParentPartID=391
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=401
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=390
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle21'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=402
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='-p'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='-s'
+                    Height='2*p+a'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=403
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=403
+                    StartFaceID=-1
+                    StartEdgeID=404
+                    StartVertexID=408
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=412
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=403
+                  $end 'LocalOperationParameters'
+                  ParentPartID=403
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=413
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=402
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle22'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=414
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='a+p'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='q'
+                    Height='-s'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=415
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=415
+                    StartFaceID=-1
+                    StartEdgeID=416
+                    StartVertexID=420
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=424
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=415
+                  $end 'LocalOperationParameters'
+                  ParentPartID=415
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=425
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=414
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle23'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=426
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='-p'
+                    YStart='0cm'
+                    ZStart='0cm'
+                    Width='q'
+                    Height='-s'
+                    WhichAxis='X'
+                  $end 'RectangleParameters'
+                  ParentPartID=427
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=427
+                    StartFaceID=-1
+                    StartEdgeID=428
+                    StartVertexID=432
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=436
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=427
+                  $end 'LocalOperationParameters'
+                  ParentPartID=427
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=437
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=426
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle24'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=438
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='-p'
+                    YStart='q'
+                    ZStart='0cm'
+                    Width='-s'
+                    Height='2*p+a'
+                    WhichAxis='Y'
+                  $end 'RectangleParameters'
+                  ParentPartID=439
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=439
+                    StartFaceID=-1
+                    StartEdgeID=440
+                    StartVertexID=444
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=448
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=439
+                  $end 'LocalOperationParameters'
+                  ParentPartID=439
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=449
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=438
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle25'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=450
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='-p'
+                    YStart='0cm'
+                    ZStart='-s'
+                    Width='a+2*p'
+                    Height='q'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=451
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=451
+                    StartFaceID=-1
+                    StartEdgeID=452
+                    StartVertexID=456
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=460
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=451
+                  $end 'LocalOperationParameters'
+                  ParentPartID=451
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=461
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=450
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Box2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Box'
+                  ID=462
+                  ReferenceCoordSystemID=1
+                  $begin 'BoxParameters'
+                    XPosition='-p'
+                    YPosition='0cm'
+                    ZPosition='0cm'
+                    XSize='2*p+a'
+                    YSize='q'
+                    ZSize='-s'
+                  $end 'BoxParameters'
+                  ParentPartID=463
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=6
+                      NumWires=0
+                      NumLoops=6
+                      NumCoedges=24
+                      NumEdges=12
+                      NumVertices=8
+                    $end 'Topology'
+                    BodyID=463
+                    StartFaceID=464
+                    StartEdgeID=470
+                    StartVertexID=482
+                    NumNewFaces=6
+                    NumNewEdges=12
+                    NumNewVertices=8
+                  $end 'OperationIdentity'
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'ToplevelParts'
+          $begin 'OperandParts'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle2'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=53
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='x1'
+                    YStart='y1'
+                    ZStart='0cm'
+                    Width='wx'
+                    Height='-wy'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=54
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=54
+                    StartFaceID=-1
+                    StartEdgeID=55
+                    StartVertexID=59
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=63
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=54
+                  $end 'LocalOperationParameters'
+                  ParentPartID=54
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=64
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=53
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle3'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=65
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='x2'
+                    YStart='y2'
+                    ZStart='0cm'
+                    Width='-wx'
+                    Height='-wy'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=66
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=66
+                    StartFaceID=-1
+                    StartEdgeID=67
+                    StartVertexID=71
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=75
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=66
+                  $end 'LocalOperationParameters'
+                  ParentPartID=66
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=76
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=65
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle4'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=77
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='x1'
+                    YStart='y3'
+                    ZStart='0cm'
+                    Width='wx'
+                    Height='-wy'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=78
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=78
+                    StartFaceID=-1
+                    StartEdgeID=79
+                    StartVertexID=83
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=87
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=78
+                  $end 'LocalOperationParameters'
+                  ParentPartID=78
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=88
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=77
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+            $begin 'GeometryPart'
+              $begin 'Attributes'
+                Name='Rectangle5'
+                Flags=''
+                Color='(132 132 193)'
+                Transparency=0
+                PartCoordinateSystem=1
+                MaterialName='vacuum'
+                SolveInside=true
+              $end 'Attributes'
+              $begin 'Operations'
+                $begin 'Operation'
+                  OperationType='Rectangle'
+                  ID=89
+                  ReferenceCoordSystemID=1
+                  $begin 'RectangleParameters'
+                    XStart='x2'
+                    YStart='y4'
+                    ZStart='0cm'
+                    Width='-wx'
+                    Height='-wy'
+                    WhichAxis='Z'
+                  $end 'RectangleParameters'
+                  ParentPartID=90
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=0
+                      NumWires=1
+                      NumLoops=0
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=90
+                    StartFaceID=-1
+                    StartEdgeID=91
+                    StartVertexID=95
+                    NumNewFaces=0
+                    NumNewEdges=4
+                    NumNewVertices=4
+                  $end 'OperationIdentity'
+                $end 'Operation'
+                $begin 'Operation'
+                  OperationType='CoverLines'
+                  ID=99
+                  $begin 'LocalOperationParameters'
+                    LocalOpPart=90
+                  $end 'LocalOperationParameters'
+                  ParentPartID=90
+                  $begin 'OperationIdentity'
+                    $begin 'Topology'
+                      NumLumps=1
+                      NumShells=1
+                      NumFaces=1
+                      NumWires=0
+                      NumLoops=1
+                      NumCoedges=4
+                      NumEdges=4
+                      NumVertices=4
+                    $end 'Topology'
+                    BodyID=-1
+                    StartFaceID=100
+                    StartEdgeID=-1
+                    StartVertexID=-1
+                    NumNewFaces=1
+                    NumNewEdges=0
+                    NumNewVertices=0
+                  $end 'OperationIdentity'
+                  ParentOperationID=89
+                $end 'Operation'
+              $end 'Operations'
+            $end 'GeometryPart'
+          $end 'OperandParts'
+          $begin 'Planes'
+          $end 'Planes'
+          $begin 'Points'
+          $end 'Points'
+          $begin 'GeometryEntityLists'
+          $end 'GeometryEntityLists'
+        $end 'GeometryOperations'
+        $begin 'GeometryDependencies'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 5)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('GeometryBodyOperation', 5)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=5
+            DependencyObject('GeometryBodyOperation', 113)
+            DependencyObject('GeometryBodyOperation', 15)
+            DependencyObject('GeometryBodyOperation', 63)
+            DependencyObject('GeometryBodyOperation', 75)
+            DependencyObject('GeometryBodyOperation', 87)
+            DependencyObject('GeometryBodyOperation', 99)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 146)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 156)
+            DependencyObject('GeometryBodyOperation', 146)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 158)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 168)
+            DependencyObject('GeometryBodyOperation', 158)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 182)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 192)
+            DependencyObject('GeometryBodyOperation', 182)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 194)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 204)
+            DependencyObject('GeometryBodyOperation', 194)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 217)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 326)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 336)
+            DependencyObject('GeometryBodyOperation', 326)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 366)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 376)
+            DependencyObject('GeometryBodyOperation', 366)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 378)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 388)
+            DependencyObject('GeometryBodyOperation', 378)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 390)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 400)
+            DependencyObject('GeometryBodyOperation', 390)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 402)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 412)
+            DependencyObject('GeometryBodyOperation', 402)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 414)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 424)
+            DependencyObject('GeometryBodyOperation', 414)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 426)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 436)
+            DependencyObject('GeometryBodyOperation', 426)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 438)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 448)
+            DependencyObject('GeometryBodyOperation', 438)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 450)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 460)
+            DependencyObject('GeometryBodyOperation', 450)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 462)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 53)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 63)
+            DependencyObject('GeometryBodyOperation', 53)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 65)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 75)
+            DependencyObject('GeometryBodyOperation', 65)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 77)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 87)
+            DependencyObject('GeometryBodyOperation', 77)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 89)
+            DependencyObject('CoordinateSystem', 1)
+          $end 'DependencyInformation'
+          $begin 'DependencyInformation'
+            NumParents=1
+            DependencyObject('GeometryBodyOperation', 99)
+            DependencyObject('GeometryBodyOperation', 89)
+          $end 'DependencyInformation'
+        $end 'GeometryDependencies'
+      $end 'GeometryCore'
+    $end 'ModelSetup'
+    $begin 'BoundarySetup'
+      $begin 'GlobalBoundData'
+        PortImpedance='1'
+      $end 'GlobalBoundData'
+      $begin 'ProductSpecificData'
+        $begin 'PMLData'
+          $begin 'PMLGroups'
+          $end 'PMLGroups'
+        $end 'PMLData'
+      $end 'ProductSpecificData'
+      $begin 'Boundaries'
+        NextUniqueID=7
+        MoveBackwards=false
+        $begin 'PerfE1'
+          ID=1
+          BoundType='Perfect E'
+          InfGroundPlane=false
+          Objects(159, 195)
+        $end 'PerfE1'
+        $begin 'PerfE2'
+          ID=2
+          BoundType='Perfect E'
+          InfGroundPlane=false
+          Objects(147, 6, 183)
+        $end 'PerfE2'
+        $begin 'PerfE3'
+          ID=6
+          BoundType='Perfect E'
+          InfGroundPlane=false
+          Objects(367, 379, 391, 403, 415, 427, 439, 451)
+        $end 'PerfE3'
+        $begin 'WavePort1'
+          ID=5
+          BoundType='Wave Port'
+          NumModes=1
+          PolarizeEField=false
+          DoDeembed=false
+          DeembedDist='0cm'
+          DoRenorm=false
+          RenormValue='50Ohm'
+          $begin 'Modes'
+            $begin 'Mode1'
+              ModeNum=1
+              UseIntLine=true
+              $begin 'IntLine'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=331
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+                $begin 'GeometryPosition'
+                  IsAttachedToEntity=true
+                  EntityID=329
+                  PositionType='EdgeCenter'
+                  UParam=0
+                  VParam=0
+                  XPosition='0'
+                  YPosition='0'
+                  ZPosition='0'
+                $end 'GeometryPosition'
+              $end 'IntLine'
+              CharImp='Zpi'
+            $end 'Mode1'
+          $end 'Modes'
+          Objects(327)
+        $end 'WavePort1'
+      $end 'Boundaries'
+    $end 'BoundarySetup'
+    $begin 'MeshSetup'
+      $begin 'MeshOperations'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'MeshOperations'
+    $end 'MeshSetup'
+    $begin 'AnalysisSetup'
+      $begin 'SolveSetups'
+        NextUniqueID=1
+        MoveBackwards=false
+        $begin 'Setup1'
+          ID=0
+          SetupType='HfssDriven'
+          Frequency='2.45GHz'
+          PortsOnly=false
+          MaxDeltaS=0.02
+          UseMatrixConv=false
+          MaximumPasses=3
+          MinimumPasses=1
+          MinimumConvergedPasses=1
+          PercentRefinement=20
+          ReducedSolutionBasis=false
+          DoLambdaRefine=true
+          DoMaterialLambda=true
+          Target=0.3333
+          PortAccuracy=2
+          SetPortMinMaxTri=false
+          PortMinTri=100
+          PortMaxTri=500
+          $begin 'Sweeps'
+            NextUniqueID=1
+            MoveBackwards=false
+            $begin 'Sweep1'
+              ID=0
+              Type='Discrete'
+              SetupType='LinearStep'
+              StartFreq='2.4GHz'
+              StopFreq='2.5GHz'
+              StepSize='0.01GHz'
+              SaveFields=true
+              ExtrapToDC=false
+            $end 'Sweep1'
+          $end 'Sweeps'
+        $end 'Setup1'
+      $end 'SolveSetups'
+    $end 'AnalysisSetup'
+    $begin 'Optimetrics'
+      $begin 'OptimetricsSetups'
+        NextUniqueID=15
+        MoveBackwards=false
+        $begin 'Parametric offset'
+          ID=2
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='offset'
+              Data='LIN 0.5cm 3cm 0.5cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric offset'
+        $begin 'Parametric wx'
+          ID=3
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='wx'
+              Data='LIN 0.5cm 3.5cm 0.5cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric wx'
+        $begin 'Parametric wy'
+          ID=4
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='wy'
+              Data='LIN 5cm 11cm 1cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric wy'
+        $begin 'Parametric hs'
+          ID=5
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='hs'
+              Data='LIN 2cm 14cm 2cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric hs'
+        $begin 'Parametric svs'
+          ID=6
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='svs'
+              Data='LIN 2cm 12cm 2cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric svs'
+        $begin 'Parametric m'
+          ID=7
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='m'
+              Data='LIN 1cm 3cm 1cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric m'
+        $begin 'Parametric ince offset'
+          ID=8
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='offset'
+              Data='LIN 1.5cm 2.5cm 0.1cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric ince offset'
+        $begin 'Parametric ince wx'
+          ID=9
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='wx'
+              Data='LIN 2.4cm 4.4cm 0.2cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric ince wx'
+        $begin 'Parametric en ince offset'
+          ID=10
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='offset'
+              Data='LIN 0.8cm 2cm 0.1cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric en ince offset'
+        $begin 'Parametric ince wy'
+          ID=11
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='wy'
+              Data='LIN 5cm 9cm 0.5cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric ince wy'
+        $begin 'Parametric ince svs'
+          ID=12
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='svs'
+              Data='LIN 8cm 12cm 0.5cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric ince svs'
+        $begin 'Parametric en ince wx'
+          ID=13
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='wx'
+              Data='LIN 2.6cm 4cm 0.2cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric en ince wx'
+        $begin 'Parametric q'
+          ID=14
+          SetupType='OptiParametric'
+          NextUniqueID=1
+          MoveBackwards=false
+          GoalSetupVersion=0
+          Version=0
+          SaveFields=true
+          $begin 'StartingPoint'
+          $end 'StartingPoint'
+          'Sim. Setups'(31)
+          $begin 'Sweeps'
+            $begin 'SweepDefinition'
+              Variable='q'
+              Data='LIN 55cm 90cm 5cm'
+              OffsetF1=false
+              Synchronize=0
+            $end 'SweepDefinition'
+          $end 'Sweeps'
+          $begin 'Sweep Operations'
+          $end 'Sweep Operations'
+          $begin 'Goals'
+            $begin 'Goal'
+              Solution=35
+              Calculation='power'
+              Context=-1
+              $begin 'Ranges'
+                Range(Var='Freq', Type='s', Start='2.45GHz', Stop='2.45GHz')
+              $end 'Ranges'
+            $end 'Goal'
+          $end 'Goals'
+        $end 'Parametric q'
+      $end 'OptimetricsSetups'
+    $end 'Optimetrics'
+    $begin 'Solutions'
+      FieldType='NoIncidentWave'
+      Entry(ID=5, Index=0, Terminal=false, Terminated=false, Magnitude=1, Phase=0)
+    $end 'Solutions'
+    $begin 'PortFieldDisplay'
+      $begin 'PortFieldDisplay'
+        ScaleFactor=5
+        ColorR=255
+        ColorG=1
+        ColorB=1
+      $end 'PortFieldDisplay'
+    $end 'PortFieldDisplay'
+    $begin 'FieldsReporter'
+      $begin 'FieldsCalculator'
+        Line_Discretization=1000
+      $end 'FieldsCalculator'
+      $begin 'PlotDefaults'
+        Default_SolutionId=35
+        Default_PlotFolder='Automatic'
+        Default_Phase='0deg'
+        Default_Freq='2.45GHz'
+      $end 'PlotDefaults'
+      $begin 'FieldsPlotManagerID'
+        NextUniqueID=6
+        MoveBackwards=false
+        NumQuantityType=0
+        NumPlots=0
+      $end 'FieldsPlotManagerID'
+    $end 'FieldsReporter'
+    $begin 'RadField'
+      $begin 'FarFieldSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'FarFieldSetups'
+      $begin 'ArraySetup'
+        UseOption='NoArray'
+        $begin 'RegularArray'
+          NumUCells='10'
+          NumVCells='10'
+          CellUDist='10cm'
+          CellVDist='10cm'
+          UDirnX='1'
+          UDirnY='0'
+          UDirnZ='0'
+          VDirnX='0'
+          VDirnY='1'
+          VDirnZ='0'
+          FirstCellPosX='0cm'
+          FirstCellPosY='0cm'
+          FirstCellPosZ='0cm'
+          UseScanAngle=true
+          ScanAnglePhi='45deg'
+          ScanAngleTheta='45deg'
+          UDirnPhaseShift='0deg'
+          VDirnPhaseShift='0deg'
+        $end 'RegularArray'
+        $begin 'CustomArray'
+          NumCells=0
+          $begin 'Cell'
+          $end 'Cell'
+        $end 'CustomArray'
+      $end 'ArraySetup'
+      $begin 'NearFieldSetups'
+        NextUniqueID=0
+        MoveBackwards=false
+      $end 'NearFieldSetups'
+    $end 'RadField'
+    $begin 'SolutionManager'
+      $begin 'OutputVariables'
+        power('(mag(S(WavePort1,WavePort1)))^2', 1, 'NoUnit', 2, '', 3, 0, 2, 0, false, false, -1, 1, 0, 1)
+      $end 'OutputVariables'
+      $begin 'SimSetup'
+        TypeName=''
+        ID=31
+        Name='Setup1'
+        $begin 'Solution'
+          ID=33
+          Name='Adaptive_1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='a'
+                Column='8.636cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='L'
+                Column='50cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='1.35cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wx'
+                Column='3.6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x1'
+                Column='3.868cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y1'
+                Column='42cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wy'
+                Column='6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='hs'
+                Column='8cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x2'
+                Column='4.768cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='svs'
+                Column='10cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y2'
+                Column='32cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y3'
+                Column='22cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y4'
+                Column='12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='b'
+                Column='4.318cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='m'
+                Column='2cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='p'
+                Column='10cm;12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='q'
+                Column='55cm;58cm;60cm;65cm;70cm;75cm;80cm;85cm;90cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='s'
+                Column='37cm'
+                Units='cm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=35
+          Name='LastAdaptive'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='a'
+                Column='8.636cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='L'
+                Column='50cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='1.35cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wx'
+                Column='3.6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x1'
+                Column='3.868cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y1'
+                Column='42cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wy'
+                Column='6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='hs'
+                Column='8cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x2'
+                Column='4.768cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='svs'
+                Column='10cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y2'
+                Column='32cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y3'
+                Column='22cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y4'
+                Column='12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='b'
+                Column='4.318cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='m'
+                Column='2cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='p'
+                Column='10cm;12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='q'
+                Column='55cm;58cm;60cm;65cm;70cm;75cm;80cm;85cm;90cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='s'
+                Column='37cm'
+                Units='cm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=37
+          Name='Sweep1'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.4GHz;2.41GHz;2.42GHz;2.43GHz;2.44GHz;2.45GHz;2.46GHz;2.47GHz;2.48GHz;2.49GHz;2.5GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='a'
+                Column='8.636cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='L'
+                Column='50cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='1.35cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wx'
+                Column='3.6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x1'
+                Column='3.868cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y1'
+                Column='42cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wy'
+                Column='6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='hs'
+                Column='8cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x2'
+                Column='4.768cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='svs'
+                Column='10cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y2'
+                Column='32cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y3'
+                Column='22cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y4'
+                Column='12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='b'
+                Column='4.318cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='m'
+                Column='2cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='p'
+                Column='10cm;12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='q'
+                Column='55cm;60cm;65cm;70cm;75cm;80cm;85cm;90cm;58cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='s'
+                Column='37cm'
+                Units='cm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=42
+          Name='Adaptive_2'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='a'
+                Column='8.636cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='L'
+                Column='50cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='1.35cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wx'
+                Column='3.6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x1'
+                Column='3.868cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wy'
+                Column='6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='hs'
+                Column='8cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x2'
+                Column='4.768cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='svs'
+                Column='10cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='b'
+                Column='4.318cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y1'
+                Column='42cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y2'
+                Column='32cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y3'
+                Column='22cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y4'
+                Column='12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='m'
+                Column='2cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='p'
+                Column='10cm;12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='q'
+                Column='55cm;58cm;60cm;65cm;70cm;75cm;80cm;85cm;90cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='s'
+                Column='37cm'
+                Units='cm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+        $begin 'Solution'
+          ID=45
+          Name='Adaptive_3'
+          $begin 'SimDataExtractor'
+            $begin 'Sweeps'
+              $begin 'Sweep'
+                Variable='Freq'
+                Column='2.45GHz'
+                Units='GHz'
+              $end 'Sweep'
+              $begin 'PostprocessSweep'
+                Variable='NormalizedDistance'
+                RegularSweep=1
+                Units=''
+                Minimum=0
+                Maximum=1
+                Increment=0.01
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phi'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Theta'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'PostprocessSweep'
+                Variable='Phase'
+                RegularSweep=1
+                Units='deg'
+                Minimum=0
+                Maximum=6.28318530717959
+                Increment=0.0872664625997165
+              $end 'PostprocessSweep'
+              $begin 'Sweep'
+                Variable='a'
+                Column='8.636cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='L'
+                Column='50cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='offset'
+                Column='1.35cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wx'
+                Column='3.6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x1'
+                Column='3.868cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='wy'
+                Column='6cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='hs'
+                Column='8cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='x2'
+                Column='4.768cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='svs'
+                Column='10cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='b'
+                Column='4.318cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y1'
+                Column='42cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y2'
+                Column='32cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y3'
+                Column='22cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='y4'
+                Column='12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='m'
+                Column='2cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='p'
+                Column='10cm;12cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='q'
+                Column='55cm;58cm;60cm;65cm;70cm;75cm;80cm;85cm;90cm'
+                Units='cm'
+              $end 'Sweep'
+              $begin 'Sweep'
+                Variable='s'
+                Column='37cm'
+                Units='cm'
+              $end 'Sweep'
+            $end 'Sweeps'
+            IsPortOnly=false
+          $end 'SimDataExtractor'
+        $end 'Solution'
+      $end 'SimSetup'
+      $begin 'Version ID Map'
+        V=572
+        $begin 'Setup'
+          N='Setup1'
+          V=572
+          Soln(N='Adaptive_1', V=572)
+          Soln(N='LastAdaptive', V=572)
+          Soln(N='Sweep1', V=572)
+          Soln(N='Adaptive_2', V=572)
+          Soln(N='Adaptive_3', V=572)
+        $end 'Setup'
+      $end 'Version ID Map'
+      $begin 'ID Map'
+        $begin 'Setup'
+          N='Setup1'
+          I=31
+          Soln(N='Adaptive_1', I=33)
+          Soln(N='LastAdaptive', I=35)
+          Soln(N='Sweep1', I=37)
+          Soln(N='Adaptive_2', I=42)
+          Soln(N='Adaptive_3', I=45)
+        $end 'Setup'
+      $end 'ID Map'
+    $end 'SolutionManager'
+    Notes=$begin_cdata$    $end_cdata$
+    $begin 'AnimationSetups'
+      $begin 'Setup_0'
+        AnimationName='Animation1'
+        Description='Swept variable Phase'
+        SweptVariable='Phase'
+        SweptValues[9: '0deg', '20deg', '40deg', '60deg', '80deg', '100deg', '120deg', '140deg', '160deg']
+        UseDesignInstance=true
+        DesignPoint=''
+        IntrinsicVarVals=''
+      $end 'Setup_0'
+    $end 'AnimationSetups'
+  $end 'HFSSModel'
+  $begin 'DataInstances'
+    DesignEditor='TopLevel'
+    RefMap('U', 1)
+    Refdes('0', 'U1')
+    $begin 'CompInstances'
+      $begin 'Compinst'
+        ID='0'
+        Status='Status'
+        CompName='HFSSModel1'
+        AutoGenerated=false
+        AutoGeneratedName=''
+        GatesInUse()
+        $begin 'Properties'
+          TextProp('ID', 'SRID', '', '0')
+        $end 'Properties'
+      $end 'Compinst'
+    $end 'CompInstances'
+    $begin 'Instance'
+      DesignEditor='HFSSModel1'
+      ID='0'
+      $begin 'HfssDesignInstance'
+        $begin 'WindowPosition'
+          $begin 'EditorWindow'
+            '3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -4, -30, 44, 58, 756, 413), OrientationMatrix(0.00324878864921629, -0.00858199596405029, 0.0159538090229034, 0, 0.0180785153061152, 0.000496923690661788, -0.00341409863904119, 0, 0.00116126972716302, 0.016273757442832, 0.00851770769804716, 0, -0.83118611574173, 0.279998511075974, -107.906455993652, 1, 0, -1.49000000953674, 1.49000000953674, -1, 1, 4.80000019073486, 211.469299316406), Drawings[16: 'Rectangle1', 'Rectangle6', 'Rectangle7', 'Rectangle9', 'Rectangle10', 'Box1', 'Rectangle17', 'Rectangle18', 'Rectangle19', 'Rectangle20', 'Rectangle21', 'Rectangle22', 'Rectangle23', 'Rectangle24', 'Rectangle25', 'Box2'])))
+          $end 'EditorWindow'
+          $begin 'ReportWindow'
+          $end 'ReportWindow'
+        $end 'WindowPosition'
+        $begin 'Reports'
+        $end 'Reports'
+      $end 'HfssDesignInstance'
+    $end 'Instance'
+  $end 'DataInstances'
+$end 'AnsoftProject'
